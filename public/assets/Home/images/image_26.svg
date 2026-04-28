@@ -1,0 +1,9 @@
+<svg width="241" height="299" viewBox="0 0 241 299" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="241" height="299" rx="28" fill="#F5F7FB"/>
+  <rect x="22" y="28" width="197" height="243" rx="22" fill="#FFFFFF" stroke="#DCE2EC"/>
+  <circle cx="121" cy="100" r="42" fill="#F2B84B"/>
+  <path d="M62 180C80 150 100 136 122 136C145 136 165 151 181 180" stroke="#0161FE" stroke-width="14" stroke-linecap="round"/>
+  <rect x="54" y="210" width="133" height="12" rx="6" fill="#202833" fill-opacity="0.22"/>
+  <rect x="72" y="236" width="97" height="12" rx="6" fill="#202833" fill-opacity="0.14"/>
+  <text x="52" y="73" fill="#202833" font-family="Arial, sans-serif" font-size="18" font-weight="700">TRIP</text>
+</svg>
