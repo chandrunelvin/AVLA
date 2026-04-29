@@ -1,0 +1,9 @@
+<svg width="1230" height="520" viewBox="0 0 1230 520" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <text x="0" y="92" fill="#BDBDBD" font-family="Georgia, serif" font-style="italic" font-size="92">Snapper</text>
+  <path d="M285 292C455 175 738 177 940 287C735 392 451 390 285 292Z" fill="#FF8A82"/>
+  <path d="M285 292C474 218 728 218 940 287C753 330 506 325 285 292Z" fill="#F5443F"/>
+  <path d="M940 287L1104 205L1058 287L1108 365L940 318Z" fill="#D9272E"/>
+  <path d="M525 220L600 136L615 256" fill="#EA3D42"/>
+  <circle cx="354" cy="275" r="16" fill="#111111"/>
+  <circle cx="349" cy="270" r="5" fill="white"/>
+</svg>

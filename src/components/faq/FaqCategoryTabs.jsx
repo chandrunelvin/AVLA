@@ -1,5 +1,3 @@
-import { useState } from 'react';
-
 const categories = [
   {
     id: 'fish',
@@ -27,35 +25,29 @@ const categories = [
   },
 ];
 
-export default function ServiceCategoriesSection() {
-  const [activeCategory, setActiveCategory] = useState(categories[0].id);
-
+export default function FaqCategoryTabs({ activeCategory, onChange }) {
   function handleKey(event, id) {
     if (event.key === 'Enter' || event.key === ' ') {
-      setActiveCategory(id);
+      onChange(id);
     }
   }
 
   return (
-    <section
-      id="service-categories-section"
-      className="relative mx-auto mt-6 h-[465px] w-full overflow-hidden rounded-[20.41314125061035px] bg-[#F6F7F9]"
-    >
-      <div className="absolute left-1/2 top-[45px] flex h-[39px] min-w-[158px] -translate-x-1/2 items-center justify-center rounded-full border border-[#202833] px-[21px]">
-        <span className="whitespace-nowrap text-[14px] font-medium uppercase leading-[18px] tracking-[1.7862435579299927px] text-[#202833]">
+    <section className="relative mt-[23px] h-[204px] w-full overflow-hidden rounded-[15px] bg-[#F6F7F9]">
+      <div className="absolute left-1/2 top-[22px] flex h-[25px] w-[113px] -translate-x-1/2 items-center justify-center rounded-full border border-[#202833]">
+        <span className="whitespace-nowrap text-[9px] font-medium uppercase leading-[12px] tracking-[1.2px] text-[#202833]">
           Our Product
         </span>
       </div>
 
-      <h2 className="absolute left-1/2 top-[107px] w-[520px] -translate-x-1/2 text-center text-[36px] font-normal leading-[42px] text-[#111111]">
-        Explore Our Seafood Export Product Categories
+      <h2 className="absolute left-1/2 top-[64px] w-[390px] -translate-x-1/2 text-center text-[25px] font-normal leading-[28px] text-[#111111]">
+        Explore a wide range of seafood families and species
       </h2>
 
       <div
-        id="service-categories-cards"
         role="tablist"
-        aria-label="Seafood product categories"
-        className="absolute left-[42px] top-[206px] flex h-[214px] w-[1338px] flex-row flex-nowrap items-start justify-start gap-[14px]"
+        aria-label="FAQ product categories"
+        className="absolute left-[43px] top-[111px] flex h-[93px] w-[1334px] gap-[14px]"
       >
         {categories.map((category) => {
           const isActive = activeCategory === category.id;
@@ -66,39 +58,37 @@ export default function ServiceCategoriesSection() {
               type="button"
               role="tab"
               aria-selected={isActive}
-              onClick={() => setActiveCategory(category.id)}
+              onClick={() => onChange(category.id)}
               onKeyDown={(event) => handleKey(event, category.id)}
-              className={`relative h-[214px] w-[324px] cursor-pointer rounded-[20.41314125061035px] border border-[rgba(142,131,131,0.12)] text-center transition ${
+              className={`relative h-[93px] w-[324px] rounded-[10px] text-center transition ${
                 isActive ? 'bg-[#0161FE]' : 'bg-white'
               }`}
             >
               <span
-                className={`absolute left-1/2 top-[44px] flex h-[38px] w-[38px] -translate-x-1/2 items-center justify-center rounded-full ${
-                  isActive ? 'bg-white/20' : 'bg-[#0161FE]'
+                className={`absolute left-1/2 top-[22px] flex h-[18px] w-[18px] -translate-x-1/2 items-center justify-center rounded-full ${
+                  isActive ? 'bg-white/25' : 'bg-[#0161FE]'
                 }`}
               >
                 {category.icon.map((icon) => (
                   <img
                     key={icon}
                     src={icon}
-                    alt="Vector"
-                    className="absolute max-h-[19px] max-w-[19px]"
+                    alt=""
+                    className="absolute max-h-[9px] max-w-[9px]"
                     loading="lazy"
                   />
                 ))}
               </span>
-
               <span
-                className={`absolute left-0 top-[108px] flex h-[24px] w-full items-center justify-center text-center text-[18px] font-normal leading-[24px] ${
+                className={`absolute left-0 top-[48px] flex w-full items-center justify-center text-[11px] font-normal leading-[14px] ${
                   isActive ? 'text-white' : 'text-[#111111]'
                 }`}
               >
                 {category.title}
               </span>
-
               <span
-                className={`absolute left-1/2 top-[147px] flex h-[44px] w-[258px] -translate-x-1/2 items-center justify-center text-center text-[16px] font-normal leading-[22px] ${
-                  isActive ? 'text-white' : 'text-[#6d6d6ecc]'
+                className={`absolute left-1/2 top-[66px] flex w-[150px] -translate-x-1/2 items-center justify-center text-center text-[9px] font-normal leading-[12px] ${
+                  isActive ? 'text-white' : 'text-[#8a8a8a]'
                 }`}
               >
                 {category.description}

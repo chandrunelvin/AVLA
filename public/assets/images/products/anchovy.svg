@@ -1,0 +1,8 @@
+<svg width="1230" height="520" viewBox="0 0 1230 520" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <text x="0" y="92" fill="#BDBDBD" font-family="Georgia, serif" font-style="italic" font-size="92">Anchovy</text>
+  <path d="M315 286C485 214 715 218 890 284C720 352 484 356 315 286Z" fill="#C8D4D7"/>
+  <path d="M890 284L1024 230L992 285L1026 340L890 306Z" fill="#AEBCC0"/>
+  <path d="M434 268C555 246 706 254 824 284" stroke="#8EA0A7" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="376" cy="274" r="13" fill="#111111"/>
+  <circle cx="372" cy="270" r="4" fill="white"/>
+</svg>

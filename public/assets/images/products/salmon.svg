@@ -1,0 +1,9 @@
+<svg width="1230" height="520" viewBox="0 0 1230 520" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <text x="0" y="92" fill="#BDBDBD" font-family="Georgia, serif" font-style="italic" font-size="92">Salmon</text>
+  <path d="M285 290C455 184 742 181 954 287C742 386 458 389 285 290Z" fill="#C7D2D8"/>
+  <path d="M285 290C460 212 732 209 948 287C739 322 493 323 285 290Z" fill="#778997"/>
+  <path d="M954 287L1110 210L1062 287L1114 366L954 320Z" fill="#6C7C87"/>
+  <path d="M555 226L632 132L640 260" fill="#586976"/>
+  <circle cx="352" cy="275" r="16" fill="#111111"/>
+  <circle cx="347" cy="270" r="5" fill="white"/>
+</svg>

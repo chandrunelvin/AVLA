@@ -1,0 +1,27 @@
+<svg width="1334" height="274" viewBox="0 0 1334 274" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1334" height="274" fill="white"/>
+  <path d="M0 230C166 213 314 219 456 236C617 256 776 259 962 236C1119 217 1248 215 1334 224V274H0V230Z" fill="#E7F4F7"/>
+  <path d="M13 239C185 224 333 230 462 246C618 265 779 265 973 243C1118 226 1248 224 1334 232" stroke="#C9E2E7" stroke-width="5"/>
+  <g transform="translate(315 48)">
+    <ellipse cx="120" cy="118" rx="94" ry="23" fill="#8C5A32"/>
+    <path d="M21 103C68 143 165 151 222 105C205 167 49 168 21 103Z" fill="#8A4F2C"/>
+    <path d="M52 106C90 127 157 130 195 107" stroke="#5A2F19" stroke-width="5" stroke-linecap="round"/>
+    <path d="M82 88L113 30L151 89" fill="#9C7B54"/>
+    <circle cx="127" cy="29" r="21" fill="#C49B73"/>
+    <path d="M108 12C129 -5 164 3 178 24C151 20 132 21 108 12Z" fill="#7A6C58"/>
+    <path d="M114 50C133 66 148 76 165 95" stroke="#7D5D45" stroke-width="12" stroke-linecap="round"/>
+    <path d="M66 65L14 109" stroke="#6B4B32" stroke-width="7" stroke-linecap="round"/>
+    <path d="M0 102L86 42" stroke="#6B4B32" stroke-width="5" stroke-linecap="round"/>
+  </g>
+  <g transform="translate(653 90)">
+    <path d="M0 105C123 15 328 24 487 101C333 194 119 194 0 105Z" fill="#D3D7DA"/>
+    <path d="M0 105C125 31 324 30 487 101C344 132 151 132 0 105Z" fill="#275C83"/>
+    <path d="M487 101L635 34L596 102L637 172L487 128Z" fill="#1B2637"/>
+    <path d="M223 44L280 -44L295 67" fill="#9CA3AA"/>
+    <path d="M281 169L334 236L363 163" fill="#D6B100"/>
+    <circle cx="63" cy="90" r="17" fill="#111111"/>
+    <circle cx="58" cy="84" r="6" fill="white"/>
+    <path d="M22 122C58 145 99 137 127 105" stroke="#9EA3A7" stroke-width="4" stroke-linecap="round"/>
+    <path d="M320 63C363 68 404 81 443 100" stroke="#F1F5F9" stroke-opacity=".35" stroke-width="6" stroke-linecap="round"/>
+  </g>
+</svg>

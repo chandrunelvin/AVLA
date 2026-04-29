@@ -1,0 +1,8 @@
+<svg width="1230" height="520" viewBox="0 0 1230 520" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <text x="0" y="92" fill="#BDBDBD" font-family="Georgia, serif" font-style="italic" font-size="92">Milkfish</text>
+  <path d="M298 288C468 190 724 194 924 286C733 379 467 382 298 288Z" fill="#D4D9D7"/>
+  <path d="M298 288C474 216 715 214 924 286C742 312 503 314 298 288Z" fill="#7D9396"/>
+  <path d="M924 286L1076 218L1038 286L1078 356L924 314Z" fill="#708488"/>
+  <circle cx="365" cy="274" r="15" fill="#111111"/>
+  <circle cx="360" cy="269" r="5" fill="white"/>
+</svg>

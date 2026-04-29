@@ -2,7 +2,7 @@ import { ArrowRight, CloudDownload } from 'lucide-react';
 
 export default function HeroSection() {
   return (
-    <section className="mx-auto w-full max-w-[1420px] rounded-[20px] bg-[#F6F7F9] px-6 pb-[112px] pt-[88px] text-center text-[#111111] sm:px-10 lg:px-12">
+    <section className="mx-auto w-full rounded-[20px] bg-[#F6F7F9] px-6 pb-[112px] pt-[88px] text-center text-[#111111] sm:px-10 lg:px-12">
       <div className="mx-auto flex max-w-[620px] flex-col items-center">
         <h1 className="text-[44px] font-normal leading-[1.18] text-[#111111] sm:text-[56px]">
           Premium Seafood

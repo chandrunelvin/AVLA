@@ -1,0 +1,9 @@
+<svg width="1230" height="520" viewBox="0 0 1230 520" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <text x="0" y="92" fill="#BDBDBD" font-family="Georgia, serif" font-style="italic" font-size="92">Sardine</text>
+  <path d="M265 285C438 186 708 197 920 280C724 377 451 382 265 285Z" fill="#B9CED2"/>
+  <path d="M920 280L1070 210L1034 281L1074 354L920 306Z" fill="#A4B6B8"/>
+  <path d="M265 285C331 232 384 239 430 289C379 335 324 335 265 285Z" fill="#DAE3E5"/>
+  <path d="M470 253C596 235 729 249 842 279" stroke="#6A8B91" stroke-width="7" stroke-linecap="round"/>
+  <circle cx="343" cy="270" r="15" fill="#111111"/>
+  <circle cx="338" cy="265" r="5" fill="white"/>
+</svg>
