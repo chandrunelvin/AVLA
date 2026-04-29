@@ -1,101 +1,43 @@
 import { useNavigate } from 'react-router-dom';
 
+const fishRows = [
+  {
+    label: 'Tuna Export',
+    question: 'What forms of Yellowfin Tuna do you offer for export?',
+    answer:
+      'We Supply Yellowfin Tuna In Whole Round, Gutted & Gilled (G&G), Loin, Steak, And Fillet Forms. Custom Cuts Are Available Based On Buyer Requirements.',
+  },
+  {
+    label: 'Frozen Tuna',
+    question: 'What is the storage temperature for frozen Tuna?',
+  },
+  {
+    label: 'Certification',
+    question: 'Is your Tuna processed in HACCP-certified facilities?',
+  },
+];
+
 const faqContent = {
   fish: [
     {
       title: 'Tuna Fish',
-      rows: [
-        {
-          label: 'Tuna Export',
-          question: 'What forms of Yellowfin Tuna do you offer for export?',
-          answer:
-            'We Supply Yellowfin Tuna In Whole Round, Gutted & Gilled (G&G), Loin, Steak, And Fillet Forms. Custom Cuts Are Available Based On Buyer Requirements.',
-        },
-        {
-          label: 'Frozen Tuna',
-          question: 'What is the storage temperature for frozen Tuna?',
-        },
-        {
-          label: 'Certification',
-          question: 'Is your Tuna processed in HACCP-certified facilities?',
-        },
-      ],
+      rows: fishRows,
     },
     {
       title: 'Sardine Fish',
-      rows: [
-        {
-          label: 'Sardine Export',
-          question: 'Do you supply sardine for bulk international markets?',
-          answer:
-            'We supply export-grade sardine in chilled and frozen formats with careful sorting, packing, and buyer-specific sizing.',
-        },
-        {
-          label: 'Frozen Sardine',
-          question: 'What packing options are available for sardine shipments?',
-        },
-        {
-          label: 'Certification',
-          question: 'Are sardines processed under food-safety standards?',
-        },
-      ],
+      rows: fishRows,
     },
     {
       title: 'Grouper Fish',
-      rows: [
-        {
-          label: 'Grouper Export',
-          question: 'Which grouper product forms are available?',
-          answer:
-            'Whole, gutted, cleaned, and frozen grouper options are available according to export market needs.',
-        },
-        {
-          label: 'Frozen Grouper',
-          question: 'How is frozen grouper handled before shipping?',
-        },
-        {
-          label: 'Certification',
-          question: 'Can documentation be provided with grouper shipments?',
-        },
-      ],
+      rows: fishRows,
     },
     {
       title: 'Salmon Fish',
-      rows: [
-        {
-          label: 'Salmon Export',
-          question: 'What salmon grades are available for buyers?',
-          answer:
-            'We support buyer-specific salmon sourcing with quality checks, cold-chain control, and export-ready documentation.',
-        },
-        {
-          label: 'Frozen Salmon',
-          question: 'Can salmon be shipped in frozen packs?',
-        },
-        {
-          label: 'Certification',
-          question: 'Is salmon sourcing traceable?',
-        },
-      ],
+      rows: fishRows,
     },
     {
       title: 'Mackerel Fish',
-      rows: [
-        {
-          label: 'Mackerel Export',
-          question: 'Do you export mackerel in bulk volumes?',
-          answer:
-            'Bulk mackerel supply is available with consistent grading, freezing, packing, and export handling.',
-        },
-        {
-          label: 'Frozen Mackerel',
-          question: 'What is the normal frozen mackerel temperature?',
-        },
-        {
-          label: 'Certification',
-          question: 'Can mackerel shipments include quality certificates?',
-        },
-      ],
+      rows: fishRows,
     },
   ],
   cephalopods: [
@@ -225,16 +167,16 @@ export default function FaqListSection({ activeCategory }) {
   const sections = faqContent[activeCategory] || faqContent.fish;
 
   return (
-    <div className="px-[43px] pt-[37px]">
+    <div className="px-[43px] pt-[24px]">
       {sections.map((section) => (
-        <section key={section.title} className="mb-[47px]">
+        <section key={section.title} className="mb-[43px]">
           <div className="flex h-[25px] w-[112px] items-center justify-center rounded-full border border-[#202833]">
             <span className="whitespace-nowrap text-[9px] font-medium uppercase leading-[12px] tracking-[1.2px] text-[#202833]">
               Product FAQ
             </span>
           </div>
 
-          <div className="mt-[22px] flex items-center justify-between">
+          <div className="mt-[17px] flex items-center justify-between">
             <h2 className="text-[34px] font-normal leading-[40px] text-[#2b2b2b]">
               {section.title}
             </h2>
@@ -248,7 +190,7 @@ export default function FaqListSection({ activeCategory }) {
             </button>
           </div>
 
-          <div className="mt-[24px] space-y-[11px]">
+          <div className="mt-[22px] space-y-[11px]">
             {section.rows.map((row, index) => (
               <div key={row.label}>
                 <div

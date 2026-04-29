@@ -2,8 +2,10 @@ import { Navigate, Outlet, Route, Routes, useLocation } from 'react-router-dom';
 import Navbar from './components/layout/Navbar';
 import SiteFooter from './components/layout/SiteFooter';
 import ContactPage from './pages/ContactPage';
+import BlogPage from './pages/BlogPage';
 import FaqPage from './pages/FaqPage';
 import HomePage from './pages/HomePage';
+import ProductsPage from './pages/ProductsPage';
 
 function getActivePage(pathname) {
   if (pathname === '/about') {
@@ -49,8 +51,8 @@ export default function App() {
       <Route element={<AppLayout />}>
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<HomePage />} />
-        <Route path="/products" element={<HomePage />} />
-        <Route path="/blog" element={<HomePage />} />
+        <Route path="/products" element={<ProductsPage />} />
+        <Route path="/blog" element={<BlogPage />} />
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/faq" element={<FaqPage />} />
       </Route>
