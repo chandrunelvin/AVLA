@@ -13,8 +13,8 @@ export default function BlogHero() {
 
       <div className="absolute left-[49px] top-[174px] h-[620px] w-[1322px] overflow-hidden rounded-[20px] bg-white">
         <img
-          src="/assets/images/blog/blog-hero-octopus.svg"
-          alt="Octopus beside a bookshelf"
+          src="/assets/images/blog/blog-banner-image.png"
+          alt="Seafood blog banner"
           className="h-full w-full object-contain"
           loading="eager"
         />

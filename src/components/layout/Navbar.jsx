@@ -20,7 +20,7 @@ export default function Navbar({ activePage }) {
           className="absolute left-[43px] top-[16px] h-[55px] w-[193px]"
         >
           <img
-            src="/assets/images/logo-avla-nettos.svg"
+            src="/assets/logo.png"
             alt="AVLA Nettos Exports"
             className="h-full w-full object-contain"
           />
