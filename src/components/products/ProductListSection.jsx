@@ -2,13 +2,13 @@ import { useNavigate } from 'react-router-dom';
 
 const productsByCategory = {
   fish: [
-    { name: 'Tuna Fish', image: '/assets/images/products/tuna.svg' },
-    { name: 'Sardine', image: '/assets/images/products/sardine.svg' },
-    { name: 'Grouper', image: '/assets/images/products/grouper.svg' },
-    { name: 'Mackerel', image: '/assets/images/products/mackerel.svg' },
-    { name: 'Anchovy', image: '/assets/images/products/anchovy.svg' },
-    { name: 'Red Snapper', image: '/assets/images/products/snapper.svg' },
-    { name: 'Herring', image: '/assets/images/products/milkfish.svg' },
+    { name: 'Tuna Fish', image: '/assets/images/products/product-tuna-fish.png' },
+    { name: 'Sardine', image: '/assets/images/products/product-Sardine-fish.png' },
+    { name: 'Grouper', image: '/assets/images/products/product-Grouper-fish.png' },
+    { name: 'Mackerel', image: '/assets/images/products/Mackerel-product-image.png' },
+    { name: 'Anchovy', image: '/assets/images/products/Anchovy-product-image.png' },
+    { name: 'Red Snapper', image: '/assets/images/products/Red-Snapper-product-image.png' },
+    { name: 'Herring', image: '/assets/images/products/Herring-product-image.png' },
   ],
   cephalopods: [
     { name: 'Squid', image: '/assets/images/blog/blog-cephalopod.svg' },
@@ -67,7 +67,7 @@ export default function ProductListSection({ activeCategory }) {
               <img
                 src={product.image}
                 alt={product.name}
-                className="h-[238px] w-[505px] object-contain"
+                className="h-full w-full object-cover"
                 loading="lazy"
               />
             </div>

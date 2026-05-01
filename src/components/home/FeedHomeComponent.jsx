@@ -4,13 +4,15 @@ import { useNavigate } from 'react-router-dom';
 const feedCards = [
   {
     title: 'Tuna Fish Guide: Quality, Processing, and Global Demand',
-    image: '/assets/images/products/tuna.svg',
+    image: '/assets/images/blog/feeds1-image.png',
     alt: 'Tuna fish',
+    imageClassName: 'h-full w-full object-cover',
   },
   {
     title: 'Sardine Fish Export-Grade: From Catch to International Markets',
     image: '/assets/images/products/sardine.svg',
     alt: 'Sardine fish',
+    imageClassName: 'h-[360px] w-[560px] object-contain',
   },
 ];
 
@@ -49,7 +51,7 @@ export default function FeedHomeComponent() {
               <img
                 src={card.image}
                 alt={card.alt}
-                className="h-[360px] w-[560px] object-contain"
+                className={card.imageClassName}
                 loading="lazy"
               />
             </div>

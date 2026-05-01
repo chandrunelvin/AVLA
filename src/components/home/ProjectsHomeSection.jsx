@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 const products = [
   {
     name: 'Tuna',
-    image: '/assets/images/products/tuna.svg',
+    image: '/assets/images/products/tuna-product-image.webp',
   },
   {
     name: 'Sardine',
@@ -90,7 +90,7 @@ export default function ProjectsHomeSection() {
         <img
           src={selectedProduct.image}
           alt={selectedProduct.name}
-          className="absolute left-[51px] top-[39px] h-[520px] w-[1230px] object-contain"
+          className="h-full w-full object-cover"
           loading="lazy"
         />
       </div>

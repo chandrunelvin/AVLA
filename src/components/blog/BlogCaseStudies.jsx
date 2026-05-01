@@ -4,65 +4,79 @@ const postsByCategory = {
   fish: [
     {
       title: 'Tuna Fish Exporter in India – Fresh & Frozen Tuna Supply Worldwide',
-      image: '/assets/images/products/tuna.svg',
+      image: '/assets/images/blog/feeds1-image.png',
+      imageClassName: 'h-full w-full object-cover',
     },
     {
       title: 'Fresh & Frozen Sardine Fish Exporter – Bulk Supply from India',
       image: '/assets/images/products/sardine.svg',
+      imageClassName: 'h-[246px] w-[500px] object-contain',
     },
     {
       title: 'Premium Grouper Fish Exporter – Fresh & Frozen Supply',
       image: '/assets/images/products/grouper.svg',
+      imageClassName: 'h-[246px] w-[500px] object-contain',
     },
     {
       title: 'Fresh & Frozen Salmon Fish Export – Premium Seafood Supplier',
       image: '/assets/images/products/salmon.svg',
+      imageClassName: 'h-[246px] w-[500px] object-contain',
     },
     {
       title: 'Indian Mackerel Exporter – Fresh & Frozen Seafood Supplier',
       image: '/assets/images/products/mackerel.svg',
+      imageClassName: 'h-[246px] w-[500px] object-contain',
     },
     {
       title: 'Indian Anchovy Fish – Bulk Supply for International Markets',
       image: '/assets/images/products/anchovy.svg',
+      imageClassName: 'h-[246px] w-[500px] object-contain',
     },
     {
       title: 'Red Snapper Fish Exporter – Premium Quality Seafood',
       image: '/assets/images/products/snapper.svg',
+      imageClassName: 'h-[246px] w-[500px] object-contain',
     },
     {
       title: 'Premium Quality Herring Fish – Export Standards & Packaging',
       image: '/assets/images/products/milkfish.svg',
+      imageClassName: 'h-[246px] w-[500px] object-contain',
     },
   ],
   cephalopods: [
     {
       title: 'Squid Export Guide – Cleaned, Frozen, and Buyer-Ready Supply',
       image: '/assets/images/blog/blog-cephalopod.svg',
+      imageClassName: 'h-[246px] w-[500px] object-contain',
     },
     {
       title: 'Octopus Export Standards – Processing, Grading, and Packing',
       image: '/assets/images/blog/blog-octopus.svg',
+      imageClassName: 'h-[246px] w-[500px] object-contain',
     },
   ],
   crustaceans: [
     {
       title: 'Crab Export Processing – Quality Handling for Global Buyers',
       image: '/assets/images/blog/blog-crab.svg',
+      imageClassName: 'h-[246px] w-[500px] object-contain',
     },
     {
       title: 'Shrimp Supply Chain – Frozen Seafood for International Markets',
       image: '/assets/images/blog/blog-shrimp.svg',
+      imageClassName: 'h-[246px] w-[500px] object-contain',
     },
   ],
   bivalve: [
     {
       title: 'Clam Export Standards – Safe Handling and Seafood Packing',
       image: '/assets/images/blog/blog-clam.svg',
+      imageClassName: 'h-[246px] w-[500px] object-contain',
     },
     {
       title: 'Mussel Export Guide – Quality, Processing, and Delivery',
       image: '/assets/images/blog/blog-mussel.svg',
+      imageClassName: 'h-[246px] w-[500px] object-contain',
     },
   ],
 };
@@ -124,7 +138,7 @@ export default function BlogCaseStudies({ activeCategory }) {
               <img
                 src={post.image}
                 alt={post.title}
-                className="h-[246px] w-[500px] object-contain"
+                className={post.imageClassName}
                 loading="lazy"
               />
             </div>

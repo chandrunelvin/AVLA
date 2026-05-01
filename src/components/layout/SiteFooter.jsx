@@ -36,7 +36,7 @@ export default function SiteFooter() {
           className="absolute left-[50px] top-[50px] h-[58px] w-[200px]"
         >
           <img
-            src="/assets/logo.png"
+            src="/assets/images/project/logo.png"
             alt="AVLA Nettos Exports"
             className="h-full w-full object-contain"
           />

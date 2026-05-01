@@ -12,8 +12,8 @@ export default function FaqHero() {
 
       <div className="absolute left-[42px] top-[235px] h-[628px] w-[calc(100%-84px)] overflow-hidden rounded-[20px] bg-white">
         <img
-          src="/assets/images/faq/faq-hero-seafood.svg"
-          alt="Fisherman and tuna illustration"
+          src="/assets/images/faq/faq-banner-image.webp"
+          alt="Seafood FAQ banner"
           className="h-full w-full object-cover object-center"
           loading="eager"
         />
