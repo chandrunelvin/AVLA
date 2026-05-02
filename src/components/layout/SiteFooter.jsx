@@ -8,8 +8,8 @@ const primaryLinks = [
   { label: 'Blog', path: '/blog' },
 ];
 
-const infrastructureLinks = ['Our Infrastructure', 'Events', 'Galary', 'Development'];
-const productLinks = ['Fish', 'Octoups', 'Crab', 'FAQ'];
+const infrastructureLinks = ['Our Infrastructure', 'Events', 'Galary', 'Events'];
+const productLinks = ['Fish', 'Octopus', 'Crab', 'FAQ'];
 const socials = ['◉', 'f', '◎', '♣', 'in', '▶', '◈', 'Bē'];
 
 export default function SiteFooter() {
@@ -27,13 +27,13 @@ export default function SiteFooter() {
 
   return (
     <div className="px-[10px] pb-[50px]">
-      <footer className="mx-auto mt-[50px] h-[361px] overflow-hidden rounded-[15px] bg-[#222222]">
+      <footer className="mx-auto mt-[50px] h-[930px] overflow-hidden rounded-[18px] bg-[#222222] md:h-[361px] md:rounded-[15px]">
         <div className="relative h-full w-full text-white">
         <button
           type="button"
           aria-label="Go to home"
           onClick={() => navigate('/')}
-          className="absolute left-[50px] top-[50px] h-[58px] w-[200px]"
+          className="absolute left-1/2 top-[55px] h-[56px] w-[199px] -translate-x-1/2 md:left-[50px] md:top-[50px] md:h-[58px] md:w-[200px] md:translate-x-0"
         >
           <img
             src="/assets/images/project/logo.png"
@@ -42,28 +42,28 @@ export default function SiteFooter() {
           />
         </button>
 
-        <p className="absolute left-[51px] top-[141px] text-[22px] font-normal leading-[28px]">
+        <p className="absolute left-[23px] top-[177px] text-[22px] font-normal leading-[28px] md:left-[51px] md:top-[141px]">
           Subscribe to our news later
         </p>
 
-        <div className="absolute left-[51px] top-[181px] flex h-[38px] items-center gap-[10px]">
+        <div className="absolute left-[23px] top-[216px] flex w-[calc(100%-46px)] flex-col gap-[10px] md:left-[51px] md:top-[181px] md:h-[38px] md:w-auto md:flex-row md:items-center">
           <input
             aria-label="Enter your email"
             value={email}
             onChange={(event) => setEmail(event.target.value)}
             placeholder="Enter your email"
-            className="h-[38px] w-[200px] rounded-full border-0 bg-white/10 px-[20px] text-[14px] text-white outline-none placeholder:text-white/45"
+            className="h-[42px] w-full rounded-full border-0 bg-[#3A3A3A] px-[23px] text-[14px] text-white outline-none placeholder:text-white/45 md:h-[38px] md:w-[200px] md:bg-white/10 md:px-[20px]"
           />
           <button
             type="button"
             onClick={subscribe}
-            className="h-[38px] w-[102px] rounded-full bg-[#0161FE] text-[14px] font-medium text-white"
+            className="h-[43px] w-full rounded-full bg-[#0161FE] text-[14px] font-medium text-white md:h-[38px] md:w-[102px]"
           >
             Subscribe
           </button>
         </div>
 
-        <nav className="absolute left-[930px] top-[65px] flex flex-col gap-[32px] text-[16px] leading-[20px] text-white/70">
+        <nav className="absolute left-[23px] top-[348px] flex flex-col gap-[24px] text-[16px] font-normal leading-[22px] text-white/70 md:left-[930px] md:top-[65px] md:gap-[32px] md:leading-[20px]">
           {primaryLinks.map((link) => (
             <button
               key={link.label}
@@ -76,13 +76,13 @@ export default function SiteFooter() {
           ))}
         </nav>
 
-        <div className="absolute left-[1063px] top-[65px] flex flex-col gap-[32px] text-[16px] leading-[20px] text-white/70">
-          {infrastructureLinks.map((link) => (
-            <p key={link}>{link}</p>
+        <div className="absolute left-[177px] top-[348px] flex flex-col gap-[24px] text-[16px] font-normal leading-[22px] text-white/70 md:left-[1063px] md:top-[65px] md:gap-[32px] md:leading-[20px]">
+          {infrastructureLinks.map((link, index) => (
+            <p key={`${link}-${index}`}>{link}</p>
           ))}
         </div>
 
-        <div className="absolute left-[1245px] top-[65px] flex flex-col gap-[32px] text-[16px] leading-[20px] text-white/70">
+        <div className="absolute left-[23px] top-[533px] flex flex-col gap-[24px] text-[16px] font-normal leading-[22px] text-white/70 md:left-[1245px] md:top-[65px] md:gap-[32px] md:leading-[20px]">
           {productLinks.map((link) => (
             <button
               key={link}
@@ -99,18 +99,19 @@ export default function SiteFooter() {
           ))}
         </div>
 
-        <p className="absolute left-[51px] top-[295px] text-[14px] leading-[18px] text-white">
+        <p className="absolute left-[51px] top-[295px] hidden text-[14px] leading-[18px] text-white md:block">
           Designed by Arunijone
         </p>
-        <p className="absolute left-[610px] top-[295px] text-[14px] leading-[18px] text-white">
-          © 2025 Arunijone. All rights reserved.
+        <p className="absolute left-1/2 top-[862px] w-full -translate-x-1/2 text-center text-[14px] leading-[18px] text-white md:left-[610px] md:top-[295px] md:w-auto md:translate-x-0 md:text-left">
+          <span className="md:hidden">© 2025 Temlis. All rights reserved.</span>
+          <span className="hidden md:inline">© 2025 Arunijone. All rights reserved.</span>
         </p>
 
-        <div className="absolute right-[50px] top-[282px] flex h-[38px] items-center gap-[14px]">
+        <div className="absolute left-1/2 top-[727px] flex w-[240px] -translate-x-1/2 flex-wrap justify-center gap-x-[10px] gap-y-[14px] md:left-auto md:right-[50px] md:top-[282px] md:h-[38px] md:w-auto md:translate-x-0 md:flex-nowrap md:items-center md:justify-start md:gap-[14px]">
           {socials.map((social) => (
             <span
               key={social}
-              className="flex h-[36px] w-[36px] items-center justify-center rounded-full border border-white/10 text-[15px] font-semibold text-white"
+              className="flex h-[42px] w-[42px] items-center justify-center rounded-full border border-white/15 text-[17px] font-semibold text-white md:h-[36px] md:w-[36px] md:text-[15px]"
             >
               {social}
             </span>

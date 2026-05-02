@@ -1,27 +1,11 @@
 import { useNavigate } from 'react-router-dom';
+import { fishProducts, otherProducts } from '../../data/productDetails';
 
 const productsByCategory = {
-  fish: [
-    { name: 'Tuna Fish', image: '/assets/images/products/product-tuna-fish.png' },
-    { name: 'Sardine', image: '/assets/images/products/product-Sardine-fish.png' },
-    { name: 'Grouper', image: '/assets/images/products/product-Grouper-fish.png' },
-    { name: 'Mackerel', image: '/assets/images/products/Mackerel-product-image.png' },
-    { name: 'Anchovy', image: '/assets/images/products/Anchovy-product-image.png' },
-    { name: 'Red Snapper', image: '/assets/images/products/Red-Snapper-product-image.png' },
-    { name: 'Herring', image: '/assets/images/products/Herring-product-image.png' },
-  ],
-  cephalopods: [
-    { name: 'Squid', image: '/assets/images/blog/blog-cephalopod.svg' },
-    { name: 'Octopus', image: '/assets/images/blog/blog-octopus.svg' },
-  ],
-  crustaceans: [
-    { name: 'Crab', image: '/assets/images/blog/blog-crab.svg' },
-    { name: 'Shrimp', image: '/assets/images/blog/blog-shrimp.svg' },
-  ],
-  bivalve: [
-    { name: 'Clam', image: '/assets/images/blog/blog-clam.svg' },
-    { name: 'Mussel', image: '/assets/images/blog/blog-mussel.svg' },
-  ],
+  fish: fishProducts,
+  cephalopods: otherProducts.filter((product) => ['squid', 'octopus'].includes(product.slug)),
+  crustaceans: otherProducts.filter((product) => ['crab', 'shrimp'].includes(product.slug)),
+  bivalve: otherProducts.filter((product) => ['clam', 'mussel'].includes(product.slug)),
 };
 
 export default function ProductListSection({ activeCategory }) {
@@ -36,53 +20,52 @@ export default function ProductListSection({ activeCategory }) {
 
   return (
     <section
-      className="relative mt-[23px] w-full overflow-hidden rounded-[15px] bg-[#F6F7F9]"
-      style={{ height: `${sectionHeight}px` }}
+      className="relative mt-[23px] w-full overflow-hidden rounded-[15px] bg-[#F6F7F9] px-[5px] pb-[35px] pt-[24px] sm:px-[16px] min-[800px]:h-[var(--section-height)] min-[800px]:px-0 min-[800px]:pb-0 min-[800px]:pt-0"
+      style={{ '--section-height': `${sectionHeight}px` }}
     >
-      <div className="absolute left-[42px] top-[53px] flex h-[25px] w-[95px] items-center justify-center rounded-full border border-[#202833]">
+      <div className="mx-auto flex h-[20px] w-[70px] items-center justify-center rounded-full border border-[#202833] min-[800px]:absolute min-[800px]:left-[42px] min-[800px]:top-[53px] min-[800px]:mx-0 min-[800px]:h-[25px] min-[800px]:w-[95px]">
         <span className="whitespace-nowrap text-[9px] font-medium uppercase leading-[12px] tracking-[1.2px] text-[#202833]">
           Products
         </span>
       </div>
 
-      <h2 className="absolute left-[42px] top-[104px] w-[354px] text-[27px] font-normal leading-[28px] text-[#2b2b2b]">
+      <h2 className="mx-auto mt-[18px] w-full max-w-[430px] text-center text-[35px] font-normal text-[#111111] min-[800px]:absolute min-[800px]:left-[42px] min-[800px]:top-[104px] min-[800px]:mx-0 min-[800px]:mt-0 min-[800px]:w-[354px] min-[800px]:max-w-none min-[800px]:text-left min-[800px]:text-[#2b2b2b]">
         Real Results. Real Impact.
         <br />
         Our Success Stories.
       </h2>
 
-      <p className="absolute left-[789px] top-[112px] w-[430px] text-[11px] font-normal leading-[16px] text-[#8a8a8a]">
+      <p className="mx-auto mt-[20px] w-full max-w-[330px] text-center text-[16px] font-normal text-[#6D6D6ECC] min-[800px]:absolute min-[800px]:left-[789px] min-[800px]:top-[112px] min-[800px]:mx-0 min-[800px]:mt-0 min-[800px]:w-[430px] min-[800px]:max-w-none min-[800px]:text-left min-[800px]:text-[#8a8a8a]">
         Our seafood products are carefully processed, quality-tested, and prepared
         for global export with guaranteed freshness and compliance.
       </p>
 
-      <div className="absolute left-[42px] top-[187px] w-[1328px]">
+      <div className="mx-auto mt-[18px] flex w-full max-w-[590px] flex-col gap-[20px] min-[800px]:absolute min-[800px]:left-[42px] min-[800px]:top-[187px] min-[800px]:mx-0 min-[800px]:mt-0 min-[800px]:block min-[800px]:w-[1328px] min-[800px]:max-w-none">
         {products.map((product, index) => (
           <article
             key={product.name}
-            className="relative h-[320px]"
-            style={{ marginTop: index === 0 ? '0px' : '46px' }}
+            className={`relative flex flex-col items-center ${index === 0 ? 'min-[800px]:mt-0' : 'min-[800px]:mt-[46px]'} min-[800px]:block min-[800px]:h-[320px]`}
           >
-            <div className="absolute left-0 top-0 flex h-[320px] w-[590px] items-center justify-center overflow-hidden rounded-[14px] bg-white">
+            <div className="flex aspect-[590/320] w-full items-center justify-center overflow-hidden rounded-[8px] bg-white min-[800px]:absolute min-[800px]:left-0 min-[800px]:top-0 min-[800px]:h-[320px] min-[800px]:w-[590px] min-[800px]:rounded-[14px]">
               <img
                 src={product.image}
                 alt={product.name}
-                className="h-full w-full object-cover"
+                className="h-full w-full object-contain min-[800px]:object-cover"
                 loading="lazy"
               />
             </div>
 
-            <div className="absolute left-[674px] top-[119px]">
-              <h3 className="text-[22px] font-normal leading-[28px] text-[#4a4a4a]">
+            <div className="mt-[17px] flex w-full flex-col items-center text-center min-[800px]:absolute min-[800px]:left-[674px] min-[800px]:top-[119px] min-[800px]:mt-0 min-[800px]:block min-[800px]:w-auto min-[800px]:text-left">
+              <h3 className="text-center text-[16px] font-normal leading-[22px] text-[#4a4a4a] min-[800px]:text-left min-[800px]:text-[22px] min-[800px]:leading-[28px]">
                 {product.name}
               </h3>
               <button
                 type="button"
-                onClick={() => navigate('/contact')}
-                className="mt-[21px] flex h-[32px] w-[87px] items-center justify-center gap-[7px] rounded-full bg-[#0161FE] text-[11px] font-semibold text-white"
+                onClick={() => navigate(product.slug ? `/products/${product.slug}` : '/contact')}
+                className="mt-[14px] flex h-[24px] w-[73px] items-center justify-center gap-[7px] rounded-full bg-[#0161FE] text-[8px] font-semibold text-white min-[800px]:mt-[21px] min-[800px]:h-[32px] min-[800px]:w-[87px] min-[800px]:text-[11px]"
               >
                 Explore
-                <span className="text-[16px] leading-none">&#8594;</span>
+                <span className="text-[14px] leading-none min-[800px]:text-[16px]">&#8594;</span>
               </button>
             </div>
           </article>

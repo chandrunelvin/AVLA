@@ -1,9 +1,0 @@
-<svg width="1230" height="520" viewBox="0 0 1230 520" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <text x="0" y="92" fill="#BDBDBD" font-family="Georgia, serif" font-style="italic" font-size="92">Mackerel</text>
-  <path d="M280 292C447 188 728 187 944 286C736 383 457 388 280 292Z" fill="#CBD4D2"/>
-  <path d="M280 292C454 201 731 202 944 286C759 306 512 309 280 292Z" fill="#235171"/>
-  <path d="M944 286L1100 216L1062 289L1102 360L944 317Z" fill="#1B2F43"/>
-  <path d="M475 230L520 282M548 216L594 283M625 207L672 282M700 214L746 282" stroke="#111111" stroke-opacity=".5" stroke-width="7"/>
-  <circle cx="349" cy="276" r="15" fill="#111111"/>
-  <circle cx="344" cy="271" r="5" fill="white"/>
-</svg>

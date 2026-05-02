@@ -1,48 +1,11 @@
 import { useNavigate } from 'react-router-dom';
+import { blogDetails } from '../../data/blogDetails';
 
 const postsByCategory = {
-  fish: [
-    {
-      title: 'Tuna Fish Exporter in India – Fresh & Frozen Tuna Supply Worldwide',
-      image: '/assets/images/blog/feeds1-image.png',
-      imageClassName: 'h-full w-full object-cover',
-    },
-    {
-      title: 'Fresh & Frozen Sardine Fish Exporter – Bulk Supply from India',
-      image: '/assets/images/products/sardine.svg',
-      imageClassName: 'h-[246px] w-[500px] object-contain',
-    },
-    {
-      title: 'Premium Grouper Fish Exporter – Fresh & Frozen Supply',
-      image: '/assets/images/products/grouper.svg',
-      imageClassName: 'h-[246px] w-[500px] object-contain',
-    },
-    {
-      title: 'Fresh & Frozen Salmon Fish Export – Premium Seafood Supplier',
-      image: '/assets/images/products/salmon.svg',
-      imageClassName: 'h-[246px] w-[500px] object-contain',
-    },
-    {
-      title: 'Indian Mackerel Exporter – Fresh & Frozen Seafood Supplier',
-      image: '/assets/images/products/mackerel.svg',
-      imageClassName: 'h-[246px] w-[500px] object-contain',
-    },
-    {
-      title: 'Indian Anchovy Fish – Bulk Supply for International Markets',
-      image: '/assets/images/products/anchovy.svg',
-      imageClassName: 'h-[246px] w-[500px] object-contain',
-    },
-    {
-      title: 'Red Snapper Fish Exporter – Premium Quality Seafood',
-      image: '/assets/images/products/snapper.svg',
-      imageClassName: 'h-[246px] w-[500px] object-contain',
-    },
-    {
-      title: 'Premium Quality Herring Fish – Export Standards & Packaging',
-      image: '/assets/images/products/milkfish.svg',
-      imageClassName: 'h-[246px] w-[500px] object-contain',
-    },
-  ],
+  fish: blogDetails.map((blog, index) => ({
+    ...blog,
+    imageClassName: index === 0 ? 'h-full w-full object-cover' : 'h-[246px] w-[500px] object-contain',
+  })),
   cephalopods: [
     {
       title: 'Squid Export Guide – Cleaned, Frozen, and Buyer-Ready Supply',
@@ -126,7 +89,7 @@ export default function BlogCaseStudies({ activeCategory }) {
               </h3>
               <button
                 type="button"
-                onClick={() => navigate('/blog')}
+                onClick={() => navigate(post.slug ? `/blog/${post.slug}` : '/blog')}
                 className="mt-[24px] flex h-[32px] w-[87px] items-center justify-center gap-[7px] rounded-full bg-[#0161FE] text-[11px] font-semibold text-white"
               >
                 Explore

@@ -167,7 +167,7 @@ export default function FaqListSection({ activeCategory }) {
   const sections = faqContent[activeCategory] || faqContent.fish;
 
   return (
-    <div className="px-[43px] pt-[24px]">
+    <div className="px-[43px]  pt-[24px]">
       {sections.map((section) => (
         <section key={section.title} className="mb-[43px]">
           <div className="flex h-[25px] w-[112px] items-center justify-center rounded-full border border-[#202833]">

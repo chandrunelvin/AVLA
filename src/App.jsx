@@ -2,9 +2,11 @@ import { Navigate, Outlet, Route, Routes, useLocation } from 'react-router-dom';
 import Navbar from './components/layout/Navbar';
 import SiteFooter from './components/layout/SiteFooter';
 import ContactPage from './pages/ContactPage';
+import BlogDetailsPage from './pages/BlogDetailsPage';
 import BlogPage from './pages/BlogPage';
 import FaqPage from './pages/FaqPage';
 import HomePage from './pages/HomePage';
+import ProductDetailsPage from './pages/ProductDetailsPage';
 import ProductsPage from './pages/ProductsPage';
 
 function getActivePage(pathname) {
@@ -12,11 +14,11 @@ function getActivePage(pathname) {
     return 'about';
   }
 
-  if (pathname === '/products') {
+  if (pathname === '/products' || pathname.startsWith('/products/')) {
     return 'products';
   }
 
-  if (pathname === '/blog') {
+  if (pathname === '/blog' || pathname.startsWith('/blog/')) {
     return 'blogs';
   }
 
@@ -52,7 +54,9 @@ export default function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<HomePage />} />
         <Route path="/products" element={<ProductsPage />} />
+        <Route path="/products/:slug" element={<ProductDetailsPage />} />
         <Route path="/blog" element={<BlogPage />} />
+        <Route path="/blog/:slug" element={<BlogDetailsPage />} />
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/faq" element={<FaqPage />} />
       </Route>
