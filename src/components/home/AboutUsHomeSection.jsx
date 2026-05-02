@@ -64,7 +64,7 @@ export default function AboutUsHomeSection() {
         <article className="absolute left-[0px] top-[297px] h-[282px] w-[656px] rounded-[18px] bg-[#0161FE] px-[19px] py-[19px] text-white">
           <div className="flex h-[47px] w-[47px] items-center justify-center rounded-full bg-white/20">
             <img
-              src="/assets/Home/images/vector_2.svg"
+              src="/assets/images/home/idea-icon.png"
               alt=""
               className="h-[20px] w-[20px]"
               loading="lazy"

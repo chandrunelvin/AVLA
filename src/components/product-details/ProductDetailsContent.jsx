@@ -1,5 +1,5 @@
-import { useNavigate } from 'react-router-dom';
 import { fishProducts, productDetails } from '../../data/productDetails';
+import OurProductsSection from '../shared/OurProductsSection';
 
 function ProductDetailsHero({ product }) {
   return (
@@ -57,12 +57,12 @@ function ProductDetailsHero({ product }) {
 
 function ExportRegionSection() {
   return (
-    <section className="bg-white px-[24px] pb-[66px] pt-[42px] text-center">
-      <div className="mx-auto flex h-[28px] w-[126px] items-center justify-center rounded-full border border-[#111111] text-[11px] font-normal uppercase tracking-[3px] text-[#111111]">
+    <section className="bg-black px-[24px] pb-[66px] pt-[42px] text-center">
+      <div className="mx-auto flex h-[28px] w-[126px] items-center justify-center rounded-full border border-white/30 text-[11px] font-normal uppercase tracking-[3px] text-white/70">
         Export Region
       </div>
 
-      <h2 className="mx-auto mt-[24px] max-w-[410px] text-[28px] font-normal leading-[34px] text-[#111111]">
+      <h2 className="mx-auto mt-[24px] max-w-[410px] text-[28px] font-normal leading-[34px] text-white">
         Exporting Premium Seafood to
         <br />
         Global Markets
@@ -75,10 +75,10 @@ function ExportRegionSection() {
         loading="lazy"
       />
 
-      <p className="mx-auto mt-[64px] max-w-[590px] text-[22px] font-normal leading-[28px] text-[#111111]">
+      <p className="mx-auto mt-[64px] max-w-[590px] text-[18px] font-normal leading-[28px] text-white/80 sm:text-[22px]">
         With years of experience in seafood exports, we ensure reliable supply,
         consistent quality, and timely international delivery.{' '}
-        <span className="text-[#6D6D6E]">
+        <span className="text-white/50">
           Our commitment to excellence makes us a trusted partner for global
           seafood importers and distributors.
         </span>
@@ -192,42 +192,6 @@ function ProductFlagsSection({ product }) {
   );
 }
 
-function MoreProductsSection() {
-  const navigate = useNavigate();
-
-  return (
-    <section className="relative left-1/2 w-screen -translate-x-1/2 overflow-hidden rounded-t-[20px] bg-[#F6F7F9] pb-[50px] pt-[52px]">
-      <div className="flex items-start justify-between gap-[60px] px-[48px]">
-        <h2 className="text-[48px] font-normal leading-[58px] text-[#111111]">Our Products</h2>
-        <p className="mr-[48px] max-w-[674px] text-[16px] font-normal leading-[22px] text-[#8a8a8a]">
-          We specialize in sourcing, processing, and exporting high-quality marine
-          products from Kerala's coastal waters. Our seafood is handled under strict
-          hygiene standards and exported globally with guaranteed freshness and compliance.
-        </p>
-      </div>
-
-      <div className="mt-[62px] flex translate-x-[-126px] gap-[14px] overflow-visible">
-        {productDetails.map((item) => (
-          <button
-            key={item.slug}
-            type="button"
-            onClick={() => navigate(`/products/${item.slug}`)}
-            className="relative h-[370px] min-w-[352px] overflow-hidden rounded-[20px] bg-white"
-          >
-            <p className="absolute left-1/2 top-[28px] -translate-x-1/2 font-serif text-[54px] italic leading-none text-[#b8b8b8]/75">
-              {item.scriptName}
-            </p>
-            <img
-              src={item.image}
-              alt={item.displayName}
-              className="absolute left-1/2 top-[132px] h-[150px] w-[300px] -translate-x-1/2 object-contain"
-            />
-          </button>
-        ))}
-      </div>
-    </section>
-  );
-}
 
 export default function ProductDetailsContent({ product }) {
   return (
@@ -235,7 +199,7 @@ export default function ProductDetailsContent({ product }) {
       <ProductDetailsHero product={product} />
       <ExportRegionSection />
       <ProductFlagsSection product={product} />
-      <MoreProductsSection />
+      <OurProductsSection />
     </div>
   );
 }

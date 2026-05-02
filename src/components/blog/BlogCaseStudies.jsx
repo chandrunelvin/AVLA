@@ -3,44 +3,41 @@ import { ArrowRight } from 'lucide-react';
 import { blogDetails } from '../../data/blogDetails';
 
 const postsByCategory = {
-  fish: blogDetails.map((blog, index) => ({
-    ...blog,
-    imageClassName: index === 0 ? 'h-full w-full object-cover' : 'h-full w-full object-cover',
-  })),
+  fish: blogDetails,
   cephalopods: [
     {
       title: 'Squid Export Guide – Cleaned, Frozen, and Buyer-Ready Supply',
       image: '/assets/images/blog/blog-cephalopod.svg',
-      imageClassName: 'h-full w-full object-cover',
+      slug: null,
     },
     {
       title: 'Octopus Export Standards – Processing, Grading, and Packing',
       image: '/assets/images/blog/blog-octopus.svg',
-      imageClassName: 'h-full w-full object-cover',
+      slug: null,
     },
   ],
   crustaceans: [
     {
       title: 'Crab Export Processing – Quality Handling for Global Buyers',
       image: '/assets/images/blog/blog-crab.svg',
-      imageClassName: 'h-full w-full object-cover',
+      slug: null,
     },
     {
       title: 'Shrimp Supply Chain – Frozen Seafood for International Markets',
       image: '/assets/images/blog/blog-shrimp.svg',
-      imageClassName: 'h-[246px] w-[500px] object-contain',
+      slug: null,
     },
   ],
   bivalve: [
     {
       title: 'Clam Export Standards – Safe Handling and Seafood Packing',
       image: '/assets/images/blog/blog-clam.svg',
-      imageClassName: 'h-[246px] w-[500px] object-contain',
+      slug: null,
     },
     {
       title: 'Mussel Export Guide – Quality, Processing, and Delivery',
       image: '/assets/images/blog/blog-mussel.svg',
-      imageClassName: 'h-[246px] w-[500px] object-contain',
+      slug: null,
     },
   ],
 };
@@ -48,63 +45,60 @@ const postsByCategory = {
 export default function BlogCaseStudies({ activeCategory }) {
   const navigate = useNavigate();
   const posts = postsByCategory[activeCategory] || postsByCategory.fish;
-  const listTop = 243;
-  const rowHeight = 320;
-  const rowGap = 46;
-  const sectionBottom = 50;
-  const sectionHeight =
-    listTop + posts.length * rowHeight + Math.max(posts.length - 1, 0) * rowGap + sectionBottom;
 
   return (
-    <section
-      className="relative mt-[23px] w-full overflow-hidden rounded-[15px] bg-[#F6F7F9]"
-      style={{ height: `${sectionHeight}px` }}
-    >
-      <div className="absolute left-[42px] top-[53px] flex h-[38px] w-[160px] items-center justify-center rounded-full border border-[#202833]">
-        <span className="whitespace-nowrap text-[14px] font-medium uppercase leading-[12px] tracking-[1.2px] text-[#202833]">
-          Case Studies
-        </span>
+    <section className="mt-[23px] w-full overflow-hidden rounded-[15px] bg-[#F6F7F9] px-[22px] pb-[50px] pt-[42px] sm:px-[42px]">
+
+      {/* Section header */}
+      <div className="flex flex-col items-center text-center lg:flex-row lg:items-start lg:justify-between lg:text-left">
+        <div>
+          <div className="inline-flex h-[38px] items-center justify-center rounded-full border border-[#202833] px-[20px]">
+            <span className="whitespace-nowrap text-[14px] font-medium uppercase leading-[12px] tracking-[1.2px] text-[#202833]">
+              Case Studies
+            </span>
+          </div>
+          <h2 className="mt-[18px] max-w-[360px] text-[27px] font-normal leading-[1.25] text-[#2b2b2b] lg:text-left">
+            Explore a wide range of seafood families and species
+          </h2>
+        </div>
+
+        <p className="mt-[16px] max-w-[340px] text-[13px] font-normal leading-[1.6] text-[#8a8a8a] lg:mt-[56px] lg:text-left">
+          Explore how we drive impactful results for our clients. Delivering
+          quality seafood exports across multiple species with certified
+          processing and on-time global supply.
+        </p>
       </div>
 
-      <h2 className="absolute left-[42px] top-[104px] w-[354px] text-[27px] font-normal leading-[28px] text-[#2b2b2b]">
-        Real Results. Real Impact.
-        <br />
-        Our Success Stories.
-      </h2>
-
-      <p className="absolute left-[964px] top-[112px] w-[336px] text-[11px] font-normal leading-[16px] text-[#8a8a8a]">
-        Discover how our solutions have delivered real results, solved complex
-        challenges, and accelerated business growth.
-      </p>
-
-      <div className="absolute left-[42px] top-[243px] w-[1328px]">
-        {posts.map((post, index) => (
+      {/* Post list */}
+      <div className="mt-[36px] space-y-[28px] lg:mt-[46px] lg:space-y-[46px]">
+        {posts.map((post) => (
           <article
             key={post.title}
-            className="relative h-[320px]"
-            style={{ marginTop: index === 0 ? '0px' : '46px' }}
+            className="flex flex-col gap-[16px] lg:flex-row lg:h-[320px] lg:items-center lg:gap-0"
           >
-            <div className="absolute left-0 top-[110px]">
-              <h3 className="w-[585px] text-[26px] font-normal leading-[31px] text-[#4a4a4a]">
+            {/* Image — top on mobile, right on desktop */}
+            <div className="order-1 flex h-[220px] w-full items-center justify-center overflow-hidden rounded-[14px] bg-white lg:order-2 lg:ml-auto lg:h-[320px] lg:w-[590px] lg:flex-shrink-0">
+              <img
+                src={post.image}
+                alt={post.title}
+                className="h-full w-full object-contain"
+                loading="lazy"
+              />
+            </div>
+
+            {/* Text — bottom on mobile, left on desktop */}
+            <div className="order-2 lg:order-1 lg:flex-1 lg:pr-[40px]">
+              <h3 className="text-[20px] font-normal leading-[1.35] text-[#4a4a4a] lg:text-[26px] lg:leading-[31px]">
                 {post.title}
               </h3>
               <button
                 type="button"
                 onClick={() => navigate(post.slug ? `/blog/${post.slug}` : '/blog')}
-                className="mt-[24px] flex h-[46px] w-[133px] items-center justify-center gap-[10px] rounded-full bg-[#0161FE] text-[16px] font-medium leading-[24px] text-white transition hover:brightness-105"
+                className="mt-[18px] flex h-[46px] w-[133px] items-center justify-center gap-[10px] rounded-full bg-[#0161FE] text-[16px] font-medium leading-[24px] text-white transition hover:brightness-105"
               >
                 Explore
-                <ArrowRight aria-hidden="true" size={22} strokeWidth={1.8} />
+                <ArrowRight aria-hidden="true" size={20} strokeWidth={1.8} />
               </button>
-            </div>
-
-            <div className="absolute left-[748px] top-0 flex h-[320px] w-[590px] items-center justify-center overflow-hidden rounded-[14px] bg-white">
-              <img
-                src={post.image}
-                alt={post.title}
-                className={post.imageClassName}
-                loading="lazy"
-              />
             </div>
           </article>
         ))}

@@ -12,12 +12,14 @@ export default function Navbar({ activePage }) {
 
   return (
     <header className="fixed inset-x-0 top-0 z-30 px-[10px] pt-[10px]">
-      <div className="relative mx-auto h-[88px] w-full rounded-[20px] bg-[#F6F7F9]">
+      <div className="relative mx-auto flex h-[68px] w-full items-center justify-between rounded-[20px] bg-[#F6F7F9] px-[18px] md:h-[88px] md:px-[43px]">
+
+        {/* Logo */}
         <button
           type="button"
           aria-label="Go to home"
           onClick={() => navigate('/')}
-          className="absolute left-[43px] top-[16px] h-[55px] w-[193px]"
+          className="h-[44px] w-[155px] flex-shrink-0 md:h-[55px] md:w-[193px]"
         >
           <img
             src="/assets/images/project/logo.png"
@@ -26,10 +28,10 @@ export default function Navbar({ activePage }) {
           />
         </button>
 
+        {/* Desktop nav links */}
         <nav className="absolute left-1/2 top-[39px] hidden -translate-x-1/2 items-center gap-[72px] md:flex">
           {NAV_ITEMS.map((item) => {
             const isActive = activePage === item.page;
-
             return (
               <button
                 key={item.page}
@@ -45,15 +47,15 @@ export default function Navbar({ activePage }) {
           })}
         </nav>
 
+        {/* Contact button */}
         <button
           type="button"
           onClick={() => navigate('/contact')}
-          className={`absolute right-[43px] top-[18px] flex h-[50px] w-[115px] items-center justify-center rounded-full bg-[#0161FE] text-[17px] font-normal leading-[22px] text-white ${
-            activePage === 'contact' ? 'brightness-100' : ''
-          }`}
+          className="flex h-[42px] w-[100px] flex-shrink-0 items-center justify-center rounded-full bg-[#0161FE] text-[15px] font-normal text-white md:h-[50px] md:w-[115px] md:text-[17px]"
         >
           Contact
         </button>
+
       </div>
     </header>
   );
