@@ -3,6 +3,7 @@ import { productDetails } from '../../data/productDetails';
 
 export default function OurProductsSection() {
   const navigate = useNavigate();
+  const doubled = [...productDetails, ...productDetails];
 
   return (
     <section className="relative left-1/2 mt-[10px] w-screen -translate-x-1/2 overflow-hidden rounded-t-[20px] bg-[#F6F7F9] pb-[50px] pt-[52px]">
@@ -18,25 +19,30 @@ export default function OurProductsSection() {
         </p>
       </div>
 
-      <div className="mt-[40px] flex translate-x-[-126px] gap-[14px] overflow-visible sm:mt-[62px]">
-        {productDetails.map((item) => (
-          <button
-            key={item.slug}
-            type="button"
-            onClick={() => navigate(`/products/${item.slug}`)}
-            className="relative h-[370px] min-w-[352px] overflow-hidden rounded-[20px] bg-white"
-          >
-            <p className="absolute left-1/2 top-[28px] -translate-x-1/2 font-serif text-[54px] italic leading-none text-[#b8b8b8]/75">
-              {item.scriptName}
-            </p>
-            <img
-              src={item.image}
-              alt={item.displayName}
-              className="absolute left-1/2 top-[132px] h-[150px] w-[300px] -translate-x-1/2 object-contain"
-              loading="lazy"
-            />
-          </button>
-        ))}
+      <div className="mt-[40px] overflow-hidden sm:mt-[62px]">
+        <div
+          className="flex w-max gap-[14px] animate-[marquee_var(--marquee-duration)_linear_infinite]"
+          style={{ '--marquee-duration': '32s' }}
+        >
+          {doubled.map((item, index) => (
+            <button
+              key={`${item.slug}-${index}`}
+              type="button"
+              onClick={() => navigate(`/products/${item.slug}`)}
+              className="relative h-[370px] min-w-[352px] overflow-hidden rounded-[20px] bg-white"
+            >
+              <p className="absolute left-1/2 top-[28px] -translate-x-1/2 font-serif text-[54px] italic leading-none text-[#b8b8b8]/75">
+                {item.scriptName}
+              </p>
+              <img
+                src={item.image}
+                alt={item.displayName}
+                className="absolute left-1/2 top-[132px] h-[150px] w-[300px] -translate-x-1/2 object-contain"
+                loading="lazy"
+              />
+            </button>
+          ))}
+        </div>
       </div>
     </section>
   );

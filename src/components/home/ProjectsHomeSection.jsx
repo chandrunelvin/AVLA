@@ -1,68 +1,36 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { fishProducts, otherProducts } from '../../data/productDetails';
 
-const products = [
-  {
-    name: 'Tuna',
-    image: '/assets/images/products/tuna-product-image.webp',
-  },
-  {
-    name: 'Sardine',
-    image: '/assets/images/products/sardine.svg',
-  },
-  {
-    name: 'Grouper',
-    image: '/assets/images/products/grouper.svg',
-  },
-  {
-    name: 'Salmon',
-    image: '/assets/images/products/salmon.svg',
-  },
-  {
-    name: 'Mackerel',
-    image: '/assets/images/products/mackerel.svg',
-  },
-  {
-    name: 'Anchovy',
-    image: '/assets/images/products/anchovy.svg',
-  },
-  {
-    name: 'Snapper',
-    image: '/assets/images/products/snapper.svg',
-  },
-  {
-    name: 'Milkfish',
-    image: '/assets/images/products/milkfish.svg',
-  },
-];
+const productsByCategory = {
+  fish: fishProducts,
+  cephalopods: otherProducts.filter((p) => ['squid', 'octopus'].includes(p.slug)),
+  crustaceans: otherProducts.filter((p) => ['crab', 'shrimp'].includes(p.slug)),
+  bivalve: otherProducts.filter((p) => ['clam', 'mussel'].includes(p.slug)),
+};
 
-export default function ProjectsHomeSection() {
+export default function ProjectsHomeSection({ activeCategory = 'fish' }) {
   const navigate = useNavigate();
+  const products = productsByCategory[activeCategory] || productsByCategory.fish;
   const [selectedIndex, setSelectedIndex] = useState(0);
-  const selectedProduct = products[selectedIndex];
+
+  const clampedIndex = Math.min(selectedIndex, products.length - 1);
+  const selectedProduct = products[clampedIndex];
 
   function selectProduct(index) {
     setSelectedIndex(index);
   }
 
   function selectPrevious() {
-    setSelectedIndex((selectedIndex - 1 + products.length) % products.length);
+    setSelectedIndex((clampedIndex - 1 + products.length) % products.length);
   }
 
   function selectNext() {
-    setSelectedIndex((selectedIndex + 1) % products.length);
-  }
-
-  function handleProjectKey(event, index) {
-    if (event.key === 'Enter' || event.key === ' ') {
-      selectProduct(index);
-    }
+    setSelectedIndex((clampedIndex + 1) % products.length);
   }
 
   function handleButtonKey(event, callback) {
-    if (event.key === 'Enter' || event.key === ' ') {
-      callback();
-    }
+    if (event.key === 'Enter' || event.key === ' ') callback();
   }
 
   return (
@@ -90,7 +58,7 @@ export default function ProjectsHomeSection() {
         <img
           src={selectedProduct.image}
           alt={selectedProduct.name}
-          className="h-full w-full object-cover"
+          className="h-full w-full object-contain"
           loading="lazy"
         />
       </div>
@@ -98,14 +66,13 @@ export default function ProjectsHomeSection() {
       <div className="absolute left-[112px] top-[860px] flex h-[96px] w-[1195px] items-center justify-start gap-[10px] rounded-[12px] bg-white px-[10px]">
         {products.map((product, index) => (
           <button
-            key={product.name}
+            key={product.slug}
             type="button"
             role="tab"
-            aria-selected={selectedIndex === index}
+            aria-selected={clampedIndex === index}
             onClick={() => selectProduct(index)}
-            onKeyDown={(event) => handleProjectKey(event, index)}
             className={`relative h-[74px] w-[139px] rounded-[6px] border bg-white transition ${
-              selectedIndex === index ? 'border-[#0161FE]' : 'border-[#8e838333]'
+              clampedIndex === index ? 'border-[#0161FE]' : 'border-[#8e838333]'
             }`}
           >
             <img
@@ -122,7 +89,7 @@ export default function ProjectsHomeSection() {
         role="button"
         tabIndex={0}
         onClick={selectPrevious}
-        onKeyDown={(event) => handleButtonKey(event, selectPrevious)}
+        onKeyDown={(e) => handleButtonKey(e, selectPrevious)}
         className="absolute left-[660px] top-[989px] flex h-[47px] w-[47px] cursor-pointer items-center justify-center rounded-full border border-[#0161FE] bg-white text-[24px] leading-none text-[#0161FE] transition hover:bg-[#0161FE] hover:text-white"
       >
         &#8592;
@@ -132,7 +99,7 @@ export default function ProjectsHomeSection() {
         role="button"
         tabIndex={0}
         onClick={selectNext}
-        onKeyDown={(event) => handleButtonKey(event, selectNext)}
+        onKeyDown={(e) => handleButtonKey(e, selectNext)}
         className="absolute left-[715px] top-[989px] flex h-[47px] w-[47px] cursor-pointer items-center justify-center rounded-full border border-[#0161FE] bg-white text-[24px] leading-none text-[#0161FE] transition hover:bg-[#0161FE] hover:text-white"
       >
         &#8594;
