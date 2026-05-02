@@ -170,14 +170,14 @@ export default function FaqListSection({ activeCategory }) {
     <div className="px-[43px]  pt-[24px]">
       {sections.map((section) => (
         <section key={section.title} className="mb-[43px]">
-          <div className="flex h-[25px] w-[112px] items-center justify-center rounded-full border border-[#202833]">
-            <span className="whitespace-nowrap text-[9px] font-medium uppercase leading-[12px] tracking-[1.2px] text-[#202833]">
+          <div className="flex h-[38px] w-[160px] items-center justify-center rounded-full border border-[#202833]">
+            <span className="whitespace-nowrap text-[14px] font-medium uppercase leading-[12px] tracking-[1.2px] text-[#202833]">
               Product FAQ
             </span>
           </div>
 
           <div className="mt-[17px] flex items-center justify-between">
-            <h2 className="text-[34px] font-normal leading-[40px] text-[#2b2b2b]">
+            <h2 className="text-[42px] font-normal leading-[40px] text-[#2b2b2b]">
               {section.title}
             </h2>
             <button
@@ -194,21 +194,21 @@ export default function FaqListSection({ activeCategory }) {
             {section.rows.map((row, index) => (
               <div key={row.label}>
                 <div
-                  className={`grid h-[42px] grid-cols-[1fr_1.05fr] items-center rounded-[16px] px-[20px] ${
-                    index === 0 ? 'bg-[#0161FE] text-white' : 'bg-[#F6F7F9] text-[#111111]'
+                  className={`grid h-[69px] grid-cols-[1fr_1.05fr] items-center rounded-[27px] px-[13px] py-[6px] ${
+                    index === 0 ? 'bg-[#0161FE] text-white' : 'bg-[#F6F7F9] text-[#000000]'
                   }`}
                 >
-                  <p className="text-[17px] font-normal leading-[22px]">{row.label}</p>
+                  <p className="text-[27.2px] font-normal leading-[22px] p-[10px]">{row.label}</p>
                   <p
-                    className={`text-[11px] font-normal leading-[14px] ${
-                      index === 0 ? 'text-white' : 'text-[#8a8a8a]'
+                    className={`text-[18px] font-[400] leading-[14px] p-[10px] ${
+                      index === 0 ? 'text-white' : 'text-[#6D6D6ECC]'
                     }`}
                   >
                     {row.question}
                   </p>
                 </div>
                 {row.answer ? (
-                  <div className="min-h-[61px] rounded-b-[16px] bg-[#F6F7F9] px-[20px] py-[15px] text-[12px] font-normal leading-[17px] text-[#8a8a8a]">
+                  <div className="min-h-[100%] rounded-[23.69px] bg-[#F6F7F9] px-[22px] py-[17px] text-[20px] font-normal leading-[28px] text-[#6D6D6ECC]">
                     {row.answer}
                   </div>
                 ) : null}

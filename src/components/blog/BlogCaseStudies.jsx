@@ -1,28 +1,29 @@
 import { useNavigate } from 'react-router-dom';
+import { ArrowRight } from 'lucide-react';
 import { blogDetails } from '../../data/blogDetails';
 
 const postsByCategory = {
   fish: blogDetails.map((blog, index) => ({
     ...blog,
-    imageClassName: index === 0 ? 'h-full w-full object-cover' : 'h-[246px] w-[500px] object-contain',
+    imageClassName: index === 0 ? 'h-full w-full object-cover' : 'h-full w-full object-cover',
   })),
   cephalopods: [
     {
       title: 'Squid Export Guide – Cleaned, Frozen, and Buyer-Ready Supply',
       image: '/assets/images/blog/blog-cephalopod.svg',
-      imageClassName: 'h-[246px] w-[500px] object-contain',
+      imageClassName: 'h-full w-full object-cover',
     },
     {
       title: 'Octopus Export Standards – Processing, Grading, and Packing',
       image: '/assets/images/blog/blog-octopus.svg',
-      imageClassName: 'h-[246px] w-[500px] object-contain',
+      imageClassName: 'h-full w-full object-cover',
     },
   ],
   crustaceans: [
     {
       title: 'Crab Export Processing – Quality Handling for Global Buyers',
       image: '/assets/images/blog/blog-crab.svg',
-      imageClassName: 'h-[246px] w-[500px] object-contain',
+      imageClassName: 'h-full w-full object-cover',
     },
     {
       title: 'Shrimp Supply Chain – Frozen Seafood for International Markets',
@@ -59,8 +60,8 @@ export default function BlogCaseStudies({ activeCategory }) {
       className="relative mt-[23px] w-full overflow-hidden rounded-[15px] bg-[#F6F7F9]"
       style={{ height: `${sectionHeight}px` }}
     >
-      <div className="absolute left-[42px] top-[53px] flex h-[25px] w-[112px] items-center justify-center rounded-full border border-[#202833]">
-        <span className="whitespace-nowrap text-[9px] font-medium uppercase leading-[12px] tracking-[1.2px] text-[#202833]">
+      <div className="absolute left-[42px] top-[53px] flex h-[38px] w-[160px] items-center justify-center rounded-full border border-[#202833]">
+        <span className="whitespace-nowrap text-[14px] font-medium uppercase leading-[12px] tracking-[1.2px] text-[#202833]">
           Case Studies
         </span>
       </div>
@@ -90,10 +91,10 @@ export default function BlogCaseStudies({ activeCategory }) {
               <button
                 type="button"
                 onClick={() => navigate(post.slug ? `/blog/${post.slug}` : '/blog')}
-                className="mt-[24px] flex h-[32px] w-[87px] items-center justify-center gap-[7px] rounded-full bg-[#0161FE] text-[11px] font-semibold text-white"
+                className="mt-[24px] flex h-[46px] w-[133px] items-center justify-center gap-[10px] rounded-full bg-[#0161FE] text-[16px] font-medium leading-[24px] text-white transition hover:brightness-105"
               >
                 Explore
-                <span className="text-[16px] leading-none">&#8594;</span>
+                <ArrowRight aria-hidden="true" size={22} strokeWidth={1.8} />
               </button>
             </div>
 

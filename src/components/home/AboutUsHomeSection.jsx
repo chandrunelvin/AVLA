@@ -23,7 +23,7 @@ const imageCards = [
 
 export default function AboutUsHomeSection() {
   return (
-    <section className="relative mx-auto mt-6 h-[857px] w-full overflow-hidden rounded-[20px] bg-[#F6F7F9] text-[#111111]">
+    <section className="relative mx-auto mt-[50px] h-[857px] w-full overflow-hidden rounded-[20px] bg-[#F6F7F9] text-[#111111]">
       <div className="absolute left-[47px] top-[53px] flex h-[38px] w-[123px] items-center justify-center rounded-full border border-[#202833]">
         <span className="whitespace-nowrap text-[14px] font-medium uppercase leading-[18px] tracking-[1.9698877334594727px] text-[#202833]">
           About us

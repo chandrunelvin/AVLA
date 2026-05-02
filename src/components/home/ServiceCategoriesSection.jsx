@@ -39,7 +39,7 @@ export default function ServiceCategoriesSection() {
   return (
     <section
       id="service-categories-section"
-      className="relative mx-auto mt-6 h-[465px] w-full overflow-hidden rounded-[20.41314125061035px] bg-[#F6F7F9]"
+      className="relative mx-auto mt-[50px] h-[465px] w-full overflow-hidden rounded-[20.41314125061035px] bg-[#F6F7F9]"
     >
       <div className="absolute left-1/2 top-[45px] flex h-[39px] min-w-[158px] -translate-x-1/2 items-center justify-center rounded-full border border-[#202833] px-[21px]">
         <span className="whitespace-nowrap text-[14px] font-medium uppercase leading-[18px] tracking-[1.7862435579299927px] text-[#202833]">

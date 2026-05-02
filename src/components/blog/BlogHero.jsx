@@ -11,7 +11,7 @@ export default function BlogHero() {
         and expertise to help your business build, scale, and succeed.
       </p>
 
-      <div className="mx-auto mt-[34px] overflow-hidden rounded-[20px] bg-white min-[800px]:absolute min-[800px]:left-[49px] min-[800px]:top-[174px] min-[800px]:mt-0 min-[800px]:h-[620px] min-[800px]:w-[1322px]">
+      <div className="mx-auto mt-[34px] overflow-hidden rounded-[20px] bg-white min-[800px]:absolute min-[800px]:left-[49px] min-[800px]:top-[174px] min-[800px]:mt-0 min-[800px]:h-[620px] min-[800px]:w-[93%]">
         <img
           src="/assets/images/blog/blog-banner-image.png"
           alt="Seafood blog banner"

@@ -1,4 +1,5 @@
 import { useNavigate } from 'react-router-dom';
+import { ArrowRight } from 'lucide-react';
 import { fishProducts, otherProducts } from '../../data/productDetails';
 
 const productsByCategory = {
@@ -56,16 +57,16 @@ export default function ProductListSection({ activeCategory }) {
             </div>
 
             <div className="mt-[17px] flex w-full flex-col items-center text-center min-[800px]:absolute min-[800px]:left-[674px] min-[800px]:top-[119px] min-[800px]:mt-0 min-[800px]:block min-[800px]:w-auto min-[800px]:text-left">
-              <h3 className="text-center text-[16px] font-normal leading-[22px] text-[#4a4a4a] min-[800px]:text-left min-[800px]:text-[22px] min-[800px]:leading-[28px]">
+              <h3 className="text-center text-[16px] font-normal leading-[22px] text-[#4a4a4a] min-[800px]:text-left min-[800px]:text-[32px] min-[800px]:leading-[28px]">
                 {product.name}
               </h3>
               <button
                 type="button"
                 onClick={() => navigate(product.slug ? `/products/${product.slug}` : '/contact')}
-                className="mt-[14px] flex h-[24px] w-[73px] items-center justify-center gap-[7px] rounded-full bg-[#0161FE] text-[8px] font-semibold text-white min-[800px]:mt-[21px] min-[800px]:h-[32px] min-[800px]:w-[87px] min-[800px]:text-[11px]"
+                className="mt-[14px] flex h-[46px] w-[133px] items-center justify-center gap-[10px] rounded-full bg-[#0161FE] text-[16px] font-medium leading-[24px] text-white transition hover:brightness-105 min-[800px]:mt-[21px]"
               >
                 Explore
-                <span className="text-[14px] leading-none min-[800px]:text-[16px]">&#8594;</span>
+                <ArrowRight aria-hidden="true" size={22} strokeWidth={1.8} />
               </button>
             </div>
           </article>

@@ -10,9 +10,9 @@ const feedCards = [
   },
   {
     title: 'Sardine Fish Export-Grade: From Catch to International Markets',
-    image: '/assets/images/products/sardine.svg',
+    image: '/assets/images/blog/Sardine-Fish-blog-image.png',
     alt: 'Sardine fish',
-    imageClassName: 'h-[360px] w-[560px] object-contain',
+    imageClassName: 'h-full w-full object-cover',
   },
 ];
 
@@ -24,9 +24,9 @@ export default function FeedHomeComponent() {
   }
 
   return (
-    <section className="relative mx-auto mt-6 h-[850px] w-full overflow-hidden rounded-[20px] bg-[#F6F7F9]">
-      <div className="absolute left-[42px] top-[52px] flex h-[39px] w-[117px] items-center justify-center rounded-full border border-[#202833]">
-        <span className="whitespace-nowrap text-[14px] font-medium uppercase leading-[18px] tracking-[1.7862437963485718px] text-[#202833]">
+    <section className="relative mx-auto mt-[50px] h-[850px] w-full overflow-hidden rounded-[20px] bg-[#F6F7F9]">
+      <div className="absolute left-[42px] top-[52px] flex h-[39px] min-w-[158px] items-center justify-center rounded-full border border-[#202833] px-[21px]">
+        <span className="whitespace-nowrap text-[14px] font-medium uppercase leading-[18px] tracking-[1.7862435579299927px] text-[#202833]">
           Feeds
         </span>
       </div>
@@ -44,10 +44,10 @@ export default function FeedHomeComponent() {
         <ArrowRight aria-hidden="true" size={22} strokeWidth={1.8} />
       </button>
 
-      <div className="absolute left-[42px] top-[185px] grid w-[1336px] grid-cols-2 gap-[14px]">
+      <div className="absolute left-[42px] top-[185px] grid w-[94%] grid-cols-2 gap-[14px]">
         {feedCards.map((card) => (
-          <article key={card.title} className="w-[661px]">
-            <div className="flex h-[438px] w-[661px] items-center justify-center overflow-hidden rounded-[22px] bg-white">
+          <article key={card.title} className="w-[100%]">
+            <div className="flex h-[438px] w-[100%] items-center justify-center overflow-hidden rounded-[22px] bg-white">
               <img
                 src={card.image}
                 alt={card.alt}

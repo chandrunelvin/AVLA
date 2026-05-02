@@ -66,7 +66,7 @@ export default function ProjectsHomeSection() {
   }
 
   return (
-    <section className="relative mx-auto mt-6 h-[1070px] w-full overflow-hidden rounded-[20px] bg-[#F6F7F9]">
+    <section className="relative mx-auto mt-[50px] h-[1070px] w-full overflow-hidden rounded-[20px] bg-[#F6F7F9]">
       <div className="absolute left-[42px] top-[52px] flex h-[39px] w-[127px] items-center justify-center rounded-full border border-[#202833]">
         <span className="whitespace-nowrap text-[14px] font-medium uppercase leading-[18px] tracking-[1.7862437963485718px] text-[#202833]">
           Products
@@ -86,7 +86,7 @@ export default function ProjectsHomeSection() {
         <span className="text-[28px] font-normal leading-none">&#8594;</span>
       </button>
 
-      <div className="absolute left-[42px] top-[225px] h-[605px] w-[1336px] overflow-hidden rounded-[23.686382293701172px] bg-white">
+      <div className="absolute left-[42px] top-[225px] h-[605px] w-[94%] overflow-hidden rounded-[23.686382293701172px] bg-white">
         <img
           src={selectedProduct.image}
           alt={selectedProduct.name}

@@ -20,7 +20,7 @@ const contactItems = [
 
 export default function ContactUsHomeSection() {
   return (
-    <section className="relative mx-auto mt-6 h-[357px] w-full overflow-hidden rounded-[20px] bg-[#F6F7F9]">
+    <section className="relative mx-auto mt-[50px] h-[357px] w-full overflow-hidden rounded-[20px] bg-[#F6F7F9]">
       <div className="absolute left-[41px] top-[47px] flex h-[38px] w-[140px] items-center justify-center rounded-full border border-[#202833]">
         <span className="whitespace-nowrap text-[14px] font-medium uppercase leading-[18px] tracking-[1.7862437963485718px] text-[#202833]">
           Contact Us

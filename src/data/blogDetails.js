@@ -17,7 +17,7 @@ export const blogDetails = [
     title: 'Fresh & Frozen Sardine Fish Exporter – Bulk Supply from India',
     slug: 'sardine-fish-exporter-india',
     category: 'Sardine',
-    image: '/assets/images/products/product-Sardine-fish.png',
+    image: '/assets/images/blog/Sardine-Fish-blog-image.png',
     company: 'Avla Nettos Exports',
     readTime: '3 Min',
     releaseDate: 'January 1, 2026',

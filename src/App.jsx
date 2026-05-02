@@ -5,6 +5,7 @@ import ContactPage from './pages/ContactPage';
 import BlogDetailsPage from './pages/BlogDetailsPage';
 import BlogPage from './pages/BlogPage';
 import FaqPage from './pages/FaqPage';
+import AboutPage from './pages/AboutPage';
 import HomePage from './pages/HomePage';
 import ProductDetailsPage from './pages/ProductDetailsPage';
 import ProductsPage from './pages/ProductsPage';
@@ -52,7 +53,7 @@ export default function App() {
     <Routes>
       <Route element={<AppLayout />}>
         <Route path="/" element={<HomePage />} />
-        <Route path="/about" element={<HomePage />} />
+        <Route path="/about" element={<AboutPage />} />
         <Route path="/products" element={<ProductsPage />} />
         <Route path="/products/:slug" element={<ProductDetailsPage />} />
         <Route path="/blog" element={<BlogPage />} />
