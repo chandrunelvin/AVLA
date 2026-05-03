@@ -14,25 +14,25 @@ export default function ProductListSection({ activeCategory }) {
   const products = productsByCategory[activeCategory] || productsByCategory.fish;
 
   return (
-    <section className="mt-[23px] w-full rounded-[15px] bg-[#F6F7F9]">
+    <section className="mt-[23px] w-full rounded-[15px] min-[800px]:bg-[#F6F7F9]">
 
       {/* ── Mobile layout ── */}
-      <div className="min-[800px]:hidden pb-[28px] pt-[20px]">
-        <div className="flex gap-[12px] overflow-x-auto px-[16px] pb-[4px] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+      <div className="min-[800px]:hidden pb-[32px] pt-[16px]">
+        <div className="flex gap-[10px] overflow-x-auto px-[10px] pb-[4px] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
           {products.map((product) => (
             <button
               key={product.slug}
               type="button"
               onClick={() => navigate(product.slug ? `/products/${product.slug}` : '/contact')}
-              className="relative h-[220px] min-w-[calc(50%-6px)] shrink-0 overflow-hidden rounded-[20px] bg-white"
+              className="relative h-[240px] min-w-[calc(50%-5px)] shrink-0 overflow-hidden rounded-[20px] bg-[#F6F7F9]"
             >
-              <p className="absolute left-[14px] top-[14px] font-serif text-[28px] italic leading-none text-[#b8b8b8]/70">
+              <p className="absolute left-[16px] top-[16px] font-serif text-[32px] italic leading-none text-[#b8b8b8]/70">
                 {product.scriptName}
               </p>
               <img
                 src={product.image}
                 alt={product.name}
-                className="absolute bottom-[10px] left-1/2 h-[140px] w-[calc(100%-20px)] -translate-x-1/2 object-contain"
+                className="absolute bottom-[12px] left-1/2 h-[150px] w-[calc(100%-16px)] -translate-x-1/2 object-contain"
                 loading="lazy"
               />
             </button>

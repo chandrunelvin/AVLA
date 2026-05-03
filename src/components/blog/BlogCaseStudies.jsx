@@ -47,10 +47,10 @@ export default function BlogCaseStudies({ activeCategory }) {
   const posts = postsByCategory[activeCategory] || postsByCategory.fish;
 
   return (
-    <section className="mt-[23px] w-full overflow-hidden rounded-[15px] bg-[#F6F7F9] px-[22px] pb-[50px] pt-[42px] sm:px-[42px]">
+    <section className="mt-[23px] w-full overflow-hidden rounded-[15px] bg-[#F6F7F9] pb-[32px] pt-[42px] lg:px-[42px] lg:pb-[50px]">
 
       {/* Section header */}
-      <div className="flex flex-col items-center text-center lg:flex-row lg:items-start lg:justify-between lg:text-left">
+      <div className="flex flex-col items-center px-[22px] text-center lg:flex-row lg:items-start lg:justify-between lg:px-0 lg:text-left">
         <div>
           <div className="inline-flex h-[38px] items-center justify-center rounded-full border border-[#202833] px-[20px]">
             <span className="whitespace-nowrap text-[14px] font-medium uppercase leading-[12px] tracking-[1.2px] text-[#202833]">
@@ -71,13 +71,13 @@ export default function BlogCaseStudies({ activeCategory }) {
 
       {/* Post list — mobile: horizontal scroll cards */}
       <div className="mt-[28px] lg:hidden">
-        <div className="flex gap-[12px] overflow-x-auto pb-[4px] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+        <div className="flex gap-[10px] overflow-x-auto px-[10px] pb-[4px] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
           {posts.map((post) => (
             <button
               key={post.title}
               type="button"
               onClick={() => navigate(post.slug ? `/blog/${post.slug}` : '/blog')}
-              className="relative h-[220px] min-w-[calc(50%-6px)] shrink-0 overflow-hidden rounded-[20px] bg-white"
+              className="relative h-[240px] min-w-[calc(50%-5px)] shrink-0 overflow-hidden rounded-[20px] bg-white"
             >
               <img
                 src={post.image}
