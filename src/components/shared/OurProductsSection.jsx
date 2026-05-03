@@ -46,15 +46,12 @@ export default function OurProductsSection() {
               key={item.slug}
               type="button"
               onClick={() => navigate(`/products/${item.slug}`)}
-              className="relative h-[240px] min-w-[calc(50%-5px)] shrink-0 overflow-hidden rounded-[20px] bg-white"
+              className="h-[240px] min-w-[calc(50%-5px)] shrink-0 overflow-hidden rounded-[20px] bg-white"
             >
-              <p className="absolute left-[16px] top-[16px] font-serif text-[32px] italic leading-none text-[#b8b8b8]/70">
-                {item.scriptName}
-              </p>
               <img
                 src={item.image}
                 alt={item.displayName}
-                className="absolute bottom-[12px] left-1/2 h-[150px] w-[calc(100%-16px)] -translate-x-1/2 object-contain"
+                className="h-full w-full object-contain p-[16px]"
                 loading="lazy"
               />
             </button>

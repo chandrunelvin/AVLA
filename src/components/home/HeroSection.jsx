@@ -37,19 +37,11 @@ export default function HeroSection() {
         </div>
       </div>
 
-      {/* Mobile image */}
-      <img
-        src="/assets/images/home/hero-mobile-image.png"
-        alt="Seafood export"
-        className="mx-auto block h-auto w-[85%] max-w-[340px] sm:hidden"
-        loading="eager"
-      />
-
-      {/* Desktop image */}
+      {/* Hero image — same for mobile and desktop */}
       <img
         src="/assets/images/home/hero-demo.svg"
         alt="Seafood export demo"
-        className="mx-auto mt-[82px] hidden h-auto w-full max-w-[1006px] rounded-[15px] px-6 sm:block lg:px-12"
+        className="mx-auto mt-[32px] block h-auto w-full max-w-[1006px] rounded-[15px] px-[16px] sm:mt-[82px] sm:px-6 lg:px-12"
         loading="eager"
       />
 

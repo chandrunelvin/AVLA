@@ -70,15 +70,6 @@ export const fishProducts = [
     summary:
       'High-quality Red Snapper processed for export with clean handling, strong grading standards, and dependable delivery.',
   },
-  {
-    name: 'Herring',
-    displayName: 'Herring',
-    scriptName: 'Herring',
-    slug: 'herring',
-    image: '/assets/images/products/Herring-product-image.png',
-    summary:
-      'Premium Herring prepared for seafood export with careful packaging and compliance-focused processing.',
-  },
 ];
 
 export const otherProducts = [

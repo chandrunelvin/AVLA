@@ -109,7 +109,7 @@ export default function AboutShowcaseSection() {
       <div className="overflow-hidden rounded-[20px] bg-[#F6F7F9] px-4 py-12 sm:px-6 lg:px-[8px] lg:py-[56px]">
         <div className="mx-auto flex max-w-[760px] flex-col items-center text-center">
           <SectionBadge>Our Infrastructure</SectionBadge>
-          <h2 className="mt-6 max-w-[720px] text-[34px] font-normal leading-[1.08] text-[#111111] sm:text-[56px]">
+          <h2 className="mt-6 max-w-[529px] text-[34px] font-normal leading-[1.08] text-[#111111] sm:text-[36px]">
             Our Advanced Seafood Processing Facilities in Kerala
           </h2>
         </div>
@@ -123,7 +123,7 @@ export default function AboutShowcaseSection() {
                 key={id}
                 type="button"
                 onClick={() => setActiveTab(id)}
-                className={`inline-flex h-[56px] items-center gap-3 rounded-full px-6 text-[15px] font-medium transition ${
+                className={`inline-flex h-[56px] items-center gap-3 rounded-[23.69px] px-6 text-[15px] font-medium transition ${
                   isActive
                     ? 'bg-[#0161FE] text-white shadow-[0_8px_20px_rgba(1,97,254,0.22)]'
                     : 'bg-white text-[#0161FE]'

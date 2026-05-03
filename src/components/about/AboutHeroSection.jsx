@@ -8,8 +8,8 @@ export default function AboutHeroSection() {
     <section className="mx-auto w-full rounded-[20px] bg-[#F6F7F9] px-4 pb-[40px] pt-[48px] text-[#111111] sm:px-8 lg:px-[48px] lg:pb-[48px] lg:pt-[64px]">
 
       {/* Heading + subtitle + buttons */}
-      <div className="mx-auto flex max-w-[680px] flex-col items-center text-center">
-        <h1 className="text-[46px] font-normal leading-[1.1] text-[#111111] sm:text-[52px] lg:text-[62px]">
+      <div className="mx-auto flex max-w-[809px] flex-col items-center text-center">
+        <h1 className="text-[46px] font-normal leading-[1.1] text-[#111111] sm:text-[52px] lg:text-[58px]">
           Expert guidance, tailored solution
         </h1>
 
@@ -18,7 +18,7 @@ export default function AboutHeroSection() {
           support your business at every stage of growth.
         </p>
 
-        <div className="mt-[28px] flex flex-wrap items-center justify-center gap-3">
+        <div className="mt-[28px] flex flex-nowrap items-center justify-center gap-3">
           <button
             type="button"
             onClick={() => navigate('/contact')}

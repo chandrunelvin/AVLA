@@ -8,12 +8,12 @@ function ProductDetailsHero({ product }) {
     <section className="rounded-b-[14px] bg-[#F6F7F9] px-[22px] pb-[40px] pt-[36px] text-center min-[800px]:px-[48px] min-[800px]:pb-[48px] min-[800px]:pt-[42px]">
 
       {/* Title */}
-      <h1 className="text-center text-[38px] font-normal leading-[1.15] text-[#111111] min-[800px]:text-[48px] min-[800px]:leading-[50px]">
+      <h1 className="text-center text-[38px] font-normal leading-[1.15] text-[#111111] min-[800px]:text-[58px] min-[800px]:leading-[50px]">
         {product.displayName}
       </h1>
 
       {/* Summary */}
-      <p className="mx-auto mt-[16px] max-w-[320px] text-[13px] font-normal leading-[1.6] text-[#6D6D6ECC] min-[800px]:mt-[28px] min-[800px]:max-w-[430px] min-[800px]:leading-[18px]">
+      <p className="mx-auto mt-[16px] max-w-[320px] text-[16px] font-normal leading-[1.6] text-[#6D6D6ECC] min-[800px]:mt-[28px] min-[800px]:max-w-[462px] min-[800px]:leading-[18px]">
         {product.summary}
       </p>
 
@@ -77,24 +77,26 @@ function ProductDetailsHero({ product }) {
 function ExportRegionSection() {
   return (
     <section className="bg-white px-[24px] pb-[66px] pt-[42px] text-center">
-      <div className="mx-auto flex h-[28px] w-[126px] items-center justify-center rounded-full border border-[#111111] text-[11px] font-normal uppercase tracking-[3px] text-[#111111]">
-        Export Region
+      <div className="mx-auto inline-flex h-[36px] items-center justify-center rounded-full border border-[#202833] px-[18px]">
+        <span className="whitespace-nowrap text-[13px] font-medium uppercase tracking-[1.79px] text-[#202833]">
+          Export Region
+        </span>
       </div>
 
-      <h2 className="mx-auto mt-[24px] max-w-[410px] text-[28px] font-normal leading-[34px] text-[#111111]">
+      <h2 className="mx-auto mt-[24px] max-w-[529px] text-[36px] font-normal leading-[34px] text-[#111111]">
         Exporting Premium Seafood to
         <br />
         Global Markets
       </h2>
 
       <img
-        src="/assets/images/product-details/export-region-map.png"
+        src="/assets/images/product-details/export-region-map.svg"
         alt="World map showing seafood export regions"
-        className="mx-auto mt-[38px] block h-auto w-full max-w-[1068px]"
+        className="mx-auto mt-[38px] block h-auto w-full"
         loading="lazy"
       />
 
-      <p className="mx-auto mt-[64px] max-w-[590px] text-[18px] font-normal leading-[28px] text-[#111111] sm:text-[22px]">
+      <p className="mx-auto mt-[64px] max-w-[763px] text-[18px] font-normal leading-[28px] text-[#111111] sm:text-[30px]">
         With years of experience in seafood exports, we ensure reliable supply,
         consistent quality, and timely international delivery.{' '}
         <span className="text-[#6D6D6E]">

@@ -14,28 +14,50 @@ export default function ProductListSection({ activeCategory }) {
   const products = productsByCategory[activeCategory] || productsByCategory.fish;
 
   return (
-    <section className="mt-[23px] w-full rounded-[15px] min-[800px]:bg-[#F6F7F9]">
+    <section className="mt-[23px] w-full rounded-[15px] bg-[#F6F7F9]">
 
       {/* ── Mobile layout ── */}
-      <div className="min-[800px]:hidden pb-[32px] pt-[16px]">
-        <div className="flex gap-[10px] overflow-x-auto px-[10px] pb-[4px] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+      <div className="flex flex-col items-center px-[22px] pb-[36px] pt-[28px] text-center min-[800px]:hidden">
+
+        <div className="flex h-[32px] w-[100px] items-center justify-center rounded-full border border-[#202833]">
+          <span className="whitespace-nowrap text-[11px] font-medium uppercase tracking-[1.5px] text-[#202833]">
+            Products
+          </span>
+        </div>
+
+        <h2 className="mt-[14px] text-[34px] font-normal leading-[1.2] text-[#111111]">
+          Real Results. Real Impact.
+          Our Success Stories.
+        </h2>
+
+        <p className="mt-[14px] max-w-[320px] text-[16px] font-normal leading-[1.6] text-[#6D6D6ECC]">
+          Our seafood products are carefully processed, quality-tested, and prepared
+          for global export with guaranteed freshness and compliance.
+        </p>
+
+        <div className="mt-[24px] flex flex-col gap-[16px]">
           {products.map((product) => (
-            <button
-              key={product.slug}
-              type="button"
-              onClick={() => navigate(product.slug ? `/products/${product.slug}` : '/contact')}
-              className="relative h-[240px] min-w-[calc(50%-5px)] shrink-0 overflow-hidden rounded-[20px] bg-[#F6F7F9]"
-            >
-              <p className="absolute left-[16px] top-[16px] font-serif text-[32px] italic leading-none text-[#b8b8b8]/70">
-                {product.scriptName}
-              </p>
-              <img
-                src={product.image}
-                alt={product.name}
-                className="absolute bottom-[12px] left-1/2 h-[150px] w-[calc(100%-16px)] -translate-x-1/2 object-contain"
-                loading="lazy"
-              />
-            </button>
+            <article key={product.slug} className="flex flex-col items-center">
+              <div className="flex h-[220px] w-full items-center justify-center overflow-hidden rounded-[16px] bg-white">
+                <img
+                  src={product.image}
+                  alt={product.name}
+                  className="h-full w-full object-contain p-[20px]"
+                  loading="lazy"
+                />
+              </div>
+              <h3 className="mt-[14px] text-[18px] font-normal leading-[1.3] text-[#4a4a4a]">
+                {product.name}
+              </h3>
+              <button
+                type="button"
+                onClick={() => navigate(product.slug ? `/products/${product.slug}` : '/contact')}
+                className="mt-[12px] flex h-[44px] w-[120px] items-center justify-center gap-[8px] rounded-full bg-[#0161FE] text-[14px] font-medium text-white"
+              >
+                Explore
+                <ArrowRight aria-hidden="true" size={16} strokeWidth={1.8} />
+              </button>
+            </article>
           ))}
         </div>
       </div>
@@ -57,7 +79,7 @@ export default function ProductListSection({ activeCategory }) {
               Our Success Stories.
             </h2>
           </div>
-          <p className="mt-[55px] max-w-[400px] text-[14px] leading-[22px] text-[#8a8a8a]">
+          <p className="mt-[55px] max-w-[542px] text-[16px] leading-[22px] text-[#8a8a8a]">
             Our seafood products are carefully processed, quality-tested, and prepared for
             global export with guaranteed freshness and compliance.
           </p>
@@ -66,7 +88,7 @@ export default function ProductListSection({ activeCategory }) {
         {/* Product list */}
         <div className="mt-[40px] flex flex-col gap-[16px]">
           {products.map((product) => (
-            <article key={product.name} className="flex items-center gap-[40px]">
+            <article key={product.name} className="flex items-center gap-[69px]">
               <div className="flex h-[436px] w-[581px] shrink-0 items-center justify-center overflow-hidden rounded-[24px] bg-white">
                 <img
                   src={product.image}

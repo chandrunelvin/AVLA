@@ -15,7 +15,7 @@ const features = [
 
 export default function AboutFeaturesSection() {
   return (
-    <section className="mx-auto mt-[10px] w-full rounded-[20px] bg-white px-6 py-[72px] sm:px-12">
+    <section className="mx-auto mt-[10px] w-full rounded-[20px] bg-white py-[72px] sm:px-12">
       <div className="grid grid-cols-1 sm:grid-cols-3">
         {features.map((feature) => (
           <div
