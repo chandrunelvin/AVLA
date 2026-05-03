@@ -30,12 +30,12 @@ export default function CertificationSection() {
         </p>
       </div>
 
-      {/* Cards grid */}
-      <div className="mt-[28px] grid grid-cols-1 gap-[14px] sm:mt-[40px] sm:grid-cols-3">
+      {/* Cards grid — overflow-hidden clips the certificate cards that bleed outside */}
+      <div className="mt-[28px] grid grid-cols-1 gap-[14px] overflow-hidden sm:mt-[40px] sm:grid-cols-3">
         {certifications.map((cert) => (
           <div
             key={cert.title}
-            className={`relative h-[180px] overflow-hidden rounded-[20px] ${
+            className={`relative h-[180px] rounded-[20px] ${
               cert.active ? 'bg-[#0161FE]' : 'bg-[#F6F7F9]'
             }`}
           >
@@ -57,17 +57,18 @@ export default function CertificationSection() {
               {cert.title}
             </p>
 
-            {/* Certificate image card — right side */}
+            {/* Certificate card — overflows right edge like the image */}
             <div
-              className={`absolute right-[8px] top-[10px] h-[160px] w-[155px] overflow-hidden rounded-[14px] ${
-                cert.active ? 'bg-[rgba(130,170,249,1.00)]' : 'bg-[rgba(210,211,212,0.70)]'
+              className={`absolute right-[10px] top-[10px] h-[160px] w-[185px] rounded-[16px] shadow-md ${
+                cert.active ? 'bg-[rgba(130,170,249,1.00)]' : 'bg-[#C5C6C7]'
               }`}
+              style={{ overflow: 'hidden', position: 'absolute' }}
             >
               <img
                 src="/assets/images/home/certificate.png"
                 alt={cert.title}
-                className="absolute rounded-[5px] object-cover"
-                style={{ width: 190, height: 147, top: 8, left: -50 }}
+                className="rounded-[5px] object-cover"
+                style={{ position: 'absolute', width: 190, height: 147, top: 8, left: -10 }}
                 loading="lazy"
               />
             </div>

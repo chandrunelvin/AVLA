@@ -10,7 +10,15 @@ const primaryLinks = [
 
 const infrastructureLinks = ['Our Infrastructure', 'Events', 'Galary', 'Events'];
 const productLinks = ['Fish', 'Octopus', 'Crab', 'FAQ'];
-const socials = ['◉', 'f', '◎', '♣', 'in', '▶', '◈', 'Bē'];
+
+const socials = [
+  { label: 'Facebook',  icon: '/assets/images/home/fb-icon.svg',       href: 'https://www.facebook.com' },
+  { label: 'Instagram', icon: '/assets/images/home/insta-icon.svg',     href: 'https://www.instagram.com' },
+  { label: 'X',         icon: '/assets/images/home/x-icon.svg',         href: 'https://www.x.com' },
+  { label: 'LinkedIn',  icon: '/assets/images/home/linkdin.svg',         href: 'https://www.linkedin.com' },
+  { label: 'WhatsApp',  icon: '/assets/images/home/whatsapp-icon.svg',  href: 'https://wa.me/919446017777' },
+  { label: 'YouTube',   icon: '/assets/images/home/youtube.svg',         href: 'https://www.youtube.com' },
+];
 
 export default function SiteFooter() {
   const navigate = useNavigate();
@@ -109,12 +117,19 @@ export default function SiteFooter() {
 
         <div className="absolute left-1/2 top-[727px] flex w-[240px] -translate-x-1/2 flex-wrap justify-center gap-x-[10px] gap-y-[14px] md:left-auto md:right-[50px] md:top-[282px] md:h-[38px] md:w-auto md:translate-x-0 md:flex-nowrap md:items-center md:justify-start md:gap-[14px]">
           {socials.map((social) => (
-            <span
-              key={social}
-              className="flex h-[42px] w-[42px] items-center justify-center rounded-full border border-white/15 text-[17px] font-semibold text-white md:h-[36px] md:w-[36px] md:text-[15px]"
+            <a
+              key={social.label}
+              href={social.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={social.label}
             >
-              {social}
-            </span>
+              <img
+                src={social.icon}
+                alt={social.label}
+                className="h-[36px] w-[36px] object-contain"
+              />
+            </a>
           ))}
         </div>
         </div>
