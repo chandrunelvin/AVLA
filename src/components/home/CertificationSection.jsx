@@ -1,125 +1,74 @@
-const cards = [
-  {
-    bg: 'bg-[#0161FE]',
-    title: 'Google UX Design',
-    titleColor: 'text-white',
-    icons: [
-      { src: '/assets/about/images/vector_23.svg', cls: 'absolute left-[1%]' },
-      { src: '/assets/about/images/vector_24.svg', cls: 'absolute left-[calc(50%-8.58px)] top-[calc(50%-8.38px)]' },
-    ],
-    rightBg: 'bg-[rgba(130,170,249,1.00)]',
-  },
-  {
-    bg: 'bg-white',
-    title: 'Technology solutions',
-    titleColor: 'text-[#111111]',
-    icons: [
-      { src: '/assets/about/images/vector_25.svg', cls: 'absolute top-[1%]' },
-      { src: '/assets/about/images/vector_26.svg', cls: 'absolute left-[calc(50%-8.58px)] top-[calc(50%-8.39px)]' },
-    ],
-    rightBg: 'bg-[rgba(197,198,199,1.00)]',
-  },
-  {
-    bg: 'bg-white',
-    title: 'Technology solutions',
-    titleColor: 'text-[#111111]',
-    icons: [
-      { src: '/assets/about/images/vector_33.svg', cls: 'absolute top-[1%]' },
-      { src: '/assets/about/images/vector_34.svg', cls: 'absolute left-[calc(50%-8.58px)] top-[calc(50%-8.39px)]' },
-    ],
-    rightBg: 'bg-[rgba(197,198,199,1.00)]',
-  },
-  {
-    bg: 'bg-white',
-    title: 'Technology solutions',
-    titleColor: 'text-[#111111]',
-    icons: [
-      { src: '/assets/about/images/vector_29.svg', cls: 'absolute top-[1%]' },
-      { src: '/assets/about/images/vector_30.svg', cls: 'absolute left-[calc(50%-8.58px)] top-[calc(50%-8.39px)]' },
-    ],
-    rightBg: 'bg-[rgba(197,198,199,1.00)]',
-  },
-  {
-    bg: 'bg-white',
-    title: 'Technology solutions',
-    titleColor: 'text-[#111111]',
-    icons: [
-      { src: '/assets/about/images/vector_27.svg', cls: 'absolute top-[1%]' },
-      { src: '/assets/about/images/vector_28.svg', cls: 'absolute left-[calc(50%-8.58px)] top-[calc(50%-8.39px)]' },
-    ],
-    rightBg: 'bg-[rgba(197,198,199,1.00)]',
-  },
-  {
-    bg: 'bg-white',
-    title: 'Technology solutions',
-    titleColor: 'text-[#111111]',
-    icons: [
-      { src: '/assets/about/images/vector_31.svg', cls: 'absolute top-[1%]' },
-      { src: '/assets/about/images/vector_32.svg', cls: 'absolute left-[calc(50%-8.58px)] top-[calc(50%-8.39px)]' },
-    ],
-    rightBg: 'bg-[rgba(197,198,199,1.00)]',
-  },
+
+const certifications = [
+  { title: 'MPEDA Registration',               active: true  },
+  { title: 'FSSAI License',                    active: false },
+  { title: 'EIC / EIA Approval',               active: false },
+  { title: 'HACCP Certified',                  active: false },
+  { title: 'ISO 22000: Food Safety Management',active: false },
+  { title: 'US FDA Registration',              active: false },
 ];
 
 export default function CertificationSection() {
   return (
-    <section className="mx-auto mt-[50px] w-full rounded-[20px] bg-[#F6F7F9] px-[22px] pb-[32px] pt-[36px] sm:px-[42px] sm:pb-[50px] sm:pt-[50px]">
+    <section className="mx-auto mt-[50px] w-full rounded-[20px] bg-[#Ffffff] px-[22px] pb-[36px] pt-[36px] sm:px-[42px] sm:pb-[52px] sm:pt-[50px]">
 
       {/* Badge */}
-      <div className="flex h-[36px] w-[130px] items-center justify-center rounded-full border border-[#202833] sm:h-[36.5px] sm:w-[153px]">
-        <span className="whitespace-nowrap text-[13px] font-medium uppercase tracking-[1.79px] text-[#202833] sm:text-[14px]">
+      <div className="flex h-[36px] w-[140px] items-center justify-center rounded-full border border-[#202833]">
+        <span className="whitespace-nowrap text-[13px] font-medium uppercase tracking-[1.79px] text-[#202833]">
           Certification
         </span>
       </div>
 
       {/* Header row */}
-      <div className="mt-[18px] flex flex-col gap-[12px] sm:mt-[20px] sm:flex-row sm:items-start sm:justify-between sm:gap-0">
-        <h2 className="text-[28px] font-normal leading-[34px] text-[#111111] sm:max-w-[527px] sm:text-[36px] sm:leading-[42px]">
-          My journey: certifications and key achievements
+      <div className="mt-[18px] flex flex-col gap-[14px] sm:mt-[22px] sm:flex-row sm:items-start sm:justify-between sm:gap-0">
+        <h2 className="text-[28px] font-normal leading-[34px] text-[#111111] sm:max-w-[400px] sm:text-[36px] sm:leading-[44px]">
+          Our Certifications &amp; Global Compliance Standards
         </h2>
-        <p className="text-[14px] font-normal leading-[22px] text-[#6d6d6ecc] sm:mt-[18px] sm:max-w-[372px] sm:text-[16px]">
-          A collection of certifications reflecting my learning, skills,
-          and professional growth.
+        <p className="text-[14px] font-normal leading-[22px] text-[#6d6d6ecc] sm:mt-[6px] sm:max-w-[420px] sm:text-[16px] sm:leading-[24px]">
+          We follow internationally recognized food safety, quality control, and export
+          compliance standards to ensure premium seafood products for global markets.
         </p>
       </div>
 
       {/* Cards grid */}
-      <div className="mt-[28px] grid grid-cols-1 gap-[14px] sm:mt-[40px] sm:grid-cols-3 sm:gap-[14px]">
-        {cards.map((card, i) => (
+      <div className="mt-[28px] grid grid-cols-1 gap-[14px] sm:mt-[40px] sm:grid-cols-3">
+        {certifications.map((cert) => (
           <div
-            key={i}
-            className={`relative h-[180px] overflow-hidden rounded-[20px] ${card.bg}`}
+            key={cert.title}
+            className={`relative h-[180px] overflow-hidden rounded-[20px] ${
+              cert.active ? 'bg-[#0161FE]' : 'bg-[#F6F7F9]'
+            }`}
           >
-            {/* Icon */}
-            <div className="absolute left-[20px] top-[27px] h-[38px] w-[38px]">
-              {card.icons.map((icon) => (
-                <img
-                  key={icon.src}
-                  src={icon.src}
-                  alt=""
-                  className={icon.cls}
-                  loading="lazy"
-                />
-              ))}
+            {/* Icon circle — top left */}
+            <div
+              className={`absolute left-[20px] top-[20px] flex h-[40px] w-[40px] items-center justify-center rounded-full ${
+                cert.active ? 'bg-white/20' : 'bg-[#0161FE]'
+              }`}
+            >
+              <img src="/assets/images/home/education-icon.svg" alt="" className="h-[20px] w-[20px]" />
             </div>
 
-            {/* Title */}
-            <span
-              className={`absolute left-[20px] top-[101px] text-[20px] font-normal capitalize leading-[24px] ${card.titleColor}`}
+            {/* Title — bottom left */}
+            <p
+              className={`absolute bottom-[20px] left-[20px] right-[160px] text-[20px] font-normal leading-[26px] ${
+                cert.active ? 'text-white' : 'text-[#111111]'
+              }`}
             >
-              {card.title}
-            </span>
+              {cert.title}
+            </p>
 
-            {/* Right image box */}
+            {/* Certificate image card — right side */}
             <div
-              className={`absolute right-[10px] top-[calc(50%-81.85px)] h-[163px] w-[148px] overflow-hidden rounded-[14px] ${card.rightBg}`}
+              className={`absolute right-[8px] top-[10px] h-[160px] w-[155px] overflow-hidden rounded-[14px] ${
+                cert.active ? 'bg-[rgba(130,170,249,1.00)]' : 'bg-[rgba(210,211,212,0.70)]'
+              }`}
             >
-              <div
-                className="absolute left-[calc(50%-95px)] top-[calc(50%-73.5px)] h-[147px] w-[190px] rounded-[5px]"
-                style={{
-                  background:
-                    'url(/assets/about/images/googel_ux_design_1.png) 100% / cover no-repeat',
-                }}
+              <img
+                src="/assets/images/home/certificate.png"
+                alt={cert.title}
+                className="absolute rounded-[5px] object-cover"
+                style={{ width: 190, height: 147, top: 8, left: -50 }}
+                loading="lazy"
               />
             </div>
           </div>
