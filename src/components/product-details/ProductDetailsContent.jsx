@@ -31,7 +31,7 @@ function ProductDetailsHero({ product }) {
           className="flex h-[48px] min-w-[148px] items-center justify-center gap-[8px] rounded-full bg-[#25D366] px-[22px] text-[14px] font-medium text-white min-[800px]:h-[42px] min-[800px]:min-w-0 min-[800px]:w-[128px] min-[800px]:px-0"
         >
           <img
-            src="/assets/images/contact/icon-whatsapp.svg"
+            src="/assets/images/project/whatsapp-icon.svg"
             alt=""
             className="h-[20px] w-[20px] brightness-[10]"
           />

@@ -69,26 +69,36 @@ export default function BlogCaseStudies({ activeCategory }) {
         </p>
       </div>
 
-      {/* Post list */}
-      <div className="mt-[36px] space-y-[28px] lg:mt-[46px] lg:space-y-[46px]">
-        {posts.map((post) => (
-          <article
-            key={post.title}
-            className="flex flex-col gap-[16px] lg:flex-row lg:h-[320px] lg:items-center lg:gap-0"
-          >
-            {/* Image — top on mobile, right on desktop */}
-            <div className="order-1 flex h-[220px] w-full items-center justify-center overflow-hidden rounded-[14px] bg-white lg:order-2 lg:ml-auto lg:h-[320px] lg:w-[590px] lg:flex-shrink-0">
+      {/* Post list — mobile: horizontal scroll cards */}
+      <div className="mt-[28px] lg:hidden">
+        <div className="flex gap-[12px] overflow-x-auto pb-[4px] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+          {posts.map((post) => (
+            <button
+              key={post.title}
+              type="button"
+              onClick={() => navigate(post.slug ? `/blog/${post.slug}` : '/blog')}
+              className="relative h-[220px] min-w-[calc(50%-6px)] shrink-0 overflow-hidden rounded-[20px] bg-white"
+            >
               <img
                 src={post.image}
                 alt={post.title}
-                className="h-full w-full object-contain"
+                className="h-full w-full object-contain p-[16px]"
                 loading="lazy"
               />
-            </div>
+            </button>
+          ))}
+        </div>
+      </div>
 
-            {/* Text — bottom on mobile, left on desktop */}
-            <div className="order-2 lg:order-1 lg:flex-1 lg:pr-[40px]">
-              <h3 className="text-[20px] font-normal leading-[1.35] text-[#4a4a4a] lg:text-[26px] lg:leading-[31px]">
+      {/* Post list — desktop */}
+      <div className="mt-[46px] hidden space-y-[46px] lg:block">
+        {posts.map((post) => (
+          <article
+            key={post.title}
+            className="flex h-[320px] items-center gap-0"
+          >
+            <div className="flex-1 pr-[40px]">
+              <h3 className="text-[26px] font-normal leading-[31px] text-[#4a4a4a]">
                 {post.title}
               </h3>
               <button
@@ -99,6 +109,14 @@ export default function BlogCaseStudies({ activeCategory }) {
                 Explore
                 <ArrowRight aria-hidden="true" size={20} strokeWidth={1.8} />
               </button>
+            </div>
+            <div className="ml-auto flex h-[320px] w-[590px] shrink-0 items-center justify-center overflow-hidden rounded-[14px] bg-white">
+              <img
+                src={post.image}
+                alt={post.title}
+                className="h-full w-full object-contain"
+                loading="lazy"
+              />
             </div>
           </article>
         ))}

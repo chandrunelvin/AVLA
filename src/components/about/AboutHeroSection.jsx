@@ -33,7 +33,7 @@ export default function AboutHeroSection() {
             className="inline-flex h-[52px] min-w-[148px] items-center justify-center gap-[10px] rounded-full bg-[#25D366] px-7 text-[16px] font-normal text-white"
           >
             <img
-              src="/assets/images/contact/icon-whatsapp.svg"
+              src="/assets/images/project/whatsapp-icon.svg"
               alt=""
               aria-hidden="true"
               className="h-[22px] w-[22px] brightness-[10]"

@@ -17,49 +17,25 @@ export default function ProductListSection({ activeCategory }) {
     <section className="mt-[23px] w-full rounded-[15px] bg-[#F6F7F9]">
 
       {/* ── Mobile layout ── */}
-      <div className="flex flex-col items-center px-[5px] pb-[35px] pt-[24px] min-[800px]:hidden sm:px-[16px]">
-        <div className="flex h-[20px] w-[70px] items-center justify-center rounded-full border border-[#202833]">
-          <span className="whitespace-nowrap text-[9px] font-medium uppercase leading-[12px] tracking-[1.2px] text-[#202833]">
-            Products
-          </span>
-        </div>
-
-        <h2 className="mt-[18px] w-full max-w-[430px] text-center text-[35px] font-normal text-[#111111]">
-          Real Results. Real Impact.
-          <br />
-          Our Success Stories.
-        </h2>
-
-        <p className="mt-[20px] w-full max-w-[330px] text-center text-[16px] font-normal text-[#6D6D6ECC]">
-          Our seafood products are carefully processed, quality-tested, and prepared
-          for global export with guaranteed freshness and compliance.
-        </p>
-
-        <div className="mt-[18px] flex w-full max-w-[590px] flex-col gap-[20px]">
+      <div className="min-[800px]:hidden pb-[28px] pt-[20px]">
+        <div className="flex gap-[12px] overflow-x-auto px-[16px] pb-[4px] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
           {products.map((product) => (
-            <article key={product.name} className="flex flex-col items-center">
-              <div className="flex aspect-[590/320] w-full items-center justify-center overflow-hidden rounded-[8px] bg-white">
-                <img
-                  src={product.image}
-                  alt={product.name}
-                  className="h-full w-full object-contain"
-                  loading="lazy"
-                />
-              </div>
-              <div className="mt-[17px] flex w-full flex-col items-center text-center">
-                <h3 className="text-[16px] font-normal leading-[22px] text-[#4a4a4a]">
-                  {product.name}
-                </h3>
-                <button
-                  type="button"
-                  onClick={() => navigate(product.slug ? `/products/${product.slug}` : '/contact')}
-                  className="mt-[14px] flex h-[46px] w-[133px] items-center justify-center gap-[10px] rounded-full bg-[#0161FE] text-[16px] font-medium leading-[24px] text-white transition hover:brightness-105"
-                >
-                  Explore
-                  <ArrowRight aria-hidden="true" size={22} strokeWidth={1.8} />
-                </button>
-              </div>
-            </article>
+            <button
+              key={product.slug}
+              type="button"
+              onClick={() => navigate(product.slug ? `/products/${product.slug}` : '/contact')}
+              className="relative h-[220px] min-w-[calc(50%-6px)] shrink-0 overflow-hidden rounded-[20px] bg-white"
+            >
+              <p className="absolute left-[14px] top-[14px] font-serif text-[28px] italic leading-none text-[#b8b8b8]/70">
+                {product.scriptName}
+              </p>
+              <img
+                src={product.image}
+                alt={product.name}
+                className="absolute bottom-[10px] left-1/2 h-[140px] w-[calc(100%-20px)] -translate-x-1/2 object-contain"
+                loading="lazy"
+              />
+            </button>
           ))}
         </div>
       </div>

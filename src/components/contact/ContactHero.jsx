@@ -13,7 +13,7 @@ export default function ContactHero() {
         className="mx-auto mt-8 flex h-[51px] w-[143px] items-center justify-center gap-[10px] rounded-full bg-[#25D366] text-[16px] font-semibold leading-[22px] text-white lg:absolute lg:left-1/2 lg:top-[210px] lg:mt-0 lg:-translate-x-1/2"
       >
         <img
-          src="/assets/images/contact/icon-whatsapp.svg"
+          src="/assets/images/project/whatsapp-icon.svg"
           alt=""
           className="h-[24px] w-[24px]"
           loading="lazy"
