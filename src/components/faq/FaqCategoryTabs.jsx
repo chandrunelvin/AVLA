@@ -33,7 +33,7 @@ export default function FaqCategoryTabs({ activeCategory, onChange }) {
   }
 
   return (
-    <section className="mt-[23px] w-full rounded-[20px] bg-[#F6F7F9] px-[22px] pb-[32px] pt-[36px] min-[800px]:px-[42px] min-[800px]:pb-[42px] min-[800px]:pt-[45px]">
+    <section className="mt-[23px] w-full rounded-[20px] bg-[#F6F7F9] px-[8px] pb-[32px] pt-[36px] min-[800px]:px-[42px] min-[800px]:pb-[42px] min-[800px]:pt-[45px]">
 
       {/* Badge */}
       <div className="flex justify-center">

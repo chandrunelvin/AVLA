@@ -50,7 +50,7 @@ export default function BlogCaseStudies({ activeCategory }) {
     <section className="mt-[23px] w-full overflow-hidden rounded-[15px] bg-[#F6F7F9] pb-[32px] pt-[42px] lg:px-[42px] lg:pb-[50px]">
 
       {/* Section header */}
-      <div className="flex flex-col items-center px-[22px] text-center lg:flex-row lg:items-start lg:justify-between lg:px-0 lg:text-left">
+      <div className="flex flex-col items-center px-[8px] text-center lg:flex-row lg:items-start lg:justify-between lg:px-0 lg:text-left">
         <div>
           <div className="inline-flex h-[38px] items-center justify-center rounded-full border border-[#202833] px-[20px]">
             <span className="whitespace-nowrap text-[14px] font-medium uppercase leading-[12px] tracking-[1.2px] text-[#202833]">
@@ -68,7 +68,7 @@ export default function BlogCaseStudies({ activeCategory }) {
       </div>
 
       {/* Post list — mobile: vertical list */}
-      <div className="mt-[28px] flex flex-col gap-[40px] px-[22px] lg:hidden">
+      <div className="mt-[28px] flex flex-col gap-[40px] px-[8px] lg:hidden">
         {posts.map((post) => (
           <article key={post.title}>
             <div className="flex h-[220px] w-full items-center justify-center overflow-hidden rounded-[20px] bg-white">

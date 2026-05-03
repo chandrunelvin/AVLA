@@ -5,7 +5,7 @@ import OurProductsSection from '../shared/OurProductsSection';
 
 function ProductDetailsHero({ product }) {
   return (
-    <section className="rounded-b-[14px] bg-[#F6F7F9] px-[22px] pb-[40px] pt-[36px] text-center min-[800px]:px-[48px] min-[800px]:pb-[48px] min-[800px]:pt-[42px]">
+    <section className="rounded-b-[14px] bg-[#F6F7F9] px-[8px] pb-[8px] pt-[36px] text-center min-[800px]:px-[48px] min-[800px]:pb-[48px] min-[800px]:pt-[42px]">
 
       {/* Title */}
       <h1 className="text-center text-[38px] font-normal leading-[1.15] text-[#111111] min-[800px]:text-[58px] min-[800px]:leading-[50px]">

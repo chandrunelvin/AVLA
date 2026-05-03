@@ -5,7 +5,7 @@ export default function AboutHeroSection() {
   const navigate = useNavigate();
 
   return (
-    <section className="mx-auto w-full rounded-[20px] bg-[#F6F7F9] px-4 pb-[40px] pt-[48px] text-[#111111] sm:px-8 lg:px-[48px] lg:pb-[48px] lg:pt-[64px]">
+    <section className="mx-auto w-full rounded-[20px] bg-[#F6F7F9] px-[8px] pb-[8px] pt-[48px] text-[#111111] sm:px-8 lg:px-[48px] lg:pb-[48px] lg:pt-[64px]">
 
       {/* Heading + subtitle + buttons */}
       <div className="mx-auto flex max-w-[809px] flex-col items-center text-center">

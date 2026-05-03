@@ -3,29 +3,22 @@ export default function BlogHero() {
     <section className="w-full overflow-hidden rounded-[20px] bg-[#F6F7F9]">
 
       {/* Mobile */}
-      <div className="min-[800px]:hidden px-[24px] pb-[36px] pt-[48px] text-center">
-        <h1 className="text-[48px] font-normal leading-[56px] text-[#111111]">
-          Our Blogs
+      <div className="min-[800px]:hidden px-[8px] pb-[8px] pt-[36px] text-center">
+        <h1 className="text-[42px] font-normal leading-[1.1] text-[#111111]">
+          Explore Blogs
         </h1>
-        <p className="mx-auto mt-[20px] max-w-[320px] text-[14px] font-normal leading-[23px] text-[#8a8a8a]">
+        <p className="mt-[16px] text-[14px] font-normal leading-[22px] text-[#8a8a8a]">
           Explore insights, industry updates, and seafood export knowledge from
           our team. Stay informed on quality standards, global markets, and the
           latest news from AVLA Nettos Exports.
         </p>
-        <div className="mt-[28px] flex items-center justify-center gap-[12px]">
-          <a
-            href="/contact"
-            className="flex h-[51px] items-center justify-center gap-[8px] rounded-full bg-[#0161FE] px-[26px] text-[15px] font-semibold text-white"
-          >
-            Contact
-            <span className="text-[18px] leading-none">&#8594;</span>
-          </a>
-          <a
-            href="/blog"
-            className="flex h-[51px] items-center justify-center rounded-full border border-[#111111] px-[26px] text-[15px] font-semibold text-[#111111]"
-          >
-            Portfolio
-          </a>
+        <div className="mt-[22px] overflow-hidden rounded-[16px] bg-white">
+          <img
+            src="/assets/images/blog/blog-banner-image.png"
+            alt="Seafood blog banner"
+            className="block h-auto w-full object-contain"
+            loading="eager"
+          />
         </div>
       </div>
 

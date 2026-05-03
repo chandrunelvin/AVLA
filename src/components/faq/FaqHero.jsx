@@ -1,6 +1,6 @@
 export default function FaqHero() {
   return (
-    <section className="w-full overflow-hidden rounded-[20px] bg-[#F6F7F9] px-[22px] pb-[30px] pt-[40px] text-center min-[800px]:relative min-[800px]:h-[905px] min-[800px]:px-0 min-[800px]:pb-0 min-[800px]:pt-0">
+    <section className="w-full overflow-hidden rounded-[20px] bg-[#F6F7F9] px-[8px] pb-[8px] pt-[40px] text-center min-[800px]:relative min-[800px]:h-[905px] min-[800px]:px-0 min-[800px]:pb-0 min-[800px]:pt-0">
       <h1 className="mx-auto max-w-[620px] text-center text-[42px] font-normal leading-[50px] text-[#111111] min-[800px]:absolute min-[800px]:left-1/2 min-[800px]:top-[48px] min-[800px]:max-w-none min-[800px]:-translate-x-1/2 min-[800px]:whitespace-nowrap min-[800px]:text-[56px] min-[800px]:leading-[67px] min-[800px]:tracking-[-1.55px]">
         Your Questions, Answered
       </h1>

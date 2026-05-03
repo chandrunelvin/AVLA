@@ -122,7 +122,7 @@ function BlogDetailsHero({ blog }) {
   ];
 
   return (
-    <section className="rounded-[18px] bg-[#F6F7F9] px-[22px] pb-[36px] pt-[36px] min-[800px]:px-[48px] min-[800px]:pb-[48px] min-[800px]:pt-[52px]">
+    <section className="rounded-[18px] bg-[#F6F7F9] px-[8px] pb-[8px] pt-[36px] min-[800px]:px-[48px] min-[800px]:pb-[48px] min-[800px]:pt-[52px]">
 
       {/* Title — centered mobile, left desktop */}
       <h1 className="text-center text-[26px] font-normal leading-[1.3] text-[#4a4a4a] min-[800px]:text-left min-[800px]:text-[42px] min-[800px]:leading-[52px]">
@@ -171,7 +171,7 @@ function BlogDetailsHero({ blog }) {
 
 function ArticleBody({ blog }) {
   return (
-    <section className="mt-[10px] rounded-[18px] bg-[#F6F7F9] px-[22px] pb-[60px] pt-[36px] min-[800px]:px-[48px] min-[800px]:pb-[80px] min-[800px]:pt-[52px]">
+    <section className="mt-[10px] rounded-[18px] bg-[#F6F7F9] px-[8px] pb-[60px] pt-[36px] min-[800px]:px-[48px] min-[800px]:pb-[80px] min-[800px]:pt-[52px]">
 
       {/* Header: badge + intro + side text */}
       <div className="flex flex-col gap-[20px] min-[800px]:flex-row min-[800px]:items-start min-[800px]:justify-between min-[800px]:gap-0">

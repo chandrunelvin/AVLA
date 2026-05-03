@@ -3,29 +3,23 @@ export default function ProductHero() {
     <section className="w-full overflow-hidden rounded-[20px] bg-[#F6F7F9]">
 
       {/* Mobile */}
-      <div className="min-[800px]:hidden px-[24px] pb-[36px] pt-[48px] text-center">
-        <h1 className="text-[48px] font-normal leading-[56px] text-[#111111]">
-          Our Projects
+      <div className="min-[800px]:hidden px-[8px] pb-[8px] pt-[36px] text-center">
+        <h1 className="text-[42px] font-normal leading-[1.1] text-[#111111]">
+          Explore Products
         </h1>
-        <p className="mx-auto mt-[20px] max-w-[320px] text-[14px] font-normal leading-[23px] text-[#8a8a8a]">
-          We specialize in sourcing, processing, and exporting high-quality marine
-          products from Kerala's coastal waters. Our seafood is handled under strict
-          hygiene standards and exported globally with guaranteed freshness and compliance.
+        <p className="mt-[16px] text-[14px] font-normal leading-[22px] text-[#8a8a8a]">
+          We offer a wide range of high-quality frozen and fresh seafood products
+          processed in HACCP-certified facilities. Our marine products are carefully
+          selected, hygienically handled, and exported worldwide with guaranteed
+          freshness and international compliance.
         </p>
-        <div className="mt-[28px] flex items-center justify-center gap-[12px]">
-          <a
-            href="/contact"
-            className="flex h-[51px] items-center justify-center gap-[8px] rounded-full bg-[#0161FE] px-[26px] text-[15px] font-semibold text-white"
-          >
-            Contact
-            <span className="text-[18px] leading-none">&#8594;</span>
-          </a>
-          <a
-            href="/products"
-            className="flex h-[51px] items-center justify-center rounded-full border border-[#111111] px-[26px] text-[15px] font-semibold text-[#111111]"
-          >
-            Portfolio
-          </a>
+        <div className="mt-[22px] overflow-hidden rounded-[16px] bg-white">
+          <img
+            src="/assets/images/products/product-banner.png"
+            alt="Seafood products banner"
+            className="block h-auto w-full object-contain"
+            loading="eager"
+          />
         </div>
       </div>
 
