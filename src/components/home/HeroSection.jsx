@@ -21,7 +21,7 @@ export default function HeroSection() {
         <div className="mt-[28px] flex flex-row items-center justify-center gap-3 sm:mt-[26px]">
           <button
             type="button"
-            className="inline-flex h-[52px] items-center justify-center gap-2 rounded-full bg-[#0161fe] px-6 text-[15px] font-normal text-white sm:h-[55px] sm:min-w-[134px] sm:text-[16px]"
+            className="inline-flex h-[52px] items-center justify-center gap-2 rounded-full bg-[#0161fe] px-6 text-[16px] font-normal text-white sm:h-[55px] sm:min-w-[134px] sm:text-[16px]"
           >
             About Me
             <ArrowRight aria-hidden="true" size={17} strokeWidth={1.8} />

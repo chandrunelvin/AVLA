@@ -41,7 +41,7 @@ function AppLayout() {
   return (
     <div className="min-h-screen bg-white text-[#111111]">
       <Navbar activePage={getActivePage(location.pathname)} fullWidth />
-      <main className="pt-[108px] pb-[110px] md:pb-0">
+      <main className="pt-[90px] pb-[100px] md:pt-[108px] md:pb-0">
         <Outlet />
       </main>
       <SiteFooter />
