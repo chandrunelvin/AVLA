@@ -64,7 +64,7 @@ export default function CertificationSection() {
 
             {/* Certificate image card */}
             <div
-              className={`absolute top-[calc(50%-81.85px)] left-[calc(50%+62.38px)] h-[163px] w-[148px] rounded-[14px] shadow-md transition-colors duration-300 ${
+              className={`absolute top-[calc(50%-81.85px)] left-[calc(50%+4.38px)] sm:left-[calc(50%+62.38px)] h-[163px] w-[148px] rounded-[14px] shadow-md transition-colors duration-300 ${
                 cert.active
                   ? 'bg-[rgba(130,170,249,1.00)] group-hover/grid:bg-[rgba(197,198,199,1.00)] group-hover:!bg-[rgba(130,170,249,1.00)]'
                   : 'bg-[rgba(197,198,199,1.00)] group-hover:bg-[rgba(130,170,249,1.00)]'
