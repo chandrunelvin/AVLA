@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import AboutUsHomeSection from '../components/home/AboutUsHomeSection';
+import CertificationSection from '../components/home/CertificationSection';
 import ContactUsHomeSection from '../components/home/ContactUsHomeSection';
 import FeedHomeComponent from '../components/home/FeedHomeComponent';
 import HeroSection from '../components/home/HeroSection';
@@ -12,6 +13,7 @@ export default function HomePage() {
   return (
     <div id="home" className="px-3 pb-12 sm:px-4 lg:px-[10px] lg:pb-[50px]">
       <HeroSection />
+      <CertificationSection />
       <AboutUsHomeSection />
       <ServiceCategoriesSection activeCategory={activeCategory} onChange={setActiveCategory} />
       <ProjectsHomeSection activeCategory={activeCategory} />

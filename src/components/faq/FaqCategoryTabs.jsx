@@ -33,25 +33,30 @@ export default function FaqCategoryTabs({ activeCategory, onChange }) {
   }
 
   return (
-    <section className="relative mt-[23px] h-[465px] w-full overflow-hidden rounded-[20.41314125061035px] bg-[#F6F7F9]">
-      <div className="absolute left-1/2 top-[45px] flex h-[39px] min-w-[158px] -translate-x-1/2 items-center justify-center rounded-full border border-[#202833] px-[21px]">
-        <span className="whitespace-nowrap text-[14px] font-medium uppercase leading-[18px] tracking-[1.7862435579299927px] text-[#202833]">
-          Our Product
-        </span>
+    <section className="mt-[23px] w-full rounded-[20px] bg-[#F6F7F9] px-[22px] pb-[32px] pt-[36px] min-[800px]:px-[42px] min-[800px]:pb-[42px] min-[800px]:pt-[45px]">
+
+      {/* Badge */}
+      <div className="flex justify-center">
+        <div className="flex h-[39px] items-center justify-center rounded-full border border-[#202833] px-[21px]">
+          <span className="whitespace-nowrap text-[14px] font-medium uppercase leading-[18px] tracking-[1.8px] text-[#202833]">
+            Our Product
+          </span>
+        </div>
       </div>
 
-      <h2 className="absolute left-1/2 top-[108px] w-[600px] -translate-x-1/2 text-center text-[36px] font-normal leading-[42px] text-[#111111]">
+      {/* Heading */}
+      <h2 className="mx-auto mt-[18px] max-w-[520px] text-center text-[28px] font-normal leading-[36px] text-[#111111] min-[800px]:text-[36px] min-[800px]:leading-[42px]">
         Explore a wide range of seafood families and species
       </h2>
 
+      {/* ── Mobile cards (horizontal pill style) ── */}
       <div
         role="tablist"
         aria-label="FAQ product categories"
-        className="absolute left-[42px] top-[206px] flex h-[214px] w-[1338px] gap-[14px]"
+        className="mt-[24px] grid grid-cols-2 gap-[12px] min-[800px]:hidden"
       >
         {categories.map((category) => {
           const isActive = activeCategory === category.id;
-
           return (
             <button
               key={category.id}
@@ -60,7 +65,54 @@ export default function FaqCategoryTabs({ activeCategory, onChange }) {
               aria-selected={isActive}
               onClick={() => onChange(category.id)}
               onKeyDown={(event) => handleKey(event, category.id)}
-              className={`relative h-[214px] w-[324px] rounded-[20.41314125061035px] text-center transition ${
+              className={`flex h-[58px] w-full items-center gap-[10px] overflow-hidden rounded-[16px] px-[12px] text-left transition ${
+                isActive ? 'bg-[#0161FE]' : 'bg-white'
+              }`}
+            >
+              <span
+                className={`flex h-[34px] w-[34px] shrink-0 items-center justify-center rounded-full ${
+                  isActive ? 'bg-white/20' : 'bg-[#0161FE]'
+                }`}
+              >
+                {category.icon.map((icon) => (
+                  <img
+                    key={icon}
+                    src={icon}
+                    alt=""
+                    className="absolute max-h-[17px] max-w-[17px]"
+                    loading="lazy"
+                  />
+                ))}
+              </span>
+              <span
+                className={`min-w-0 truncate text-[13px] font-normal leading-[18px] ${
+                  isActive ? 'text-white' : 'text-[#111111]'
+                }`}
+              >
+                {category.title}
+              </span>
+            </button>
+          );
+        })}
+      </div>
+
+      {/* ── Desktop cards (tall square style) ── */}
+      <div
+        role="tablist"
+        aria-label="FAQ product categories"
+        className="mt-[24px] hidden grid-cols-4 gap-[14px] min-[800px]:grid"
+      >
+        {categories.map((category) => {
+          const isActive = activeCategory === category.id;
+          return (
+            <button
+              key={category.id}
+              type="button"
+              role="tab"
+              aria-selected={isActive}
+              onClick={() => onChange(category.id)}
+              onKeyDown={(event) => handleKey(event, category.id)}
+              className={`relative h-[214px] w-full cursor-pointer rounded-[20px] text-center transition ${
                 isActive ? 'bg-[#0161FE]' : 'bg-white'
               }`}
             >
@@ -87,7 +139,7 @@ export default function FaqCategoryTabs({ activeCategory, onChange }) {
                 {category.title}
               </span>
               <span
-                className={`absolute left-1/2 top-[147px] flex w-[258px] -translate-x-1/2 items-center justify-center text-center text-[16px] font-normal leading-[22px] ${
+                className={`absolute left-1/2 top-[147px] w-[80%] -translate-x-1/2 text-center text-[14px] font-normal leading-[20px] min-[800px]:text-[16px] min-[800px]:leading-[22px] ${
                   isActive ? 'text-white' : 'text-[#8a8a8a]'
                 }`}
               >

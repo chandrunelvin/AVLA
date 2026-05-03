@@ -11,7 +11,7 @@ export default function OurProductsSection() {
         <h2 className="shrink-0 text-[36px] font-normal leading-[1.2] text-[#111111] sm:text-[48px] sm:leading-[58px]">
           Our Products
         </h2>
-        <p className="max-w-[674px] text-[15px] font-normal leading-[1.6] text-[#8a8a8a] sm:mr-[48px] sm:text-[16px] sm:leading-[22px]">
+        <p className="max-w-[674px] text-[15px] font-normal leading-[1.6] text-[#8a8a8a] sm:text-[16px] sm:leading-[22px]">
           We specialize in sourcing, processing, and exporting high-quality marine
           products from Kerala's coastal waters. Our seafood is handled under strict
           hygiene standards and exported globally with guaranteed freshness and

@@ -35,7 +35,7 @@ export default function ServiceCategoriesSection({ activeCategory, onChange }) {
   return (
     <section
       id="service-categories-section"
-      className="mx-auto mt-[50px] w-full rounded-[20px] bg-[#F6F7F9] px-[42px] pb-[42px] pt-[45px]"
+      className="mx-auto mt-[50px] w-full rounded-[20px] bg-[#F6F7F9] px-[22px] pb-[32px] pt-[36px] lg:px-[42px] lg:pb-[42px] lg:pt-[45px]"
     >
       {/* Badge */}
       <div className="flex justify-center">
@@ -47,19 +47,65 @@ export default function ServiceCategoriesSection({ activeCategory, onChange }) {
       </div>
 
       {/* Heading */}
-      <h2 className="mx-auto mt-[18px] max-w-[520px] text-center text-[36px] font-normal leading-[42px] text-[#111111]">
+      <h2 className="mx-auto mt-[18px] max-w-[520px] text-center text-[28px] font-normal leading-[36px] text-[#111111] lg:text-[36px] lg:leading-[42px]">
         Explore Our Seafood Export Product Categories
       </h2>
 
-      {/* Category cards — equal padding both sides via grid */}
+      {/* ── Mobile cards (horizontal pill style) ── */}
       <div
         role="tablist"
         aria-label="Seafood product categories"
-        className="mt-[24px] grid grid-cols-2 gap-[14px] lg:grid-cols-4"
+        className="mt-[24px] grid grid-cols-2 gap-[12px] lg:hidden"
       >
         {categories.map((category) => {
           const isActive = activeCategory === category.id;
+          return (
+            <button
+              key={category.id}
+              type="button"
+              role="tab"
+              aria-selected={isActive}
+              onClick={() => onChange(category.id)}
+              onKeyDown={(event) => handleKey(event, category.id)}
+              className={`flex h-[58px] w-full items-center gap-[10px] overflow-hidden rounded-[16px] px-[12px] text-left transition ${
+                isActive ? 'bg-[#0161FE]' : 'bg-white'
+              }`}
+            >
+              <span
+                className={`flex h-[34px] w-[34px] shrink-0 items-center justify-center rounded-full ${
+                  isActive ? 'bg-white/20' : 'bg-[#0161FE]'
+                }`}
+              >
+                {category.icon.map((icon) => (
+                  <img
+                    key={icon}
+                    src={icon}
+                    alt=""
+                    className="absolute max-h-[17px] max-w-[17px]"
+                    loading="lazy"
+                  />
+                ))}
+              </span>
+              <span
+                className={`min-w-0 truncate text-[13px] font-normal leading-[18px] ${
+                  isActive ? 'text-white' : 'text-[#111111]'
+                }`}
+              >
+                {category.title}
+              </span>
+            </button>
+          );
+        })}
+      </div>
 
+      {/* ── Desktop cards (tall square style) ── */}
+      <div
+        role="tablist"
+        aria-label="Seafood product categories"
+        className="mt-[24px] hidden grid-cols-4 gap-[14px] lg:grid"
+      >
+        {categories.map((category) => {
+          const isActive = activeCategory === category.id;
           return (
             <button
               key={category.id}
@@ -87,7 +133,6 @@ export default function ServiceCategoriesSection({ activeCategory, onChange }) {
                   />
                 ))}
               </span>
-
               <span
                 className={`absolute left-0 top-[108px] flex w-full items-center justify-center text-center text-[18px] font-normal leading-[24px] ${
                   isActive ? 'text-white' : 'text-[#111111]'
@@ -95,9 +140,8 @@ export default function ServiceCategoriesSection({ activeCategory, onChange }) {
               >
                 {category.title}
               </span>
-
               <span
-                className={`absolute left-1/2 top-[147px] w-[80%] -translate-x-1/2 text-center text-[14px] font-normal leading-[20px] lg:text-[16px] lg:leading-[22px] ${
+                className={`absolute left-1/2 top-[147px] w-[80%] -translate-x-1/2 text-center text-[16px] font-normal leading-[22px] ${
                   isActive ? 'text-white' : 'text-[#6d6d6ecc]'
                 }`}
               >
