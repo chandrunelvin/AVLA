@@ -6,14 +6,14 @@ export default function HeroSection() {
 
       {/* Text + buttons */}
       <div className="mx-auto flex flex-col items-center px-5 pt-[52px] sm:px-10 sm:pt-[88px] lg:px-12">
-        <h1 className="text-[72px] font-normal leading-[1.05] text-[#111111] sm:text-[56px] sm:leading-[1.18] lg:text-[64px]">
+        <h1 className="text-[58px] font-normal leading-[1.05] text-[#111111] sm:text-[56px] sm:leading-[1.18] lg:text-[64px]">
           Premium<br className="sm:hidden" />{' '}
           Seafood<br />
           Exporters<br className="sm:hidden" />{' '}
           Worldwide
         </h1>
 
-        <p className="mt-[22px] max-w-[300px] text-[14px] font-normal leading-[1.6] text-[#838383] sm:mt-[24px] sm:max-w-[500px] sm:text-[16px]">
+        <p className="mt-[22px] max-w-[300px] text-[16px] font-normal leading-[1.6] text-[#838383] sm:mt-[24px] sm:max-w-[500px] sm:text-[16px]">
           Premium marine species exporter delivering fish, cephalopods,
           crustaceans, and bivalves worldwide with quality assurance.
         </p>
