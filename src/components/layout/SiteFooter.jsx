@@ -34,7 +34,7 @@ export default function SiteFooter() {
   }
 
   return (
-    <div className="px-[10px] pb-[10px]">
+    <div className="px-[10px] pb-[120px] md:pb-[10px]">
       <footer className="mx-auto mt-[0px] h-[930px] overflow-hidden rounded-[18px] bg-[#222222] md:h-[361px] md:rounded-[15px]">
         <div className="relative h-full w-full text-white">
         <button
