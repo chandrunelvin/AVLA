@@ -3,7 +3,7 @@ export default function AboutUsHomeSection() {
     <section className="mx-auto mt-[50px] w-full rounded-[20px] bg-[#F6F7F9] text-[#111111]">
 
       {/* ── Mobile layout ── */}
-      <div className="flex flex-col px-[22px] pb-[24px] pt-[36px] sm:hidden">
+      <div className="flex flex-col px-[8px] pb-[8px] pt-[36px] sm:hidden">
 
         {/* Badge */}
         <div className="flex justify-center">

@@ -58,7 +58,7 @@ export default function ProjectsHomeSection({ activeCategory = 'fish' }) {
         </div>
 
         {/* Main image card */}
-        <div className="relative mt-[24px] h-[260px] w-full overflow-hidden rounded-[20px] bg-white">
+        <div className="relative mt-[24px] h-[221px] w-full overflow-hidden rounded-[20px] bg-white">
           <p className="absolute left-[16px] top-[14px] font-serif text-[38px] italic leading-none text-[#b8b8b8]/70">
             {selectedProduct.scriptName}
           </p>
@@ -71,20 +71,20 @@ export default function ProjectsHomeSection({ activeCategory = 'fish' }) {
         </div>
 
         {/* Thumbnail strip */}
-        <div className="mt-[12px] flex gap-[10px] overflow-x-auto pb-[4px] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+        <div className="mt-[12px] flex gap-[10px]">
           {products.map((product, index) => (
             <button
               key={product.slug}
               type="button"
               onClick={() => selectProduct(index)}
-              className={`flex h-[74px] min-w-[100px] shrink-0 items-center justify-center rounded-[10px] border bg-white transition ${
+              className={`flex h-[74px] flex-1 items-center justify-center overflow-hidden rounded-[10px] border bg-white transition ${
                 clampedIndex === index ? 'border-[#0161FE]' : 'border-[#e0e0e0]'
               }`}
             >
               <img
                 src={product.image}
                 alt={product.name}
-                className="h-[56px] w-[84px] object-contain"
+                className="h-full w-full object-contain p-[8px]"
                 loading="lazy"
               />
             </button>

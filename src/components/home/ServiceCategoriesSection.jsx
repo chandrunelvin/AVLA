@@ -67,7 +67,7 @@ export default function ServiceCategoriesSection({ activeCategory, onChange }) {
               aria-selected={isActive}
               onClick={() => onChange(category.id)}
               onKeyDown={(event) => handleKey(event, category.id)}
-              className={`flex h-[58px] w-full items-center gap-[10px] overflow-hidden rounded-[16px] px-[12px] text-left transition ${
+              className={`flex min-h-[58px] w-full items-center gap-[10px] rounded-[16px] px-[12px] text-left transition ${
                 isActive ? 'bg-[#0161FE]' : 'bg-white'
               }`}
             >
@@ -87,7 +87,7 @@ export default function ServiceCategoriesSection({ activeCategory, onChange }) {
                 ))}
               </span>
               <span
-                className={`min-w-0 truncate text-[13px] font-normal leading-[18px] ${
+                className={`text-[13px] font-normal leading-[18px] ${
                   isActive ? 'text-white' : 'text-[#111111]'
                 }`}
               >
