@@ -68,7 +68,7 @@ export default function BlogCaseStudies({ activeCategory }) {
       </div>
 
       {/* Post list — mobile: vertical list */}
-      <div className="mt-[28px] flex flex-col gap-[40px] px-[8px] lg:hidden">
+      <div className="mt-[28px] flex flex-col gap-[30px] px-[8px] lg:hidden">
         {posts.map((post) => (
           <article key={post.title}>
             <div className="flex h-[220px] w-full items-center justify-center overflow-hidden rounded-[20px] bg-white">

@@ -125,20 +125,32 @@ function BlogDetailsHero({ blog }) {
     <section className="rounded-[18px] bg-[#F6F7F9] px-[8px] pb-[8px] pt-[36px] min-[800px]:px-[48px] min-[800px]:pb-[48px] min-[800px]:pt-[52px]">
 
       {/* Title — centered mobile, left desktop */}
-      <h1 className="text-center text-[26px] font-normal leading-[1.3] text-[#4a4a4a] min-[800px]:text-left min-[800px]:text-[42px] min-[800px]:leading-[52px]">
+      <h1
+        className="text-center text-[40px] font-normal leading-[40px] text-[#4a4a4a] min-[800px]:text-left"
+        
+      >
         {blog.title}
       </h1>
 
       {/* Meta row — stacked centered on mobile, 5-col row on desktop */}
-      <div className="mx-auto mt-[28px] flex max-w-[260px] flex-col items-center gap-[22px] text-center min-[800px]:mx-0 min-[800px]:mt-[36px] min-[800px]:max-w-none min-[800px]:flex-row min-[800px]:items-start min-[800px]:gap-0 min-[800px]:text-left">
+      <div className="mx-auto mt-[28px] flex max-w-[260px] flex-col items-center gap-[22px] text-center min-[800px]:mx-auto min-[800px]:mt-[36px] min-[800px]:max-w-none min-[800px]:flex-row min-[800px]:items-start min-[800px]:gap-[100px] min-[800px]:text-left min-[800px]:justify-center min-[800px]:w-fit">
         {metaItems.map(({ label, value }, index) => (
           <div
             key={label}
-            className={`w-full min-[800px]:w-auto ${
-              index < metaItems.length - 1 ? 'min-[800px]:pr-[54px]' : ''
-            }`}
+            className="w-full min-[800px]:w-auto"
           >
-            <p className="text-[12px] leading-[18px] text-[#858585]">{label}</p>
+            <p
+              className="text-[#858585] align-middle"
+              style={{
+                fontFamily: 'SF Pro Display, -apple-system, BlinkMacSystemFont, sans-serif',
+                fontWeight: 300,
+                fontSize: '18px',
+                lineHeight: '20.41px',
+                letterSpacing: '0%',
+              }}
+            >
+              {label}
+            </p>
             {label === 'Work By' ? (
               <div className="mt-[10px] flex justify-center gap-[8px] min-[800px]:mt-[6px] min-[800px]:justify-start">
                 <span className="flex h-[36px] w-[36px] items-center justify-center rounded-full bg-[#0161FE] text-white min-[800px]:h-[32px] min-[800px]:w-[32px]">
@@ -149,7 +161,16 @@ function BlogDetailsHero({ blog }) {
                 </span>
               </div>
             ) : (
-              <p className="mt-[6px] text-[15px] font-semibold text-[#4a4a4a] min-[800px]:mt-[4px] min-[800px]:text-[14px]">
+              <p
+                className="mt-[6px] text-[#4a4a4a] align-middle"
+                style={{
+                  fontFamily: 'SF Pro Display, -apple-system, BlinkMacSystemFont, sans-serif',
+                  fontWeight: 400,
+                  fontSize: '20px',
+                  lineHeight: '23.81px',
+                  letterSpacing: '0px',
+                }}
+              >
                 {value}
               </p>
             )}
