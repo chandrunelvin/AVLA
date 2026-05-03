@@ -1,6 +1,7 @@
 import { Navigate, Outlet, Route, Routes, useLocation } from 'react-router-dom';
 import Navbar from './components/layout/Navbar';
 import SiteFooter from './components/layout/SiteFooter';
+import BottomNavMobile from './components/layout/BottomNavMobile';
 import ContactPage from './pages/ContactPage';
 import BlogDetailsPage from './pages/BlogDetailsPage';
 import BlogPage from './pages/BlogPage';
@@ -40,10 +41,11 @@ function AppLayout() {
   return (
     <div className="min-h-screen bg-white text-[#111111]">
       <Navbar activePage={getActivePage(location.pathname)} fullWidth />
-      <main className="pt-[108px]">
+      <main className="pt-[108px] pb-[110px] md:pb-0">
         <Outlet />
       </main>
       <SiteFooter />
+      <BottomNavMobile />
     </div>
   );
 }
