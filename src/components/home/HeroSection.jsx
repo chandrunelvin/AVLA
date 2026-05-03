@@ -18,10 +18,10 @@ export default function HeroSection() {
           crustaceans, and bivalves worldwide with quality assurance.
         </p>
 
-        <div className="mt-[28px] flex flex-row items-center justify-center gap-3 sm:mt-[26px]">
+        <div className="mt-[28px] mb-[28px] flex flex-row items-center justify-center gap-3 sm:mt-[26px]">
           <button
             type="button"
-            className="inline-flex h-[52px] items-center justify-center gap-2 rounded-full bg-[#0161fe] px-6 text-[16px] font-normal text-white sm:h-[55px] sm:min-w-[134px] sm:text-[16px]"
+            className="inline-flex h-[47px] w-[127px] items-center justify-center gap-2 rounded-[95px] bg-[#0161fe] text-[16px] font-normal text-white sm:h-[55px] sm:w-auto sm:min-w-[134px] sm:px-6"
           >
             About Me
             <ArrowRight aria-hidden="true" size={17} strokeWidth={1.8} />
@@ -29,7 +29,7 @@ export default function HeroSection() {
 
           <button
             type="button"
-            className="inline-flex h-[52px] items-center justify-center gap-2 rounded-full border border-[#0161fe] px-5 text-[14px] font-normal text-[#0161fe] sm:h-[55px] sm:min-w-[201px] sm:gap-3 sm:px-6 sm:text-[16px]"
+            className="inline-flex h-[47px] w-[175px] items-center justify-center gap-2 rounded-[95px] border border-[#0161fe] text-[16px] font-normal text-[#0161fe] sm:h-[55px] sm:w-auto sm:min-w-[201px] sm:gap-3 sm:px-6"
           >
             Download Brochure
             <CloudDownload aria-hidden="true" size={17} strokeWidth={1.8} />
