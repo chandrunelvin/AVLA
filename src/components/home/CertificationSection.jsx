@@ -53,7 +53,7 @@ export default function CertificationSection() {
 
             {/* Title */}
             <p
-              className={`absolute top-[101px] left-[20px] right-[36%] text-[20px] font-normal leading-[23.88px] capitalize transition-colors duration-300 ${
+              className={`absolute top-[113px] md:top-[101px] left-[20px] w-[110px] md:w-auto right-auto md:right-[36%] text-[18px] md:text-[20px] font-normal leading-[23.88px] capitalize transition-colors duration-300 ${
                 cert.active
                   ? 'text-white group-hover/grid:text-[rgba(17,17,17,1.00)] group-hover:!text-white'
                   : 'text-[rgba(17,17,17,1.00)] group-hover:text-white'

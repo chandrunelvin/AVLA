@@ -121,15 +121,12 @@ export default function FaqCategoryTabs({ activeCategory, onChange }) {
                   isActive ? 'bg-white/25' : 'bg-[#0161FE]'
                 }`}
               >
-                {category.icon.map((icon) => (
-                  <img
-                    key={icon}
-                    src={icon}
-                    alt=""
-                    className="absolute max-h-[19px] max-w-[19px]"
-                    loading="lazy"
-                  />
-                ))}
+                <img
+                  src="/assets/images/home/icon-product.png"
+                  alt=""
+                  className="h-[19px] w-[19px]"
+                  loading="lazy"
+                />
               </span>
               <span
                 className={`absolute left-0 top-[108px] flex w-full items-center justify-center text-[18px] font-normal leading-[24px] ${

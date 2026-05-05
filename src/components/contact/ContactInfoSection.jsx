@@ -1,12 +1,12 @@
 const contactCards = [
   {
-    label: 'Email Addres',
-    value: 'info@avlaexports.com',
+    label: 'Email Address',
+    value: 'sales@avlaexports.com',
     icon: '/assets/images/contact/icon-mail.svg',
   },
   {
     label: 'Phone Number',
-    value: '+91 9446017777',
+    value: '+91 9446017777 / +91 7736782999',
     icon: '/assets/images/contact/icon-phone.svg',
   },
   {
@@ -33,9 +33,9 @@ export default function ContactInfoSection() {
         {contactCards.map((card) => (
           <article
             key={card.label}
-            className="relative h-[85px] w-full rounded-[20px] bg-white lg:w-[399px]"
+            className="flex min-h-[85px] w-full items-center gap-[18px] rounded-[20px] bg-white px-[20px] py-[16px] lg:w-[399px]"
           >
-            <div className="absolute left-[20px] top-[16px] flex h-[53px] w-[53px] items-center justify-center rounded-full bg-[#0161FE]">
+            <div className="flex h-[53px] w-[53px] shrink-0 items-center justify-center rounded-full bg-[#0161FE]">
               <img
                 src={card.icon}
                 alt=""
@@ -43,12 +43,14 @@ export default function ContactInfoSection() {
                 loading="lazy"
               />
             </div>
-            <p className="absolute left-[95px] top-[20px] text-[16px] font-normal leading-[20px] text-[#8a8a8a]">
-              {card.label}
-            </p>
-            <p className="absolute left-[95px] right-[18px] top-[47px] truncate text-[18px] font-normal leading-[24px] text-[#111111] lg:text-[20px]">
-              {card.value}
-            </p>
+            <div className="flex flex-col gap-[4px]">
+              <p className="text-[16px] font-normal leading-[20px] text-[#8a8a8a]">
+                {card.label}
+              </p>
+              <p className="text-[18px] font-normal leading-[24px] text-[#111111] lg:text-[20px]">
+                {card.value}
+              </p>
+            </div>
           </article>
         ))}
       </div>

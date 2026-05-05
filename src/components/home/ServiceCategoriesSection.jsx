@@ -39,7 +39,8 @@ export default function ServiceCategoriesSection({ activeCategory, onChange }) {
     >
       {/* Badge */}
       <div className="flex justify-center">
-        <div className="flex h-[39px] items-center justify-center rounded-full border border-[#202833] px-[21px]">
+        <div className="flex h-[39px] items-center justify-center gap-[8px] rounded-full border border-[#202833] px-[21px]">
+          <img src="/assets/images/home/icon-product.png" alt="" className="h-[16px] w-[16px]" />
           <span className="whitespace-nowrap text-[14px] font-medium uppercase leading-[18px] tracking-[1.8px] text-[#202833]">
             Our Product
           </span>
@@ -76,15 +77,12 @@ export default function ServiceCategoriesSection({ activeCategory, onChange }) {
                   isActive ? 'bg-white/20' : 'bg-[#0161FE]'
                 }`}
               >
-                {category.icon.map((icon) => (
-                  <img
-                    key={icon}
-                    src={icon}
-                    alt=""
-                    className="absolute max-h-[17px] max-w-[17px]"
-                    loading="lazy"
-                  />
-                ))}
+                <img
+                  src="/assets/images/home/icon-product.png"
+                  alt=""
+                  className="h-[17px] w-[17px]"
+                  loading="lazy"
+                />
               </span>
               <span
                 className={`text-[13px] font-normal leading-[18px] ${
@@ -123,15 +121,12 @@ export default function ServiceCategoriesSection({ activeCategory, onChange }) {
                   isActive ? 'bg-white/20' : 'bg-[#0161FE]'
                 }`}
               >
-                {category.icon.map((icon) => (
-                  <img
-                    key={icon}
-                    src={icon}
-                    alt=""
-                    className="absolute max-h-[19px] max-w-[19px]"
-                    loading="lazy"
-                  />
-                ))}
+                <img
+                  src="/assets/images/home/icon-product.png"
+                  alt=""
+                  className="h-[19px] w-[19px]"
+                  loading="lazy"
+                />
               </span>
               <span
                 className={`absolute left-0 top-[108px] flex w-full items-center justify-center text-center text-[18px] font-normal leading-[24px] ${
