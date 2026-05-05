@@ -40,7 +40,7 @@ export default function ServiceCategoriesSection({ activeCategory, onChange }) {
       {/* Badge */}
       <div className="flex justify-center">
         <div className="flex h-[39px] items-center justify-center gap-[8px] rounded-full border border-[#202833] px-[21px]">
-          <img src="/assets/images/home/icon-product.png" alt="" className="h-[16px] w-[16px]" />
+          
           <span className="whitespace-nowrap text-[14px] font-medium uppercase leading-[18px] tracking-[1.8px] text-[#202833]">
             Our Product
           </span>

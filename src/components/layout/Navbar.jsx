@@ -11,7 +11,7 @@ export default function Navbar({ activePage }) {
   const navigate = useNavigate();
 
   return (
-    <header className="fixed inset-x-0 top-0 z-30 px-[10px] pt-[10px]">
+    <header className=" inset-x-0 top-0 z-30 bg-white px-[10px] pt-[10px]">
       <div className="relative mx-auto flex h-[68px] w-full items-center justify-between rounded-[20px] bg-[#F6F7F9] px-[18px] md:h-[88px] md:px-[43px]">
 
         {/* Logo */}
@@ -29,7 +29,7 @@ export default function Navbar({ activePage }) {
         </button>
 
         {/* Desktop nav links */}
-        <nav className="absolute left-1/2 top-[39px] hidden -translate-x-1/2 items-center gap-[72px] md:flex">
+        <nav className="absolute left-1/2 top-[33px] hidden -translate-x-1/2 items-center gap-[72px] md:flex">
           {NAV_ITEMS.map((item) => {
             const isActive = activePage === item.page;
             return (

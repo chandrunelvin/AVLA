@@ -70,6 +70,24 @@ export const fishProducts = [
     summary:
       'High-quality Red Snapper processed for export with clean handling, strong grading standards, and dependable delivery.',
   },
+  {
+    name: 'King Fish',
+    displayName: 'King Fish',
+    scriptName: 'King Fish',
+    slug: 'king-fish',
+    image: '/assets/images/products/Anchovy-product-image.png',
+    summary:
+      'Premium King Fish sourced from Kerala coastal waters, processed under hygiene standards and exported for global markets.',
+  },
+  {
+    name: 'Pomfret',
+    displayName: 'Pomfret',
+    scriptName: 'Pomfret',
+    slug: 'pomfret',
+    image: '/assets/images/products/product-Sardine-fish.png',
+    summary:
+      'Export-grade Pomfret prepared with quality grading, hygienic processing, and reliable cold-chain delivery worldwide.',
+  },
 ];
 
 export const otherProducts = [

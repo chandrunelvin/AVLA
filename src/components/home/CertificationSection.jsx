@@ -24,8 +24,8 @@ export default function CertificationSection() {
         <h2 className="text-[28px] font-normal leading-[34px] text-[#111111] min-[900px]:w-[527px] min-[900px]:max-w-none min-[900px]:text-[36px] min-[900px]:leading-[42px]">
           Our Certifications &amp; Global Compliance Standards
         </h2>
-        <p className="text-[16px] font-normal leading-[22px] text-[rgba(109,109,110,0.80)] min-[900px]:mt-[18px] min-[900px]:w-[372px] min-[900px]:max-w-none">
-          We follow internationally recognized food safety, quality control, and export compliance standards to ensure premium seafood products for global markets.
+        <p className="text-[16px] font-normal leading-[22px] text-[rgba(109,109,110,0.80)] min-[900px]:mt-[18px] min-[900px]:w-[545px] min-[900px]:max-w-none">
+       We follow internationally recognized food safety, quality control, and export compliance standards to ensure premium seafood products for global markets.
         </p>
       </div>
 
