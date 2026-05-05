@@ -101,8 +101,8 @@ export default function SiteFooter() {
           <div className="flex items-start justify-between">
             {/* Left */}
             <div className="flex flex-col gap-[16px]">
-              <button type="button" aria-label="Go to home" onClick={() => navigate('/')} className="h-[58px] w-[200px]">
-                <img src="/assets/images/project/logo.png" alt="AVLA Nettos Exports" className="h-full w-full object-contain" />
+              <button type="button" aria-label="Go to home" onClick={() => navigate('/')} className="h-[70px] w-[220px]">
+                <img src="/assets/images/project/logo.png" alt="AVLA Nettos Exports" className="h-full w-full object-contain object-left" />
               </button>
               <div className="flex flex-col gap-[8px]">
                 <p className="text-[22px] font-normal leading-[28px]">Subscribe to our news later</p>
@@ -122,19 +122,19 @@ export default function SiteFooter() {
             </div>
 
             {/* Right: Nav cols */}
-            <div className="flex gap-[clamp(32px,5vw,133px)]">
-              <nav className="flex flex-col gap-[32px] text-[16px] font-normal leading-[20px] text-white/70">
+            <div className="flex gap-[54px] pr-[75px]">
+              <nav className="flex flex-col gap-[28px] text-[16px] font-normal leading-[20px] text-white/70">
                 {primaryLinks.map((link) => (
-                  <button key={link.label} type="button" onClick={() => navigate(link.path)} className="text-left">{link.label}</button>
+                  <button key={link.label} type="button" onClick={() => navigate(link.path)} className="text-left hover:text-white transition">{link.label}</button>
                 ))}
               </nav>
-              <div className="flex flex-col gap-[32px] text-[16px] font-normal leading-[20px] text-white/70">
+              <div className="flex flex-col gap-[28px] text-[16px] font-normal leading-[20px] text-white/70">
                 {infrastructureLinks.map((link, i) => <p key={`${link}-${i}`}>{link}</p>)}
               </div>
-              <div className="flex flex-col gap-[32px] text-[16px] font-normal leading-[20px] text-white/70">
+              <div className="flex flex-col gap-[28px] text-[16px] font-normal leading-[20px] text-white/70">
                 {productLinks.map((link) => (
                   <button key={link} type="button" onClick={() => { if (link === 'FAQ') navigate('/faq'); }}
-                    className={`text-left ${link === 'FAQ' ? 'font-semibold text-white' : ''}`}>
+                    className={`text-left hover:text-white transition ${link === 'FAQ' ? 'font-bold text-white' : ''}`}>
                     {link}
                   </button>
                 ))}
@@ -142,16 +142,15 @@ export default function SiteFooter() {
             </div>
           </div>
 
-          {/* Bottom row: Credits  |  Socials */}
+          {/* Bottom row: Designed by | Copyright | Socials */}
           <div className="flex items-center justify-between">
-            <div className="flex flex-col gap-[4px]">
-              <p className="text-[14px] leading-[18px] text-white">Designed by Arunijone</p>
-              <p className="text-[14px] leading-[18px] text-white">© 2025 Arunijone. All rights reserved.</p>
-            </div>
-            <div className="flex items-center gap-[14px]">
+            <p className="text-[14px] leading-[18px] text-white/70">Designed by Arunijone</p>
+            <p className="text-[14px] leading-[18px] text-white/70">© 2025 Arunijone. All rights reserved.</p>
+            <div className="flex items-center gap-[10px]">
               {socials.map((social) => (
-                <a key={social.label} href={social.href} target="_blank" rel="noopener noreferrer" aria-label={social.label}>
-                  <img src={social.icon} alt={social.label} className="h-[36px] w-[36px] object-contain" />
+                <a key={social.label} href={social.href} target="_blank" rel="noopener noreferrer" aria-label={social.label}
+                  className="flex  items-center justify-center rounded-full bg-white/10 hover:bg-white/20 transition">
+                  <img src={social.icon} alt={social.label} className="h-[38px] w-[38px] object-contain" />
                 </a>
               ))}
             </div>
