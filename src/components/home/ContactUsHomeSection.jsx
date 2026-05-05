@@ -81,7 +81,7 @@ export default function ContactUsHomeSection() {
         </h2>
 
         {/* Left — subtitle */}
-        <p className="absolute left-[41px] top-[220px] max-w-[40%] text-[16px] font-normal leading-[22px] text-[#8a8a8a]">
+        <p className="absolute left-[41px] top-[180px] max-w-[40%] text-[16px] font-normal leading-[22px] text-[#8a8a8a]">
           Learn about my vision, story, and how I bring ideas to life.
         </p>
 
