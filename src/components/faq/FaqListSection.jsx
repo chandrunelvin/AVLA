@@ -157,19 +157,21 @@ export default function FaqListSection({ activeCategory }) {
                   )}
 
                   {/* Desktop: 2-column row */}
-                  <div
-                    className={`hidden sm:grid sm:min-h-[69px] sm:grid-cols-[1fr_1.05fr] sm:items-center sm:rounded-[27px] sm:px-[13px] sm:py-[6px] ${
-                      rowIndex === 0 ? 'bg-[#0161FE] text-white' : 'bg-[#F6F7F9] text-[#000000]'
+                  <button
+                    type="button"
+                    onClick={() => toggle(sectionIndex, rowIndex)}
+                    className={`hidden w-full sm:grid sm:min-h-[69px] sm:grid-cols-[1fr_1.05fr] sm:items-center sm:rounded-[27px] sm:px-[13px] sm:py-[6px] ${
+                      expanded ? 'bg-[#0161FE] text-white' : 'bg-[#F6F7F9] text-[#000000]'
                     }`}
                   >
-                    <p className="p-[10px] text-[27px] font-normal leading-[22px]">{row.label}</p>
-                    <p className={`p-[10px] text-[18px] font-normal leading-[22px] ${rowIndex === 0 ? 'text-white' : 'text-[#6D6D6ECC]'}`}>
+                    <p className="p-[10px] text-left text-[27px] font-normal leading-[22px]">{row.label}</p>
+                    <p className={`p-[10px] text-left text-[18px] font-normal leading-[22px] ${expanded ? 'text-white' : 'text-[#6D6D6ECC]'}`}>
                       {row.question}
                     </p>
-                  </div>
+                  </button>
 
                   {/* Desktop: answer */}
-                  {rowIndex === 0 && row.answer && (
+                  {expanded && row.answer && (
                     <div className="hidden rounded-[23px] bg-[#F6F7F9] px-[22px] py-[17px] text-[20px] font-normal leading-[28px] text-[#6D6D6ECC] sm:block">
                       {row.answer}
                     </div>

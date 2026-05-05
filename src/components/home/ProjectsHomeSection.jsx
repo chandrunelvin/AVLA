@@ -29,7 +29,7 @@ export default function ProjectsHomeSection({ activeCategory = 'fish' }) {
     <section className="mx-auto mt-[50px] w-full rounded-[20px] bg-[#F6F7F9]">
 
       {/* ── Mobile layout ── */}
-      <div className="flex flex-col px-[16px] pb-[28px] pt-[36px] sm:hidden">
+      <div className="flex flex-col px-[8px] pb-[8px] pt-[36px] sm:hidden">
 
         {/* Badge */}
         <div className="flex justify-center">
@@ -71,24 +71,26 @@ export default function ProjectsHomeSection({ activeCategory = 'fish' }) {
         </div>
 
         {/* Thumbnail strip */}
-        <div className="mt-[12px] flex gap-[10px]">
-          {products.map((product, index) => (
-            <button
-              key={product.slug}
-              type="button"
-              onClick={() => selectProduct(index)}
-              className={`flex h-[74px] flex-1 items-center justify-center overflow-hidden rounded-[10px] border bg-white transition ${
-                clampedIndex === index ? 'border-[#0161FE]' : 'border-[#e0e0e0]'
-              }`}
-            >
-              <img
-                src={product.image}
-                alt={product.name}
-                className="h-full w-full object-contain p-[8px]"
-                loading="lazy"
-              />
-            </button>
-          ))}
+        <div className="mt-[12px] overflow-x-auto rounded-[12px] bg-white p-[8px] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+          <div className="flex gap-[10px]">
+            {products.map((product, index) => (
+              <button
+                key={product.slug}
+                type="button"
+                onClick={() => selectProduct(index)}
+                className={`flex h-[61px] w-[114px] shrink-0 items-center justify-center overflow-hidden rounded-[10px] border bg-white transition ${
+                  clampedIndex === index ? 'border-[#0161FE]' : 'border-[#e0e0e0]'
+                }`}
+              >
+                <img
+                  src={product.image}
+                  alt={product.name}
+                  className="h-full w-full object-contain p-[0px]"
+                  loading="lazy"
+                />
+              </button>
+            ))}
+          </div>
         </div>
 
       </div>
