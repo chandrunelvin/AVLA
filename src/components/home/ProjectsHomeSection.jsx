@@ -116,7 +116,7 @@ export default function ProjectsHomeSection({ activeCategory = 'fish' }) {
           <span className="text-[28px] font-normal leading-none">&#8594;</span>
         </button>
 
-        <div className="absolute left-[42px] top-[225px] h-[605px] w-[94%] overflow-hidden rounded-[24px] bg-white">
+        <div className="absolute left-1/2 top-[225px] h-[605px] w-[94%] -translate-x-1/2 overflow-hidden rounded-[24px] bg-white">
           <img
             src={selectedProduct.image}
             alt={selectedProduct.name}
@@ -125,7 +125,7 @@ export default function ProjectsHomeSection({ activeCategory = 'fish' }) {
           />
         </div>
 
-        <div className="absolute left-[112px] top-[860px] flex h-[96px] w-[1195px] items-center justify-start gap-[10px] rounded-[12px] bg-white px-[10px]">
+        <div className="absolute left-1/2 top-[860px] flex h-[96px] w-[94%] -translate-x-1/2 items-center justify-start gap-[10px] rounded-[12px] bg-white px-[10px]">
           {products.map((product, index) => (
             <button
               key={product.slug}
