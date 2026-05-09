@@ -27,7 +27,7 @@ function ProductDetailsHero({ product }) {
           <span className="text-[18px] leading-none">&#8594;</span>
         </a>
         <a
-          href="https://wa.me/919446017777"
+          href="https://wa.me/917736782999"
           className="flex h-[48px] min-w-[148px] items-center justify-center gap-[8px] rounded-full bg-[#25D366] px-[22px] text-[14px] font-medium text-white min-[800px]:h-[42px] min-[800px]:min-w-0 min-[800px]:w-[128px] min-[800px]:px-0"
         >
           <img

@@ -1,7 +1,7 @@
 
 const certifications = [
-  { title: 'MPEDA Registration', active: true,  image: '/assets/images/home/certificate.png' },
-  { title: 'FSSAI License',      active: false, image: '/assets/images/home/certificate.png' },
+  { title: 'MPEDA Registration', active: true,  image: '/assets/images/home/certi1.svg' },
+  { title: 'FSSAI License',      active: false, image: '/assets/images/home/certi2.svg' },
 ];
 
 export default function CertificationSection() {
@@ -20,7 +20,7 @@ export default function CertificationSection() {
         <h2 className="text-[28px] font-normal leading-[34px] text-[#111111] min-[900px]:w-[527px] min-[900px]:max-w-none min-[900px]:text-[36px] min-[900px]:leading-[42px]">
           Our Certifications &amp; Global Compliance Standards
         </h2>
-        <p className="text-[16px] font-normal leading-[22px] text-[rgba(109,109,110,0.80)] min-[900px]:mt-[18px] min-[900px]:w-[545px] min-[900px]:max-w-none">
+        <p className="text-[16px] font-normal leading-[22px] text-[rgba(109,109,110,0.80)] min-[900px]:mt-[18px] min-[900px]:w-[575px] min-[900px]:max-w-none">
        We follow internationally recognized food safety, quality control, and export compliance standards to ensure premium seafood products for global markets.
         </p>
       </div>
@@ -60,15 +60,16 @@ export default function CertificationSection() {
 
             {/* Certificate image card — percentage-based so it scales with card width */}
             <div
-              className={`absolute top-[4.45%] left-[64%] h-[90.71%] w-[33.87%] rounded-[14px] shadow-md transition-colors duration-300 ${
+              className={`absolute top-[4.45%] left-[64%] h-[90.71%] w-[33.87%] rounded-[14px] shadow-md flex items-center justify-center transition-colors duration-300 ${
                 cert.active
                   ? 'bg-[rgba(130,170,249,1.00)] group-hover/grid:bg-[rgba(197,198,199,1.00)] group-hover:!bg-[rgba(130,170,249,1.00)]'
                   : 'bg-[rgba(197,198,199,1.00)] group-hover:bg-[rgba(130,170,249,1.00)]'
               }`}
             >
-              <div
-                className="absolute h-[147px] w-[190px] left-[calc(50%-124px)] top-[calc(50%-73.5px)] rounded-[5px]"
-                style={{ background: `url('${cert.image}') 100% center / cover no-repeat` }}
+              <img
+                src={cert.image}
+                alt={cert.title}
+                className="h-full w-full object-contain p-[8px]"
               />
             </div>
           </div>

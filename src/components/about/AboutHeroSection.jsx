@@ -29,7 +29,7 @@ export default function AboutHeroSection() {
           </button>
 
           <a
-            href="https://wa.me/919446017777"
+            href="https://wa.me/917736782999"
             className="inline-flex h-[52px] min-w-[148px] items-center justify-center gap-[10px] rounded-full bg-[#25D366] px-7 text-[16px] font-normal text-white"
           >
             <img

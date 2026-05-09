@@ -41,7 +41,7 @@ export default function ProjectsHomeSection({ activeCategory = 'fish' }) {
         </div>
 
         {/* Heading */}
-        <h2 className="mt-[18px] text-center text-[28px] font-normal leading-[34px] text-[#111111]">
+        <h2 className="mt-[18px] text-center text-[34px] font-normal leading-[34px] text-[#111111]">
           Export-Grade Seafood Products from Trusted Sources
         </h2>
 

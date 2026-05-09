@@ -3,25 +3,25 @@ const categories = [
     id: 'fish',
     title: 'Fish',
     description: 'Exploring diverse fish families and their unique species',
-    icon: ['/assets/Home/images/vector_5.svg', '/assets/Home/images/vector_6.svg'],
+    icon: '/assets/images/home/ion_fish-sharp.svg',
   },
   {
     id: 'cephalopods',
     title: 'Cephalopods',
     description: 'Discovering cephalopod family species across world oceans',
-    icon: ['/assets/Home/images/vector_7.svg'],
+    icon: '/assets/images/home/fe_squid.svg',
   },
   {
     id: 'crustaceans',
-    title: 'Crustacenas',
+    title: 'Crustaceans',
     description: 'Understanding crustacean families and their species',
-    icon: ['/assets/Home/images/vector_11.svg'],
+    icon: '/assets/images/home/fluent-emoji-high-contrast_lobster.svg',
   },
   {
     id: 'bivalve',
     title: 'Bivalve',
     description: 'Showcasing diverse bivalve family species globally',
-    icon: ['/assets/Home/images/vector_16.svg'],
+    icon: '/assets/images/home/mynaui_shell-solid.svg',
   },
 ];
 
@@ -48,7 +48,7 @@ export default function ServiceCategoriesSection({ activeCategory, onChange }) {
       </div>
 
       {/* Heading */}
-      <h2 className="mx-auto mt-[18px] max-w-[520px] text-center text-[28px] font-normal leading-[36px] text-[#111111] lg:text-[36px] lg:leading-[42px]">
+      <h2 className="mx-auto mt-[18px] max-w-[520px] text-center text-[36px] font-normal leading-[36px] text-[#111111] lg:text-[36px] lg:leading-[42px]">
         Explore Our Seafood Export Product Categories
       </h2>
 
@@ -78,7 +78,7 @@ export default function ServiceCategoriesSection({ activeCategory, onChange }) {
                 }`}
               >
                 <img
-                  src="/assets/images/home/icon-product.png"
+                  src={category.icon}
                   alt=""
                   className="h-[17px] w-[17px]"
                   loading="lazy"
@@ -122,7 +122,7 @@ export default function ServiceCategoriesSection({ activeCategory, onChange }) {
                 }`}
               >
                 <img
-                  src="/assets/images/home/icon-product.png"
+                  src={category.icon}
                   alt=""
                   className="h-[19px] w-[19px]"
                   loading="lazy"

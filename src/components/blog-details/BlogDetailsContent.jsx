@@ -117,7 +117,6 @@ function BlogDetailsHero({ blog }) {
     { label: 'Read Time', value: blog.readTime },
     { label: 'Release Date', value: blog.releaseDate },
     { label: 'Species Family', value: blog.speciesFamily },
-    { label: 'Work By', value: null },
   ];
 
   return (
@@ -126,53 +125,36 @@ function BlogDetailsHero({ blog }) {
       {/* Title — centered mobile, left desktop */}
       <h1
         className="text-center text-[40px] font-normal leading-[40px] text-[#4a4a4a] min-[800px]:text-left"
-        
       >
         {blog.title}
       </h1>
 
       {/* Meta row — stacked centered on mobile, 5-col row on desktop */}
       <div className="mx-auto mt-[28px] flex max-w-[260px] flex-col items-center gap-[22px] text-center min-[800px]:mx-auto min-[800px]:mt-[36px] min-[800px]:max-w-none min-[800px]:flex-row min-[800px]:items-start min-[800px]:gap-[100px] min-[800px]:text-left min-[800px]:justify-center min-[800px]:w-fit">
-        {metaItems.map(({ label, value }, index) => (
-          <div
-            key={label}
-            className="w-full min-[800px]:w-auto"
-          >
+        {metaItems.map(({ label, value }) => (
+          <div key={label} className="flex flex-col min-[800px]">
             <p
-              className="text-[#858585] align-middle"
+              className="text-[#858585]"
               style={{
                 fontFamily: 'SF Pro Display, -apple-system, BlinkMacSystemFont, sans-serif',
                 fontWeight: 300,
                 fontSize: '18px',
                 lineHeight: '20.41px',
-                letterSpacing: '0%',
               }}
             >
               {label}
             </p>
-            {label === 'Work By' ? (
-              <div className="mt-[10px] flex justify-center gap-[8px] min-[800px]:mt-[6px] min-[800px]:justify-start">
-                <span className="flex h-[43px] w-[43px] items-center justify-center rounded-full bg-[#0161FE] text-white min-[800px]:h-[43px] min-[800px]:w-[43px]">
-                  <img src="/assets/images/product-details/icon-account.svg" alt="" className="h-[18px] w-[18px]" />
-                </span>
-                <span className="flex h-[43px] w-[43px] items-center justify-center rounded-full bg-[#0161FE] text-white min-[800px]:h-[43px] min-[800px]:w-[43px]">
-                  <img src="/assets/images/product-details/icon-account.svg" alt="" className="h-[18px] w-[18px]" />
-                </span>
-              </div>
-            ) : (
-              <p
-                className="mt-[6px] text-[#4a4a4a] align-middle"
-                style={{
-                  fontFamily: 'SF Pro Display, -apple-system, BlinkMacSystemFont, sans-serif',
-                  fontWeight: 400,
-                  fontSize: '20px',
-                  lineHeight: '23.81px',
-                  letterSpacing: '0px',
-                }}
-              >
-                {value}
-              </p>
-            )}
+            <p
+              className="mt-[6px] text-[#4a4a4a]"
+              style={{
+                fontFamily: 'SF Pro Display, -apple-system, BlinkMacSystemFont, sans-serif',
+                fontWeight: 400,
+                fontSize: '20px',
+                lineHeight: '23.81px',
+              }}
+            >
+              {value}
+            </p>
           </div>
         ))}
       </div>

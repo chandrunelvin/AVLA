@@ -8,7 +8,7 @@ const contactItems = [
   },
   {
     label: 'Phone Number',
-    value: '+91 9446017777 / +91 7736782999',
+    value: '+91 7736782999',
     icon: Phone,
   },
   {

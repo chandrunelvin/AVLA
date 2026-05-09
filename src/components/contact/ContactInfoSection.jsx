@@ -6,7 +6,7 @@ const contactCards = [
   },
   {
     label: 'Phone Number',
-    value: '+91 9446017777\n+91 7736782999',
+    value: '+91 7736782999',
     icon: '/assets/images/contact/phone-icon.svg',
   },
   {

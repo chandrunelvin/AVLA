@@ -49,7 +49,7 @@ export default function FeedHomeComponent() {
         </div>
 
         {/* Heading */}
-        <h2 className="mt-[16px] text-center text-[32px] font-normal leading-[38px] text-[#111111]">
+        <h2 className="mt-[16px] text-center text-[34px] font-normal leading-[38px] text-[#111111]">
           Latest insights and trends
         </h2>
 
@@ -76,7 +76,7 @@ export default function FeedHomeComponent() {
             />
           </div>
 
-          <h3 className="mt-[20px] text-[22px] font-normal leading-[30px] text-[#3f3f3f]">
+          <h3 className="mt-[20px] text-[24px] font-normal leading-[30px] text-[#3f3f3f]">
             {card.title}
           </h3>
 

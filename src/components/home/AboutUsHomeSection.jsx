@@ -106,11 +106,11 @@ export default function AboutUsHomeSection() {
                 About us
               </span>
             </div>
-            <h2 className="mt-[20px] max-w-[500px] text-[36px] font-normal leading-[38px] text-[#111111]">
+            <h2 className="mt-[20px] max-w-[555px] text-[36px] font-normal leading-[38px] text-[#111111]">
               Delivering Sustainable, Safe & High-Quality Seafood Exports
             </h2>
           </div>
-          <p className="mt-[4px] max-w-[400px] text-[16px] font-normal leading-[22px] text-[#6d6d6ecc] lg:max-w-none lg:w-[498px]">
+          <p className="self-end max-w-[400px] text-[16px] font-normal leading-[22px] text-[#6d6d6ecc] lg:max-w-none lg:w-[540px]">
             At AVLA NETTOS EXPORTS, we specialize in sourcing, processing, and exporting
             premium seafood products. With a strong focus on quality, food safety, and
             global compliance, we deliver fresh and frozen sea species that meet
@@ -159,7 +159,7 @@ export default function AboutUsHomeSection() {
             <p className="mt-[40px] text-[46px] font-normal leading-[54px]">95%+</p>
             <p className="mt-[10px] text-[18px] font-medium leading-[24px]">Client Satisfaction</p>
             <p className="mt-[8px] text-[16px] font-normal leading-[24px] text-white/80">
-              Trusted by global seafood buyers
+              Client satisfaction built on reliable supply, accurate grading, customized packing, and strict adherence to international seafood export standards.
             </p>
           </article>
 

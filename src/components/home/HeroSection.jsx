@@ -5,7 +5,7 @@ export default function HeroSection() {
     <section className="mx-auto w-full rounded-[20px] bg-[#F6F7F9] pb-[40px] text-center text-[#111111] sm:pb-[112px]">
 
       {/* Text + buttons */}
-      <div className="mx-auto flex flex-col items-center px-5 pt-[52px] sm:px-10 sm:pt-[88px] lg:px-12">
+      <div className="mx-auto flex flex-col items-center px-5 pt-[36px] sm:px-10 sm:pt-[88px] lg:px-12">
         <h1 className="text-[58px] font-normal leading-[1.05] text-[#111111] sm:text-[56px] sm:leading-[1.18] lg:text-[64px]">
           Premium<br className="sm:hidden" />{' '}
           Seafood<br />
