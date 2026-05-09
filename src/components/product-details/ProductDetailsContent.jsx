@@ -8,7 +8,7 @@ function ProductDetailsHero({ product }) {
     <section className="rounded-b-[14px] bg-[#F6F7F9] px-[8px] pb-[8px] pt-[36px] text-center min-[800px]:px-[48px] min-[800px]:pb-[48px] min-[800px]:pt-[42px]">
 
       {/* Title */}
-      <h1 className="text-center text-[38px] font-normal leading-[1.15] text-[#111111] min-[800px]:text-[58px] min-[800px]:leading-[50px]">
+      <h1 className="text-center text-[54px] font-normal leading-[1.15] text-[#111111] min-[800px]:text-[58px] min-[800px]:leading-[50px]">
         {product.displayName}
       </h1>
 
@@ -54,7 +54,7 @@ function ProductDetailsHero({ product }) {
       </div>
 
       {/* Thumbnail strip — scrollable on mobile */}
-      <div className="mx-auto mt-[16px] flex max-w-[1210px] gap-[8px] overflow-x-auto rounded-[10px] bg-white p-[8px] scrollbar-none min-[800px]:mt-[31px] min-[800px]:overflow-hidden min-[800px]:rounded-[6px]">
+      <div className="mx-auto mt-[16px] flex max-w-[1177px] gap-[8px] overflow-x-auto rounded-[10px] bg-white p-[8px] scrollbar-none min-[800px]:mt-[31px] min-[800px]:overflow-hidden min-[800px]:rounded-[6px]">
         {productDetails.slice(0, 8).map((item) => (
           <div
             key={item.slug}
@@ -76,14 +76,14 @@ function ProductDetailsHero({ product }) {
 
 function ExportRegionSection() {
   return (
-    <section className="bg-white px-[24px] pb-[66px] pt-[42px] text-center">
+    <section className="bg-white px-[24px] pb-[66px] pt-[50px] text-center mt-[50px]">
       <div className="mx-auto inline-flex h-[36px] items-center justify-center rounded-full border border-[#202833] px-[18px]">
         <span className="whitespace-nowrap text-[13px] font-medium uppercase tracking-[1.79px] text-[#202833]">
           Export Region
         </span>
       </div>
 
-      <h2 className="mx-auto mt-[24px] max-w-[529px] text-[36px] font-normal leading-[34px] text-[#111111]">
+      <h2 className="mx-auto mt-[30px] max-w-[529px] text-[36px] font-normal leading-[34px] text-[#111111]">
         Exporting Premium Seafood to
         <br />
         Global Markets
@@ -92,11 +92,11 @@ function ExportRegionSection() {
       <img
         src="/assets/images/product-details/export-region-map.svg"
         alt="World map showing seafood export regions"
-        className="mx-auto mt-[38px] block h-auto w-full"
+        className="mx-auto mt-[50px] block h-auto w-full"
         loading="lazy"
       />
 
-      <p className="mx-auto mt-[64px] max-w-[763px] text-[18px] font-normal leading-[28px] text-[#111111] sm:text-[30px]">
+      <p className="mx-auto mt-[10%] mb-[8%] max-w-[763px] text-[18px] font-normal leading-[28px] text-[#111111] sm:text-[30px]">
         With years of experience in seafood exports, we ensure reliable supply,
         consistent quality, and timely international delivery.{' '}
         <span className="text-[#6D6D6E]">
@@ -139,7 +139,7 @@ function ProductFlagsSection({ product }) {
                 Product FAQ
               </span>
             </div>
-            <h2 className="mt-[14px] text-[32px] font-normal leading-[1.1] text-[#2b2b2b] sm:text-[42px] sm:leading-[40px]">
+            <h2 className="mt-[20px] text-[32px] font-normal leading-[1.1] text-[#2b2b2b] sm:text-[42px] sm:leading-[40px]">
               {product.displayName}
             </h2>
           </div>
@@ -153,7 +153,7 @@ function ProductFlagsSection({ product }) {
         </div>
 
         {/* FAQ rows — same as FaqListSection */}
-        <div className="mt-[18px] space-y-[10px]">
+        <div className="mt-[40px] space-y-[20px]">
           {faqs.map((faq, index) => (
             <div key={faq.question}>
 
@@ -179,19 +179,21 @@ function ProductFlagsSection({ product }) {
               )}
 
               {/* Desktop: 2-column row */}
-              <div
-                className={`hidden sm:grid sm:min-h-[69px] sm:grid-cols-[1fr_1.05fr] sm:items-center sm:rounded-[27px] sm:px-[13px] sm:py-[6px] ${
-                  index === 0 ? 'bg-[#0161FE] text-white' : 'bg-[#F6F7F9] text-[#000000]'
+              <button
+                type="button"
+                onClick={() => toggle(index)}
+                className={`hidden w-full sm:grid sm:min-h-[69px] sm:grid-cols-[1fr_1.05fr] sm:items-center sm:rounded-[27px] sm:px-[13px] sm:py-[6px] ${
+                  isExpanded(index) ? 'bg-[#0161FE] text-white' : 'bg-[#F6F7F9] text-[#000000]'
                 }`}
               >
-                <p className="p-[10px] text-[27px] font-normal leading-[22px]">{getFaqLabel(index)}</p>
-                <p className={`p-[10px] text-[18px] font-normal leading-[22px] ${index === 0 ? 'text-white' : 'text-[#6D6D6ECC]'}`}>
+                <p className="p-[10px] text-left text-[27px] font-normal leading-[22px]">{getFaqLabel(index)}</p>
+                <p className={`p-[10px] text-left text-[18px] font-normal leading-[22px] ${isExpanded(index) ? 'text-white' : 'text-[#6D6D6ECC]'}`}>
                   {faq.question}
                 </p>
-              </div>
+              </button>
 
               {/* Desktop: answer */}
-              {index === 0 && faq.answer && (
+              {isExpanded(index) && faq.answer && (
                 <div className="hidden rounded-[23px] bg-[#F6F7F9] px-[22px] py-[17px] text-[20px] font-normal leading-[28px] text-[#6D6D6ECC] sm:block">
                   {faq.answer}
                 </div>

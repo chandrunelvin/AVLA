@@ -65,7 +65,7 @@ export default function ProjectsHomeSection({ activeCategory = 'fish' }) {
           <img
             src={selectedProduct.image}
             alt={selectedProduct.name}
-            className="h-full w-full object-contain p-[20px]"
+            className="h-full w-full object-contain"
             loading="lazy"
           />
         </div>

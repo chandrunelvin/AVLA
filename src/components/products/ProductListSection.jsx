@@ -17,7 +17,7 @@ export default function ProductListSection({ activeCategory }) {
     <section className="mt-[23px] w-full rounded-[15px] bg-[#F6F7F9]">
 
       {/* ── Mobile layout ── */}
-      <div className="flex flex-col items-center px-[22px] pb-[36px] pt-[28px] text-center min-[800px]:hidden">
+      <div className="flex flex-col items-center px-0 pb-[36px] pt-[28px] text-center min-[800px]:hidden">
 
         <div className="flex h-[32px] w-[100px] items-center justify-center rounded-full border border-[#202833]">
           <span className="whitespace-nowrap text-[11px] font-medium uppercase tracking-[1.5px] text-[#202833]">
@@ -35,24 +35,24 @@ export default function ProductListSection({ activeCategory }) {
           for global export with guaranteed freshness and compliance.
         </p>
 
-        <div className="mt-[24px] flex flex-col gap-[16px]">
+        <div className="mt-[24px] flex flex-col gap-[30px]">
           {products.map((product) => (
             <article key={product.slug} className="flex flex-col items-center">
-              <div className="flex h-[220px] w-full items-center justify-center overflow-hidden rounded-[16px] bg-white">
+              <div className="flex h-[230px] w-full items-center justify-center overflow-hidden rounded-[16px] bg-white">
                 <img
                   src={product.image}
                   alt={product.name}
-                  className="h-full w-full object-contain p-[20px]"
+                  className="h-full w-full object-contain"
                   loading="lazy"
                 />
               </div>
-              <h3 className="mt-[14px] text-[18px] font-normal leading-[1.3] text-[#4a4a4a]">
+              <h3 className="mt-[20px] text-[18px] font-normal leading-[1.3] text-[#4a4a4a]">
                 {product.name}
               </h3>
               <button
                 type="button"
                 onClick={() => navigate(product.slug ? `/products/${product.slug}` : '/contact')}
-                className="mt-[12px] flex h-[44px] w-[120px] items-center justify-center gap-[8px] rounded-full bg-[#0161FE] text-[14px] font-medium text-white"
+                className="mt-[20px] flex h-[44px] w-[120px] items-center justify-center gap-[8px] rounded-full bg-[#0161FE] text-[14px] font-medium text-white"
               >
                 Explore
                 <ArrowRight aria-hidden="true" size={16} strokeWidth={1.8} />
@@ -86,14 +86,14 @@ export default function ProductListSection({ activeCategory }) {
         </div>
 
         {/* Product list */}
-        <div className="mt-[40px] flex flex-col gap-[16px]">
+        <div className="mt-[60px] flex flex-col gap-[40px]">
           {products.map((product) => (
             <article key={product.name} className="flex items-center gap-[69px]">
               <div className="flex h-[436px] w-[581px] shrink-0 items-center justify-center overflow-hidden rounded-[24px] bg-white">
                 <img
                   src={product.image}
                   alt={product.name}
-                  className="h-full w-full object-contain p-[20px]"
+                  className="h-full w-full object-contain"
                   loading="lazy"
                 />
               </div>
@@ -104,7 +104,7 @@ export default function ProductListSection({ activeCategory }) {
                 <button
                   type="button"
                   onClick={() => navigate(product.slug ? `/products/${product.slug}` : '/contact')}
-                  className="mt-[20px] flex h-[46px] w-[133px] items-center justify-center gap-[10px] rounded-full bg-[#0161FE] text-[16px] font-medium leading-[24px] text-white transition hover:brightness-105"
+                  className="mt-[30px] flex h-[46px] w-[133px] items-center justify-center gap-[10px] rounded-full bg-[#0161FE] text-[16px] font-medium leading-[24px] text-white transition hover:brightness-105"
                 >
                   Explore
                   <ArrowRight aria-hidden="true" size={22} strokeWidth={1.8} />
