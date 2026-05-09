@@ -112,7 +112,17 @@ export default function OurProductsSection() {
                 onClick={() => { if (!dragged) navigate(`/products/${item.slug}`); }}
                 className="relative h-[370px] min-w-[352px] overflow-hidden rounded-[20px] bg-white"
               >
-                <p className="absolute left-1/2 top-[28px] -translate-x-1/2 font-serif text-[54px] italic leading-none text-[#b8b8b8]/75">
+                <p
+                  className="absolute left-1/2 top-[28px] -translate-x-1/2 text-[#b8b8b8]/75"
+                  style={{
+                    fontFamily: 'Snell Roundhand, cursive',
+                    fontWeight: 500,
+                    fontStyle: 'normal',
+                    fontSize: '60px',
+                    lineHeight: '54px',
+                    letterSpacing: '0px',
+                  }}
+                >
                   {item.scriptName}
                 </p>
                 <img
