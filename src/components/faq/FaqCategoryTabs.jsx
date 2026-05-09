@@ -53,9 +53,9 @@ export default function FaqCategoryTabs({ activeCategory, onChange }) {
       <div
         role="tablist"
         aria-label="FAQ product categories"
-        className="mt-[24px] grid grid-cols-2 gap-[12px] min-[800px]:hidden"
+        className="mt-[24px] flex flex-wrap justify-center gap-[12px] min-[800px]:hidden"
       >
-        {categories.map((category) => {
+        {categories.map((category, index) => {
           const isActive = activeCategory === category.id;
           return (
             <button
@@ -65,7 +65,7 @@ export default function FaqCategoryTabs({ activeCategory, onChange }) {
               aria-selected={isActive}
               onClick={() => onChange(category.id)}
               onKeyDown={(event) => handleKey(event, category.id)}
-              className={`flex h-[58px] w-full items-center gap-[10px] overflow-hidden rounded-[16px] px-[12px] text-left transition ${
+              className={`flex h-[58px] ${['w-[122.54px]', 'w-[172.54px]', 'w-[139.98px]', 'w-[148.98px]'][index] ?? 'w-fit'} items-center gap-[10px] overflow-hidden rounded-[16px] px-[12px] text-left transition ${
                 isActive ? 'bg-[#0161FE]' : 'bg-white'
               }`}
             >
