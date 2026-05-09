@@ -2,23 +2,23 @@ const contactCards = [
   {
     label: 'Email Address',
     value: 'sales@avlaexports.com',
-    icon: '/assets/images/contact/icon-mail.svg',
+    icon: '/assets/images/contact/mail-icon.svg',
   },
   {
     label: 'Phone Number',
-    value: '+91 9446017777 / +91 7736782999',
-    icon: '/assets/images/contact/icon-phone.svg',
+    value: '+91 9446017777\n+91 7736782999',
+    icon: '/assets/images/contact/phone-icon.svg',
   },
   {
     label: 'Our Office',
     value: 'Sakthikulangara, Kollam, Kerala.',
-    icon: '/assets/images/contact/icon-location.svg',
+    icon: '/assets/images/contact/location-icon.svg',
   },
 ];
 
 export default function ContactInfoSection() {
   return (
-    <section className="relative mt-[50px] min-h-[361px] w-full overflow-hidden rounded-[20px] bg-[#F6F7F9] px-5 py-11 sm:px-8 lg:h-[361px] lg:px-0 lg:py-0">
+    <section className="relative mt-[40px] min-h-[361px] w-full overflow-hidden rounded-[20px] bg-[#F6F7F9] px-5 py-11 sm:px-8 lg:mt-[50px] lg:h-[361px] lg:px-0 lg:py-0">
       <div className="mx-auto flex h-[39px] w-[157px] items-center justify-center rounded-full border border-[#202833] lg:absolute lg:left-1/2 lg:top-[57px] lg:-translate-x-1/2">
         <span className="whitespace-nowrap text-[14px] font-medium uppercase leading-[18px] tracking-[1.7862437963485718px] text-[#202833]">
           Contact Us
@@ -39,7 +39,7 @@ export default function ContactInfoSection() {
               <img
                 src={card.icon}
                 alt=""
-                className="h-[24px] w-[24px]"
+               
                 loading="lazy"
               />
             </div>
@@ -47,7 +47,7 @@ export default function ContactInfoSection() {
               <p className="text-[16px] font-normal leading-[20px] text-[#8a8a8a]">
                 {card.label}
               </p>
-              <p className="text-[18px] font-normal leading-[24px] text-[#111111] lg:text-[20px]">
+              <p className="whitespace-pre-line text-[18px] font-normal leading-[24px] text-[#111111] lg:text-[20px]">
                 {card.value}
               </p>
             </div>

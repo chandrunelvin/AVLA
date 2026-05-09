@@ -125,7 +125,7 @@ export default function ProjectsHomeSection({ activeCategory = 'fish' }) {
           />
         </div>
 
-        <div className="absolute left-1/2 top-[860px] flex h-[96px] w-[94%] -translate-x-1/2 items-center justify-start gap-[10px] rounded-[12px] bg-white px-[10px]">
+        <div className="absolute left-1/2 top-[860px] flex h-[96px] w-[83%] -translate-x-1/2 items-center justify-start gap-[10px] rounded-[12px] bg-white px-[10px]">
           {products.map((product, index) => (
             <button
               key={product.slug}

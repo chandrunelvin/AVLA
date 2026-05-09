@@ -1,11 +1,7 @@
 
 const certifications = [
-  { title: 'MPEDA Registration',               active: true,  image: '/assets/images/home/certificate.png' },
-  { title: 'FSSAI License',                    active: false, image: '/assets/images/home/certificate.png' },
-  { title: 'EIC / EIA Approval',               active: false, image: '/assets/images/home/certificate.png' },
-  { title: 'HACCP Certified',                  active: false, image: '/assets/images/home/certificate.png' },
-  { title: 'ISO 22000: Food Safety Management',active: false, image: '/assets/images/home/certificate.png' },
-  { title: 'US FDA Registration',              active: false, image: '/assets/images/home/certificate.png' },
+  { title: 'MPEDA Registration', active: true,  image: '/assets/images/home/certificate.png' },
+  { title: 'FSSAI License',      active: false, image: '/assets/images/home/certificate.png' },
 ];
 
 export default function CertificationSection() {
@@ -30,7 +26,7 @@ export default function CertificationSection() {
       </div>
 
       {/* Cards grid */}
-      <div className="group/grid mt-[28px] grid grid-cols-1 gap-[14px] min-[900px]:mt-[40px] min-[900px]:grid-cols-3 min-[900px]:gap-x-[14px] min-[900px]:gap-y-[40px]">
+      <div className="group/grid mt-[28px] grid grid-cols-1 gap-[14px] min-[900px]:mt-[40px] min-[900px]:grid-cols-2 min-[900px]:gap-[14px]">
         {certifications.map((cert) => (
           <div
             key={cert.title}

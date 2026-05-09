@@ -33,7 +33,7 @@ export default function FaqCategoryTabs({ activeCategory, onChange }) {
   }
 
   return (
-    <section className="mt-[23px] w-full rounded-[20px] bg-[#F6F7F9] px-[8px] pb-[32px] pt-[36px] min-[800px]:px-[42px] min-[800px]:pb-[42px] min-[800px]:pt-[45px]">
+    <section className="mt-[40px] w-full rounded-[20px] bg-[#F6F7F9] px-[8px] pb-[32px] pt-[36px] min-[800px]:mt-[50px] min-[800px]:px-[42px] min-[800px]:pb-[42px] min-[800px]:pt-[45px]">
 
       {/* Badge */}
       <div className="flex justify-center">
@@ -45,7 +45,7 @@ export default function FaqCategoryTabs({ activeCategory, onChange }) {
       </div>
 
       {/* Heading */}
-      <h2 className="mx-auto mt-[18px] max-w-[520px] text-center text-[28px] font-normal leading-[36px] text-[#111111] min-[800px]:text-[36px] min-[800px]:leading-[42px]">
+      <h2 className="mx-auto mt-[18px] max-w-[466px] text-center text-[28px] font-normal leading-[36px] text-[#111111] min-[800px]:text-[36px] min-[800px]:leading-[42px]">
         Explore a wide range of seafood families and species
       </h2>
 
@@ -74,15 +74,12 @@ export default function FaqCategoryTabs({ activeCategory, onChange }) {
                   isActive ? 'bg-white/20' : 'bg-[#0161FE]'
                 }`}
               >
-                {category.icon.map((icon) => (
-                  <img
-                    key={icon}
-                    src={icon}
-                    alt=""
-                    className="absolute max-h-[17px] max-w-[17px]"
-                    loading="lazy"
-                  />
-                ))}
+                <img
+                  src="/assets/images/home/icon-product.png"
+                  alt=""
+                  className="h-[17px] w-[17px]"
+                  loading="lazy"
+                />
               </span>
               <span
                 className={`min-w-0 truncate text-[13px] font-normal leading-[18px] ${

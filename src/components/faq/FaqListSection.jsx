@@ -102,34 +102,34 @@ export default function FaqListSection({ activeCategory }) {
   }
 
   return (
-    <div className="px-[16px] pt-[24px] sm:px-[43px]">
+    <div className="px-[16px] pt-[50px] sm:px-[43px]">
       {sections.map((section, sectionIndex) => (
-        <section key={section.title} className="mb-[40px] sm:mb-[43px]">
+        <section key={section.title} className="mb-[71px] sm:mb-[43px]">
 
           {/* Section header */}
-          <div className="flex flex-col items-center text-center sm:flex-row sm:items-center sm:justify-between sm:text-left">
-            <div className="flex flex-col items-center sm:items-start">
-              <div className="inline-flex h-[34px] items-center justify-center rounded-full border border-[#202833] px-[16px]">
-                <span className="whitespace-nowrap text-[11px] font-medium uppercase tracking-[1.2px] text-[#202833]">
-                  Product FAQ
-                </span>
-              </div>
-              <h2 className="mt-[14px] text-[32px] font-normal leading-[1.1] text-[#2b2b2b] sm:text-[42px] sm:leading-[40px]">
+          <div className="flex flex-col items-center text-center sm:items-start sm:text-left">
+            <div className="inline-flex h-[34px] items-center justify-center rounded-full border border-[#202833] px-[16px]">
+              <span className="whitespace-nowrap text-[11px] font-medium uppercase tracking-[1.2px] text-[#202833]">
+                Product FAQ
+              </span>
+            </div>
+            <div className="mt-[24px] flex w-full flex-col items-center gap-[16px] sm:flex-row sm:items-center sm:justify-between">
+              <h2 className="text-[32px] font-normal leading-[1.1] text-[#2b2b2b] sm:text-[42px] sm:leading-[40px]">
                 {section.title}
               </h2>
+              <button
+                type="button"
+                onClick={() => navigate('/products')}
+                className="flex h-[42px] w-[110px] shrink-0 items-center justify-center gap-[7px] rounded-full bg-[#0161FE] text-[13px] font-semibold text-white"
+              >
+                View All
+                <ArrowRight size={15} strokeWidth={2.5} />
+              </button>
             </div>
-            <button
-              type="button"
-              onClick={() => navigate('/products')}
-              className="mt-[16px] flex h-[42px] w-[110px] items-center justify-center gap-[7px] rounded-full bg-[#0161FE] text-[13px] font-semibold text-white sm:mt-0"
-            >
-              View All
-              <ArrowRight size={15} strokeWidth={2.5} />
-            </button>
           </div>
 
           {/* FAQ rows */}
-          <div className="mt-[18px] space-y-[10px]">
+          <div className="mt-[50px] space-y-[20px]">
             {section.rows.map((row, rowIndex) => {
               const expanded = isExpanded(sectionIndex, rowIndex);
               return (
