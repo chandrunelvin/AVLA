@@ -30,7 +30,7 @@ export default function AboutHeroSection() {
 
           <a
             href="https://wa.me/917736782999"
-            className="inline-flex h-[52px] min-w-[148px] items-center justify-center gap-[10px] rounded-full bg-[#25D366] px-7 text-[16px] font-normal text-white"
+            className="inline-flex h-[52px] min-w-[148px] items-center justify-center gap-[10px] rounded-full bg-[#25D366] px-7 text-[15px] font-bold text-white"
           >
             <img
               src="/assets/images/project/whatsapp-icon.svg"

@@ -47,11 +47,11 @@ export default function BottomNavMobile() {
       style={{ paddingBottom: 'calc(15px + env(safe-area-inset-bottom))' }}
     >
       <div
-        className="bg-white rounded-[72px] flex items-center justify-between px-[15px] pointer-events-auto"
+        className="bg-white rounded-[72px] flex items-center justify-between px-[10px] pointer-events-auto"
         style={{
           width: 'calc(100% - 16px)',
           maxWidth: '430px',
-          height: '89px',
+          height: '69px',
           boxShadow: '0px 3px 12px rgba(0, 0, 0, 0.25)',
         }}
       >
@@ -65,7 +65,7 @@ export default function BottomNavMobile() {
               onClick={() => navigate(item.route)}
               className={`flex items-center gap-[10px] transition-all duration-200 border-none outline-none ${
                 isActive
-                  ? 'bg-[#0161FE] rounded-[95px] px-[20px] py-[17px]'
+                  ? 'bg-[#0161FE] rounded-[95px] px-[15px] py-[12px]'
                   : 'px-[10px] py-[17px]'
               }`}
             >

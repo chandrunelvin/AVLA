@@ -35,7 +35,7 @@ export default function ServiceCategoriesSection({ activeCategory, onChange }) {
   return (
     <section
       id="service-categories-section"
-      className="mx-auto mt-[50px] w-full rounded-[20px] bg-[#F6F7F9] px-[22px] pb-[32px] pt-[36px] lg:px-[42px] lg:pb-[42px] lg:pt-[45px]"
+      className="mx-auto mt-[50px] w-full rounded-[20px] bg-[#F6F7F9] px-[10px] pb-[32px] pt-[36px] lg:px-[42px] lg:pb-[42px] lg:pt-[45px]"
     >
       {/* Badge */}
       <div className="flex justify-center">
@@ -56,9 +56,9 @@ export default function ServiceCategoriesSection({ activeCategory, onChange }) {
       <div
         role="tablist"
         aria-label="Seafood product categories"
-        className="mt-[24px] grid grid-cols-2 gap-[12px] lg:hidden"
+        className="mt-[24px] flex flex-wrap justify-center gap-[12px] lg:hidden"
       >
-        {categories.map((category) => {
+        {categories.map((category, index) => {
           const isActive = activeCategory === category.id;
           return (
             <button
@@ -68,7 +68,7 @@ export default function ServiceCategoriesSection({ activeCategory, onChange }) {
               aria-selected={isActive}
               onClick={() => onChange(category.id)}
               onKeyDown={(event) => handleKey(event, category.id)}
-              className={`flex min-h-[58px] w-full items-center gap-[10px] rounded-[16px] px-[12px] text-left transition ${
+              className={`flex min-h-[58px] ${['w-[122.54px]', 'w-[172.54px]', 'w-[139.98px]', 'w-[148.98px]'][index] ?? 'w-fit'} items-center gap-[10px] rounded-[16px] px-[12px] text-left transition ${
                 isActive ? 'bg-[#0161FE]' : 'bg-white'
               }`}
             >

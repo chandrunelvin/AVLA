@@ -22,7 +22,7 @@ export default function AboutFeaturesSection() {
             key={feature.title}
             className="flex flex-col items-center justify-center px-[40px] py-[40px] text-center sm:py-0"
           >
-            <h3 className="text-[32px] font-normal leading-[1.25] text-[#111111] sm:text-[36px] lg:text-[40px]">
+            <h3 className="text-[25px] font-normal leading-[1.25] text-[#111111] sm:text-[36px] lg:text-[40px]">
               {feature.title}
             </h3>
             <p className="mt-[18px] max-w-[260px] text-[14px] font-normal leading-[1.7] text-[#9A9A9A]">

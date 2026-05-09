@@ -38,11 +38,11 @@ export default function ProductListSection({ activeCategory }) {
         <div className="mt-[24px] flex flex-col gap-[30px]">
           {products.map((product) => (
             <article key={product.slug} className="flex flex-col items-center">
-              <div className="flex h-[230px] w-full items-center justify-center overflow-hidden rounded-[16px] bg-white">
+              <div className="flex h-[220px] w-full items-center justify-center overflow-hidden rounded-[16px] bg-white">
                 <img
                   src={product.image}
                   alt={product.name}
-                  className="h-full w-full object-contain"
+                  className="h-full w-full object-contain p-[16px]"
                   loading="lazy"
                 />
               </div>
