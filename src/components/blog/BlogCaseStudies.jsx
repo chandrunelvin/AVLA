@@ -57,13 +57,13 @@ export default function BlogCaseStudies({ activeCategory }) {
               Case Studies
             </span>
           </div>
-          <h2 className="mt-[18px] max-w-[360px] text-[27px] font-normal leading-[1.25] text-[#2b2b2b] lg:text-left">
-            Explore a wide range of seafood families and species
+          <h2 className="mt-[18px] max-w-[380px] text-[35px] font-normal leading-[1.25] text-[#2b2b2b] lg:text-left">
+            Real Results. Real Impact. Our Success Stories.
           </h2>
         </div>
 
-        <p className="mt-[16px] max-w-[404px] text-[16px] font-normal leading-[23.69px] text-[#8a8a8a] lg:mt-[56px] lg:text-left">
-         Discover how our solutions have delivered real results, solved complex challenges, and accelerated business growth.
+        <p className="mt-[16px] max-w-[450px] text-[16px] font-normal leading-[23.69px] text-[#8a8a8a] lg:mt-[66px] lg:text-left">
+        Discover how our solutions have delivered real results, solved complex challenges, and accelerated business growth.
         </p>
       </div>
 
@@ -102,7 +102,7 @@ export default function BlogCaseStudies({ activeCategory }) {
             className="flex h-[436px] items-center gap-0"
           >
             <div className="flex-1 pr-[40px]">
-              <h3 className="h-[80px] w-[660px] text-[26px] font-normal leading-[31px] text-[#4a4a4a]">
+              <h3 className="h-[80px] w-[660px] text-[32px] font-normal leading-[40px] text-[#4a4a4a]">
                 {post.title}
               </h3>
               <button

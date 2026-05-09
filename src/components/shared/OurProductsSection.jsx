@@ -1,12 +1,33 @@
 import { useNavigate } from 'react-router-dom';
+import { useRef, useState } from 'react';
 import { productDetails } from '../../data/productDetails';
 
 export default function OurProductsSection() {
   const navigate = useNavigate();
-  const doubled = [...productDetails, ...productDetails];
+  const scrollRef = useRef(null);
+  const [isDragging, setIsDragging] = useState(false);
+  const [startX, setStartX] = useState(0);
+  const [scrollLeft, setScrollLeft] = useState(0);
+  const [dragged, setDragged] = useState(false);
+
+  function onMouseDown(e) {
+    setIsDragging(true);
+    setDragged(false);
+    setStartX(e.pageX - scrollRef.current.offsetLeft);
+    setScrollLeft(scrollRef.current.scrollLeft);
+  }
+  function onMouseMove(e) {
+    if (!isDragging) return;
+    e.preventDefault();
+    const x = e.pageX - scrollRef.current.offsetLeft;
+    const walk = x - startX;
+    if (Math.abs(walk) > 5) setDragged(true);
+    scrollRef.current.scrollLeft = scrollLeft - walk;
+  }
+  function onMouseUp() { setIsDragging(false); }
 
   return (
-    <section className="relative left-1/2 mt-[50px] w-screen -translate-x-1/2 overflow-hidden rounded-t-[20px] bg-[#F6F7F9]">
+    <section className="relative left-1/2 mt-[50px] w-screen -translate-x-1/2 rounded-t-[20px] bg-[#F6F7F9]">
 
       {/* ── Mobile layout ── */}
       <div className="sm:hidden">
@@ -40,7 +61,7 @@ export default function OurProductsSection() {
         </div>
 
         {/* Horizontal scroll cards */}
-        <div className="flex gap-[10px] overflow-x-auto px-[10px] pb-[32px] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+        <div className="flex gap-[10px] overflow-x-auto px-[10px] pb-[10px] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
           {productDetails.map((item) => (
             <button
               key={item.slug}
@@ -63,7 +84,7 @@ export default function OurProductsSection() {
       {/* ── Desktop layout ── */}
       <div className="hidden sm:block pb-[50px] pt-[52px]">
         <div className="flex items-start justify-between gap-[60px] px-[48px]">
-          <h2 className="shrink-0 text-[48px] font-normal leading-[58px] text-[#111111]">
+          <h2 className="shrink-0 text-[46px] font-normal leading-[58px] text-[#111111]">
             Our Products
           </h2>
           <p className="max-w-[674px] text-[16px] font-normal leading-[22px] text-[#8a8a8a]">
@@ -74,16 +95,21 @@ export default function OurProductsSection() {
           </p>
         </div>
 
-        <div className="mt-[62px] overflow-hidden">
-          <div
-            className="flex w-max gap-[14px] animate-[marquee_var(--marquee-duration)_linear_infinite]"
-            style={{ '--marquee-duration': '32s' }}
-          >
-            {doubled.map((item, index) => (
+        <div
+          ref={scrollRef}
+          className="mt-[62px] overflow-x-auto px-[48px] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
+          style={{ cursor: isDragging ? 'grabbing' : 'grab' }}
+          onMouseDown={onMouseDown}
+          onMouseMove={onMouseMove}
+          onMouseUp={onMouseUp}
+          onMouseLeave={onMouseUp}
+        >
+          <div className="flex w-max gap-[14px] pb-[4px]">
+            {productDetails.map((item, index) => (
               <button
                 key={`${item.slug}-${index}`}
                 type="button"
-                onClick={() => navigate(`/products/${item.slug}`)}
+                onClick={() => { if (!dragged) navigate(`/products/${item.slug}`); }}
                 className="relative h-[370px] min-w-[352px] overflow-hidden rounded-[20px] bg-white"
               >
                 <p className="absolute left-1/2 top-[28px] -translate-x-1/2 font-serif text-[54px] italic leading-none text-[#b8b8b8]/75">

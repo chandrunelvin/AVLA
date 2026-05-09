@@ -4,13 +4,15 @@ export default function BlogHero() {
 
       {/* Mobile */}
       <div className="min-[800px]:hidden px-[8px] pb-[8px] pt-[36px] text-center">
-        <h1 className="text-[42px] font-normal leading-[1.1] text-[#111111]">
+        <h1 className="text-[46px] font-normal leading-[1.1] text-[#111111]">
           Explore Blogs
         </h1>
         <p className="mt-[16px] text-[14px] font-normal leading-[22px] text-[#8a8a8a]">
-          Explore insights, industry updates, and seafood export knowledge from
-          our team. Stay informed on quality standards, global markets, and the
-          latest news from AVLA Nettos Exports.
+         We offer a comprehensive range of services
+designed to meet the unique needs of your
+business. From strategy development to risk
+management, our expert team is dedicated to
+driving your success.
         </p>
         <div className="mt-[22px] overflow-hidden rounded-[16px] bg-white">
           <img
@@ -28,10 +30,8 @@ export default function BlogHero() {
           <h1 className="text-[48px] font-normal leading-[58px] text-[#111111]">
             Explore Blogs
           </h1>
-          <p className="max-w-[512px] text-[16px] font-normal leading-[24px] text-[#8a8a8a]">
-            Explore insights, industry updates, and seafood export knowledge from
-            our team. Stay informed on quality standards, global markets, and the
-            latest news from AVLA Nettos Exports.
+          <p className="max-w-[550px] text-[16px] font-normal leading-[22px] text-[#8a8a8a]">
+           Explore a wide range of services crafted to support your vision. From digital design and marketing growth to industry-specific solutions, I provide the tools and expertise to help your business build, scale, and succeed.
           </p>
         </div>
         <div className="mt-[34px] overflow-hidden rounded-[20px] bg-white xl:mt-[35px]">

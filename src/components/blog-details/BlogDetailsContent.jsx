@@ -1,5 +1,4 @@
 import { useNavigate } from 'react-router-dom';
-import { User } from 'lucide-react';
 import { productDetails } from '../../data/productDetails';
 import OurProductsSection from '../shared/OurProductsSection';
 
@@ -153,11 +152,11 @@ function BlogDetailsHero({ blog }) {
             </p>
             {label === 'Work By' ? (
               <div className="mt-[10px] flex justify-center gap-[8px] min-[800px]:mt-[6px] min-[800px]:justify-start">
-                <span className="flex h-[36px] w-[36px] items-center justify-center rounded-full bg-[#0161FE] text-white min-[800px]:h-[32px] min-[800px]:w-[32px]">
-                  <User size={16} strokeWidth={2} />
+                <span className="flex h-[43px] w-[43px] items-center justify-center rounded-full bg-[#0161FE] text-white min-[800px]:h-[43px] min-[800px]:w-[43px]">
+                  <img src="/assets/images/product-details/icon-account.svg" alt="" className="h-[18px] w-[18px]" />
                 </span>
-                <span className="flex h-[36px] w-[36px] items-center justify-center rounded-full bg-[#0161FE] text-white min-[800px]:h-[32px] min-[800px]:w-[32px]">
-                  <User size={16} strokeWidth={2} />
+                <span className="flex h-[43px] w-[43px] items-center justify-center rounded-full bg-[#0161FE] text-white min-[800px]:h-[43px] min-[800px]:w-[43px]">
+                  <img src="/assets/images/product-details/icon-account.svg" alt="" className="h-[18px] w-[18px]" />
                 </span>
               </div>
             ) : (
@@ -192,25 +191,25 @@ function BlogDetailsHero({ blog }) {
 
 function ArticleBody({ blog }) {
   return (
-    <section className="mt-[10px] rounded-[18px] bg-[#F6F7F9] px-[8px] pb-[60px] pt-[36px] min-[800px]:px-[48px] min-[800px]:pb-[80px] min-[800px]:pt-[52px]">
+    <section className="mt-[40px] rounded-[18px] bg-[#F6F7F9] px-[8px] pb-[60px] pt-[36px] min-[800px]:mt-[50px] min-[800px]:px-[48px] min-[800px]:pb-[80px] min-[800px]:pt-[52px]">
 
       {/* Header: badge + intro + side text */}
-      <div className="flex flex-col gap-[20px] min-[800px]:flex-row min-[800px]:items-start min-[800px]:justify-between min-[800px]:gap-0">
-        <div className="min-[800px]:max-w-[420px]">
-          <div className="inline-flex h-[25px] items-center justify-center rounded-full border border-[#202833] px-[12px] text-[9px] font-medium uppercase tracking-[1.2px] text-[#202833]">
+      <div className="flex flex-col items-center gap-[20px] text-center min-[800px]:flex-row min-[800px]:items-start min-[800px]:justify-between min-[800px]:gap-0 min-[800px]:text-left">
+        <div className="min-[800px]:max-w-[400px]">
+          <div className="inline-flex h-[25px] items-center justify-center rounded-full border border-[#202833] px-[12px] text-[14px] font-medium uppercase tracking-[1.2px] text-[#202833]">
             {blog.category}
           </div>
-          <h2 className="mt-[20px] text-[22px] font-normal leading-[1.3] text-[#222222] min-[800px]:mt-[32px] min-[800px]:text-[28px] min-[800px]:leading-[32px]">
+          <h2 className="mt-[20px] text-[35px] font-normal leading-[1.3] text-[#222222] min-[800px]:mt-[32px] min-[800px]:text-[28px] min-[800px]:leading-[32px]">
             {blog.intro}
           </h2>
         </div>
-        <p className="text-[13px] font-normal leading-[1.6] text-[#8a8a8a] min-[800px]:mt-[62px] min-[800px]:w-[360px]">
+        <p className="text-[16px] font-normal leading-[1.6] text-[#8a8a8a] min-[800px]:mt-[62px] min-[800px]:w-[434px]">
           {blog.sideText}
         </p>
       </div>
 
       {/* Article content */}
-      <article className="mx-auto mt-[40px] max-w-[710px] text-[13px] font-normal leading-[21px] text-[#6D6D6E] min-[800px]:mt-[72px]">
+      <article className="mx-auto mt-[40px] max-w-[710px] text-[18px] font-normal leading-[28px] text-[#6D6D6E] min-[800px]:mt-[72px]">
         <p>
           India is a leading hub for high-quality seafood exports, and tuna fish
           stands among the most demanded products worldwide. As a trusted Tuna Fish
@@ -226,11 +225,11 @@ function ArticleBody({ blog }) {
 
         {articleSections.map((section) => (
           <section key={section.title} className="mt-[28px] min-[800px]:mt-[32px]">
-            <h3 className="text-[16px] font-semibold leading-[24px] text-[#222222] min-[800px]:text-[17px]">
+            <h3 className="text-[24px] font-semibold leading-[28px] text-[#222222] min-[800px]:text-[24px]">
               {section.title}
             </h3>
             {section.subtitle && (
-              <h4 className="mt-[8px] text-[14px] font-semibold text-[#222222]">
+              <h4 className="mt-[8px] text-[20px] font-semibold text-[#222222]">
                 {section.subtitle}
               </h4>
             )}
