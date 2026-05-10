@@ -57,7 +57,7 @@ function ProductDetailsHero({ product }) {
       </div>
 
       {/* Thumbnail strip — scrollable on mobile */}
-      <div className="mx-auto mt-[16px] flex max-w-[1177px] gap-[8px] overflow-x-auto rounded-[10px] bg-white p-[8px] scrollbar-none min-[800px]:mt-[31px] min-[800px]:overflow-hidden min-[800px]:rounded-[6px]">
+      <div className="mx-auto mt-[16px] flex max-w-[1177px] gap-[8px] overflow-x-auto rounded-[10px] bg-white p-[8px] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden min-[800px]:mt-[31px] min-[800px]:overflow-hidden min-[800px]:rounded-[6px]">
         {productDetails.slice(0, 8).map((item) => (
           <div
             key={item.slug}
