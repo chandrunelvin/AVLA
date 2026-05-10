@@ -13,7 +13,7 @@ export default function AboutHeroSection() {
           Expert guidance, tailored solution
         </h1>
 
-        <p className="mt-[18px] max-w-[340px] text-[14px] font-normal leading-[1.65] text-[#838383] sm:max-w-[480px] sm:text-[16px]">
+        <p className="mt-[18px] max-w-[300px] text-[14px] font-normal leading-[1.65] text-[#838383] sm:max-w-[480px] sm:text-[16px]">
           Adapt easily and scale confidently with a flexible system designed to
           support your business at every stage of growth.
         </p>

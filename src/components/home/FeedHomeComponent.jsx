@@ -95,16 +95,16 @@ export default function FeedHomeComponent() {
           <button
             type="button"
             onClick={prev}
-            className="flex h-[47px] w-[47px] items-center justify-center rounded-full border border-[#0161FE] bg-white text-[#0161FE] transition hover:bg-[#0161FE] hover:text-white"
+            className="flex h-[47px] w-[47px] items-center justify-center rounded-full border border-[#0161FE] bg-white text-[#0161FE] transition min-[800px]:hover:bg-[#0161FE] min-[800px]:hover:text-white"
           >
             <img src="/assets/images/home/arrow.svg" alt="previous" className="rotate-180" />
           </button>
           <button
             type="button"
             onClick={next}
-            className="flex h-[47px] w-[47px] items-center justify-center rounded-full border border-[#0161FE] bg-white text-[#0161FE] transition hover:bg-[#0161FE] hover:text-white"
+            className="flex h-[47px] w-[47px] items-center justify-center rounded-full border border-[#0161FE] bg-white text-[#0161FE] transition min-[800px]:hover:bg-[#0161FE] min-[800px]:hover:text-white"
           >
-            &#8594;
+             <img src="/assets/images/home/right-arrow.svg" alt="next" />
           </button>
         </div>
       </div>
