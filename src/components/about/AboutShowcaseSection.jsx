@@ -62,7 +62,7 @@ function MarqueeRow({ images, reverse = false, duration = 34 }) {
 function SectionBadge({ children }) {
   return (
     <div className="inline-flex h-[37px] items-center justify-center rounded-full border border-[#202833] px-[18px]">
-      <span className="text-[14px] font-medium uppercase tracking-[0.22em] text-[#202833]">
+      <span className="text-[12px] font-medium uppercase tracking-[0.22em] text-[#202833] sm:text-[14px]">
         {children}
       </span>
     </div>
@@ -93,7 +93,7 @@ export default function AboutShowcaseSection() {
                 key={id}
                 type="button"
                 onClick={() => setActiveTab(id)}
-                className={`inline-flex h-[56px] items-center gap-3 rounded-[23.69px] px-6 text-[15px] font-medium transition ${
+                className={`inline-flex h-[56px] items-center gap-3 rounded-[17.39px] px-6 text-[15px] font-medium transition sm:rounded-[23.69px] ${
                   isActive
                     ? 'bg-[#0161FE] text-white shadow-[0_8px_20px_rgba(1,97,254,0.22)]'
                     : 'bg-white text-[#0161FE]'
@@ -123,7 +123,7 @@ export default function AboutShowcaseSection() {
       <div className="overflow-hidden rounded-[20px] bg-[#F6F7F9] px-4 py-12 sm:px-6 lg:px-[8px] lg:py-[56px]">
         <div className="mx-auto flex max-w-[760px] flex-col items-center text-center">
           <SectionBadge>Global Presence</SectionBadge>
-          <h2 className="mt-6 max-w-[540px] text-[36px] font-normal leading-[1.08] text-[#111111] sm:text-[36px]">
+          <h2 className="mt-6 max-w-[540px] text-[31px] font-normal leading-[1.08] text-[#111111] sm:text-[36px]">
             Showcasing Our Seafood Excellence at Global Trade Events
           </h2>
         </div>

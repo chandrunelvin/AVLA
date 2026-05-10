@@ -13,7 +13,6 @@ const productLinks = ['Fish', 'Octopus', 'Crab', 'FAQ'];
 const socials = [
   { label: 'Facebook',  icon: '/assets/images/home/fb-icon.svg',       href: 'https://www.facebook.com' },
   { label: 'Instagram', icon: '/assets/images/home/insta-icon.svg',     href: 'https://www.instagram.com' },
-  { label: 'X',         icon: '/assets/images/home/x-icon.svg',         href: 'https://www.x.com' },
   { label: 'LinkedIn',  icon: '/assets/images/home/linkdin.svg',         href: 'https://www.linkedin.com' },
   { label: 'WhatsApp',  icon: '/assets/images/home/whatsapp-icon.svg',  href: 'https://wa.me/917736782999' },
   { label: 'YouTube',   icon: '/assets/images/home/youtube.svg',         href: 'https://www.youtube.com' },
@@ -27,7 +26,7 @@ export default function SiteFooter() {
       <footer className="mx-auto mt-[0px] overflow-hidden rounded-[18px] bg-[#222222] min-[1000px]:rounded-[15px]">
 
         {/* ── Mobile layout (< 1000px) ── */}
-        <div className="relative h-[760px] text-white min-[1000px]:hidden">
+        <div className="relative h-[710px] text-white min-[1000px]:hidden">
           <button
             type="button"
             aria-label="Go to home"
@@ -64,8 +63,8 @@ export default function SiteFooter() {
             ))}
           </div>
 
-          <p className="absolute left-1/2 top-[691px] w-full -translate-x-1/2 text-center text-[14px] leading-[18px] text-white">
-            © 2025 Temlis. All rights reserved.
+          <p className="absolute left-1/2 top-[641px] w-full -translate-x-1/2 text-center text-[14px] leading-[18px] text-white">
+            © 2026 AVLA Exports. All rights reserved.
           </p>
         </div>
 
@@ -105,7 +104,7 @@ export default function SiteFooter() {
           {/* Bottom row: Designed by | Copyright | Socials */}
           <div className="flex items-center justify-between">
             <p className="text-[14px] leading-[18px] text-white/70">Designed by Arunijone</p>
-            <p className="text-[14px] leading-[18px] text-white/70">© 2025 Arunijone. All rights reserved.</p>
+            <p className="text-[14px] leading-[18px] text-white/70">© 2025 AVLA Exports. All rights reserved.</p>
             <div className="flex items-center gap-[10px]">
               {socials.map((social) => (
                 <a key={social.label} href={social.href} target="_blank" rel="noopener noreferrer" aria-label={social.label}

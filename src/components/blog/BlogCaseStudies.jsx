@@ -53,7 +53,7 @@ export default function BlogCaseStudies({ activeCategory }) {
       <div className="flex flex-col items-center px-[8px] text-center lg:flex-row lg:items-start lg:justify-between lg:px-0 lg:text-left">
         <div>
           <div className="inline-flex h-[38px] items-center justify-center rounded-full border border-[#202833] px-[20px]">
-            <span className="whitespace-nowrap text-[14px] font-medium uppercase leading-[12px] tracking-[1.2px] text-[#202833]">
+            <span className="whitespace-nowrap text-[12px] font-medium uppercase leading-[12px] tracking-[1.2px] text-[#202833] sm:text-[14px]">
               Case Studies
             </span>
           </div>
@@ -88,7 +88,7 @@ export default function BlogCaseStudies({ activeCategory }) {
               className="mt-[14px] flex h-[44px] w-[120px] items-center justify-center gap-[8px] rounded-full bg-[#0161FE] text-[14px] font-medium text-white"
             >
               Explore
-              <ArrowRight aria-hidden="true" size={16} strokeWidth={1.8} />
+              <img src="/assets/images/home/main-arrow.svg" alt="" aria-hidden="true" className="h-[16px] w-[16px]" />
             </button>
           </article>
         ))}

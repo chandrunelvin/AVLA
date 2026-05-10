@@ -37,8 +37,8 @@ export default function FaqCategoryTabs({ activeCategory, onChange }) {
 
       {/* Badge */}
       <div className="flex justify-center">
-        <div className="flex h-[39px] items-center justify-center rounded-full border border-[#202833] px-[21px]">
-          <span className="whitespace-nowrap text-[14px] font-medium uppercase leading-[18px] tracking-[1.8px] text-[#202833]">
+        <div className="flex h-[30px] items-center justify-center rounded-full border border-[#202833] px-[21px] min-[800px]:h-[39px]">
+          <span className="whitespace-nowrap text-[12px] font-medium uppercase leading-[18px] tracking-[1.8px] text-[#202833] min-[800px]:text-[14px]">
             Our Product
           </span>
         </div>

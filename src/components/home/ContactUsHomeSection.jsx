@@ -26,7 +26,7 @@ export default function ContactUsHomeSection() {
       <div className="flex flex-col px-[20px] pb-[40px] pt-[40px] lg:hidden">
         <div className="flex justify-center">
           <div className="flex h-[36px] items-center justify-center rounded-full border border-[#202833] px-[18px]">
-            <span className="whitespace-nowrap text-[13px] font-medium uppercase tracking-[1.8px] text-[#202833]">
+            <span className="whitespace-nowrap text-[12px] font-medium uppercase tracking-[1.8px] text-[#202833] sm:text-[14px]">
               Contact Us
             </span>
           </div>
@@ -70,7 +70,7 @@ export default function ContactUsHomeSection() {
 
         {/* Left — badge */}
         <div className="absolute left-[41px] top-[47px] flex h-[38px] w-[140px] items-center justify-center rounded-full border border-[#202833]">
-          <span className="whitespace-nowrap text-[14px] font-medium uppercase leading-[18px] tracking-[1.8px] text-[#202833]">
+          <span className="whitespace-nowrap text-[12px] font-medium uppercase leading-[18px] tracking-[1.8px] text-[#202833] sm:text-[14px]">
             Contact Us
           </span>
         </div>

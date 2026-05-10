@@ -42,7 +42,10 @@ function ProductDetailsHero({ product }) {
       {/* Fish image card */}
       <div className="mx-auto mt-[24px] flex max-w-[1350px] items-center justify-center overflow-hidden rounded-[18px] bg-white px-[16px] py-[24px] min-[800px]:mt-[47px] min-[800px]:h-[632px] min-[800px]:px-[28px] min-[800px]:py-[36px]">
         <div className="relative flex w-full items-center justify-center">
-          <p className="absolute left-[10px] top-0 font-serif text-[40px] italic leading-none text-[#b8b8b8]/70 min-[800px]:left-0 min-[800px]:text-[90px]">
+          <p
+            className="absolute left-[10px] top-0 whitespace-nowrap not-italic leading-[54px] tracking-[0px] text-[#b8b8b8]/70 min-[800px]:left-0 min-[800px]:text-[90px]"
+            style={{ fontFamily: 'Snell Roundhand, cursive', fontWeight: 500, fontSize: '30px' }}
+          >
             {product.scriptName}
           </p>
           <img
@@ -78,12 +81,12 @@ function ExportRegionSection() {
   return (
     <section className="bg-white px-[24px] pb-[66px] pt-[50px] text-center mt-[50px]">
       <div className="mx-auto inline-flex h-[36px] items-center justify-center rounded-full border border-[#202833] px-[18px]">
-        <span className="whitespace-nowrap text-[13px] font-medium uppercase tracking-[1.79px] text-[#202833]">
+        <span className="whitespace-nowrap text-[12px] font-medium uppercase tracking-[1.79px] text-[#202833]">
           Export Region
         </span>
       </div>
 
-      <h2 className="mx-auto mt-[30px] max-w-[529px] text-[36px] font-normal leading-[34px] text-[#111111]">
+      <h2 className="mx-auto mt-[30px] max-w-[529px] text-[34px] font-normal leading-[34px] text-[#111111] sm:text-[36px]">
         Exporting Premium Seafood to
         <br />
         Global Markets
@@ -96,7 +99,7 @@ function ExportRegionSection() {
         loading="lazy"
       />
 
-      <p className="mx-auto mt-[10%] mb-[8%] max-w-[763px] text-[18px] font-normal leading-[28px] text-[#111111] sm:text-[30px]">
+      <p className="mx-auto mt-[25%] mb-[8%] max-w-[763px] text-[18px] font-normal leading-[28px] text-[#111111] sm:mt-[10%] sm:text-[30px]">
         With years of experience in seafood exports, we ensure reliable supply,
         consistent quality, and timely international delivery.{' '}
         <span className="text-[#6D6D6E]">

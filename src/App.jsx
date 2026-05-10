@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { Navigate, Outlet, Route, Routes, useLocation } from 'react-router-dom';
 import Navbar from './components/layout/Navbar';
 import SiteFooter from './components/layout/SiteFooter';
@@ -35,11 +36,22 @@ function getActivePage(pathname) {
   return 'home';
 }
 
+function ScrollToTop() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+}
+
 function AppLayout() {
   const location = useLocation();
 
   return (
     <div className="min-h-screen bg-white text-[#111111]">
+      <ScrollToTop />
       <Navbar activePage={getActivePage(location.pathname)} fullWidth />
       <main className="pt-[10px] pb-[0px] md:pt-[10px] md:pb-0">
         <Outlet />

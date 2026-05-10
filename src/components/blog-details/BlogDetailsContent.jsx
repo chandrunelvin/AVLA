@@ -124,7 +124,7 @@ function BlogDetailsHero({ blog }) {
 
       {/* Title — centered mobile, left desktop */}
       <h1
-        className="text-center text-[40px] font-normal leading-[40px] text-[#4a4a4a] min-[800px]:text-left"
+        className="text-center text-[37px] font-normal leading-[40px] text-[#4a4a4a] min-[800px]:text-left min-[800px]:text-[40px]"
       >
         {blog.title}
       </h1>
@@ -178,10 +178,10 @@ function ArticleBody({ blog }) {
       {/* Header: badge + intro + side text */}
       <div className="flex flex-col items-center gap-[20px] text-center min-[800px]:flex-row min-[800px]:items-start min-[800px]:justify-between min-[800px]:gap-0 min-[800px]:text-left">
         <div className="min-[800px]:max-w-[400px]">
-          <div className="inline-flex h-[25px] items-center justify-center rounded-full border border-[#202833] px-[12px] text-[14px] font-medium uppercase tracking-[1.2px] text-[#202833]">
+          <div className="inline-flex h-[25px] items-center justify-center rounded-full border border-[#202833] px-[12px] text-[12px] font-medium uppercase tracking-[1.2px] text-[#202833] min-[800px]:text-[14px]">
             {blog.category}
           </div>
-          <h2 className="mt-[20px] text-[35px] font-normal leading-[1.3] text-[#222222] min-[800px]:mt-[32px] min-[800px]:text-[28px] min-[800px]:leading-[32px]">
+          <h2 className="mt-[20px] text-[33px] font-normal leading-[1.3] text-[#222222] min-[800px]:mt-[32px] min-[800px]:text-[28px] min-[800px]:leading-[32px]">
             {blog.intro}
           </h2>
         </div>

@@ -38,7 +38,7 @@ export default function ProductListSection({ activeCategory }) {
         <div className="mt-[24px] flex flex-col gap-[30px]">
           {products.map((product) => (
             <article key={product.slug} className="flex flex-col items-center">
-              <div className="flex h-[220px] w-full items-center justify-center overflow-hidden rounded-[20px] bg-white">
+              <div className="flex h-[240px] w-full items-center justify-center overflow-hidden rounded-[20px] bg-white">
                 <img
                   src={product.image}
                   alt={product.name}
@@ -55,7 +55,7 @@ export default function ProductListSection({ activeCategory }) {
                 className="mt-[20px] flex h-[44px] w-[120px] items-center justify-center gap-[8px] rounded-full bg-[#0161FE] text-[14px] font-medium text-white"
               >
                 Explore
-                <ArrowRight aria-hidden="true" size={16} strokeWidth={1.8} />
+                <img src="/assets/images/home/main-arrow.svg" alt="" aria-hidden="true" className="h-[16px] w-[16px]" />
               </button>
             </article>
           ))}

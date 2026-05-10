@@ -1,7 +1,7 @@
 
 const certifications = [
-  { title: 'MPEDA Registration', active: true,  image: '/assets/images/home/certi1.svg' },
-  { title: 'FSSAI License',      active: false, image: '/assets/images/home/certi2.svg' },
+  { title: 'BRC Registration', active: true,  image: '/assets/images/home/certi1.svg' },
+  { title: 'HACCP License',      active: false, image: '/assets/images/home/certi2.svg' },
 ];
 
 export default function CertificationSection() {
@@ -10,7 +10,7 @@ export default function CertificationSection() {
 
       {/* Badge */}
       <div className="flex h-[36.5px] w-[153.5px] items-center justify-center rounded-full border-[0.75px] border-[#202833] mx-auto min-[900px]:mx-0">
-        <span className="whitespace-nowrap text-[14px] font-medium uppercase tracking-[1.79px] text-[#202833]">
+        <span className="whitespace-nowrap text-[12px] font-medium uppercase tracking-[1.79px] text-[#202833] min-[900px]:text-[14px]">
           Certification
         </span>
       </div>
@@ -21,7 +21,8 @@ export default function CertificationSection() {
           Our Certifications &amp; Global Compliance Standards
         </h2>
         <p className="text-[16px] font-normal leading-[22px] text-[rgba(109,109,110,0.80)] min-[900px]:mt-[18px] min-[900px]:w-[575px] min-[900px]:max-w-none">
-       We follow internationally recognized food safety, quality control, and export compliance standards to ensure premium seafood products for global markets.
+          <span className="min-[900px]:hidden">Focused on your unique needs, our team delivers solutions that blend deep industry knowledge and cutting-edge strategies to ensure lasting growth.</span>
+          <span className="hidden min-[900px]:inline">We follow internationally recognized food safety, quality control, and export compliance standards to ensure premium seafood products for global markets.</span>
         </p>
       </div>
 

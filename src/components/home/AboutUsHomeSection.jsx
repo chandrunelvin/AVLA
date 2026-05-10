@@ -8,14 +8,14 @@ export default function AboutUsHomeSection() {
         {/* Badge */}
         <div className="flex justify-center">
           <div className="flex h-[36px] items-center justify-center rounded-full border border-[#202833] px-[18px]">
-            <span className="whitespace-nowrap text-[13px] font-medium uppercase tracking-[1.8px] text-[#202833]">
+            <span className="whitespace-nowrap text-[12px] font-medium uppercase tracking-[1.8px] text-[#202833] sm:text-[14px]">
               About Us
             </span>
           </div>
         </div>
 
         {/* Heading */}
-        <h2 className="mt-[18px] text-center text-[36px] font-normal leading-[42px] text-[#111111]">
+        <h2 className="mt-[18px] text-center text-[32px] font-normal leading-[42px] text-[#111111] sm:text-[36px]">
           Delivering Sustainable, Safe & High-Quality Seafood Exports
         </h2>
 

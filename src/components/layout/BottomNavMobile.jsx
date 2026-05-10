@@ -37,7 +37,7 @@ export default function BottomNavMobile() {
 
   let activePage = '';
   if (pathname === '/') activePage = 'home';
-  else if (pathname.startsWith('/about') || pathname.startsWith('/contact')) activePage = 'about';
+  else if (pathname.startsWith('/about')) activePage = 'about';
   else if (pathname.startsWith('/product') || pathname.startsWith('/portfolio')) activePage = 'service';
   else if (pathname.startsWith('/blog')) activePage = 'blog';
 

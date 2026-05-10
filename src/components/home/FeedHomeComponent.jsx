@@ -42,7 +42,7 @@ export default function FeedHomeComponent() {
         {/* Badge */}
         <div className="flex justify-center">
           <div className="flex h-[36px] items-center justify-center rounded-full border border-[#202833] px-[18px]">
-            <span className="whitespace-nowrap text-[13px] font-medium uppercase tracking-[1.8px] text-[#202833]">
+            <span className="whitespace-nowrap text-[12px] font-medium uppercase tracking-[1.8px] text-[#202833] sm:text-[14px]">
               Our Blog
             </span>
           </div>
@@ -97,7 +97,7 @@ export default function FeedHomeComponent() {
             onClick={prev}
             className="flex h-[47px] w-[47px] items-center justify-center rounded-full border border-[#0161FE] bg-white text-[#0161FE] transition hover:bg-[#0161FE] hover:text-white"
           >
-            &#8592;
+            <img src="/assets/images/home/arrow.svg" alt="previous" className="rotate-180" />
           </button>
           <button
             type="button"
@@ -112,7 +112,7 @@ export default function FeedHomeComponent() {
       {/* ── Desktop layout ── */}
       <div className="relative hidden h-[850px] w-full overflow-hidden sm:block">
         <div className="absolute left-[42px] top-[52px] flex h-[39px] min-w-[120px] items-center justify-center rounded-full border border-[#202833] px-[21px]">
-          <span className="whitespace-nowrap text-[14px] font-medium uppercase leading-[18px] tracking-[1.8px] text-[#202833]">
+          <span className="whitespace-nowrap text-[12px] font-medium uppercase leading-[18px] tracking-[1.8px] text-[#202833] sm:text-[14px]">
             Our Blog
           </span>
         </div>

@@ -34,7 +34,7 @@ export default function ProjectsHomeSection({ activeCategory = 'fish' }) {
         {/* Badge */}
         <div className="flex justify-center">
           <div className="flex h-[36px] items-center justify-center rounded-full border border-[#202833] px-[18px]">
-            <span className="whitespace-nowrap text-[13px] font-medium uppercase tracking-[1.8px] text-[#202833]">
+            <span className="whitespace-nowrap text-[12px] font-medium uppercase tracking-[1.8px] text-[#202833] sm:text-[14px]">
               Portfolio
             </span>
           </div>
@@ -59,7 +59,7 @@ export default function ProjectsHomeSection({ activeCategory = 'fish' }) {
 
         {/* Main image card */}
         <div className="relative mt-[24px] h-[221px] w-full overflow-hidden rounded-[20px] bg-white">
-          <p className="absolute left-[16px] top-[14px] font-serif text-[38px] italic leading-none text-[#b8b8b8]/70">
+          <p className="absolute left-[16px] top-[14px] text-[30px] not-italic leading-[54px] tracking-[0px] text-[#b8b8b8]/70" style={{fontFamily: 'Snell Roundhand', fontWeight: 500}}>
             {selectedProduct.scriptName}
           </p>
           <img
@@ -154,7 +154,7 @@ export default function ProjectsHomeSection({ activeCategory = 'fish' }) {
           onKeyDown={(e) => handleButtonKey(e, selectPrevious)}
           className="absolute left-[660px] top-[989px] flex h-[47px] w-[47px] cursor-pointer items-center justify-center rounded-full border border-[#0161FE] bg-white text-[24px] leading-none text-[#0161FE] transition hover:bg-[#0161FE] hover:text-white"
         >
-          &#8592;
+          <img src="/assets/images/home/arrow.svg" alt="previous" className="rotate-180" />
         </div>
 
         <div

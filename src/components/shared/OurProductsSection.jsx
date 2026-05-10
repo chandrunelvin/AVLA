@@ -46,16 +46,16 @@ export default function OurProductsSection() {
           <div className="mt-[28px] flex items-center justify-center gap-[12px]">
             <a
               href="/contact"
-              className="flex h-[51px] items-center justify-center gap-[8px] rounded-full bg-[#0161FE] px-[26px] text-[15px] font-semibold text-white"
+              className="flex h-[46px] items-center justify-center gap-[8px] rounded-full bg-[#0161FE] px-[26px] text-[14px] font-semibold text-white"
             >
               Contact
               <span className="text-[18px] leading-none">&#8594;</span>
             </a>
             <a
               href="/products"
-              className="flex h-[51px] items-center justify-center rounded-full border border-[#111111] px-[26px] text-[15px] font-semibold text-[#111111]"
+              className="flex h-[46px] items-center justify-center rounded-full border border-[#111111] px-[26px] text-[14px] font-semibold text-[#111111]"
             >
-              Portfolio
+              Product
             </a>
           </div>
         </div>
@@ -67,8 +67,21 @@ export default function OurProductsSection() {
               key={item.slug}
               type="button"
               onClick={() => navigate(`/products/${item.slug}`)}
-              className="h-[240px] min-w-[calc(50%-5px)] shrink-0 overflow-hidden rounded-[20px] bg-white"
+              className="relative h-[240px] min-w-[calc(50%-5px)] shrink-0 overflow-hidden rounded-[20px] bg-white"
             >
+              <p
+                className="absolute left-1/2 top-[14px] -translate-x-1/2 whitespace-nowrap text-[#b8b8b8]/75"
+                style={{
+                  fontFamily: 'Snell Roundhand, cursive',
+                  fontWeight: 500,
+                  fontStyle: 'normal',
+                  fontSize: '30px',
+                  lineHeight: '54px',
+                  letterSpacing: '0px',
+                }}
+              >
+                {item.scriptName}
+              </p>
               <img
                 src={item.image}
                 alt={item.displayName}
@@ -113,12 +126,12 @@ export default function OurProductsSection() {
                 className="relative h-[370px] min-w-[352px] overflow-hidden rounded-[20px] bg-white"
               >
                 <p
-                  className="absolute left-1/2 top-[28px] -translate-x-1/2 text-[#b8b8b8]/75"
+                  className="absolute left-1/2 top-[28px] -translate-x-1/2 whitespace-nowrap text-[#b8b8b8]/75"
                   style={{
                     fontFamily: 'Snell Roundhand, cursive',
                     fontWeight: 500,
                     fontStyle: 'normal',
-                    fontSize: '60px',
+                    fontSize: '50px',
                     lineHeight: '54px',
                     letterSpacing: '0px',
                   }}
