@@ -59,7 +59,7 @@ export default function ProjectsHomeSection({ activeCategory = 'fish' }) {
 
         {/* Main image card */}
         <div className="relative mt-[24px] h-[221px] w-full overflow-hidden rounded-[20px] bg-white">
-          <p className="absolute left-[16px] top-[14px] text-[30px] not-italic leading-[54px] tracking-[0px] text-[#b8b8b8]/70" style={{fontFamily: 'Snell Roundhand', fontWeight: 500}}>
+          <p className="absolute left-[16px] top-[14px] text-[30px] not-italic leading-[54px] tracking-[0px] text-[#b8b8b8]/70" style={{ fontFamily: '"Snell Roundhand", "Brush Script MT", cursive', fontWeight: 500 }}>
             {selectedProduct.scriptName}
           </p>
           <img
