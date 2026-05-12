@@ -104,7 +104,7 @@ export default function SiteFooter() {
           {/* Bottom row: Designed by | Copyright | Socials */}
           <div className="flex items-center justify-between">
             <p className="text-[14px] leading-[18px] text-white/70">Designed by Arunijone</p>
-            <p className="text-[14px] leading-[18px] text-white/70">© 2025 AVLA Exports. All rights reserved.</p>
+            <p className="text-[14px] leading-[18px] text-white/70">© 2026 AVLA Nettos Exports. All rights reserved.</p>
             <div className="flex items-center gap-[10px]">
               {socials.map((social) => (
                 <a key={social.label} href={social.href} target="_blank" rel="noopener noreferrer" aria-label={social.label}

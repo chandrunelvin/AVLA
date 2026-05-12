@@ -75,7 +75,7 @@ function MarqueeRow({ images, reverse = false, duration = 34 }) {
 
 function SectionBadge({ children }) {
   return (
-    <div className="inline-flex h-[37px] items-center justify-center rounded-full border border-[#202833] px-[18px]">
+    <div className="inline-flex h-[30px] items-center justify-center rounded-full border border-[#202833] px-[18px]">
       <span className="text-[12px] font-medium uppercase tracking-[0.22em] text-[#202833] sm:text-[14px]">
         {children}
       </span>
@@ -93,7 +93,7 @@ export default function AboutShowcaseSection() {
       <div className="overflow-hidden rounded-[20px] bg-[#F6F7F9] px-4 py-12 sm:px-6 lg:px-[8px] lg:py-[56px]">
         <div className="mx-auto flex max-w-[760px] flex-col items-center text-center">
           <SectionBadge>Our Infrastructure</SectionBadge>
-          <h2 className="mt-6 max-w-[540px] text-[34px] font-normal leading-[1.08] text-[#111111] sm:text-[36px]">
+          <h2 className="mt-6 max-w-[540px] text-[34px] font-normal leading-[40px] text-[#111111] sm:text-[36px]">
             Our Advanced Seafood Processing Facilities in Kerala
           </h2>
         </div>
@@ -137,7 +137,7 @@ export default function AboutShowcaseSection() {
       <div className="overflow-hidden rounded-[20px] bg-[#F6F7F9] px-4 py-12 sm:px-6 lg:px-[8px] lg:py-[56px]">
         <div className="mx-auto flex max-w-[760px] flex-col items-center text-center">
           <SectionBadge>Global Presence</SectionBadge>
-          <h2 className="mt-6 max-w-[540px] text-[31px] font-normal leading-[1.08] text-[#111111] sm:text-[36px]">
+          <h2 className="mt-6 max-w-[540px] text-[34px] font-normal leading-[40px] text-[#111111] sm:text-[36px]">
             Showcasing Our Seafood Excellence at Global Trade Events
           </h2>
         </div>

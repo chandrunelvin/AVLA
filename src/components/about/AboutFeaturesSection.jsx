@@ -20,12 +20,12 @@ export default function AboutFeaturesSection() {
         {features.map((feature) => (
           <div
             key={feature.title}
-            className="flex flex-col items-center justify-center px-[40px] py-[40px] text-center sm:py-0"
+            className="flex flex-col items-center justify-center px-[60px] py-[40px] text-center sm:py-0"
           >
-            <h3 className="text-[25px] font-normal leading-[1.25] text-[#111111] sm:text-[36px] lg:text-[40px]">
+            <h3 className="w-[186px] text-[25px] font-normal leading-[1.25] text-[#111111] sm:w-auto sm:text-[36px] lg:text-[40px]">
               {feature.title}
             </h3>
-            <p className="mt-[18px] max-w-[230px] text-[14px] font-normal leading-[1.7] text-[#9A9A9A]">
+            <p className="mt-[18px] max-w-[186px] text-[14px] font-normal leading-[1.7] text-[#9A9A9A]">
               {feature.description}
             </p>
           </div>

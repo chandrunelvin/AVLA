@@ -58,7 +58,7 @@ export default function AboutHeroSection() {
 
         {/* Top-right: blue card */}
         <div className="flex min-h-[190px] flex-col justify-between rounded-[18px] bg-[#0161FE] px-[16px] py-[18px] text-white">
-          <p className="text-[12px] font-normal leading-[1.6]">
+          <p className="text-[12px] font-normal leading-[1.6] text-white">
             Buyer satisfaction built on reliable supply, accurate grading,
             customized packing, and strict adherence to international seafood
             export standards.
@@ -78,7 +78,7 @@ export default function AboutHeroSection() {
             />
           </div>
           <p className="mt-[16px] text-[44px] font-normal leading-[1.1]">3+</p>
-          <p className="mt-[8px] text-[12px] font-normal leading-[1.6] text-white/75">
+          <p className="mt-[8px] text-[12px] font-normal leading-[1.6] text-white">
             15+ years seafood processing and exports, delivering certified
             quality since 2010.
           </p>
