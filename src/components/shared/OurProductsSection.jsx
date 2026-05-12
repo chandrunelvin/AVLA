@@ -141,7 +141,8 @@ export default function OurProductsSection() {
                 <img
                   src={item.image}
                   alt={item.displayName}
-                  className="absolute left-1/2 top-[132px] h-[150px] w-[300px] -translate-x-1/2 object-contain"
+                  className="absolute left-[0%] top-[132px] h-[148px] w-[192px] max-w-none translate-x-0 object-contain md:left-1/2 md:h-[150px] md:w-[300px] md:-translate-x-1/2"
+                  style={{ maxWidth: 'none' }}
                   loading="lazy"
                 />
               </button>
