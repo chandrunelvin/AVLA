@@ -1,7 +1,10 @@
 
 const certifications = [
-  { title: 'BRC Registration', active: true,  image: '/assets/images/home/certi1.svg' },
-  { title: 'HACCP License',      active: false, image: '/assets/images/home/certi2.svg' },
+  { title: 'EIC India', active: true, image: '/assets/images/home/EICINDIA.jpeg' },
+  { title: 'HACCP', active: false, image: '/assets/images/home/HACCP.jpeg' },
+  { title: 'IFC', active: false, image: '/assets/images/home/IFC.jpeg' },
+  { title: 'ISO', active: false, image: '/assets/images/home/ISO.jpeg' },
+  { title: 'MPEDA', active: false, image: '/assets/images/home/MPEDA.jpeg' },
 ];
 
 export default function CertificationSection() {

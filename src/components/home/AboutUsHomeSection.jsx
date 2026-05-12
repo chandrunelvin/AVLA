@@ -15,7 +15,7 @@ export default function AboutUsHomeSection() {
         </div>
 
         {/* Heading */}
-        <h2 className="mt-[18px] text-center text-[32px] font-normal leading-[42px] text-[#111111] sm:text-[36px]">
+        <h2 className="mt-[18px] text-center text-[31px] font-normal leading-[42px] text-[#111111] sm:text-[36px]">
           Delivering Sustainable, Safe & High-Quality Seafood Exports
         </h2>
 

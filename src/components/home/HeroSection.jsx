@@ -1,6 +1,9 @@
 import { ArrowRight, CloudDownload } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 
 export default function HeroSection() {
+  const navigate = useNavigate();
+
   return (
     <section className="mx-auto w-full rounded-[20px] bg-[#F6F7F9] pb-[10px] text-center text-[#111111] sm:pb-[112px]">
 
@@ -21,9 +24,10 @@ export default function HeroSection() {
         <div className="mt-[28px] mb-[28px] flex flex-row items-center justify-center gap-3 sm:mt-[26px]">
           <button
             type="button"
+            onClick={() => navigate('/about')}
             className="inline-flex h-[47px] w-[127px] items-center justify-center gap-2 rounded-[95px] bg-[#0161fe] text-[14px] font-normal text-white sm:h-[55px] sm:w-auto sm:min-w-[134px] sm:px-6 sm:text-[16px]"
           >
-            About Me
+            About Us
             <ArrowRight aria-hidden="true" size={17} strokeWidth={1.8} />
           </button>
 

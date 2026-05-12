@@ -16,6 +16,20 @@ const allInfraImages = [
   '/assets/images/about/Infrastructureq.webp',
 ];
 
+const purchaseAreaImages = [
+  '/assets/images/about/Purchase area1.jpeg',
+  '/assets/images/about/Purchase area2.jpeg',
+  '/assets/images/about/Purchase area3.jpeg',
+  '/assets/images/about/Purchase area4.jpeg',
+  '/assets/images/about/Purchase area5.jpeg',
+  '/assets/images/about/Purchase area6.jpeg',
+  '/assets/images/about/Purchase area7.jpeg',
+  '/assets/images/about/Purchase area8.jpeg',
+  '/assets/images/about/Purchase area9.jpeg',
+  '/assets/images/about/Purchase area10.jpeg',
+  '/assets/images/about/Purchase area11.jpeg',
+];
+
 const infrastructureTabs = [
   { id: 'purchase',       label: 'Purchase Area',       icon: FishSymbol },
   { id: 'preprocessing',  label: 'Pre Processing Area', icon: Waves },
@@ -24,10 +38,10 @@ const infrastructureTabs = [
 ];
 
 const infraCardsByTab = {
-  purchase:      allInfraImages.slice(0, 4),
-  preprocessing: allInfraImages.slice(3, 7),
-  production:    allInfraImages.slice(6, 10),
-  coldstorage:   allInfraImages.slice(8, 12),
+  purchase:      purchaseAreaImages,
+  preprocessing: purchaseAreaImages,
+  production:    purchaseAreaImages,
+  coldstorage:   purchaseAreaImages,
 };
 
 function ImageCard({ src }) {
