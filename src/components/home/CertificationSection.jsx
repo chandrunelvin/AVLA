@@ -12,7 +12,7 @@ export default function CertificationSection() {
     <section className="relative mx-auto mt-[50px] w-full rounded-[20px] bg-[rgba(246,247,249,1.00)] px-[8px] pb-[8px] pt-[36px] min-[900px]:px-[42px] min-[900px]:pb-[52px] min-[900px]:pt-[50px]">
 
       {/* Badge */}
-      <div className="flex h-[36.5px] w-[153.5px] items-center justify-center rounded-full border-[0.75px] border-[#202833] mx-auto min-[900px]:mx-0">
+      <div className="mx-auto flex h-[32px] w-[153.5px] items-center justify-center rounded-full border-[0.75px] border-[#202833] min-[900px]:mx-0 min-[900px]:h-[36.5px]">
         <span className="whitespace-nowrap text-[12px] font-medium uppercase tracking-[1.79px] text-[#202833] min-[900px]:text-[14px]">
           Certification
         </span>
@@ -20,7 +20,7 @@ export default function CertificationSection() {
 
       {/* Header row */}
       <div className="mt-[18px] flex flex-col gap-[14px] text-center min-[900px]:mt-[22px] min-[900px]:flex-row min-[900px]:items-start min-[900px]:justify-between min-[900px]:gap-0 min-[900px]:text-left">
-        <h2 className="text-[28px] font-normal leading-[34px] text-[#111111] min-[900px]:w-[527px] min-[900px]:max-w-none min-[900px]:text-[36px] min-[900px]:leading-[42px]">
+        <h2 className="text-[34px] font-normal leading-[34px] text-[#111111] min-[900px]:w-[527px] min-[900px]:max-w-none min-[900px]:text-[36px] min-[900px]:leading-[42px]">
           Our Certifications &amp; Global Compliance Standards
         </h2>
         <p className="text-[16px] font-normal leading-[22px] text-[rgba(109,109,110,0.80)] min-[900px]:mt-[18px] min-[900px]:w-[575px] min-[900px]:max-w-none">

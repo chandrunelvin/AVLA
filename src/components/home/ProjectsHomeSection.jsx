@@ -33,7 +33,7 @@ export default function ProjectsHomeSection({ activeCategory = 'fish' }) {
 
         {/* Badge */}
         <div className="flex justify-center">
-          <div className="flex h-[36px] items-center justify-center rounded-full border border-[#202833] px-[18px]">
+          <div className="flex h-[32px] items-center justify-center rounded-full border border-[#202833] px-[18px]">
             <span className="whitespace-nowrap text-[12px] font-medium uppercase tracking-[1.8px] text-[#202833] sm:text-[14px]">
               Portfolio
             </span>
@@ -59,7 +59,7 @@ export default function ProjectsHomeSection({ activeCategory = 'fish' }) {
 
         {/* Main image card */}
         <div className="relative mt-[24px] h-[221px] w-full overflow-hidden rounded-[20px] bg-white">
-          <p className="absolute left-[16px] top-[14px] text-[30px] not-italic leading-[54px] tracking-[0px] text-[#b8b8b8]/70" style={{ fontFamily: '"Snell Roundhand", "Brush Script MT", cursive', fontWeight: 500 }}>
+          <p className="absolute left-[16px] top-[5px] text-[30px] not-italic leading-[54px] tracking-[0px] text-[#b8b8b8]/70" style={{ fontFamily: '"Snell Roundhand", "Brush Script MT", cursive', fontWeight: 500 }}>
             {selectedProduct.scriptName}
           </p>
           <img

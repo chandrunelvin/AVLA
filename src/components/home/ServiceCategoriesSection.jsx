@@ -39,7 +39,7 @@ export default function ServiceCategoriesSection({ activeCategory, onChange }) {
     >
       {/* Badge */}
       <div className="flex justify-center">
-        <div className="flex h-[39px] items-center justify-center gap-[8px] rounded-full border border-[#202833] px-[21px]">
+        <div className="flex h-[30px] items-center justify-center gap-[8px] rounded-full border border-[#202833] px-[21px]">
           
           <span className="whitespace-nowrap text-[12px] font-medium uppercase leading-[18px] tracking-[1.8px] text-[#202833] lg:text-[14px]">
             Our Product
@@ -48,7 +48,7 @@ export default function ServiceCategoriesSection({ activeCategory, onChange }) {
       </div>
 
       {/* Heading */}
-      <h2 className="mx-auto mt-[18px] max-w-[520px] text-center text-[36px] font-normal leading-[38px] text-[#111111] lg:text-[36px] lg:leading-[42px]">
+      <h2 className="mx-auto mt-[18px] max-w-[520px] text-center text-[37px] font-normal leading-[38px] text-[#111111] lg:text-[36px] lg:leading-[42px]">
         <span className="lg:hidden">Solutions designed to power your business</span>
         <span className="hidden lg:inline">Explore Our Seafood Export Product Categories</span>
       </h2>
@@ -69,7 +69,7 @@ export default function ServiceCategoriesSection({ activeCategory, onChange }) {
               aria-selected={isActive}
               onClick={() => onChange(category.id)}
               onKeyDown={(event) => handleKey(event, category.id)}
-              className={`flex min-h-[58px] ${['w-[122.54px]', 'w-[172.54px]', 'w-[139.98px]', 'w-[148.98px]'][index] ?? 'w-fit'} items-center gap-[10px] rounded-[16px] px-[12px] text-left transition ${
+              className={`flex min-h-[58px] ${['w-[122.54px]', 'w-[172.54px]', 'w-[150.98px]', 'w-[148.98px]'][index] ?? 'w-fit'} items-center gap-[10px] rounded-[16px] px-[18px] text-left transition ${
                 isActive ? 'bg-[#0161FE]' : 'bg-white'
               }`}
             >
@@ -86,7 +86,7 @@ export default function ServiceCategoriesSection({ activeCategory, onChange }) {
                 />
               </span>
               <span
-                className={`text-[13px] font-normal leading-[18px] ${
+                className={`flex-1 text-center text-[13px] font-normal leading-[18px] ${
                   isActive ? 'text-white' : 'text-[#111111]'
                 }`}
               >

@@ -8,12 +8,12 @@ function ProductDetailsHero({ product }) {
     <section className="rounded-b-[14px] bg-[#F6F7F9] px-[8px] pb-[8px] pt-[36px] text-center min-[800px]:px-[48px] min-[800px]:pb-[48px] min-[800px]:pt-[42px]">
 
       {/* Title */}
-      <h1 className="text-center text-[54px] font-normal leading-[1.15] text-[#111111] min-[800px]:text-[58px] min-[800px]:leading-[50px]">
+      <h1 className="text-center text-[54px] font-[500] leading-[1.15] text-[#111111] min-[800px]:text-[58px] min-[800px]:leading-[50px]">
         {product.displayName}
       </h1>
 
       {/* Summary */}
-      <p className="mx-auto mt-[16px] max-w-[320px] text-[16px] font-normal leading-[1.6] text-[#6D6D6ECC] min-[800px]:mt-[28px] min-[800px]:max-w-[462px] min-[800px]:leading-[18px]">
+      <p className="mx-auto mt-[21px] max-w-[320px] text-[16px] font-normal leading-[1.6] text-[#6D6D6ECC] min-[800px]:mt-[28px] min-[800px]:max-w-[462px] min-[800px]:leading-[18px]">
         {product.summary}
       </p>
 
@@ -40,7 +40,7 @@ function ProductDetailsHero({ product }) {
       </div>
 
       {/* Fish image card */}
-      <div className="mx-auto mt-[24px] flex max-w-[1350px] items-center justify-center overflow-hidden rounded-[18px] bg-white px-[16px] py-[24px] min-[800px]:mt-[47px] min-[800px]:h-[632px] min-[800px]:px-[28px] min-[800px]:py-[36px]">
+      <div className="mx-auto mt-[30px] flex max-w-[1350px] items-center justify-center overflow-hidden rounded-[18px] bg-white px-[16px] py-[24px] min-[800px]:mt-[47px] min-[800px]:h-[632px] min-[800px]:px-[28px] min-[800px]:py-[36px]">
         <div className="relative flex w-full items-center justify-center">
           <p
             className="absolute left-[10px] top-0 whitespace-nowrap not-italic leading-[54px] tracking-[0px] text-[#b8b8b8]/70 min-[800px]:left-0 min-[800px]:text-[90px]"
@@ -80,13 +80,13 @@ function ProductDetailsHero({ product }) {
 function ExportRegionSection() {
   return (
     <section className="bg-white px-[24px] pb-[66px] pt-[50px] text-center mt-[50px]">
-      <div className="mx-auto inline-flex h-[36px] items-center justify-center rounded-full border border-[#202833] px-[18px]">
+      <div className="mx-auto inline-flex h-[31px] items-center justify-center rounded-full border border-[#202833] px-[18px]">
         <span className="whitespace-nowrap text-[12px] font-medium uppercase tracking-[1.79px] text-[#202833]">
           Export Region
         </span>
       </div>
 
-      <h2 className="mx-auto mt-[30px] max-w-[529px] text-[34px] font-normal leading-[34px] text-[#111111] sm:text-[36px]">
+      <h2 className="mx-auto mt-[30px] max-w-[529px] text-[34px] font-normal leading-[38px] text-[#111111] sm:text-[36px]">
         Exporting Premium Seafood to
         <br />
         Global Markets
@@ -99,7 +99,7 @@ function ExportRegionSection() {
         loading="lazy"
       />
 
-      <p className="mx-auto mt-[25%] mb-[8%] max-w-[763px] text-[18px] font-normal leading-[28px] text-[#111111] sm:mt-[10%] sm:text-[30px]">
+      <p className="mx-auto mt-[25%] mb-[8%] max-w-[763px] text-[25px] font-normal leading-[34px] text-[#111111] sm:mt-[10%] sm:text-[30px]">
         With years of experience in seafood exports, we ensure reliable supply,
         consistent quality, and timely international delivery.{' '}
         <span className="text-[#6D6D6E]">
@@ -137,18 +137,18 @@ function ProductFlagsSection({ product }) {
         {/* Header — same as FaqListSection */}
         <div className="flex flex-col items-center text-center sm:flex-row sm:items-center sm:justify-between sm:text-left">
           <div className="flex flex-col items-center sm:items-start">
-            <div className="inline-flex h-[34px] items-center justify-center rounded-full border border-[#202833] px-[16px]">
+            <div className="inline-flex h-[32px] items-center justify-center rounded-full border border-[#202833] px-[16px]">
               <span className="whitespace-nowrap text-[11px] font-medium uppercase tracking-[1.2px] text-[#202833]">
                 Product FAQ
               </span>
             </div>
-            <h2 className="mt-[20px] text-[32px] font-normal leading-[1.1] text-[#2b2b2b] sm:text-[42px] sm:leading-[40px]">
+            <h2 className="mt-[30px] text-[32px] font-normal leading-[1.1] text-[#2b2b2b] sm:text-[42px] sm:leading-[40px]">
               {product.displayName}
             </h2>
           </div>
           <a
             href="/products"
-            className="mt-[16px] flex h-[42px] w-[110px] items-center justify-center gap-[7px] rounded-full bg-[#0161FE] text-[13px] font-semibold text-white sm:mt-0"
+            className="mt-[30px] flex h-[42px] w-[110px] items-center justify-center gap-[7px] rounded-full bg-[#0161FE] text-[13px] font-semibold text-white sm:mt-0"
           >
             View All
             <ArrowRight size={15} strokeWidth={2.5} />
@@ -176,7 +176,7 @@ function ProductFlagsSection({ product }) {
 
               {/* Mobile: answer panel */}
               {isExpanded(index) && faq.answer && (
-                <div className="mt-[6px] rounded-[20px] bg-[#F6F7F9] px-[18px] py-[18px] text-center sm:hidden">
+                <div className="mt-[-8px] rounded-[20px] bg-[#F6F7F9] px-[18px] py-[18px] text-center sm:hidden">
                   <p className="text-[14px] leading-[1.7] text-[#8a8a8a]">{faq.answer}</p>
                 </div>
               )}

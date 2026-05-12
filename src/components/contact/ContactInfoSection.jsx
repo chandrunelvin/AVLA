@@ -19,13 +19,13 @@ const contactCards = [
 export default function ContactInfoSection() {
   return (
     <section className="relative mt-[40px] min-h-[361px] w-full overflow-hidden rounded-[20px] bg-[#F6F7F9] px-5 py-11 sm:px-8 lg:mt-[50px] lg:h-[361px] lg:px-0 lg:py-0">
-      <div className="mx-auto flex h-[39px] w-[157px] items-center justify-center rounded-full border border-[#202833] lg:absolute lg:left-1/2 lg:top-[57px] lg:-translate-x-1/2">
-        <span className="whitespace-nowrap text-[14px] font-medium uppercase leading-[18px] tracking-[1.7862437963485718px] text-[#202833]">
+      <div className="mx-auto flex h-[32px] w-[125px] items-center justify-center rounded-full border border-[#202833] lg:absolute lg:left-1/2 lg:top-[57px] lg:-translate-x-1/2">
+        <span className="whitespace-nowrap text-[12px] font-medium uppercase leading-[18px] tracking-[1.7862437963485718px] text-[#202833]">
           Contact Us
         </span>
       </div>
 
-      <h2 className="mx-auto mt-8 max-w-[980px] text-center text-[34px] font-normal leading-[42px] text-[#111111] sm:text-[42px] sm:leading-[52px] lg:absolute lg:left-1/2 lg:top-[126px] lg:mt-0 lg:max-w-none lg:-translate-x-1/2 lg:whitespace-nowrap lg:text-[48px] lg:leading-[58px] xl:text-[50px] xl:leading-[62px]">
+      <h2 className="mx-auto mt-8 max-w-[980px] text-center text-[38px] font-normal leading-[42px] text-[#111111] sm:text-[42px] sm:leading-[52px] lg:absolute lg:left-1/2 lg:top-[126px] lg:mt-0 lg:max-w-none lg:-translate-x-1/2 lg:whitespace-nowrap lg:text-[48px] lg:leading-[58px] xl:text-[50px] xl:leading-[62px]">
         Get in touch, let us know how we can help
       </h2>
 
@@ -35,7 +35,7 @@ export default function ContactInfoSection() {
             key={card.label}
             className="flex min-h-[85px] w-full items-center gap-[18px] rounded-[20px] bg-white px-[20px] py-[16px] lg:w-[399px]"
           >
-            <div className="flex h-[53px] w-[53px] shrink-0 items-center justify-center rounded-full bg-[#0161FE]">
+            <div className="flex h-[38px] w-[38px] shrink-0 items-center justify-center rounded-full bg-[#0161FE] lg:h-[53px] lg:w-[53px]">
               <img
                 src={card.icon}
                 alt=""
@@ -44,7 +44,7 @@ export default function ContactInfoSection() {
               />
             </div>
             <div className="flex flex-col gap-[4px]">
-              <p className="text-[16px] font-normal leading-[20px] text-[#8a8a8a]">
+              <p className="text-[18px] font-normal leading-[20px] text-[#8a8a8a]">
                 {card.label}
               </p>
               <p className="whitespace-pre-line text-[18px] font-normal leading-[24px] text-[#111111] lg:text-[20px]">

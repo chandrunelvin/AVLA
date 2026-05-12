@@ -59,7 +59,7 @@ export default function AboutHeroSection() {
         {/* Top-right: blue card */}
         <div className="flex min-h-[190px] flex-col justify-between rounded-[18px] bg-[#0161FE] px-[16px] py-[18px] text-white">
           <p className="text-[12px] font-normal leading-[1.6]">
-            Client satisfaction built on reliable supply, accurate grading,
+            Buyer satisfaction built on reliable supply, accurate grading,
             customized packing, and strict adherence to international seafood
             export standards.
           </p>
@@ -113,7 +113,7 @@ export default function AboutHeroSection() {
         <div className="flex flex-col gap-[10px]">
           <div className="flex min-h-[272px] flex-col justify-between rounded-[22px] bg-[#0161FE] px-[22px] py-[22px] text-white">
             <p className="max-w-[320px] text-[15px] font-normal leading-[1.6]">
-              Client satisfaction built on reliable supply, accurate grading,
+              Buyer satisfaction built on reliable supply, accurate grading,
               customized packing, and strict adherence to international seafood
               export standards.
             </p>

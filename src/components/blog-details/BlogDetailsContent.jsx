@@ -124,7 +124,7 @@ function BlogDetailsHero({ blog }) {
 
       {/* Title — centered mobile, left desktop */}
       <h1
-        className="text-center text-[37px] font-normal leading-[40px] text-[#4a4a4a] min-[800px]:text-left min-[800px]:text-[40px]"
+        className="text-center text-[40px] font-normal leading-[40px] text-[#4a4a4a] min-[800px]:text-left min-[800px]:text-[40px]"
       >
         {blog.title}
       </h1>
@@ -160,7 +160,7 @@ function BlogDetailsHero({ blog }) {
       </div>
 
       {/* Fish image card */}
-      <div className="mt-[28px] flex items-center justify-center overflow-hidden rounded-[18px] bg-white px-[20px] py-[32px] min-[800px]:mt-[40px] min-[800px]:h-[580px] min-[800px]:px-[60px] min-[800px]:py-0">
+      <div className="mt-[28px] flex items-center justify-center overflow-hidden rounded-[18px] bg-white px-[20px] py-[0px] min-[800px]:mt-[40px] min-[800px]:h-[580px] min-[800px]:px-[60px] min-[800px]:py-0">
         <img
           src={blog.image}
           alt={blog.title}

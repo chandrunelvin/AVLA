@@ -45,7 +45,7 @@ export default function HeroSection() {
       <img
         src="/assets/images/home/hero-demo.svg"
         alt="Seafood export demo"
-        className="mx-auto mt-[32px] block h-auto w-full max-w-[1006px] rounded-[15px] px-[16px] sm:mt-[82px] sm:px-6 lg:px-12"
+        className="mx-auto mt-[32px] block h-auto w-full max-w-[1006px] rounded-[15px] px-[9px] sm:mt-[82px] sm:px-6 lg:px-12"
         loading="eager"
       />
 

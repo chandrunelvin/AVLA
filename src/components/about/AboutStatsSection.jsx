@@ -1,7 +1,7 @@
 const stats = [
   {
     value: '95%+',
-    description: 'Client satisfaction trusted by global seafood buyers',
+    description: 'Buyer satisfaction trusted by global seafood buyers',
   },
   {
     value: '15+',

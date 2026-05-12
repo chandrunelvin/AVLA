@@ -12,14 +12,14 @@ export default function Navbar({ activePage }) {
 
   return (
     <header className=" inset-x-0 top-0 z-30 bg-white px-[10px] pt-[10px]">
-      <div className="relative mx-auto flex h-[68px] w-full items-center justify-between rounded-[20px] bg-[#F6F7F9] px-[18px] md:h-[88px] md:px-[43px]">
+      <div className="relative mx-auto flex h-[59px] w-full items-center justify-between rounded-[20px] bg-[#F6F7F9] px-[18px] md:h-[88px] md:px-[43px]">
 
         {/* Logo */}
         <button
           type="button"
           aria-label="Go to home"
           onClick={() => navigate('/')}
-          className="h-[44px] w-[155px] flex-shrink-0 md:h-[55px] md:w-[193px]"
+          className="h-[37px] w-[133px] flex-shrink-0 md:h-[55px] md:w-[193px]"
         >
           <img
             src="/assets/images/project/logo.png"

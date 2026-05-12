@@ -25,34 +25,34 @@ export default function ProductListSection({ activeCategory }) {
           </span>
         </div>
 
-        <h2 className="mt-[14px] text-[34px] font-normal leading-[1.2] text-[#111111]">
+        <h2 className="mt-[20px] text-[34px] font-normal leading-[1.2] text-[#111111]">
           Real Results. Real Impact.
           Our Success Stories.
         </h2>
 
-        <p className="mt-[14px] max-w-[320px] text-[16px] font-normal leading-[1.6] text-[#6D6D6ECC]">
+        <p className="mt-[20px] max-w-[320px] text-[16px] font-normal leading-[1.6] text-[#6D6D6ECC]">
           Our seafood products are carefully processed, quality-tested, and prepared
           for global export with guaranteed freshness and compliance.
         </p>
 
-        <div className="mt-[24px] flex flex-col gap-[30px]">
+        <div className="mt-[30px] flex flex-col gap-[30px]">
           {products.map((product) => (
             <article key={product.slug} className="flex flex-col items-center">
-              <div className="flex h-[240px] w-full items-center justify-center overflow-hidden rounded-[20px] bg-white">
+              <div className="flex w-[95%] items-center justify-center overflow-hidden rounded-[20px] bg-white">
                 <img
                   src={product.image}
                   alt={product.name}
-                  className="h-full w-full object-contain p-[10px]"
+                  className="h-full w-full object-contain"
                   loading="lazy"
                 />
               </div>
-              <h3 className="mt-[20px] text-[18px] font-normal leading-[1.3] text-[#4a4a4a]">
+              <h3 className="mt-[25px] text-[24px] font-[500] leading-[1.3] text-[#4a4a4a]">
                 {product.name}
               </h3>
               <button
                 type="button"
                 onClick={() => navigate(product.slug ? `/products/${product.slug}` : '/contact')}
-                className="mt-[20px] flex h-[44px] w-[120px] items-center justify-center gap-[8px] rounded-full bg-[#0161FE] text-[14px] font-medium text-white"
+                className="mt-[25px] flex h-[44px] w-[120px] items-center justify-center gap-[8px] rounded-full bg-[#0161FE] text-[14px] font-medium text-white"
               >
                 Explore
                 <img src="/assets/images/home/main-arrow.svg" alt="" aria-hidden="true" className="h-[16px] w-[16px]" />

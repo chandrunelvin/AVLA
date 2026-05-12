@@ -50,7 +50,7 @@ export default function BottomNavMobile() {
         className="bg-white rounded-[72px] flex items-center justify-between px-[10px] pointer-events-auto"
         style={{
           width: 'calc(100% - 16px)',
-          maxWidth: '430px',
+          maxWidth: '254px',
           height: '69px',
           boxShadow: '0px 3px 12px rgba(0, 0, 0, 0.25)',
         }}
@@ -65,17 +65,17 @@ export default function BottomNavMobile() {
               onClick={() => navigate(item.route)}
               className={`flex items-center gap-[10px] transition-all duration-200 border-none outline-none ${
                 isActive
-                  ? 'bg-[#0161FE] rounded-[95px] px-[15px] py-[12px]'
+                  ? 'bg-[#0161FE] rounded-[95px] px-[13.5px] py-[13.5px]'
                   : 'px-[10px] py-[17px]'
               }`}
             >
               <img
                 src={isActive ? item.activeIcon : item.icon}
                 alt={item.label}
-                className="h-[22px] w-[22px] object-contain"
+                className="h-[16px] w-[16px] object-contain"
               />
               {isActive && (
-                <span className="text-white font-bold text-[16px] leading-[28px] whitespace-nowrap capitalize">
+                <span className="text-white font-bold text-[11px] leading-[28px] whitespace-nowrap capitalize">
                   {item.label}
                 </span>
               )}

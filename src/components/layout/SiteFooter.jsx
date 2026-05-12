@@ -63,8 +63,8 @@ export default function SiteFooter() {
             ))}
           </div>
 
-          <p className="absolute left-1/2 top-[641px] w-full -translate-x-1/2 text-center text-[14px] leading-[18px] text-white">
-            © 2026 AVLA Exports. All rights reserved.
+          <p className="absolute left-1/2 top-[641px] w-[200px] -translate-x-1/2 text-center text-[14px] leading-[18px] text-white">
+            © 2026 AVLA Nettos Exports . All rights reserved.
           </p>
         </div>
 

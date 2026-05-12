@@ -45,7 +45,7 @@ export default function FaqCategoryTabs({ activeCategory, onChange }) {
       </div>
 
       {/* Heading */}
-      <h2 className="mx-auto mt-[18px] max-w-[466px] text-center text-[28px] font-normal leading-[36px] text-[#111111] min-[800px]:text-[36px] min-[800px]:leading-[42px]">
+      <h2 className="mx-auto mt-[18px] max-w-[466px] text-center text-[34px] font-normal leading-[36px] text-[#111111] min-[800px]:text-[36px] min-[800px]:leading-[42px]">
         Explore a wide range of seafood families and species
       </h2>
 
@@ -65,7 +65,7 @@ export default function FaqCategoryTabs({ activeCategory, onChange }) {
               aria-selected={isActive}
               onClick={() => onChange(category.id)}
               onKeyDown={(event) => handleKey(event, category.id)}
-              className={`flex h-[58px] ${['w-[122.54px]', 'w-[172.54px]', 'w-[139.98px]', 'w-[148.98px]'][index] ?? 'w-fit'} items-center gap-[10px] overflow-hidden rounded-[16px] px-[12px] text-left transition ${
+              className={`flex h-[58px] ${['w-[122.54px]', 'w-[172.54px]', 'w-[150.98px]', 'w-[148.98px]'][index] ?? 'w-fit'} items-center gap-[10px] overflow-hidden rounded-[16px] px-[18px] text-left transition ${
                 isActive ? 'bg-[#0161FE]' : 'bg-white'
               }`}
             >
@@ -82,7 +82,7 @@ export default function FaqCategoryTabs({ activeCategory, onChange }) {
                 />
               </span>
               <span
-                className={`min-w-0 truncate text-[13px] font-normal leading-[18px] ${
+                className={`min-w-0 flex-1 text-center text-[13px] font-normal leading-[18px] ${
                   isActive ? 'text-white' : 'text-[#111111]'
                 }`}
               >

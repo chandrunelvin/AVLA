@@ -66,8 +66,8 @@ export default function AboutUsHomeSection() {
               />
             </div>
             <p className="mt-[16px] text-[52px] font-normal leading-[56px]">95%</p>
-            <p className="mt-[16px] text-[14px] font-normal leading-[20px] text-white/90">
-              Client satisfaction built on reliable supply, accurate grading,
+            <p className="mt-[16px] text-[14px] font-normal leading-[20px] text-white">
+              Buyer satisfaction built on reliable supply, accurate grading,
               customized packing, and strict adherence to international seafood export
               standards.
             </p>
@@ -159,7 +159,7 @@ export default function AboutUsHomeSection() {
             <p className="mt-[40px] text-[46px] font-normal leading-[54px]">95%+</p>
             <p className="mt-[10px] text-[18px] font-medium leading-[24px]">Client Satisfaction</p>
             <p className="mt-[8px] text-[16px] font-normal leading-[24px] text-white/80">
-              Client satisfaction built on reliable supply, accurate grading, customized packing, and strict adherence to international seafood export standards.
+              Buyer satisfaction built on reliable supply, accurate grading, customized packing, and strict adherence to international seafood export standards.
             </p>
           </article>
 

@@ -27,7 +27,7 @@ export default function OurProductsSection() {
   function onMouseUp() { setIsDragging(false); }
 
   return (
-    <section className="relative left-1/2 mt-[110px] w-screen -translate-x-1/2 rounded-t-[20px] bg-[#F6F7F9]">
+    <section className="relative left-1/2 mt-[40px] w-screen -translate-x-1/2 rounded-t-[20px] bg-[#F6F7F9]">
 
       {/* ── Mobile layout ── */}
       <div className="sm:hidden">
@@ -61,7 +61,7 @@ export default function OurProductsSection() {
         </div>
 
         {/* Horizontal scroll cards */}
-        <div className="flex gap-[10px] overflow-x-auto px-[10px] pb-[10px] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+        <div className="flex gap-[10px] overflow-x-auto px-[0px] pb-[10px] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
           {productDetails.map((item) => (
             <button
               key={item.slug}

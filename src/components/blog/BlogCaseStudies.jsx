@@ -52,12 +52,12 @@ export default function BlogCaseStudies({ activeCategory }) {
       {/* Section header */}
       <div className="flex flex-col items-center px-[8px] text-center lg:flex-row lg:items-start lg:justify-between lg:px-0 lg:text-left">
         <div>
-          <div className="inline-flex h-[38px] items-center justify-center rounded-full border border-[#202833] px-[20px]">
+          <div className="inline-flex h-[32px] items-center justify-center rounded-full border border-[#202833] px-[20px]">
             <span className="whitespace-nowrap text-[12px] font-medium uppercase leading-[12px] tracking-[1.2px] text-[#202833] sm:text-[14px]">
               Case Studies
             </span>
           </div>
-          <h2 className="mt-[18px] max-w-[380px] text-[35px] font-normal leading-[1.25] text-[#2b2b2b] lg:text-left">
+          <h2 className="mt-[18px] max-w-[380px] text-[30px] font-normal leading-[1.25] text-[#2b2b2b] lg:text-left">
             Real Results. Real Impact. Our Success Stories.
           </h2>
         </div>
@@ -75,17 +75,17 @@ export default function BlogCaseStudies({ activeCategory }) {
               <img
                 src={post.image}
                 alt={post.title}
-                className="h-full w-full object-contain p-[16px]"
+                className="h-full w-full object-contain"
                 loading="lazy"
               />
             </div>
-            <h3 className="mt-[16px] text-[20px] font-normal leading-[1.35] text-[#4a4a4a]">
+            <h3 className="mt-[25px] text-[20px] font-normal leading-[1.35] text-[#4a4a4a]">
               {post.title}
             </h3>
             <button
               type="button"
               onClick={() => navigate(post.slug ? `/blog/${post.slug}` : '/blog')}
-              className="mt-[14px] flex h-[44px] w-[120px] items-center justify-center gap-[8px] rounded-full bg-[#0161FE] text-[14px] font-medium text-white"
+              className="mt-[25px] flex h-[44px] w-[120px] items-center justify-center gap-[8px] rounded-full bg-[#0161FE] text-[14px] font-medium text-white"
             >
               Explore
               <img src="/assets/images/home/main-arrow.svg" alt="" aria-hidden="true" className="h-[16px] w-[16px]" />

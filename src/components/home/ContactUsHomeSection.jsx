@@ -32,7 +32,7 @@ export default function ContactUsHomeSection() {
           </div>
         </div>
 
-        <h2 className="mt-[20px] text-center text-[32px] font-normal leading-[40px] text-[#1b1b1b] sm:text-[38px] sm:leading-[46px]">
+        <h2 className="mt-[20px] text-center text-[46px] font-normal leading-[40px] text-[#1b1b1b] sm:text-[40px] sm:leading-[46px]">
           Connect with Avla Nettons
         </h2>
 

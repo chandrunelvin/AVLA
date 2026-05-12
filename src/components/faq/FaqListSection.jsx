@@ -108,12 +108,12 @@ export default function FaqListSection({ activeCategory }) {
 
           {/* Section header */}
           <div className="flex flex-col items-center text-center sm:items-start sm:text-left">
-            <div className="inline-flex h-[34px] items-center justify-center rounded-full border border-[#202833] px-[16px]">
+            <div className="inline-flex h-[32px] items-center justify-center rounded-full border border-[#202833] px-[16px]">
               <span className="whitespace-nowrap text-[11px] font-medium uppercase tracking-[1.2px] text-[#202833]">
                 Product FAQ
               </span>
             </div>
-            <div className="mt-[24px] flex w-full flex-col items-center gap-[16px] sm:flex-row sm:items-center sm:justify-between">
+            <div className="mt-[30px] flex w-full flex-col items-center gap-[30px] sm:flex-row sm:items-center sm:justify-between">
               <h2 className="text-[32px] font-normal leading-[1.1] text-[#2b2b2b] sm:text-[42px] sm:leading-[40px]">
                 {section.title}
               </h2>
@@ -129,7 +129,7 @@ export default function FaqListSection({ activeCategory }) {
           </div>
 
           {/* FAQ rows */}
-          <div className="mt-[50px] space-y-[20px]">
+          <div className="mt-[30px] space-y-[20px]">
             {section.rows.map((row, rowIndex) => {
               const expanded = isExpanded(sectionIndex, rowIndex);
               return (
@@ -151,7 +151,7 @@ export default function FaqListSection({ activeCategory }) {
 
                   {/* Mobile: answer panel */}
                   {expanded && row.answer && (
-                    <div className="mt-[6px] rounded-[20px] bg-[#F6F7F9] px-[18px] py-[18px] text-center sm:hidden">
+                    <div className="rounded-[20px] bg-[#F6F7F9] px-[18px] py-[18px] text-center sm:hidden">
                       <p className="text-[14px] leading-[1.7] text-[#8a8a8a]">{row.answer}</p>
                     </div>
                   )}
