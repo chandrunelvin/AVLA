@@ -79,7 +79,7 @@ export default function ProductListSection({ activeCategory }) {
               Our Success Stories.
             </h2>
           </div>
-          <p className="mt-[55px] max-w-[542px] text-[16px] leading-[22px] text-[#8a8a8a]">
+          <p className="mt-[78px] max-w-[542px] text-[16px] leading-[22px] text-[#8a8a8a]">
             Our seafood products are carefully processed, quality-tested, and prepared for
             global export with guaranteed freshness and compliance.
           </p>

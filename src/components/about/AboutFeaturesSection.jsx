@@ -25,7 +25,7 @@ export default function AboutFeaturesSection() {
             <h3 className="w-[186px] text-[25px] font-normal leading-[1.25] text-[#111111] sm:w-auto sm:text-[36px] lg:text-[40px]">
               {feature.title}
             </h3>
-            <p className="mt-[18px] max-w-[186px] text-[14px] font-normal leading-[1.7] text-[#9A9A9A]">
+            <p className="mt-[18px] max-w-[186px] text-[14px] font-normal leading-[1.7] text-[#9A9A9A] sm:text-[16px]">
               {feature.description}
             </p>
           </div>

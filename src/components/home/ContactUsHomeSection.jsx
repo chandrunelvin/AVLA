@@ -1,20 +1,18 @@
-import { Mail, MapPin, Phone } from 'lucide-react';
-
 const contactItems = [
   {
     label: 'Email Address',
     value: 'sales@avlaexports.com',
-    icon: Mail,
+    icon: '/assets/images/contact/mail-icon.svg',
   },
   {
     label: 'Phone Number',
     value: '+91 7736782999',
-    icon: Phone,
+    icon: '/assets/images/contact/phone-icon.svg',
   },
   {
     label: 'My Location',
     value: 'Sakthikulangara, Kollam, Kerala.',
-    icon: MapPin,
+    icon: '/assets/images/contact/location-icon.svg',
   },
 ];
 
@@ -32,7 +30,7 @@ export default function ContactUsHomeSection() {
           </div>
         </div>
 
-        <h2 className="mt-[20px] text-center text-[46px] font-normal leading-[40px] text-[#1b1b1b] sm:text-[40px] sm:leading-[46px]">
+        <h2 className="mt-[20px] text-center text-[36px] font-normal leading-[40px] text-[#1b1b1b] sm:text-[38px] sm:leading-[46px]">
           Connect with Avla Nettons
         </h2>
 
@@ -42,14 +40,17 @@ export default function ContactUsHomeSection() {
 
         <div className="mt-[32px] flex flex-col gap-[12px]">
           {contactItems.map((item) => {
-            const Icon = item.icon;
             return (
               <div
                 key={item.label}
                 className="flex items-center gap-[16px] rounded-[18px] bg-white px-[18px] py-[14px]"
               >
-                <div className="flex h-[44px] w-[44px] shrink-0 items-center justify-center rounded-full bg-[#0161FE] text-white">
-                  <Icon aria-hidden="true" size={20} strokeWidth={2.2} />
+                <div className="flex h-[38px] w-[38px] shrink-0 items-center justify-center rounded-full bg-[#0161FE] lg:h-[43px] lg:w-[43px]">
+                  <img
+                    src={item.icon}
+                    alt=""
+                    loading="lazy"
+                  />
                 </div>
                 <div className="flex flex-col">
                   <p className="text-[13px] font-normal leading-[18px] text-[#8a8a8a]">
@@ -88,20 +89,23 @@ export default function ContactUsHomeSection() {
         {/* Right — contact cards */}
         <div className="absolute bottom-[41px] left-[50%] right-[41px] top-[41px] flex flex-col justify-center gap-[14px]">
           {contactItems.map((item) => {
-            const Icon = item.icon;
             return (
               <div
                 key={item.label}
                 className="flex items-center gap-[16px] rounded-[19px] bg-white px-[21px] py-[14px]"
               >
-                <div className="flex h-[43px] w-[43px] shrink-0 items-center justify-center rounded-full bg-[#0161FE] text-white">
-                  <Icon aria-hidden="true" size={21} strokeWidth={2.4} />
+                <div className="flex h-[38px] w-[38px] shrink-0 items-center justify-center rounded-full bg-[#0161FE] lg:h-[53px] lg:w-[53px]">
+                  <img
+                    src={item.icon}
+                    alt=""
+                    loading="lazy"
+                  />
                 </div>
                 <div className="flex flex-col">
-                  <p className="text-[15px] font-normal leading-[20px] text-[#8a8a8a]">
+                  <p className="text-[18px] font-normal leading-[20px] text-[#8a8a8a]">
                     {item.label}
                   </p>
-                  <p className="text-[18px] font-normal leading-[24px] text-[#111111]">
+                  <p className="mt-[6px] text-[18px] font-normal leading-[24px] text-[#111111] lg:mt-[11px] lg:text-[20px]">
                     {item.value}
                   </p>
                 </div>

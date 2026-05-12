@@ -62,7 +62,7 @@ export default function BlogCaseStudies({ activeCategory }) {
           </h2>
         </div>
 
-        <p className="mt-[16px] max-w-[450px] text-[16px] font-normal leading-[23.69px] text-[#8a8a8a] lg:mt-[66px] lg:text-left">
+        <p className="mt-[16px] max-w-[450px] text-[16px] font-normal leading-[23.69px] text-[#8a8a8a] lg:mt-[63.5px] lg:text-left">
         Discover how our solutions have delivered real results, solved complex challenges, and accelerated business growth.
         </p>
       </div>

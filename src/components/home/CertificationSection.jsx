@@ -1,6 +1,6 @@
 
 const certifications = [
-  { title: 'IFS Certification', active: true, image: '/assets/images/home/ifs0.svg' },
+  { title: 'IFS Certification', active: true, image: '/assets/images/home/ifs0.png' },
   { title: 'US FDA Registration', active: false, image: '/assets/images/home/us Fda1.png' },
   { title: 'MPEDA Registration', active: false, image: '/assets/images/home/mpeda2.png' },
   { title: 'HACCP Certification', active: false, image: '/assets/images/home/haccp3.png' },

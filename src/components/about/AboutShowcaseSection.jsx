@@ -30,6 +30,22 @@ const purchaseAreaImages = [
   '/assets/images/about/Purchase area11.jpeg',
 ];
 
+const globalPresenceImages = [
+  '/assets/images/about/Global Presence1.png',
+  '/assets/images/about/Global Presence2.png',
+  '/assets/images/about/Global Presence3.png',
+  '/assets/images/about/Global Presence4.png',
+  '/assets/images/about/Global Presence5.png',
+  '/assets/images/about/Global Presence6.png',
+  '/assets/images/about/Global Presence7.png',
+  '/assets/images/about/Global Presence8.png',
+  '/assets/images/about/Global Presence9.png',
+];
+
+const preprocessingAreaImages = allInfraImages.slice(0, 4);
+const productionAreaImages = allInfraImages.slice(4, 8);
+const coldStorageImages = allInfraImages.slice(8, 12);
+
 const infrastructureTabs = [
   { id: 'purchase',       label: 'Purchase Area',       icon: FishSymbol },
   { id: 'preprocessing',  label: 'Pre Processing Area', icon: Waves },
@@ -38,10 +54,10 @@ const infrastructureTabs = [
 ];
 
 const infraCardsByTab = {
-  purchase:      purchaseAreaImages,
-  preprocessing: purchaseAreaImages,
-  production:    purchaseAreaImages,
-  coldstorage:   purchaseAreaImages,
+  purchase: purchaseAreaImages,
+  preprocessing: preprocessingAreaImages,
+  production: productionAreaImages,
+  coldstorage: coldStorageImages,
 };
 
 function ImageCard({ src }) {
@@ -86,6 +102,10 @@ function SectionBadge({ children }) {
 export default function AboutShowcaseSection() {
   const [activeTab, setActiveTab] = useState('purchase');
   const tabImages = infraCardsByTab[activeTab];
+  const infrastructureDurations =
+    activeTab === 'purchase'
+      ? { forward: 42, reverse: 40 }
+      : { forward: 30, reverse: 28 };
 
   return (
     <section className="space-y-6">
@@ -128,8 +148,8 @@ export default function AboutShowcaseSection() {
 
         {/* Cards marquee */}
         <div className="mt-10 space-y-[10px]">
-          <MarqueeRow images={tabImages} duration={30} />
-          <MarqueeRow images={[...tabImages].reverse()} reverse duration={28} />
+          <MarqueeRow images={tabImages} duration={infrastructureDurations.forward} />
+          <MarqueeRow images={[...tabImages].reverse()} reverse duration={infrastructureDurations.reverse} />
         </div>
       </div>
 
@@ -143,8 +163,8 @@ export default function AboutShowcaseSection() {
         </div>
 
         <div className="mt-12 space-y-[10px]">
-          <MarqueeRow images={allInfraImages.slice(0, 6)} duration={32} />
-          <MarqueeRow images={allInfraImages.slice(6)} reverse duration={29} />
+          <MarqueeRow images={globalPresenceImages.slice(0, 5)} duration={32} />
+          <MarqueeRow images={globalPresenceImages.slice(5)} reverse duration={29} />
         </div>
       </div>
     </section>
