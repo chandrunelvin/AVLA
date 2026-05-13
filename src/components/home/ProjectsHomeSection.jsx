@@ -147,24 +147,27 @@ export default function ProjectsHomeSection({ activeCategory = 'fish' }) {
           ))}
         </div>
 
-        <div
-          role="button"
-          tabIndex={0}
-          onClick={selectPrevious}
-          onKeyDown={(e) => handleButtonKey(e, selectPrevious)}
-          className="absolute left-[660px] top-[989px] flex h-[47px] w-[47px] cursor-pointer items-center justify-center rounded-full border border-[#0161FE] bg-white text-[24px] leading-none text-[#0161FE] transition hover:bg-[#0161FE] hover:text-white"
-        >
-          <img src="/assets/images/home/arrow.svg" alt="previous" className="rotate-180" />
-        </div>
+        <div className="absolute left-1/2 top-[989px] flex -translate-x-1/2 items-center gap-[8px]">
+          <div
+            role="button"
+            tabIndex={0}
+            onClick={selectPrevious}
+            onKeyDown={(e) => handleButtonKey(e, selectPrevious)}
+            className="flex h-[47px] w-[47px] cursor-pointer items-center justify-center rounded-full border border-[#0161FE] bg-white text-[24px] leading-none text-[#0161FE] transition hover:bg-[#0161FE] hover:text-white"
+          >
+            <img src="/assets/images/home/arrow.svg" alt="previous" className="rotate-180" />
+          </div>
 
-        <div
-          role="button"
-          tabIndex={0}
-          onClick={selectNext}
-          onKeyDown={(e) => handleButtonKey(e, selectNext)}
-          className="absolute left-[715px] top-[989px] flex h-[47px] w-[47px] cursor-pointer items-center justify-center rounded-full border border-[#0161FE] bg-white text-[24px] leading-none text-[#0161FE] transition hover:bg-[#0161FE] hover:text-white"
-        >
-          &#8594;
+          <div
+            role="button"
+            tabIndex={0}
+            onClick={selectNext}
+            onKeyDown={(e) => handleButtonKey(e, selectNext)}
+            className="flex h-[47px] w-[47px] cursor-pointer items-center justify-center rounded-full border border-[#0161FE] bg-white text-[24px] leading-none text-[#0161FE] transition hover:bg-[#0161FE] hover:text-white"
+          >
+            {/* &#8594; */}
+             <img src="/assets/images/home/arrow.svg" alt="previous" />
+          </div>
         </div>
       </div>
 

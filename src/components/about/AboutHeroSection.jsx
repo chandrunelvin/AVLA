@@ -77,7 +77,7 @@ export default function AboutHeroSection() {
               loading="lazy"
             />
           </div>
-          <p className="mt-[16px] text-[44px] font-normal leading-[1.1]">3+</p>
+          <p className="mt-[16px] text-[44px] font-normal leading-[1.1]">15+</p>
           <p className="mt-[8px] text-[12px] font-normal leading-[1.6] text-white">
             15+ years seafood processing and exports, delivering certified
             quality since 2010.
@@ -130,7 +130,7 @@ export default function AboutHeroSection() {
                 loading="lazy"
               />
             </div>
-            <p className="mt-[24px] text-[50px] font-normal leading-[1.1]">3+</p>
+            <p className="mt-[24px] text-[50px] font-normal leading-[1.1]">15+</p>
             <p className="mt-[14px] text-[15px] font-normal leading-[1.6] text-white/80">
               Years of proven experience in seafood processing and exports,
               delivering consistent quality through certified systems and
