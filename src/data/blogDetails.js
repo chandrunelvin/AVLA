@@ -43,7 +43,7 @@ export const blogDetails = [
     title: 'Fresh & Frozen Salmon Fish Export – Premium Seafood Supplier',
     slug: 'salmon-fish-export',
     category: 'Salmon',
-    image: '/assets/images/products/salmon.svg',
+    image: '/assets/images/products/salmen-product-fish.webp',
     company: 'Avla Nettos Exports',
     readTime: '3 Min',
     releaseDate: 'January 1, 2026',

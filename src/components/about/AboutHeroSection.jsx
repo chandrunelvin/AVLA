@@ -36,7 +36,7 @@ export default function AboutHeroSection() {
               src="/assets/images/project/whatsapp-icon.svg"
               alt=""
               aria-hidden="true"
-              className="h-[22px] w-[22px] brightness-[10]"
+              className="h-[22px] w-[22px]"
             />
             WhatsApp
           </a>
