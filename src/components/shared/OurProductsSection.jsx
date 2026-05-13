@@ -67,7 +67,7 @@ export default function OurProductsSection() {
               key={item.slug}
               type="button"
               onClick={() => navigate(`/products/${item.slug}`)}
-              className="relative h-[240px] min-w-[calc(50%-5px)] shrink-0 overflow-hidden rounded-[20px] bg-white"
+              className="relative h-[290px] min-w-[275px] shrink-0 overflow-hidden rounded-[20px] bg-white"
             >
               <p
                 className="absolute left-1/2 top-[14px] -translate-x-1/2 whitespace-nowrap text-[#b8b8b8]/75"
@@ -83,9 +83,9 @@ export default function OurProductsSection() {
                 {item.scriptName}
               </p>
               <img
-                src={item.image}
+                src={item.projectImage || item.image}
                 alt={item.displayName}
-                className="h-full w-full object-contain p-[16px]"
+                className="h-[125px] w-full object-contain p-[16px]"
                 loading="lazy"
               />
             </button>
@@ -139,9 +139,9 @@ export default function OurProductsSection() {
                   {item.scriptName}
                 </p>
                 <img
-                  src={item.image}
+                  src={item.projectImage || item.image}
                   alt={item.displayName}
-                  className="absolute left-[0%] top-[132px] h-[148px] w-[192px] max-w-none translate-x-0 object-contain md:left-1/2 md:h-[150px] md:w-[300px] md:-translate-x-1/2"
+                  className="absolute left-1/2 top-[132px] h-[148px] w-[192px] max-w-none -translate-x-1/2 object-contain md:h-[150px] md:w-[300px]"
                   style={{ maxWidth: 'none' }}
                   loading="lazy"
                 />

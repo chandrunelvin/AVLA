@@ -1,13 +1,14 @@
 
 const certifications = [
-  { title: 'EU APPROVAL\n799\nKOC/FFP/02587', active: true, image: '/assets/images/home/ifs0.png' },
-  { title: 'US FDA Registration', active: false, image: '/assets/images/home/us Fda1.png' },
+  { title: 'IFS Certification', active: true, image: '/assets/images/home/ifs0.png' },
+  { title: 'EU APPROVAL\n799\nKOC/FFP/02587', active: false, image: '/assets/images/home/Eu-certificate.png' },
   { title: 'MPEDA Registration', active: false, image: '/assets/images/home/mpeda2.png' },
   { title: 'HACCP Certification', active: false, image: '/assets/images/home/haccp3.png' },
   { title: 'ISO 22000 Certification', active: false, image: '/assets/images/home/iso4.png' },
   { title: 'EIC / EIA Approval', active: false, image: '/assets/images/home/eic5.png' },
   { title: 'FSSAI License', active: false, image: '/assets/images/home/fssai6.png' },
   { title: 'BRC Certification', active: false, image: '/assets/images/home/brc7.png' },
+  { title: 'US FDA Registration', active: false, image: '/assets/images/home/us Fda1.png' },
 ];
 
 export default function CertificationSection() {
@@ -56,7 +57,7 @@ export default function CertificationSection() {
 
             {/* Title */}
             <p
-              className={`absolute top-[113px] md:top-[101px] left-[20px] w-[120px] whitespace-pre-line md:w-[164px] right-auto md:right-[36%] text-[18px] md:text-[20px] font-normal leading-[23.88px] transition-colors duration-300 ${
+              className={`absolute top-[113px] md:top-[95px] left-[20px] w-[120px] whitespace-pre-line md:w-[164px] right-auto md:right-[36%] text-[18px] md:text-[20px] font-normal leading-[23.88px] transition-colors duration-300 ${
                 cert.active
                   ? 'text-white group-hover/grid:text-[rgba(17,17,17,1.00)] group-hover:!text-white'
                   : 'text-[rgba(17,17,17,1.00)] group-hover:text-white'

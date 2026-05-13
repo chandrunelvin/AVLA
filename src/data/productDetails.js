@@ -2,9 +2,10 @@ export const fishProducts = [
   {
     name: 'Tuna Fish',
     displayName: 'Tuna Fish',
-    scriptName: 'Tuna whole',
+    scriptName: 'Tuna',
     slug: 'tuna-fish',
     image: '/assets/images/products/product-tuna-fish.png',
+    projectImage: '/assets/images/products/project-container-tuna.webp',
     summary:
       'Premium grade Yellowfin Tuna processed under strict hygiene standards and supplied worldwide with guaranteed freshness.',
     faqs: [
@@ -31,6 +32,7 @@ export const fishProducts = [
     scriptName: 'Sardine',
     slug: 'sardine',
     image: '/assets/images/products/product-Sardine-fish.png',
+    projectImage: '/assets/images/products/project-container-s2.webp',
     summary:
       'Fresh and frozen Sardine prepared for bulk seafood export with consistent grading, packing, and cold-chain handling.',
   },
@@ -40,6 +42,7 @@ export const fishProducts = [
     scriptName: 'Grouper',
     slug: 'grouper',
     image: '/assets/images/products/product-Grouper-fish.png',
+    projectImage: '/assets/images/products/project-container-d3.webp',
     summary:
       'Premium Grouper sourced, processed, and packed for international buyers who require reliable quality and freshness.',
   },
@@ -49,6 +52,7 @@ export const fishProducts = [
     scriptName: 'Mackerel',
     slug: 'mackerel',
     image: '/assets/images/products/Mackerel-product-image.png',
+    projectImage: '/assets/images/products/project-container-mak5.webp',
     summary:
       'Export-grade Mackerel handled through hygienic processing and dependable frozen logistics for global markets.',
   },
@@ -67,6 +71,7 @@ export const fishProducts = [
     scriptName: 'Snapper',
     slug: 'red-snapper',
     image: '/assets/images/products/Red-Snapper-product-image.png',
+    projectImage: '/assets/images/products/project-container-salmon4.webp',
     summary:
       'High-quality Red Snapper processed for export with clean handling, strong grading standards, and dependable delivery.',
   },

@@ -120,7 +120,7 @@ export default function AboutHeroSection() {
             <p className="text-[50px] font-normal leading-[1.1]">95%</p>
           </div>
 
-          <div className="flex min-h-[272px] flex-col rounded-[22px] bg-[#222222] px-[22px] py-[22px] text-white">
+          <div className="flex min-h-[277px] flex-col rounded-[22px] bg-[#222222] px-[22px] py-[22px] text-white">
             <div className="flex h-[42px] w-[42px] items-center justify-center rounded-full bg-white/20">
               <img
                 src="/assets/images/home/idea-icon.png"

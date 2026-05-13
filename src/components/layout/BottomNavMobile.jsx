@@ -51,7 +51,7 @@ export default function BottomNavMobile() {
         style={{
           width: 'calc(100% - 16px)',
           maxWidth: '254px',
-          height: '69px',
+          height: '60px',
           boxShadow: '0px 3px 12px rgba(0, 0, 0, 0.25)',
         }}
       >
@@ -63,7 +63,7 @@ export default function BottomNavMobile() {
               key={item.id}
               type="button"
               onClick={() => navigate(item.route)}
-              className={`flex items-center gap-[10px] transition-all duration-200 border-none outline-none ${
+              className={`flex items-center gap-[10px] transition-all duration-200 border-none outline-none h-[40px] ${
                 isActive
                   ? 'bg-[#0161FE] rounded-[95px] px-[13.5px] py-[13.5px]'
                   : 'px-[10px] py-[17px]'

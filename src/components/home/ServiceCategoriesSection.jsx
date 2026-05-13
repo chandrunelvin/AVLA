@@ -39,7 +39,7 @@ export default function ServiceCategoriesSection({ activeCategory, onChange }) {
     >
       {/* Badge */}
       <div className="flex justify-center">
-        <div className="flex h-[30px] items-center justify-center gap-[8px] rounded-full border border-[#202833] px-[21px]">
+        <div className="flex h-[30px] items-center justify-center gap-[8px] rounded-full border border-[#202833] px-[21px] lg:h-[38px]">
           
           <span className="whitespace-nowrap text-[12px] font-medium uppercase leading-[18px] tracking-[1.8px] text-[#202833] lg:text-[14px]">
             Our Product

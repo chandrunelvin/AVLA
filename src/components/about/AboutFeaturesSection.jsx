@@ -20,7 +20,7 @@ export default function AboutFeaturesSection() {
         {features.map((feature) => (
           <div
             key={feature.title}
-            className="flex flex-col items-center justify-center px-[60px] py-[40px] text-center sm:py-0"
+            className="flex flex-col items-center px-[60px] py-[40px] text-center sm:py-0"
           >
             <h3 className="w-[186px] text-[25px] font-normal leading-[1.25] text-[#111111] sm:w-auto sm:text-[36px] lg:text-[40px]">
               {feature.title}

@@ -127,7 +127,7 @@ export default function AboutShowcaseSection() {
                 key={id}
                 type="button"
                 onClick={() => setActiveTab(id)}
-                className={`inline-flex h-[56px] items-center gap-3 rounded-[17.39px] px-6 text-[15px] font-medium transition sm:rounded-[23.69px] ${
+                className={`inline-flex h-[56px] items-center gap-3 rounded-[15.39px] px-6 text-[15px] font-medium transition sm:rounded-[19.69px] ${
                   isActive
                     ? 'bg-[#0161FE] text-white shadow-[0_8px_20px_rgba(1,97,254,0.22)]'
                     : 'bg-white text-[#0161FE]'
