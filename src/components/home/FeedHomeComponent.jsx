@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { ArrowRight } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 
 const feedCards = [
@@ -58,10 +57,10 @@ export default function FeedHomeComponent() {
           <button
             type="button"
             onClick={goToBlog}
-            className="flex h-[46px] min-w-[130px] items-center justify-center gap-[8px] rounded-full bg-[#0161FE] text-[15px] font-medium text-white"
-          >
-            View All
-            <ArrowRight aria-hidden="true" size={18} strokeWidth={1.8} />
+          className="flex h-[46px] min-w-[130px] items-center justify-center gap-[8px] rounded-full bg-[#0161FE] text-[15px] font-medium text-white"
+        >
+          View All
+          <img src="/assets/images/home/main-arrow.svg" alt="" aria-hidden="true" className="h-[16px] w-[16px]" />
           </button>
         </div>
 
@@ -83,10 +82,10 @@ export default function FeedHomeComponent() {
           <button
             type="button"
             onClick={goToBlog}
-            className="mt-[18px] flex h-[44px] min-w-[120px] items-center justify-center gap-[8px] rounded-full bg-[#0161FE] text-[15px] font-medium text-white"
-          >
-            Explore
-            <ArrowRight aria-hidden="true" size={18} strokeWidth={1.8} />
+          className="mt-[18px] flex h-[44px] min-w-[120px] items-center justify-center gap-[8px] rounded-full bg-[#0161FE] text-[15px] font-medium text-white"
+        >
+          Explore
+          <img src="/assets/images/home/main-arrow.svg" alt="" aria-hidden="true" className="h-[16px] w-[16px]" />
           </button>
         </div>
 
@@ -127,7 +126,7 @@ export default function FeedHomeComponent() {
           className="absolute right-[44px] top-[105px] flex h-[45px] w-[133px] items-center justify-center gap-[10px] rounded-full bg-[#0161FE] text-[16px] font-medium text-white"
         >
           View All
-          <ArrowRight aria-hidden="true" size={22} strokeWidth={1.8} />
+          <img src="/assets/images/home/main-arrow.svg" alt="" aria-hidden="true" className="h-[18px] w-[18px]" />
         </button>
 
         <div className="absolute left-[42px] top-[185px] grid w-[94%] grid-cols-2 gap-[14px]">
@@ -147,10 +146,10 @@ export default function FeedHomeComponent() {
               <button
                 type="button"
                 onClick={goToBlog}
-                className="mt-[28px] flex h-[46px] w-[133px] items-center justify-center gap-[10px] rounded-full bg-[#0161FE] text-[16px] font-medium text-white"
+              className="mt-[28px] flex h-[46px] w-[133px] items-center justify-center gap-[10px] rounded-full bg-[#0161FE] text-[16px] font-medium text-white"
               >
                 Explore
-                <ArrowRight aria-hidden="true" size={22} strokeWidth={1.8} />
+                <img src="/assets/images/home/main-arrow.svg" alt="" aria-hidden="true" className="h-[18px] w-[18px]" />
               </button>
             </article>
           ))}

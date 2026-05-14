@@ -1,5 +1,4 @@
 import { useNavigate } from 'react-router-dom';
-import { ArrowRight } from 'lucide-react';
 import { blogDetails } from '../../data/blogDetails';
 
 const postsByCategory = {
@@ -52,7 +51,7 @@ export default function BlogCaseStudies({ activeCategory }) {
       {/* Section header */}
       <div className="flex flex-col items-center px-[8px] text-center lg:flex-row lg:items-start lg:justify-between lg:px-0 lg:text-left">
         <div>
-          <div className="inline-flex h-[32px] items-center justify-center rounded-full border border-[#202833] px-[20px]">
+          <div className="inline-flex h-[32px] items-center justify-center rounded-full border border-[#202833] px-[20px] lg:h-[38px]">
             <span className="whitespace-nowrap text-[12px] font-medium uppercase leading-[12px] tracking-[1.2px] text-[#202833] sm:text-[14px]">
               Case Studies
             </span>
@@ -99,10 +98,10 @@ export default function BlogCaseStudies({ activeCategory }) {
         {posts.map((post) => (
           <article
             key={post.title}
-            className="flex h-[436px] items-center gap-0"
+            className="flex h-[436px] items-center gap-0 min-[1000px]:max-[1300px]:h-[360px] min-[1000px]:max-[1300px]:gap-[24px]"
           >
-            <div className="flex-1 pr-[40px]">
-              <h3 className="h-[80px] w-[660px] text-[32px] font-normal leading-[40px] text-[#4a4a4a]">
+            <div className="flex-1 pr-[40px] min-[1000px]:max-[1300px]:pr-0">
+              <h3 className="h-[80px] w-[660px] text-[32px] font-normal leading-[40px] text-[#4a4a4a] min-[1000px]:max-[1300px]:h-auto min-[1000px]:max-[1300px]:w-full min-[1000px]:max-[1300px]:text-[28px] min-[1000px]:max-[1300px]:leading-[36px]">
                 {post.title}
               </h3>
               <button
@@ -111,10 +110,10 @@ export default function BlogCaseStudies({ activeCategory }) {
                 className="mt-[18px] flex h-[46px] w-[133px] items-center justify-center gap-[10px] rounded-full bg-[#0161FE] text-[16px] font-medium leading-[24px] text-white transition hover:brightness-105"
               >
                 Explore
-                <ArrowRight aria-hidden="true" size={20} strokeWidth={1.8} />
+                <img src="/assets/images/home/main-arrow.svg" alt="" aria-hidden="true" className="h-[18px] w-[18px]" />
               </button>
             </div>
-            <div className="ml-auto flex h-[436px] w-[581px] shrink-0 items-center justify-center overflow-hidden rounded-[23px] bg-white">
+            <div className="ml-auto flex h-[436px] w-[581px] shrink-0 items-center justify-center overflow-hidden rounded-[23px] bg-white min-[1000px]:max-[1300px]:h-[360px] min-[1000px]:max-[1300px]:w-[440px]">
               <img
                 src={post.image}
                 alt={post.title}

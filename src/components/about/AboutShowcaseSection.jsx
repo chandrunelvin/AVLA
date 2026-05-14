@@ -91,7 +91,7 @@ function MarqueeRow({ images, reverse = false, duration = 34 }) {
 
 function SectionBadge({ children }) {
   return (
-    <div className="inline-flex h-[30px] items-center justify-center rounded-full border border-[#202833] px-[18px]">
+    <div className="inline-flex h-[30px] items-center justify-center rounded-full border border-[#202833] px-[18px] sm:h-[38px]">
       <span className="text-[12px] font-medium uppercase tracking-[0.22em] text-[#202833] sm:text-[14px]">
         {children}
       </span>

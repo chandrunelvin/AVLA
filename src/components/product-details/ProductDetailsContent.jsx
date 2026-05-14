@@ -24,7 +24,7 @@ function ProductDetailsHero({ product }) {
           className="flex h-[48px] min-w-[130px] items-center justify-center gap-[8px] rounded-full bg-[#0161FE] px-[22px] text-[14px] font-medium text-white min-[800px]:h-[42px] min-[800px]:min-w-0 min-[800px]:w-[116px] min-[800px]:px-0"
         >
           Contact
-          <span className="text-[18px] leading-none">&#8594;</span>
+          <img src="/assets/images/home/main-arrow.svg" alt="" aria-hidden="true" className="h-[16px] w-[16px]" />
         </a>
         <a
           href="https://wa.me/917736782999"
@@ -80,8 +80,8 @@ function ProductDetailsHero({ product }) {
 function ExportRegionSection() {
   return (
     <section className="bg-white px-[24px] pb-[66px] pt-[50px] text-center mt-[50px]">
-      <div className="mx-auto inline-flex h-[31px] items-center justify-center rounded-full border border-[#202833] px-[18px]">
-        <span className="whitespace-nowrap text-[12px] font-medium uppercase tracking-[1.79px] text-[#202833]">
+      <div className="mx-auto inline-flex h-[31px] items-center justify-center rounded-full border border-[#202833] px-[18px] sm:h-[38px]">
+        <span className="whitespace-nowrap text-[12px] font-medium uppercase tracking-[1.79px] text-[#202833] sm:text-[14px]">
           Export Region
         </span>
       </div>
@@ -137,8 +137,8 @@ function ProductFlagsSection({ product }) {
         {/* Header — same as FaqListSection */}
         <div className="flex flex-col items-center text-center sm:flex-row sm:items-center sm:justify-between sm:text-left">
           <div className="flex flex-col items-center sm:items-start">
-            <div className="inline-flex h-[32px] items-center justify-center rounded-full border border-[#202833] px-[16px]">
-              <span className="whitespace-nowrap text-[11px] font-medium uppercase tracking-[1.2px] text-[#202833]">
+            <div className="inline-flex h-[32px] items-center justify-center rounded-full border border-[#202833] px-[16px] sm:h-[38px]">
+              <span className="whitespace-nowrap text-[11px] font-medium uppercase tracking-[1.2px] text-[#202833] sm:text-[14px]">
                 Product FAQ
               </span>
             </div>

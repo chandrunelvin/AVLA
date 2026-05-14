@@ -15,7 +15,7 @@ export default function ProductHero() {
         </p>
         <div className="mt-[22px] overflow-hidden rounded-[16px] bg-white">
           <img
-            src="/assets/images/products/product-banner.png"
+            src="/assets/images/products/product-banner.webp"
             alt="Seafood products banner"
             className="block h-auto w-full object-contain"
             loading="eager"
@@ -38,7 +38,7 @@ export default function ProductHero() {
         </div>
         <div className="mt-[34px] overflow-hidden rounded-[20px] bg-white xl:mt-[35px]">
           <img
-            src="/assets/images/products/product-banner.png"
+            src="/assets/images/products/product-banner.webp"
             alt="Seafood products banner"
             className="block aspect-[1322/622] h-auto w-full object-contain"
             loading="eager"

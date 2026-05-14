@@ -108,8 +108,8 @@ export default function FaqListSection({ activeCategory }) {
 
           {/* Section header */}
           <div className="flex flex-col items-center text-center sm:items-start sm:text-left">
-            <div className="inline-flex h-[32px] items-center justify-center rounded-full border border-[#202833] px-[16px]">
-              <span className="whitespace-nowrap text-[11px] font-medium uppercase tracking-[1.2px] text-[#202833]">
+            <div className="inline-flex h-[32px] items-center justify-center rounded-full border border-[#202833] px-[16px] sm:h-[38px]">
+              <span className="whitespace-nowrap text-[11px] font-medium uppercase tracking-[1.2px] text-[#202833] sm:text-[14px]">
                 Product FAQ
               </span>
             </div>

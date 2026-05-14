@@ -19,8 +19,8 @@ const contactCards = [
 export default function ContactInfoSection() {
   return (
     <section className="relative mt-[40px] min-h-[361px] w-full overflow-hidden rounded-[20px] bg-[#F6F7F9] px-5 py-11 sm:px-8 lg:mt-[50px] lg:h-[361px] lg:px-0 lg:py-0">
-      <div className="mx-auto flex h-[32px] w-[125px] items-center justify-center rounded-full border border-[#202833] lg:absolute lg:left-1/2 lg:top-[57px] lg:-translate-x-1/2">
-        <span className="whitespace-nowrap text-[12px] font-medium uppercase leading-[18px] tracking-[1.7862437963485718px] text-[#202833]">
+      <div className="mx-auto flex h-[32px] w-[125px] items-center justify-center rounded-full border border-[#202833] lg:absolute lg:left-1/2 lg:top-[57px] lg:h-[38px] lg:-translate-x-1/2">
+        <span className="whitespace-nowrap text-[12px] font-medium uppercase leading-[18px] tracking-[1.7862437963485718px] text-[#202833] lg:text-[14px]">
           Contact Us
         </span>
       </div>
@@ -29,11 +29,11 @@ export default function ContactInfoSection() {
         Get in touch, let us know how we can help
       </h2>
 
-      <div className="mx-auto mt-10 grid max-w-[620px] gap-5 lg:absolute lg:left-[51px] lg:top-[225px] lg:mt-0 lg:flex lg:max-w-none lg:gap-[61px]">
+      <div className="mx-auto mt-10 grid max-w-[620px] gap-5 lg:absolute lg:left-[51px] lg:top-[225px] lg:mt-0 lg:flex lg:max-w-none lg:gap-[61px] min-[1100px]:max-[1300px]:left-[24px] min-[1100px]:max-[1300px]:right-[24px] min-[1100px]:max-[1300px]:justify-between min-[1100px]:max-[1300px]:gap-[18px]">
         {contactCards.map((card) => (
           <article
             key={card.label}
-            className="flex min-h-[85px] w-full items-center gap-[18px] rounded-[20px] bg-white px-[20px] py-[16px] lg:w-[399px]"
+            className="flex min-h-[85px] w-full items-center gap-[18px] rounded-[20px] bg-white px-[20px] py-[16px] lg:w-[399px] min-[1100px]:max-[1300px]:w-[32%]"
           >
             <div className="flex h-[38px] w-[38px] shrink-0 items-center justify-center rounded-full bg-[#0161FE] lg:h-[53px] lg:w-[53px]">
               <img

@@ -1,5 +1,4 @@
 import { useNavigate } from 'react-router-dom';
-import { ArrowRight } from 'lucide-react';
 import { fishProducts, otherProducts } from '../../data/productDetails';
 
 const productsByCategory = {
@@ -104,10 +103,10 @@ export default function ProductListSection({ activeCategory }) {
                 <button
                   type="button"
                   onClick={() => navigate(product.slug ? `/products/${product.slug}` : '/contact')}
-                  className="mt-[30px] flex h-[46px] w-[133px] items-center justify-center gap-[10px] rounded-full bg-[#0161FE] text-[16px] font-medium leading-[24px] text-white transition hover:brightness-105"
+                className="mt-[30px] flex h-[46px] w-[133px] items-center justify-center gap-[10px] rounded-full bg-[#0161FE] text-[16px] font-medium leading-[24px] text-white transition hover:brightness-105"
                 >
                   Explore
-                  <ArrowRight aria-hidden="true" size={22} strokeWidth={1.8} />
+                  <img src="/assets/images/home/main-arrow.svg" alt="" aria-hidden="true" className="h-[18px] w-[18px]" />
                 </button>
               </div>
             </article>

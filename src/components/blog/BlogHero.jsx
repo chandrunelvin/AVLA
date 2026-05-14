@@ -16,7 +16,7 @@ driving your success.
         </p>
         <div className="mt-[22px] overflow-hidden rounded-[16px] bg-white">
           <img
-            src="/assets/images/blog/blog-banner-image.png"
+            src="/assets/images/blog/blog-banner-image.webp"
             alt="Seafood blog banner"
             className="block h-auto w-full object-contain"
             loading="eager"
@@ -36,7 +36,7 @@ driving your success.
         </div>
         <div className="mt-[34px] overflow-hidden rounded-[20px] bg-white xl:mt-[35px]">
           <img
-            src="/assets/images/blog/blog-banner-image.png"
+            src="/assets/images/blog/blog-banner-image.webp"
             alt="Seafood blog banner"
             className="block aspect-[1322/622] h-auto w-full object-contain"
             loading="eager"

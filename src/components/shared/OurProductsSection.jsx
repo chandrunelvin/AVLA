@@ -49,7 +49,7 @@ export default function OurProductsSection() {
               className="flex h-[46px] items-center justify-center gap-[8px] rounded-full bg-[#0161FE] px-[26px] text-[14px] font-semibold text-white"
             >
               Contact
-              <span className="text-[18px] leading-none">&#8594;</span>
+              <img src="/assets/images/home/main-arrow.svg" alt="" aria-hidden="true" className="h-[16px] w-[16px]" />
             </a>
             <a
               href="/products"

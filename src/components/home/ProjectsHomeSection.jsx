@@ -113,7 +113,7 @@ export default function ProjectsHomeSection({ activeCategory = 'fish' }) {
           className="absolute right-[43px] top-[111px] flex h-[45px] w-[133px] items-center justify-center gap-[10px] rounded-full bg-[#0161FE] text-[16px] font-medium leading-[24px] text-white"
         >
           View All
-          <span className="text-[28px] font-normal leading-none">&#8594;</span>
+          <img src="/assets/images/home/main-arrow.svg" alt="" aria-hidden="true" className="h-[18px] w-[18px]" />
         </button>
 
         <div className="absolute left-1/2 top-[225px] h-[605px] w-[94%] -translate-x-1/2 overflow-hidden rounded-[24px] bg-white">
@@ -153,7 +153,7 @@ export default function ProjectsHomeSection({ activeCategory = 'fish' }) {
             tabIndex={0}
             onClick={selectPrevious}
             onKeyDown={(e) => handleButtonKey(e, selectPrevious)}
-            className="flex h-[47px] w-[47px] cursor-pointer items-center justify-center rounded-full border border-[#0161FE] bg-white text-[24px] leading-none text-[#0161FE] transition hover:bg-[#0161FE] hover:text-white"
+            className="flex h-[47px] w-[47px] cursor-pointer items-center justify-center rounded-full border border-[#0161FE] bg-white text-[24px] leading-none text-[#0161FE] transition"
           >
             <img src="/assets/images/home/arrow.svg" alt="previous" className="rotate-180" />
           </div>
@@ -163,7 +163,7 @@ export default function ProjectsHomeSection({ activeCategory = 'fish' }) {
             tabIndex={0}
             onClick={selectNext}
             onKeyDown={(e) => handleButtonKey(e, selectNext)}
-            className="flex h-[47px] w-[47px] cursor-pointer items-center justify-center rounded-full border border-[#0161FE] bg-white text-[24px] leading-none text-[#0161FE] transition hover:bg-[#0161FE] hover:text-white"
+            className="flex h-[47px] w-[47px] cursor-pointer items-center justify-center rounded-full border border-[#0161FE] bg-white text-[24px] leading-none text-[#0161FE] transition"
           >
             {/* &#8594; */}
              <img src="/assets/images/home/arrow.svg" alt="previous" />
