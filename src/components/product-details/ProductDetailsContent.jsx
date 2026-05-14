@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { ArrowRight } from 'lucide-react';
 import { productDetails } from '../../data/productDetails';
 import OurProductsSection from '../shared/OurProductsSection';
 
@@ -43,8 +42,8 @@ function ProductDetailsHero({ product }) {
       <div className="mx-auto mt-[30px] flex max-w-[1350px] items-center justify-center overflow-hidden rounded-[18px] bg-white px-[16px] py-[24px] min-[800px]:mt-[47px] min-[800px]:h-[632px] min-[800px]:px-[28px] min-[800px]:py-[36px]">
         <div className="relative flex w-full items-center justify-center">
           <p
-            className="absolute left-[10px] top-0 whitespace-nowrap not-italic leading-[54px] tracking-[0px] text-[#b8b8b8]/70 min-[800px]:left-0 min-[800px]:text-[90px]"
-            style={{ fontFamily: 'Snell Roundhand, cursive', fontWeight: 500, fontSize: '30px' }}
+            className="absolute left-[10px] top-0 whitespace-nowrap text-[30px] not-italic leading-[54px] tracking-[0px] text-[#b8b8b8]/70 min-[800px]:left-0 min-[800px]:text-[102px]"
+            style={{ fontFamily: 'Snell Roundhand, cursive', fontWeight: 500 }}
           >
             {product.scriptName}
           </p>
@@ -147,11 +146,11 @@ function ProductFlagsSection({ product }) {
             </h2>
           </div>
           <a
-            href="/products"
+            href="/faq"
             className="mt-[30px] flex h-[42px] w-[110px] items-center justify-center gap-[7px] rounded-full bg-[#0161FE] text-[13px] font-semibold text-white sm:mt-0"
           >
             View All
-            <ArrowRight size={15} strokeWidth={2.5} />
+            <img src="/assets/images/home/main-arrow.svg" alt="" aria-hidden="true" className="h-[14px] w-[14px]" />
           </a>
         </div>
 

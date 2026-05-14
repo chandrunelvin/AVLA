@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { ArrowRight } from 'lucide-react';
 
 const fishRows = [
   {
@@ -123,7 +122,7 @@ export default function FaqListSection({ activeCategory }) {
                 className="flex h-[42px] w-[110px] shrink-0 items-center justify-center gap-[7px] rounded-full bg-[#0161FE] text-[13px] font-semibold text-white"
               >
                 View All
-                <ArrowRight size={15} strokeWidth={2.5} />
+                <img src="/assets/images/home/main-arrow.svg" alt="" aria-hidden="true" className="h-[14px] w-[14px]" />
               </button>
             </div>
           </div>
