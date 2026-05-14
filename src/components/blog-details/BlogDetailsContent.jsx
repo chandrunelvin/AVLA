@@ -181,7 +181,7 @@ function ArticleBody({ blog }) {
           <div className="inline-flex h-[32px] items-center justify-center rounded-full border border-[#202833] px-[12px] text-[12px] font-medium uppercase tracking-[1.2px] text-[#202833] min-[800px]:h-[38px] min-[800px]:text-[14px]">
             {blog.category}
           </div>
-          <h2 className="mt-[20px] text-[33px] font-normal leading-[1.3] text-[#222222] min-[800px]:mt-[32px] min-[800px]:text-[28px] min-[800px]:leading-[32px]">
+          <h2 className="mt-[20px] text-[33px] font-normal leading-[1.3] text-[#222222] min-[800px]:mt-[32px] min-[800px]:text-[33px] min-[800px]:leading-[34px]">
             {blog.intro}
           </h2>
         </div>
