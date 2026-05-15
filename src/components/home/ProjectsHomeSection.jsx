@@ -125,7 +125,7 @@ export default function ProjectsHomeSection({ activeCategory = 'fish' }) {
           />
         </div>
 
-        <div className="absolute left-1/2 top-[860px] flex h-[96px] w-[83%] -translate-x-1/2 items-center justify-start gap-[10px] rounded-[12px] bg-white px-[10px]">
+        <div className="absolute left-1/2 top-[860px] flex h-[96px] w-[83%] -translate-x-1/2 items-center justify-start gap-[10px] rounded-[12px] bg-white px-[10px] min-[1000px]:max-[1300px]:w-fit min-[1000px]:max-[1300px]:justify-center min-[1000px]:max-[1300px]:gap-[8px] min-[1000px]:max-[1300px]:px-[8px]">
           {products.map((product, index) => (
             <button
               key={product.slug}
@@ -133,14 +133,14 @@ export default function ProjectsHomeSection({ activeCategory = 'fish' }) {
               role="tab"
               aria-selected={clampedIndex === index}
               onClick={() => selectProduct(index)}
-              className={`relative h-[74px] w-[139px] rounded-[6px] border bg-white transition ${
+              className={`relative h-[74px] w-[139px] rounded-[6px] border bg-white transition min-[1000px]:max-[1300px]:h-[68px] min-[1000px]:max-[1300px]:w-[112px] ${
                 clampedIndex === index ? 'border-[#0161FE]' : 'border-[#8e838333]'
               }`}
             >
               <img
                 src={product.image}
                 alt={product.name}
-                className="absolute left-[10px] top-[7px] h-[60px] w-[119px] object-contain"
+                className="absolute left-[10px] top-[7px] h-[60px] w-[119px] object-contain min-[1000px]:max-[1300px]:left-[8px] min-[1000px]:max-[1300px]:top-[6px] min-[1000px]:max-[1300px]:h-[54px] min-[1000px]:max-[1300px]:w-[96px]"
                 loading="lazy"
               />
             </button>

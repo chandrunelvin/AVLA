@@ -129,7 +129,7 @@ export default function FeedHomeComponent() {
           <img src="/assets/images/home/main-arrow.svg" alt="" aria-hidden="true" className="h-[18px] w-[18px]" />
         </button>
 
-        <div className="absolute left-[42px] top-[185px] grid w-[94%] grid-cols-2 gap-[14px]">
+        <div className="absolute left-[42px] top-[185px] grid w-[94%] grid-cols-2 gap-[14px] min-[1000px]:max-[1300px]:left-1/2 min-[1000px]:max-[1300px]:w-[92%] min-[1000px]:max-[1300px]:-translate-x-1/2">
           {feedCards.map((c) => (
             <article key={c.title} className="w-full">
               <div className="flex h-[438px] w-full items-center justify-center overflow-hidden rounded-[22px] bg-white">

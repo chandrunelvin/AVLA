@@ -27,7 +27,7 @@ export default function OurProductsSection() {
   function onMouseUp() { setIsDragging(false); }
 
   return (
-    <section className="relative left-1/2 mt-[40px] w-screen -translate-x-1/2 rounded-t-[20px] bg-[#F6F7F9]">
+    <section className="mx-auto mt-[40px] w-full rounded-[20px] bg-[#F6F7F9]">
 
       {/* ── Mobile layout ── */}
       <div className="sm:hidden">

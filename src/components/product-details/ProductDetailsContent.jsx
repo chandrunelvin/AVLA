@@ -4,7 +4,7 @@ import OurProductsSection from '../shared/OurProductsSection';
 
 function ProductDetailsHero({ product }) {
   return (
-    <section className="rounded-b-[14px] bg-[#F6F7F9] px-[8px] pb-[8px] pt-[36px] text-center min-[800px]:px-[48px] min-[800px]:pb-[48px] min-[800px]:pt-[42px]">
+    <section className="rounded-[14px] bg-[#F6F7F9] px-[8px] pb-[8px] pt-[36px] text-center min-[800px]:px-[48px] min-[800px]:pb-[48px] min-[800px]:pt-[42px]">
 
       {/* Title */}
       <h1 className="text-center text-[54px] font-[500] leading-[1.15] text-[#111111] min-[800px]:text-[58px] min-[800px]:leading-[50px]">
@@ -42,7 +42,7 @@ function ProductDetailsHero({ product }) {
       <div className="mx-auto mt-[30px] flex max-w-[1350px] items-center justify-center overflow-hidden rounded-[18px] bg-white px-[16px] py-[24px] min-[800px]:mt-[47px] min-[800px]:h-[632px] min-[800px]:px-[28px] min-[800px]:py-[36px]">
         <div className="relative flex w-full items-center justify-center">
           <p
-            className="absolute left-[10px] top-0 whitespace-nowrap text-[30px] not-italic leading-[54px] tracking-[0px] text-[#b8b8b8]/70 min-[800px]:left-0 min-[800px]:text-[102px]"
+            className="absolute left-[10px] top-0 z-[2] whitespace-nowrap text-[30px] not-italic leading-[54px] tracking-[0px] text-[#b8b8b8]/70 min-[800px]:left-0 min-[800px]:text-[102px]"
             style={{ fontFamily: 'Snell Roundhand, cursive', fontWeight: 500 }}
           >
             {product.scriptName}
@@ -134,24 +134,24 @@ function ProductFlagsSection({ product }) {
       <section className="mb-[40px] sm:mb-[43px]">
 
         {/* Header — same as FaqListSection */}
-        <div className="flex flex-col items-center text-center sm:flex-row sm:items-center sm:justify-between sm:text-left">
-          <div className="flex flex-col items-center sm:items-start">
-            <div className="inline-flex h-[32px] items-center justify-center rounded-full border border-[#202833] px-[16px] sm:h-[38px]">
-              <span className="whitespace-nowrap text-[11px] font-medium uppercase tracking-[1.2px] text-[#202833] sm:text-[14px]">
-                Product FAQ
-              </span>
-            </div>
-            <h2 className="mt-[30px] text-[32px] font-normal leading-[1.1] text-[#2b2b2b] sm:text-[42px] sm:leading-[40px]">
+        <div className="flex flex-col items-center text-center sm:items-start sm:text-left">
+          <div className="inline-flex h-[32px] items-center justify-center rounded-full border border-[#202833] px-[16px] sm:h-[38px]">
+            <span className="whitespace-nowrap text-[11px] font-medium uppercase tracking-[1.2px] text-[#202833] sm:text-[14px]">
+              Product FAQ
+            </span>
+          </div>
+          <div className="mt-[30px] flex w-full flex-col items-center gap-[30px] sm:flex-row sm:items-center sm:justify-between">
+            <h2 className="text-[32px] font-normal leading-[1.1] text-[#2b2b2b] sm:text-[42px] sm:leading-[40px]">
               {product.displayName}
             </h2>
+            <a
+              href="/faq"
+              className="flex h-[42px] w-[110px] shrink-0 items-center justify-center gap-[7px] rounded-full bg-[#0161FE] text-[13px] font-semibold text-white"
+            >
+              View All
+              <img src="/assets/images/home/main-arrow.svg" alt="" aria-hidden="true" className="h-[14px] w-[14px]" />
+            </a>
           </div>
-          <a
-            href="/faq"
-            className="mt-[30px] flex h-[42px] w-[110px] items-center justify-center gap-[7px] rounded-full bg-[#0161FE] text-[13px] font-semibold text-white sm:mt-0"
-          >
-            View All
-            <img src="/assets/images/home/main-arrow.svg" alt="" aria-hidden="true" className="h-[14px] w-[14px]" />
-          </a>
         </div>
 
         {/* FAQ rows — same as FaqListSection */}
