@@ -63,7 +63,7 @@ export default function FaqListSection({ activeCategory = 'fish', productSlug = 
     : getProductsByCategory(activeCategory).map((product) => ({
         title: product.displayName,
         slug: product.slug,
-        rows: product.faqs || [],
+        rows: (product.faqs || []).slice(0, 3),
       }));
   const [expandedKey, setExpandedKey] = useState('0-0');
 
