@@ -1,16 +1,9 @@
 import { useNavigate } from 'react-router-dom';
-import { fishProducts, otherProducts } from '../../data/productDetails';
-
-const productsByCategory = {
-  fish: fishProducts,
-  cephalopods: otherProducts.filter((product) => ['squid', 'octopus'].includes(product.slug)),
-  crustaceans: otherProducts.filter((product) => ['crab', 'shrimp'].includes(product.slug)),
-  bivalve: otherProducts.filter((product) => ['clam', 'mussel'].includes(product.slug)),
-};
+import { getProductsByCategory } from '../../data/productDetails';
 
 export default function ProductListSection({ activeCategory }) {
   const navigate = useNavigate();
-  const products = productsByCategory[activeCategory] || productsByCategory.fish;
+  const products = getProductsByCategory(activeCategory);
 
   return (
     <section className="mt-[23px] w-full rounded-[15px] bg-[#F6F7F9]">

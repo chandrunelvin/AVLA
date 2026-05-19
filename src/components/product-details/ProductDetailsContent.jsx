@@ -145,7 +145,7 @@ function ProductFlagsSection({ product }) {
               {product.displayName}
             </h2>
             <a
-              href="/faq"
+              href={`/faq/${product.slug}`}
               className="flex h-[42px] w-[110px] shrink-0 items-center justify-center gap-[7px] rounded-full bg-[#0161FE] text-[13px] font-semibold text-white"
             >
               View All

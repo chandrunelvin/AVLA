@@ -7,6 +7,7 @@ import ContactPage from './pages/ContactPage';
 import BlogDetailsPage from './pages/BlogDetailsPage';
 import BlogPage from './pages/BlogPage';
 import FaqPage from './pages/FaqPage';
+import FaqDetailsPage from './pages/FaqDetailsPage';
 import AboutPage from './pages/AboutPage';
 import HomePage from './pages/HomePage';
 import ProductDetailsPage from './pages/ProductDetailsPage';
@@ -29,7 +30,7 @@ function getActivePage(pathname) {
     return 'contact';
   }
 
-  if (pathname === '/faq') {
+  if (pathname === '/faq' || pathname.startsWith('/faq/')) {
     return 'faq';
   }
 
@@ -74,6 +75,7 @@ export default function App() {
         <Route path="/blog/:slug" element={<BlogDetailsPage />} />
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/faq" element={<FaqPage />} />
+        <Route path="/faq/:slug" element={<FaqDetailsPage />} />
       </Route>
       <Route path="*" element={<Navigate to="/" replace />} />
     </Routes>
