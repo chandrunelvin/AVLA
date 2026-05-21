@@ -112,13 +112,7 @@ function ExportRegionSection() {
 
 function ProductFlagsSection({ product }) {
   const [expandedKey, setExpandedKey] = useState('0');
-  const faqs = product.faqs || productDetails[0].faqs;
-
-  function getFaqLabel(index) {
-    if (index === 0) return `${product.displayName} Export`;
-    if (index === 1) return `Frozen ${product.displayName}`;
-    return 'Certification';
-  }
+  const faqs = (product.faqs || productDetails[0].faqs).slice(0, 3);
 
   function toggle(index) {
     const key = String(index);
@@ -167,7 +161,7 @@ function ProductFlagsSection({ product }) {
                   isExpanded(index) ? 'bg-[#0161FE] text-white' : 'bg-[#F6F7F9] text-[#111111]'
                 }`}
               >
-                <p className="text-[22px] font-normal leading-[1.2]">{getFaqLabel(index)}</p>
+                <p className="text-[22px] font-normal leading-[1.2]">{faq.label}</p>
                 <p className={`mt-[12px] text-[14px] leading-[1.6] ${isExpanded(index) ? 'text-white/90' : 'text-[#6D6D6ECC]'}`}>
                   {faq.question}
                 </p>
@@ -188,7 +182,7 @@ function ProductFlagsSection({ product }) {
                   isExpanded(index) ? 'bg-[#0161FE] text-white' : 'bg-[#F6F7F9] text-[#000000]'
                 }`}
               >
-                <p className="p-[10px] text-left text-[27px] font-normal leading-[22px]">{getFaqLabel(index)}</p>
+                <p className="p-[10px] text-left text-[27px] font-normal leading-[22px]">{faq.label}</p>
                 <p className={`p-[10px] text-left text-[18px] font-normal leading-[22px] ${isExpanded(index) ? 'text-white' : 'text-[#6D6D6ECC]'}`}>
                   {faq.question}
                 </p>
