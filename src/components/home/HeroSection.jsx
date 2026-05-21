@@ -31,13 +31,13 @@ export default function HeroSection() {
             <ArrowRight aria-hidden="true" size={17} strokeWidth={1.8} />
           </button>
 
-          <button
+          {/* <button
             type="button"
             className="inline-flex h-[47px] w-[175px] items-center justify-center gap-2 rounded-[95px] border border-[#0161fe] text-[14px] font-normal text-[#0161fe] sm:h-[55px] sm:w-auto sm:min-w-[201px] sm:gap-3 sm:px-6 sm:text-[16px]"
           >
             Download Brochure
             <CloudDownload aria-hidden="true" size={17} strokeWidth={1.8} />
-          </button>
+          </button> */}
         </div>
       </div>
 

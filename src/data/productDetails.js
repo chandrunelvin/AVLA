@@ -1034,12 +1034,12 @@ export const otherProducts = [
     faqs: lobsterFaqs,
   }),
   createProduct({
-    name: 'Biagai',
-    slug: 'biagai',
+    name: 'Baigai',
+    slug: 'Baigai',
     category: 'bivalve',
     image: '/assets/images/blog/blog-clam.svg',
     summary:
-      'Biagai products processed for export with safe handling, clean packing, and dependable supply coordination.',
+      'Baigai products processed for export with safe handling, clean packing, and dependable supply coordination.',
     faqs: [
       {
         label: 'Ark Clams',
