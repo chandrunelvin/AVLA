@@ -937,7 +937,7 @@ export const otherProducts = [
     name: 'Brown Shrimp',
     slug: 'brown-shrimp',
     category: 'crustaceans',
-    image: '/assets/images/blog/blog-shrimp.svg',
+    image: '/assets/images/products/brown shrimp.webp',
     scriptName: 'Brown Shrimp',
     summary:
       'Brown Shrimp supplied for export with careful grading, hygienic processing, and reliable cold-chain coordination.',
@@ -947,7 +947,7 @@ export const otherProducts = [
     name: 'Karikadi',
     slug: 'karikadi',
     category: 'crustaceans',
-    image: '/assets/images/blog/blog-shrimp.svg',
+    image: '/assets/images/products/Karikadi Shrimp.webp',
     summary:
       'Karikadi prepared for seafood export with strong handling standards, export packing, and consistent product quality.',
     faqs: shrimpFaqs,
@@ -956,7 +956,7 @@ export const otherProducts = [
     name: 'Poovalan',
     slug: 'poovalan',
     category: 'crustaceans',
-    image: '/assets/images/blog/blog-shrimp.svg',
+    image: '/assets/images/products/Poovalan Shrimp.webp',
     summary:
       'Poovalan export supply managed through careful sorting, processing, and freshness-controlled shipment.',
     faqs: shrimpFaqs,
@@ -965,7 +965,7 @@ export const otherProducts = [
     name: 'Deep Sea Shrimp',
     slug: 'deep-sea-shrimp',
     category: 'crustaceans',
-    image: '/assets/images/blog/blog-shrimp.svg',
+    image: '/assets/images/products/deep sea shrimp.webp',
     summary:
       'Deep Sea Shrimp handled for export with quality inspection, hygienic packing, and buyer-ready sizing.',
     faqs: shrimpFaqs,
@@ -974,7 +974,7 @@ export const otherProducts = [
     name: 'Flower Shrimp',
     slug: 'flower-shrimp',
     category: 'crustaceans',
-    image: '/assets/images/blog/blog-shrimp.svg',
+    image: '/assets/images/products/flower shrimp.webp',
     summary:
       'Flower Shrimp supplied in export-ready packs with dependable freezing, grading, and documentation support.',
     faqs: shrimpFaqs,
@@ -983,7 +983,7 @@ export const otherProducts = [
     name: 'Blue Swimming Crab',
     slug: 'blue-swimming-crab',
     category: 'crustaceans',
-    image: '/assets/images/blog/blog-crab.svg',
+    image: '/assets/images/products/Blue Swimming Crab.webp',
     summary:
       'Blue Swimming Crab processed for global seafood buyers with export-grade handling and reliable logistics.',
     faqs: crabFaqs,
@@ -992,7 +992,7 @@ export const otherProducts = [
     name: 'Threespot Crab',
     slug: 'threespot-crab',
     category: 'crustaceans',
-    image: '/assets/images/blog/blog-crab.svg',
+    image: '/assets/images/products/Threespot Crab.webp',
     summary:
       'Threespot Crab prepared for export with clean processing, quality checks, and market-specific packing.',
     faqs: crabFaqs,
@@ -1001,7 +1001,7 @@ export const otherProducts = [
     name: 'Crucifix Crab',
     slug: 'crucifix-crab',
     category: 'crustaceans',
-    image: '/assets/images/blog/blog-crab.svg',
+    image: '/assets/images/products/Crucifix Crab.webp',
     summary:
       'Crucifix Crab export supply supported by hygienic handling, grading, and dependable shipment planning.',
     faqs: crabFaqs,
@@ -1010,7 +1010,7 @@ export const otherProducts = [
     name: 'Deep Sea Lobster',
     slug: 'deep-sea-lobster',
     category: 'crustaceans',
-    image: '/assets/images/blog/blog-crab.svg',
+    image: '/assets/images/products/deep-sea lobster.webp',
     summary:
       'Deep Sea Lobster packed for export with careful quality monitoring, temperature control, and buyer-ready presentation.',
     faqs: lobsterFaqs,
@@ -1019,7 +1019,7 @@ export const otherProducts = [
     name: 'Spiny Lobster',
     slug: 'spiny-lobster',
     category: 'crustaceans',
-    image: '/assets/images/blog/blog-crab.svg',
+    image: '/assets/images/products/spiny lobster.webp',
     summary:
       'Spiny Lobster supplied for premium export markets with strict hygiene, grading, and cold-chain handling.',
     faqs: lobsterFaqs,
@@ -1028,7 +1028,7 @@ export const otherProducts = [
     name: 'Sand Lobster',
     slug: 'sand-lobster',
     category: 'crustaceans',
-    image: '/assets/images/blog/blog-crab.svg',
+    image: '/assets/images/products/Sand Lobster.webp',
     summary:
       'Sand Lobster managed for export through careful packing, freshness protection, and consistent quality checks.',
     faqs: lobsterFaqs,
@@ -1037,7 +1037,7 @@ export const otherProducts = [
     name: 'Baigai',
     slug: 'Baigai',
     category: 'bivalve',
-    image: '/assets/images/blog/blog-clam.svg',
+    image: '/assets/images/products/Baigai.webp',
     summary:
       'Baigai products processed for export with safe handling, clean packing, and dependable supply coordination.',
     faqs: [
@@ -1107,7 +1107,7 @@ export const otherProducts = [
     name: 'Yellow Clam',
     slug: 'yellow-clam',
     category: 'bivalve',
-    image: '/assets/images/blog/blog-clam.svg',
+    image: '/assets/images/products/Yellow Clam.webp',
     summary:
       'Yellow Clam export supply supported by careful sorting, hygiene-led processing, and freshness-focused shipment.',
     faqs: bivalveFaqs,
@@ -1116,7 +1116,7 @@ export const otherProducts = [
     name: 'Green Mussels',
     slug: 'green-mussels',
     category: 'bivalve',
-    image: '/assets/images/blog/blog-mussel.svg',
+    image: '/assets/images/products/Green Mussels.webp',
     summary:
       'Green Mussels prepared for export with quality inspection, safe packing, and reliable cold-chain handling.',
     faqs: bivalveFaqs,
@@ -1125,7 +1125,7 @@ export const otherProducts = [
     name: 'Loligo Squid',
     slug: 'loligo-squid',
     category: 'cephalopods',
-    image: '/assets/images/blog/blog-cephalopod.svg',
+    image: '/assets/images/products/Loligo Squid.webp',
     summary:
       'Loligo Squid supplied for export with controlled processing, export packing, and buyer-specific preparation.',
     faqs: [
@@ -1195,7 +1195,7 @@ export const otherProducts = [
     name: 'Semi Needle Squid',
     slug: 'semi-needle-squid',
     category: 'cephalopods',
-    image: '/assets/images/blog/blog-cephalopod.svg',
+    image: '/assets/images/products/Semi Needle Squid.webp',
     summary:
       'Semi Needle Squid packed for export with dependable hygiene practices, grading, and shipment coordination.',
     faqs: needleSquidFaqs,
@@ -1204,7 +1204,7 @@ export const otherProducts = [
     name: 'Needle Squid',
     slug: 'needle-squid',
     category: 'cephalopods',
-    image: '/assets/images/blog/blog-cephalopod.svg',
+    image: '/assets/images/products/Needle Squid.webp',
     summary:
       'Needle Squid prepared for global seafood buyers with clean handling, freezing support, and export documentation.',
     faqs: needleSquidFaqs,
@@ -1213,7 +1213,7 @@ export const otherProducts = [
     name: 'Cuttlefish',
     slug: 'cuttlefish',
     category: 'cephalopods',
-    image: '/assets/images/blog/blog-cephalopod.svg',
+    image: '/assets/images/products/Cuttlefish.webp',
     summary:
       'Cuttlefish exported with careful processing, sizing, and buyer-ready packing for international markets.',
     faqs: [
@@ -1283,7 +1283,7 @@ export const otherProducts = [
     name: 'Octopus',
     slug: 'octopus',
     category: 'cephalopods',
-    image: '/assets/images/blog/blog-octopus.svg',
+    image: '/assets/images/products/Octopus.webp',
     summary:
       'Export-quality Octopus prepared with strict hygiene standards, controlled freezing, and dependable packaging.',
     faqs: [
