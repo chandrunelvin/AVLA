@@ -42,7 +42,7 @@ function ProductDetailsHero({ product }) {
       <div className="mx-auto mt-[30px] flex max-w-[1350px] items-center justify-center overflow-hidden rounded-[18px] bg-white px-[16px] py-[24px] min-[800px]:mt-[47px] min-[800px]:h-[632px] min-[800px]:px-[28px] min-[800px]:py-[36px]">
         <div className="relative flex w-full items-center justify-center">
           <p
-            className="absolute left-[10px] top-0 z-[2] whitespace-nowrap text-[30px] not-italic leading-[54px] tracking-[0px] text-[#b8b8b8]/70 min-[800px]:left-0 min-[800px]:text-[102px]"
+            className="absolute left-[10px] top-0 z-[2] whitespace-nowrap text-[30px] not-italic leading-[54px] tracking-[0px] text-[#b8b8b8]/70 min-[800px]:left-0 min-[800px]:text-[90px]"
             style={{ fontFamily: 'Snell Roundhand, cursive', fontWeight: 500 }}
           >
             {product.scriptName}

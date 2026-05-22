@@ -131,7 +131,7 @@ export default function OurProductsSection() {
                     fontFamily: 'Snell Roundhand, cursive',
                     fontWeight: 500,
                     fontStyle: 'normal',
-                    fontSize: '50px',
+                    fontSize: '40px',
                     lineHeight: '54px',
                     letterSpacing: '0px',
                   }}
