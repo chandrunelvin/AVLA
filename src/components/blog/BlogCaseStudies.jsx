@@ -45,6 +45,25 @@ export default function BlogCaseStudies({ activeCategory }) {
   const navigate = useNavigate();
   const posts = postsByCategory[activeCategory] || postsByCategory.fish;
 
+  function PostImage({ post }) {
+    if (!post.image) {
+      return (
+        <div className="flex h-full w-full items-center justify-center bg-[#EEF1F5] px-[24px] text-center text-[16px] leading-[1.5] text-[#7B7B7B]">
+          Image coming soon
+        </div>
+      );
+    }
+
+    return (
+      <img
+        src={post.image}
+        alt={post.title}
+        className="h-full w-full object-contain"
+        loading="lazy"
+      />
+    );
+  }
+
   return (
     <section className="mt-[23px] w-full overflow-hidden rounded-[15px] bg-[#F6F7F9] pb-[32px] pt-[42px] lg:px-[42px] lg:pb-[50px]">
 
@@ -71,12 +90,7 @@ export default function BlogCaseStudies({ activeCategory }) {
         {posts.map((post) => (
           <article key={post.title}>
             <div className="flex h-[220px] w-full items-center justify-center overflow-hidden rounded-[20px] bg-white">
-              <img
-                src={post.image}
-                alt={post.title}
-                className="h-full w-full object-contain"
-                loading="lazy"
-              />
+              <PostImage post={post} />
             </div>
             <h3 className="mt-[25px] text-[20px] font-normal leading-[1.35] text-[#4a4a4a]">
               {post.title}
@@ -114,12 +128,7 @@ export default function BlogCaseStudies({ activeCategory }) {
               </button>
             </div>
             <div className="ml-auto flex h-[436px] w-[581px] shrink-0 items-center justify-center overflow-hidden rounded-[23px] bg-white min-[1000px]:max-[1300px]:h-[360px] min-[1000px]:max-[1300px]:w-[440px]">
-              <img
-                src={post.image}
-                alt={post.title}
-                className="h-full w-full object-contain"
-                loading="lazy"
-              />
+              <PostImage post={post} />
             </div>
           </article>
         ))}
