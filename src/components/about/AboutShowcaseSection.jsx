@@ -42,7 +42,12 @@ const globalPresenceImages = [
   '/assets/images/about/Global Presence9.png',
 ];
 
-const preprocessingAreaImages = allInfraImages.slice(0, 4);
+const preprocessingAreaImages = [
+  '/assets/images/about/Pre Processing.webp',
+  '/assets/images/about/Pre Processing 2.webp',
+  '/assets/images/about/Pre Processing 3.webp',
+  '/assets/images/about/Pre Processing 4.webp',
+];
 const productionAreaImages = allInfraImages.slice(4, 8);
 const coldStorageImages = allInfraImages.slice(8, 12);
 
