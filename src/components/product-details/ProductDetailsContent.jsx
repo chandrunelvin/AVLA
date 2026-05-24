@@ -1,8 +1,64 @@
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { productDetails } from '../../data/productDetails';
 import OurProductsSection from '../shared/OurProductsSection';
 
 function ProductDetailsHero({ product }) {
+  const heroImages = product.galleryImages?.length
+    ? [product.image, ...product.galleryImages.filter((image) => image !== product.image)]
+    : [product.image];
+  const [selectedImage, setSelectedImage] = useState(heroImages[0]);
+  const thumbnailsRef = useRef(null);
+  const dragStateRef = useRef({
+    isDragging: false,
+    startX: 0,
+    scrollLeft: 0,
+    hasMoved: false,
+  });
+
+  useEffect(() => {
+    setSelectedImage(heroImages[0]);
+  }, [product.slug]);
+
+  function handleThumbnailPointerDown(event) {
+    if (!thumbnailsRef.current || window.innerWidth < 800) {
+      return;
+    }
+
+    dragStateRef.current = {
+      isDragging: true,
+      startX: event.clientX,
+      scrollLeft: thumbnailsRef.current.scrollLeft,
+      hasMoved: false,
+    };
+  }
+
+  function handleThumbnailPointerMove(event) {
+    if (!thumbnailsRef.current || !dragStateRef.current.isDragging) {
+      return;
+    }
+
+    const distance = event.clientX - dragStateRef.current.startX;
+
+    if (Math.abs(distance) > 4) {
+      dragStateRef.current.hasMoved = true;
+    }
+
+    thumbnailsRef.current.scrollLeft = dragStateRef.current.scrollLeft - distance;
+  }
+
+  function stopThumbnailDrag() {
+    dragStateRef.current.isDragging = false;
+  }
+
+  function handleThumbnailClick(event, image) {
+    if (dragStateRef.current.hasMoved) {
+      event.preventDefault();
+      return;
+    }
+
+    setSelectedImage(image);
+  }
+
   return (
     <section className="rounded-[14px] bg-[#F6F7F9] px-[8px] pb-[8px] pt-[36px] text-center min-[800px]:px-[48px] min-[800px]:pb-[48px] min-[800px]:pt-[42px]">
 
@@ -48,7 +104,7 @@ function ProductDetailsHero({ product }) {
             {product.scriptName}
           </p>
           <img
-            src={product.image}
+            src={selectedImage}
             alt={product.displayName}
             className="relative z-[1] h-auto max-h-[200px] w-full object-contain min-[800px]:max-h-[520px] min-[800px]:max-w-[1050px]"
           />
@@ -56,21 +112,56 @@ function ProductDetailsHero({ product }) {
       </div>
 
       {/* Thumbnail strip — scrollable on mobile */}
-      <div className="mx-auto mt-[16px] flex max-w-[1177px] gap-[8px] overflow-x-auto rounded-[10px] bg-white p-[8px] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden min-[800px]:mt-[31px] min-[800px]:overflow-hidden min-[800px]:rounded-[6px]">
-        {productDetails.slice(0, 8).map((item) => (
-          <div
-            key={item.slug}
-            className={`flex h-[64px] min-w-[90px] flex-shrink-0 items-center justify-center rounded-[6px] border bg-white px-[8px] min-[800px]:h-[72px] min-[800px]:min-w-[138px] min-[800px]:px-[12px] ${
-              item.slug === product.slug ? 'border-[#111111]' : 'border-[#E6E6E6]'
-            }`}
-          >
-            <img
-              src={item.image}
-              alt={item.displayName}
-              className="h-full w-full object-contain"
-            />
+      <div className="mx-auto mt-[16px] max-w-[1177px] min-[800px]:mt-[31px]">
+        {product.galleryImages?.length ? (
+          <div className="flex items-center">
+            <div
+              ref={thumbnailsRef}
+              className="flex flex-1 gap-[8px] overflow-x-auto rounded-[10px] bg-white p-[8px] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden min-[800px]:cursor-grab min-[800px]:rounded-[6px] min-[800px]:active:cursor-grabbing"
+              onPointerDown={handleThumbnailPointerDown}
+              onPointerMove={handleThumbnailPointerMove}
+              onPointerUp={stopThumbnailDrag}
+              onPointerLeave={stopThumbnailDrag}
+              onPointerCancel={stopThumbnailDrag}
+            >
+              {heroImages.map((image, index) => (
+                <button
+                  key={image}
+                  type="button"
+                  onClick={(event) => handleThumbnailClick(event, image)}
+                  className={`flex h-[64px] min-w-[90px] flex-shrink-0 items-center justify-center rounded-[6px] border bg-white px-[8px] transition-colors min-[800px]:h-[72px] min-[800px]:min-w-[138px] min-[800px]:px-[12px] ${
+                    selectedImage === image ? 'border-[#111111]' : 'border-[#E6E6E6]'
+                  }`}
+                  aria-label={`Show ${product.displayName} image ${index + 1}`}
+                >
+                  <img
+                    src={image}
+                    alt={`${product.displayName} view ${index + 1}`}
+                    className="h-full w-full object-contain select-none"
+                    draggable="false"
+                  />
+                </button>
+              ))}
+            </div>
           </div>
-        ))}
+        ) : (
+          <div className="flex gap-[8px] overflow-x-auto rounded-[10px] bg-white p-[8px] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden min-[800px]:rounded-[6px]">
+            {productDetails.slice(0, 8).map((item) => (
+              <div
+                key={item.slug}
+                className={`flex h-[64px] min-w-[90px] flex-shrink-0 items-center justify-center rounded-[6px] border bg-white px-[8px] min-[800px]:h-[72px] min-[800px]:min-w-[138px] min-[800px]:px-[12px] ${
+                  item.slug === product.slug ? 'border-[#111111]' : 'border-[#E6E6E6]'
+                }`}
+              >
+                <img
+                  src={item.image}
+                  alt={item.displayName}
+                  className="h-full w-full object-contain"
+                />
+              </div>
+            ))}
+          </div>
+        )}
       </div>
     </section>
   );
