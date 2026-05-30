@@ -3,9 +3,10 @@ import { productDetails } from '../../data/productDetails';
 import OurProductsSection from '../shared/OurProductsSection';
 
 function ProductDetailsHero({ product }) {
+  const primaryDetailImage = product.detailImage || product.image;
   const heroImages = product.galleryImages?.length
-    ? [product.image, ...product.galleryImages.filter((image) => image !== product.image)]
-    : [product.image];
+    ? [primaryDetailImage, ...product.galleryImages.filter((image) => image !== primaryDetailImage)]
+    : [primaryDetailImage];
   const [selectedImage, setSelectedImage] = useState(heroImages[0]);
   const thumbnailsRef = useRef(null);
   const dragStateRef = useRef({

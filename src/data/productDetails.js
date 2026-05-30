@@ -14,6 +14,7 @@ import {
   grouperGalleryImages,
   leatherjacketGalleryImages,
   loligoSquidGalleryImages,
+  mackerelGalleryImages,
   mahiGalleryImages,
   needleSquidGalleryImages,
   octopusGalleryImages,
@@ -29,6 +30,7 @@ function createProduct({
   slug,
   category,
   image,
+  detailImage,
   galleryImages,
   projectImage,
   scriptName,
@@ -42,6 +44,7 @@ function createProduct({
     slug,
     category,
     image,
+    detailImage: detailImage || image,
     galleryImages,
     projectImage,
     summary,
@@ -207,7 +210,9 @@ export const fishProducts = [
     name: 'Ribbonfish',
     slug: 'ribbonfish',
     category: 'fish',
-    image: fishImageSet[2],
+    image: '/assets/images/products/Ribbonfish.webp',
+    detailImage: '/assets/images/products/Ribbonfish.webp',
+    projectImage: '/assets/images/products/Ribbonfish.webp',
     summary:
       'Ribbonfish prepared for international seafood buyers with clean processing, grading, and reliable frozen logistics.',
     faqs: [
@@ -278,7 +283,9 @@ export const fishProducts = [
     slug: 'mackerel',
     category: 'fish',
     image: '/assets/images/products/Mackerel-product-image.png',
-    projectImage: '/assets/images/products/project-container-mak5.webp',
+    detailImage: '/assets/images/products/Mackerel-product-image.png',
+    galleryImages: mackerelGalleryImages,
+    projectImage: '/assets/images/products/Mackerel-product-image.png',
     summary:
       'Export-grade Mackerel handled through hygienic processing and dependable frozen logistics for global markets.',
     faqs: [

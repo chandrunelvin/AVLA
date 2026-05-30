@@ -1,4 +1,16 @@
 export const baigaiGalleryImages = [
+  '/assets/images/product-details/Baigai/baigai (1).webp',
+  '/assets/images/product-details/Baigai/baigai (2).webp',
+  '/assets/images/product-details/Baigai/baigai (3).webp',
+  '/assets/images/product-details/Baigai/baigai (4).webp',
+  '/assets/images/product-details/Baigai/biagai (1).webp',
+  '/assets/images/product-details/Baigai/biagai (2).webp',
+  '/assets/images/product-details/Baigai/biagai (3).webp',
+  '/assets/images/product-details/Baigai/biagai (4).webp',
+  '/assets/images/product-details/Baigai/biagai (5).webp',
+  '/assets/images/product-details/Baigai/biagai (6).webp',
+  '/assets/images/product-details/Baigai/biagai (7).webp',
+  '/assets/images/product-details/Baigai/biagai3.webp',
   '/assets/images/product-details/Baigai/Baigai Product Image1.webp',
   '/assets/images/product-details/Baigai/Baigai Product Image2.webp',
   '/assets/images/product-details/Baigai/Baigai Product Image3.webp',
@@ -11,6 +23,8 @@ export const baigaiGalleryImages = [
 ];
 
 export const crabGalleryImages = [
+  '/assets/images/product-details/Blue Swimming Crab/bue swimming crab.webp',
+  '/assets/images/product-details/threespot crab/threespot crab (1).webp',
   '/assets/images/product-details/Crab/Crab Product.webp',
   '/assets/images/product-details/Crab/Crab Product2.webp',
   '/assets/images/product-details/Crab/Crab Product3.webp',
@@ -57,7 +71,12 @@ export const mahiGalleryImages = [
   '/assets/images/product-details/mahi/Mahi 6.webp',
 ];
 
+export const mackerelGalleryImages = [
+  '/assets/images/product-details/mackerel/mackerel.webp',
+];
+
 export const leatherjacketGalleryImages = [
+  '/assets/images/product-details/Leather jacket/leatherjacket.webp',
   '/assets/images/product-details/Leather jacket/Leather jacket1.webp',
   '/assets/images/product-details/Leather jacket/Leather jacket2.webp',
   '/assets/images/product-details/Leather jacket/Leather jacket3.webp',
@@ -76,6 +95,11 @@ export const needleSquidGalleryImages = [
 ];
 
 export const octopusGalleryImages = [
+  '/assets/images/product-details/Octopus/octopus whole cleaned .webp',
+  '/assets/images/product-details/Octopus/octopus whole cleaned 12.webp',
+  '/assets/images/product-details/Octopus/octopus whole cleaned 23.webp',
+  '/assets/images/product-details/Octopus/octopus whole cleaned 234.webp',
+  '/assets/images/product-details/Octopus/octopus 787.webp',
   '/assets/images/product-details/Octopus/Octopus1.webp',
   '/assets/images/product-details/Octopus/Octopus2.webp',
   '/assets/images/product-details/Octopus/Octopus3.webp',
@@ -87,6 +111,7 @@ export const octopusGalleryImages = [
 ];
 
 export const sandLobsterGalleryImages = [
+  '/assets/images/product-details/Sand Lobster/sand lobster (1).webp',
   '/assets/images/product-details/Sand Lobster/Sand Lobster1.webp',
   '/assets/images/product-details/Sand Lobster/Sand Lobster2.webp',
   '/assets/images/product-details/Sand Lobster/Sand Lobster3.webp',
@@ -94,6 +119,9 @@ export const sandLobsterGalleryImages = [
 ];
 
 export const shrimpGalleryImages = [
+  '/assets/images/product-details/Shrimp/giant tiger prawns.webp',
+  '/assets/images/product-details/Shrimp/japanese tiger prawns.webp',
+  '/assets/images/product-details/Shrimp/greentail shrimp .webp',
   '/assets/images/product-details/Shrimp/Shrimp1.webp',
   '/assets/images/product-details/Shrimp/Shrimp2.webp',
   '/assets/images/product-details/Shrimp/Shrimp3.webp',
@@ -132,6 +160,13 @@ export const loligoSquidGalleryImages = [
 ];
 
 export const semiNeedleSquidGalleryImages = [
+  '/assets/images/product-details/Squid-Semi Needle/semi needle .webp',
+  '/assets/images/product-details/Squid-Semi Needle/semineedle .webp',
+  '/assets/images/product-details/Squid-Semi Needle/semi needle 433.webp',
+  '/assets/images/product-details/Squid-Semi Needle/semi needle 12123.webp',
+  '/assets/images/product-details/Squid-Semi Needle/semi needle 1232.webp',
+  '/assets/images/product-details/Squid-Semi Needle/semi needle 12324.webp',
+  '/assets/images/product-details/Squid-Semi Needle/semi needle 121324.webp',
   '/assets/images/product-details/Squid-Semi Needle/Squid-Semi Needle1.webp',
   '/assets/images/product-details/Squid-Semi Needle/Squid-Semi Needle2.webp',
   '/assets/images/product-details/Squid-Semi Needle/Squid-Semi Needle3.webp',
