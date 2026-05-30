@@ -345,12 +345,126 @@ const kollamSeafoodCapitalSections = [
   },
 ];
 
+const ashtamudiFreshCatchSections = [
+  {
+    title: 'Introduction: A Journey That Begins in Ashtamudi',
+    paragraphs: [
+      'Kerala has earned global recognition for its seafood heritage, and among its many natural treasures, Ashtamudi stands out as a region deeply connected with marine life and fishing communities. Known for its rich aquatic ecosystem and strategic location near Kollam, Ashtamudi has become an important contributor to India\'s seafood industry.',
+      'The journey from local waters to international markets requires more than harvesting seafood; it demands a disciplined process built around quality, efficiency, and reliability. Through AVLA Nettos Exports, this journey transforms into a structured process where every stage contributes toward delivering premium seafood to customers across the world.',
+    ],
+    source: {
+      label: 'Ramsar Sites Information Service',
+      url: 'https://rsis.ramsar.org/',
+    },
+  },
+  {
+    title: 'The Importance of Ashtamudi in Kerala\'s Seafood Ecosystem',
+    paragraphs: [
+      'Ashtamudi is one of Kerala\'s most important water bodies and supports a thriving fishing ecosystem that sustains local communities and industries. Its unique ecological characteristics provide favorable conditions for a diverse range of marine species and seafood resources.',
+      'The region has historically supported livelihoods associated with fishing and marine activities, creating an environment where industry knowledge and practical expertise continue passing from one generation to another. Businesses including AVLA Nettos Exports benefit from operating within a region that combines natural abundance with deep-rooted seafood traditions.',
+    ],
+    source: {
+      label: 'Food and Agriculture Organization (FAO)',
+      url: 'https://www.fao.org/',
+    },
+  },
+  {
+    title: 'Freshness Begins at the Source',
+    paragraphs: [
+      'The quality of seafood is determined long before processing and packaging stages begin. It starts with sourcing products from trusted and reliable environments where freshness can be preserved from the moment of harvest.',
+      'Effective seafood operations require immediate attention to handling methods and transportation procedures because even minor delays can affect quality standards. AVLA understands that preserving freshness at the source forms the foundation of customer satisfaction. Through AVLA Nettos Exports, the company demonstrates a commitment toward maintaining seafood integrity from the earliest stages of the supply chain.',
+    ],
+    source: {
+      label: 'Marine Products Export Development Authority (MPEDA)',
+      url: 'https://mpeda.gov.in/',
+    },
+  },
+  {
+    title: 'The Role of Skilled Fishing Communities',
+    paragraphs: [
+      'Behind every successful seafood operation is the contribution of experienced fishing communities and industry professionals. The coastal regions surrounding Kollam and Ashtamudi are supported by individuals who understand marine conditions, seasonal patterns, and effective seafood handling practices.',
+      'Their expertise contributes significantly to maintaining quality throughout the supply chain. Years of experience help create consistency and efficiency within seafood operations. Companies such as AVLA Nettos Exports operate within an ecosystem strengthened by human knowledge and practical industry expertise.',
+    ],
+    source: {
+      label: 'National Fisheries Development Board',
+      url: 'https://nfdb.gov.in/',
+    },
+  },
+  {
+    title: 'Quality Control Beyond Traditional Practices',
+    paragraphs: [
+      'Modern seafood exports require more than traditional experience and industry knowledge. International buyers expect products that meet strict standards for quality, hygiene, and safety.',
+      'Maintaining these standards requires structured quality control systems throughout every stage of production and handling. AVLA focuses on maintaining operational processes designed to support consistency and product reliability. Through AVLA Nettos Exports, customers can understand the company\'s commitment to delivering seafood products that satisfy international expectations.',
+    ],
+    source: {
+      label: 'U.S. Food and Drug Administration Seafood Guidance',
+      url: 'https://www.fda.gov/food',
+    },
+  },
+  {
+    title: 'Modern Processing Supports Product Integrity',
+    paragraphs: [
+      'Seafood processing infrastructure has become increasingly important in maintaining quality and ensuring product readiness for export markets. Modern facilities support cleaning, handling, packaging, and storage operations that reduce contamination risks and preserve freshness.',
+      'Maintaining strict processing procedures helps improve consistency and strengthen customer confidence. AVLA recognizes the value of process efficiency and operational discipline in supporting premium seafood exports. Through AVLA Nettos Exports, the company highlights a structured approach toward seafood handling and product management.',
+    ],
+    source: {
+      label: 'Marine Products Export Development Authority (MPEDA)',
+      url: 'https://mpeda.gov.in/',
+    },
+  },
+  {
+    title: 'The Importance of Cold Chain Excellence',
+    paragraphs: [
+      'Seafood quality preservation depends heavily on effective temperature management. A strong cold chain system prevents deterioration and supports product freshness throughout transportation and storage activities.',
+      'Interruptions within this process can significantly affect product quality and customer satisfaction. Maintaining temperature consistency therefore becomes essential for seafood businesses operating within international markets. AVLA understands the importance of preserving seafood quality throughout the journey from processing facilities to global destinations. Information available through AVLA Nettos Exports reflects the company\'s commitment toward maintaining quality through reliable cold chain practices.',
+    ],
+    source: {
+      label: 'FAO Fisheries and Aquaculture Division',
+      url: 'https://www.fao.org/fisheries/en/',
+    },
+  },
+  {
+    title: 'Understanding International Buyer Expectations',
+    paragraphs: [
+      'Global seafood buyers increasingly expect suppliers to provide more than products alone. Reliability, communication, quality assurance, and supply consistency have become critical requirements influencing purchasing decisions.',
+      'Export companies must therefore understand market expectations and continuously improve operational standards to remain competitive. AVLA focuses on building long-term relationships by maintaining dependable business practices and customer-oriented operations. Through AVLA Nettos Exports, buyers gain access to a company focused on delivering value beyond standard product transactions.',
+    ],
+    source: {
+      label: 'International Trade Administration',
+      url: 'https://www.trade.gov/',
+    },
+  },
+  {
+    title: 'Sustainable Practices Supporting Long-Term Success',
+    paragraphs: [
+      'The seafood industry increasingly prioritizes sustainability because environmental responsibility has become an important consideration among consumers and regulatory organizations worldwide. Responsible sourcing and efficient resource management contribute toward long-term business stability and industry growth.',
+      'Sustainable operations also strengthen customer confidence and improve market acceptance across global regions. AVLA recognizes that long-term success depends on balancing commercial objectives with responsible practices. Through AVLA Nettos Exports, customers can understand the company\'s approach toward supporting responsible seafood operations and industry development.',
+    ],
+    source: {
+      label: 'World Wildlife Fund Sustainable Seafood Program',
+      url: 'https://www.worldwildlife.org/industries/seafood',
+    },
+  },
+  {
+    title: 'From Ashtamudi to Global Markets',
+    paragraphs: [
+      'The journey from Ashtamudi to international markets represents much more than a logistical process. It reflects the combined efforts of natural resources, skilled communities, modern infrastructure, and disciplined quality systems working together toward a common goal.',
+      'Every stage within this journey contributes toward maintaining product integrity and delivering value to customers worldwide. AVLA continues strengthening its reputation by focusing on quality, reliability, and operational excellence. Through AVLA Nettos Exports, businesses and customers can connect with a company committed to transforming fresh seafood into trusted global products.',
+      'The story of quality begins with local waters but reaches far beyond regional boundaries, creating a seafood journey that supports international markets, strengthens customer relationships, and demonstrates how commitment to excellence can connect Ashtamudi with customers around the world through dependable export solutions and sustainable growth opportunities.',
+    ],
+    source: {
+      label: 'AVLA Nettos Exports Official Website',
+      url: 'https://www.avlaexports.com/',
+    },
+  },
+];
+
 export const blogDetails = [
   {
     title: 'Why Kollam Kerala is India\'s Seafood Export Capital',
     slug: 'kollam-kerala-seafood-export-capital',
     category: 'Kollam Kerala',
-    image: '',
+    image: '/assets/images/blog/blog-post/Why Kollam Kerala is India\'s Seafood Export Capital.webp',
     company: 'Avla Nettos Exports',
     readTime: '6 Min',
     releaseDate: 'May 24, 2026',
@@ -388,7 +502,7 @@ export const blogDetails = [
     title: 'AVLA Nettos Exports: India\'s Premier Seafood Exporter from Kollam',
     slug: 'avla-nettos-exports-kollam',
     category: 'AVLA Nettos Exports',
-    image: '',
+    image: '/assets/images/blog/blog-post/AVLA Nettos Exports-blog.webp',
     company: 'Avla Nettos Exports',
     readTime: '6 Min',
     releaseDate: 'May 24, 2026',
@@ -423,10 +537,48 @@ export const blogDetails = [
     sections: avlaCompanySections,
   },
   {
+    title: 'From Ashtamudi to the World: AVLA\'s Fresh Catch Quality Story',
+    slug: 'ashtamudi-fresh-catch-quality-story',
+    category: 'AVLA Fresh Catch Quality Story',
+    image: '/assets/images/blog/blog-post/From Ashtamudi to the World.webp',
+    company: 'Avla Nettos Exports',
+    readTime: '6 Min',
+    releaseDate: 'May 30, 2026',
+    speciesFamily: 'Company',
+    intro: 'From Ashtamudi to the World: AVLA\'s Fresh Catch Quality Story.',
+    sideText:
+      'Discover how AVLA Nettos Exports transforms fresh seafood from Ashtamudi into globally trusted products through quality control, advanced processing, and reliable export standards.',
+    metaTitle:
+      'From Ashtamudi to the World: AVLA\'s Fresh Catch Quality Story | Premium Seafood Exports.',
+    metaDescription:
+      'Discover how AVLA Nettos Exports transforms fresh seafood from Ashtamudi into globally trusted products through quality control, advanced processing, and reliable export standards.',
+    keywords: {
+      primary: 'AVLA Fresh Catch Quality Story',
+      secondary: [
+        'Seafood exporter from Kollam',
+        'Ashtamudi seafood exports',
+        'premium seafood processing',
+        'Indian seafood exporter',
+      ],
+      cluster: [
+        'Seafood quality standards',
+        'cold chain management',
+        'seafood processing infrastructure',
+        'sustainable seafood sourcing',
+        'seafood export solutions',
+      ],
+    },
+    articleLead: [
+      'Kerala\'s seafood reputation is built on a combination of natural marine resources, skilled fishing communities, and disciplined export systems that protect quality from source to shipment.',
+      'From the waters of Ashtamudi to international destinations, AVLA Nettos Exports reflects this journey through careful sourcing, modern processing, reliable cold chain handling, and a focus on long-term buyer trust.',
+    ],
+    sections: ashtamudiFreshCatchSections,
+  },
+  {
     title: 'Tuna Fish Exporter in India – Fresh & Frozen Tuna Supply Worldwide',
     slug: 'tuna-fish-exporter-india',
     category: 'Tuna Fish',
-    image: '/assets/images/products/product-tuna-fish.png',
+    image: '/assets/images/blog/blog-post/Tuna Fish Exporter in India – Fresh.webp',
     company: 'Avla Nettos Exports',
     readTime: '3 Min',
     releaseDate: 'January 1, 2026',

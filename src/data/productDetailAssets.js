@@ -22,6 +22,11 @@ export const crabGalleryImages = [
 ];
 
 export const cuttlefishGalleryImages = [
+  '/assets/images/product-details/Cuttlefish/cuttlefish whole cleaned .webp',
+  '/assets/images/product-details/Cuttlefish/cuttlefish whole cleaned.webp',
+  '/assets/images/product-details/Cuttlefish/cuttlefish whole cleaned.12.webp',
+  '/assets/images/product-details/Cuttlefish/cuttlefish cleaned block.webp',
+  '/assets/images/product-details/Cuttlefish/cuttlefish whole cleaned block .webp',
   '/assets/images/product-details/Cuttlefish/Cuttlefish1.jpg',
   '/assets/images/product-details/Cuttlefish/Cuttlefish2.jpg',
   '/assets/images/product-details/Cuttlefish/Cuttlefish3.jpg',
@@ -101,6 +106,17 @@ export const shrimpGalleryImages = [
 ];
 
 export const loligoSquidGalleryImages = [
+  '/assets/images/product-details/loligo squid/loligo squid whole .webp',
+  '/assets/images/product-details/loligo squid/loligo squid whole 2.webp',
+  '/assets/images/product-details/loligo squid/loligo squid whole 3.webp',
+  '/assets/images/product-details/loligo squid/loligo squid whole 23.webp',
+  '/assets/images/product-details/loligo squid/loligo squid whole 111.webp',
+  '/assets/images/product-details/loligo squid/loligo squid whole 233.webp',
+  '/assets/images/product-details/loligo squid/loligo squid whole 333.webp',
+  '/assets/images/product-details/loligo squid/loligo squid whole 345.webp',
+  '/assets/images/product-details/loligo squid/loligo squid whole 454.webp',
+  '/assets/images/product-details/loligo squid/loligo squid whole 1234.webp',
+  '/assets/images/product-details/loligo squid/loligo squid whole 12345.webp',
   '/assets/images/product-details/Squid-Loligo/Squid-Loligo1.webp',
   '/assets/images/product-details/Squid-Loligo/Squid-Loligo2.webp',
   '/assets/images/product-details/Squid-Loligo/Squid-Loligo3.webp',

@@ -1,4 +1,4 @@
-import { ArrowRight, CloudDownload } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 
 export default function HeroSection() {
@@ -42,12 +42,16 @@ export default function HeroSection() {
       </div>
 
       {/* Hero image — same for mobile and desktop */}
-      <img
-        src="/assets/images/home/hero-demo.svg"
-        alt="Seafood export demo"
-        className="mx-auto mt-[32px] block h-auto w-full max-w-[1006px] rounded-[15px] px-[9px] sm:mt-[82px] sm:px-6 lg:px-12"
-        loading="eager"
-      />
+      <div className="mx-auto mt-[32px] w-full max-w-[1006px] px-[9px] sm:mt-[82px] sm:px-6 lg:px-12">
+        <div className="overflow-hidden rounded-[15px] lg:rounded-[17px]">
+          <img
+            src="/assets/images/home/HOME-PAGE.webp"
+            alt="Seafood export banner"
+            className="block h-auto w-full lg:h-[439px]"
+            loading="eager"
+          />
+        </div>
+      </div>
 
     </section>
   );

@@ -135,7 +135,8 @@ export const fishProducts = [
     name: 'Leatherjacket',
     slug: 'leatherjacket',
     category: 'fish',
-    image: fishImageSet[1],
+    image: '/assets/images/product-details/Leather jacket/Leather Jacket.webp',
+    projectImage: '/assets/images/product-details/Leather jacket/Leather Jacket.webp',
     galleryImages: leatherjacketGalleryImages,
     summary:
       'Export-ready Leatherjacket supplied with dependable quality control, hygienic handling, and market-specific packing.',
@@ -347,7 +348,8 @@ export const fishProducts = [
     name: 'Mahi Mahi',
     slug: 'mahi-mahi',
     category: 'fish',
-    image: fishImageSet[0],
+    image: '/assets/images/product-details/mahi/Mahi Mahi Fish.webp',
+    projectImage: '/assets/images/product-details/mahi/Mahi Mahi Fish.webp',
     galleryImages: mahiGalleryImages,
     summary:
       'Premium Mahi Mahi sourced and packed for export with freshness-focused handling and buyer-ready specifications.',
