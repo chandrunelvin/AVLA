@@ -1,14 +1,14 @@
 
 const certifications = [
-  { title: 'IFS Certification', active: true, image: '/assets/images/home/ifs0.png' },
-  { title: 'EU APPROVAL\n799\nKOC/FFP/02587', active: false, image: '/assets/images/home/Eu-certificate.png' },
-  { title: 'MPEDA Registration', active: false, image: '/assets/images/home/mpeda2.png' },
-  { title: 'HACCP Certification', active: false, image: '/assets/images/home/haccp3.png' },
-  { title: 'ISO 22000 Certification', active: false, image: '/assets/images/home/iso4.png' },
-  { title: 'EIC / EIA Approval', active: false, image: '/assets/images/home/eic5.png' },
-  { title: 'FSSAI License', active: false, image: '/assets/images/home/fssai6.png' },
-  { title: 'BRC Certification', active: false, image: '/assets/images/home/brc7.png' },
-  { title: 'US FDA Registration', active: false, image: '/assets/images/home/us Fda1.png' },
+  { title: 'IFS Certification', active: true, image: '/assets/images/home/IFS.webp' },
+  { title: 'EU APPROVAL\n799\nKOC/FFP/02587', active: false, image: '/assets/images/home/EU.webp' },
+  { title: 'MPEDA Registration', active: false, image: '/assets/images/home/MPEDA.webp' },
+  { title: 'HACCP Certification', active: false, image: '/assets/images/home/HACCP.webp' },
+  { title: 'ISO 22000 Certification', active: false, image: '/assets/images/home/ISO.webp' },
+  { title: 'EIC / EIA Approval', active: false, image: '/assets/images/home/Export-certificate.webp' },
+  { title: 'FSSAI License', active: false, image: '/assets/images/home/Fssai.webp' },
+  { title: 'BRC Certification', active: false, image: '/assets/images/home/BRC.webp' },
+  { title: 'US FDA Registration', active: false, image: '/assets/images/home/FDA.webp' },
 ];
 
 export default function CertificationSection() {
@@ -68,16 +68,12 @@ export default function CertificationSection() {
 
             {/* Certificate image card — percentage-based so it scales with card width */}
             <div
-              className={`absolute top-[4.45%] left-[64%] h-[90.71%] w-[33.87%] rounded-[14px] shadow-md flex items-center justify-center transition-colors duration-300 md:left-auto md:right-[8px] md:top-[8px] md:h-[163px] md:w-[148px] md:overflow-visible ${
-                cert.active
-                  ? 'bg-[rgba(130,170,249,1.00)] group-hover/grid:bg-[rgba(197,198,199,1.00)] group-hover:!bg-[rgba(130,170,249,1.00)]'
-                  : 'bg-[rgba(197,198,199,1.00)] group-hover:bg-[rgba(130,170,249,1.00)]'
-              }`}
+              className="absolute top-[4.45%] left-[64%] h-[90.71%] w-[33.87%] flex items-center justify-center md:left-auto md:right-[8px] md:top-[8px] md:h-[163px] md:w-[148px] md:overflow-visible"
             >
               <img
                 src={cert.image}
                 alt={cert.title}
-                className="absolute left-[20%] top-1/2 h-[90%] w-[128%] max-w-none -translate-y-1/2 -translate-x-[42%] p-0 md:left-[20%] md:top-1/2 md:h-[147px] md:w-[190px] md:max-w-none md:-translate-y-1/2 md:-translate-x-[42%] md:p-0"
+                className="h-full w-full object-contain md:h-[163px] md:w-[148px]"
               />
             </div>
           </div>

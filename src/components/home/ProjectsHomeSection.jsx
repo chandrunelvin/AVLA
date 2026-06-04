@@ -5,10 +5,12 @@ import { fishProducts, otherProducts } from '../../data/productDetails';
 
 const productsByCategory = {
   fish: fishProducts,
-  cephalopods: otherProducts.filter((p) => ['squid', 'octopus'].includes(p.slug)),
-  crustaceans: otherProducts.filter((p) => ['crab', 'shrimp'].includes(p.slug)),
-  bivalve: otherProducts.filter((p) => ['clam', 'mussel'].includes(p.slug)),
+  cephalopods: otherProducts.filter((p) => p.category === 'cephalopods'),
+  crustaceans: otherProducts.filter((p) => p.category === 'crustaceans'),
+  bivalve: otherProducts.filter((p) => p.category === 'bivalve'),
 };
+
+const THUMBS_PER_PAGE = 8;
 
 export default function ProjectsHomeSection({ activeCategory = 'fish' }) {
   const navigate = useNavigate();
@@ -17,6 +19,10 @@ export default function ProjectsHomeSection({ activeCategory = 'fish' }) {
 
   const clampedIndex = Math.min(selectedIndex, products.length - 1);
   const selectedProduct = products[clampedIndex];
+
+  // Show max 8 thumbnails at a time; the visible page follows the selected item.
+  const pageStart = Math.floor(clampedIndex / THUMBS_PER_PAGE) * THUMBS_PER_PAGE;
+  const visibleProducts = products.slice(pageStart, pageStart + THUMBS_PER_PAGE);
 
   function selectProduct(index) { setSelectedIndex(index); }
   function selectPrevious() { setSelectedIndex((clampedIndex - 1 + products.length) % products.length); }
@@ -126,7 +132,9 @@ export default function ProjectsHomeSection({ activeCategory = 'fish' }) {
         </div>
 
         <div className="absolute left-1/2 top-[860px] flex h-[96px] w-[83%] -translate-x-1/2 items-center justify-start gap-[10px] rounded-[12px] bg-white px-[10px] min-[1000px]:max-[1300px]:w-fit min-[1000px]:max-[1300px]:justify-center min-[1000px]:max-[1300px]:gap-[8px] min-[1000px]:max-[1300px]:px-[8px]">
-          {products.map((product, index) => (
+          {visibleProducts.map((product, offset) => {
+            const index = pageStart + offset;
+            return (
             <button
               key={product.slug}
               type="button"
@@ -144,7 +152,8 @@ export default function ProjectsHomeSection({ activeCategory = 'fish' }) {
                 loading="lazy"
               />
             </button>
-          ))}
+            );
+          })}
         </div>
 
         <div className="absolute left-1/2 top-[989px] flex -translate-x-1/2 items-center gap-[8px]">
