@@ -63,7 +63,7 @@ export default function AboutHeroSection() {
             customized packing, and strict adherence to international seafood
             export standards.
           </p>
-          <p className="text-[44px] font-normal leading-[1.1]">95%</p>
+          <p className="text-[44px] font-normal leading-[1.1]">99%</p>
         </div>
 
         {/* Bottom-left: dark card */}
@@ -117,7 +117,7 @@ export default function AboutHeroSection() {
               customized packing, and strict adherence to international seafood
               export standards.
             </p>
-            <p className="text-[50px] font-normal leading-[1.1]">95%</p>
+            <p className="text-[50px] font-normal leading-[1.1]">99%</p>
           </div>
 
           <div className="flex min-h-[277px] flex-col rounded-[22px] bg-[#222222] px-[22px] py-[22px] text-white">

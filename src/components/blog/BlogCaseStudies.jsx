@@ -58,7 +58,7 @@ export default function BlogCaseStudies({ activeCategory }) {
       <img
         src={post.image}
         alt={post.title}
-        className="h-full w-full object-contain"
+        className="h-full w-full object-cover"
         loading="lazy"
       />
     );

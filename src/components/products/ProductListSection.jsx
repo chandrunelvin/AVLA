@@ -30,7 +30,7 @@ export default function ProductListSection({ activeCategory }) {
         <div className="mt-[30px] flex flex-col gap-[30px]">
           {products.map((product) => (
             <article key={product.slug} className="flex flex-col items-center">
-              <div className="flex w-[95%] items-center justify-center overflow-hidden rounded-[20px] bg-white">
+              <div className="flex w-[99%] items-center justify-center overflow-hidden rounded-[20px] bg-white">
                 <img
                   src={product.image}
                   alt={product.name}

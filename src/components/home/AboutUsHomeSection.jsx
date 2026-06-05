@@ -65,7 +65,7 @@ export default function AboutUsHomeSection() {
                 loading="lazy"
               />
             </div>
-            <p className="mt-[16px] text-[52px] font-normal leading-[56px]">95%</p>
+            <p className="mt-[16px] text-[52px] font-normal leading-[56px]">99%</p>
             <p className="mt-[16px] text-[14px] font-normal leading-[20px] text-white">
               Buyer satisfaction built on reliable supply, accurate grading,
               customized packing, and strict adherence to international seafood export
@@ -146,7 +146,7 @@ export default function AboutUsHomeSection() {
             loading="lazy"
           />
 
-          {/* Row 2, Col 1 — blue 95% card */}
+          {/* Row 2, Col 1 — blue 99% card */}
           <article className="rounded-[18px] bg-[#0161FE] px-[19px] py-[19px] text-white">
             <div className="flex h-[47px] w-[47px] items-center justify-center rounded-full bg-white/20">
               <img
@@ -156,7 +156,7 @@ export default function AboutUsHomeSection() {
                 loading="lazy"
               />
             </div>
-            <p className="mt-[40px] text-[46px] font-normal leading-[54px]">95%+</p>
+            <p className="mt-[40px] text-[46px] font-normal leading-[54px]">99%+</p>
             <p className="mt-[10px] text-[18px] font-medium leading-[24px]">Client Satisfaction</p>
             <p className="mt-[8px] text-[16px] font-normal leading-[24px] text-white/80">
               Buyer satisfaction built on reliable supply, accurate grading, customized packing, and strict adherence to international seafood export standards.

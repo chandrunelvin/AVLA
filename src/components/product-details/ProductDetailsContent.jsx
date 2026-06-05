@@ -96,10 +96,10 @@ function ProductDetailsHero({ product }) {
       </div>
 
       {/* Fish image card */}
-      <div className="mx-auto mt-[30px] flex max-w-[1350px] items-center justify-center overflow-hidden rounded-[18px] bg-white px-[16px] py-[24px] min-[800px]:mt-[47px] min-[800px]:h-[632px] min-[800px]:px-[28px] min-[800px]:py-[36px]">
-        <div className="relative flex w-full items-center justify-center">
+      <div className="mx-auto mt-[30px] flex h-[260px] max-w-[1350px] items-center justify-center overflow-hidden rounded-[18px] bg-white min-[800px]:mt-[47px] min-[800px]:h-[632px]">
+        <div className="relative flex h-full w-full items-center justify-center">
           <p
-            className="absolute left-[10px] top-0 z-[2] whitespace-nowrap text-[30px] not-italic leading-[54px] tracking-[0px] text-[#b8b8b8]/70 min-[800px]:left-0 min-[800px]:text-[90px]"
+            className="absolute left-[16px] top-[12px] z-[2] whitespace-nowrap text-[30px] not-italic leading-[54px] tracking-[0px] text-[#b8b8b8]/70 min-[800px]:left-[40px] min-[800px]:top-[40px] min-[800px]:text-[90px]"
             style={{ fontFamily: 'Snell Roundhand, cursive', fontWeight: 500 }}
           >
             {product.scriptName}
@@ -107,7 +107,7 @@ function ProductDetailsHero({ product }) {
           <img
             src={selectedImage}
             alt={product.displayName}
-            className="relative z-[1] h-auto max-h-[200px] w-full object-contain min-[800px]:max-h-[520px] min-[800px]:max-w-[1050px]"
+            className="relative z-[1] h-full w-full object-cover"
           />
         </div>
       </div>
