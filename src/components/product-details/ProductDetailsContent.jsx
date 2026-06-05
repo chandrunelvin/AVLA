@@ -112,9 +112,9 @@ function ProductDetailsHero({ product }) {
         </div>
       </div>
 
-      {/* Thumbnail strip — scrollable on mobile */}
-      <div className="mx-auto mt-[16px] max-w-[1177px] min-[800px]:mt-[31px]">
-        {product.galleryImages?.length ? (
+      {/* Thumbnail strip — only shown when the product has multiple images */}
+      {product.galleryImages?.length ? (
+        <div className="mx-auto mt-[16px] max-w-[1177px] min-[800px]:mt-[31px]">
           <div className="flex items-center">
             <div
               ref={thumbnailsRef}
@@ -145,25 +145,8 @@ function ProductDetailsHero({ product }) {
               ))}
             </div>
           </div>
-        ) : (
-          <div className="flex gap-[8px] overflow-x-auto rounded-[10px] bg-white p-[8px] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden min-[800px]:rounded-[6px]">
-            {productDetails.slice(0, 8).map((item) => (
-              <div
-                key={item.slug}
-                className={`flex h-[64px] min-w-[90px] flex-shrink-0 items-center justify-center rounded-[6px] border bg-white px-[8px] min-[800px]:h-[72px] min-[800px]:min-w-[138px] min-[800px]:px-[12px] ${
-                  item.slug === product.slug ? 'border-[#111111]' : 'border-[#E6E6E6]'
-                }`}
-              >
-                <img
-                  src={item.image}
-                  alt={item.displayName}
-                  className="h-full w-full object-contain"
-                />
-              </div>
-            ))}
-          </div>
-        )}
-      </div>
+        </div>
+      ) : null}
     </section>
   );
 }
