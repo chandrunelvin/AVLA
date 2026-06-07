@@ -7,8 +7,8 @@ const primaryLinks = [
   { label: 'Blog', path: '/blog' },
 ];
 
-const infrastructureLinks = ['Our Infrastructure', 'Events', 'Galary', 'Events'];
-const productLinks = ['Fish', 'Octopus', 'Crab', 'FAQ'];
+const infrastructureLinks = ['Fish', 'Cephalopod', 'Crustacean', 'Bivalvia'];
+const productLinks = ['Tuna', 'Octopus', 'Crab', 'FAQ'];
 
 const socials = [
   { label: 'Facebook',  icon: '/assets/images/home/fb-icon.svg',       href: 'https://www.facebook.com' },
