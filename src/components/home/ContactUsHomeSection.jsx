@@ -6,7 +6,7 @@ const contactItems = [
   },
   {
     label: 'Phone Number',
-    value: '+91 7736782999',
+    value: '+91 7736782999\n+91 9446017777',
     icon: '/assets/images/contact/phone-icon.svg',
   },
   {
@@ -56,7 +56,7 @@ export default function ContactUsHomeSection() {
                   <p className="text-[13px] font-normal leading-[18px] text-[#8a8a8a]">
                     {item.label}
                   </p>
-                  <p className="mt-[2px] text-[16px] font-normal leading-[22px] text-[#111111]">
+                  <p className="mt-[2px] whitespace-pre-line text-[16px] font-normal leading-[22px] text-[#111111]">
                     {item.value}
                   </p>
                 </div>
@@ -105,7 +105,7 @@ export default function ContactUsHomeSection() {
                   <p className="text-[18px] font-normal leading-[20px] text-[#8a8a8a]">
                     {item.label}
                   </p>
-                  <p className="mt-[6px] text-[18px] font-normal leading-[24px] text-[#111111] lg:mt-[11px] lg:text-[20px]">
+                  <p className="mt-[6px] whitespace-pre-line text-[18px] font-normal leading-[24px] text-[#111111] lg:mt-[11px] lg:text-[20px]">
                     {item.value}
                   </p>
                 </div>
