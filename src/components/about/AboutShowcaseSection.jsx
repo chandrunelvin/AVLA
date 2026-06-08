@@ -115,7 +115,7 @@ export default function AboutShowcaseSection() {
   return (
     <section className="space-y-6">
       {/* Infrastructure */}
-      <div className="overflow-hidden rounded-[20px] bg-[#F6F7F9] px-4 py-12 sm:px-6 lg:px-[8px] lg:py-[56px]">
+      <div className="overflow-hidden rounded-[20px] bg-[#F6F7F9] px-0 py-12 lg:py-[56px]">
         <div className="mx-auto flex max-w-[760px] flex-col items-center text-center">
           <SectionBadge>Our Infrastructure</SectionBadge>
           <h2 className="mt-6 max-w-[540px] text-[34px] font-normal leading-[40px] text-[#111111] sm:text-[36px]">
@@ -159,7 +159,7 @@ export default function AboutShowcaseSection() {
       </div>
 
       {/* Global Presence */}
-      <div className="overflow-hidden rounded-[20px] bg-[#F6F7F9] px-4 py-12 sm:px-6 lg:px-[8px] lg:py-[56px]">
+      <div className="overflow-hidden rounded-[20px] bg-[#F6F7F9] px-0 py-12 lg:py-[56px]">
         <div className="mx-auto flex max-w-[760px] flex-col items-center text-center">
           <SectionBadge>Global Presence</SectionBadge>
           <h2 className="mt-6 max-w-[540px] text-[34px] font-normal leading-[40px] text-[#111111] sm:text-[36px]">

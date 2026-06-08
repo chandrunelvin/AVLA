@@ -131,7 +131,7 @@ export default function FeedHomeComponent() {
                 <img
                   src={c.image}
                   alt={c.title}
-                  className="h-full w-full object-contain p-[24px]"
+                  className="h-full w-full object-cover"
                   loading="lazy"
                 />
               </div>

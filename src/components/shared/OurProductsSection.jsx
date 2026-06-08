@@ -61,7 +61,7 @@ export default function OurProductsSection() {
         </div>
 
         {/* Horizontal scroll cards */}
-        <div className="flex gap-[10px] overflow-x-auto px-[0px] pb-[10px] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+        <div className="flex gap-[10px] overflow-x-auto px-[10px] pb-[10px] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
           {productDetails.map((item) => (
             <button
               key={item.slug}
