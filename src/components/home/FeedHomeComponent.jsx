@@ -1,36 +1,31 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { blogDetails } from '../../data/blogDetails';
 
-const feedCards = [
-  {
-    title: 'Tuna Fish Guide: Quality, Processing, and Global Demand',
-    image: '/assets/images/blog/feeds1-image.png',
-    alt: 'Tuna fish',
-  },
-  {
-    title: 'Sardine Fish Export-Grade: From Catch to International Markets',
-    image: '/assets/images/blog/Sardine-Fish-blog-image.png',
-    alt: 'Sardine fish',
-  },
-];
+// Desktop shows the first two; mobile cycles through every blog.
+const desktopCards = blogDetails.slice(0, 2);
 
 export default function FeedHomeComponent() {
   const navigate = useNavigate();
   const [current, setCurrent] = useState(0);
 
   function prev() {
-    setCurrent((i) => (i - 1 + feedCards.length) % feedCards.length);
+    setCurrent((i) => (i - 1 + blogDetails.length) % blogDetails.length);
   }
 
   function next() {
-    setCurrent((i) => (i + 1) % feedCards.length);
+    setCurrent((i) => (i + 1) % blogDetails.length);
   }
 
   function goToBlog() {
     navigate('/blog');
   }
 
-  const card = feedCards[current];
+  function openBlog(slug) {
+    navigate(slug ? `/blog/${slug}` : '/blog');
+  }
+
+  const card = blogDetails[current];
 
   return (
     <section className="mx-auto mt-[50px] w-full rounded-[20px] bg-[#F6F7F9]">
@@ -69,8 +64,8 @@ export default function FeedHomeComponent() {
           <div className="flex h-[260px] w-full items-center justify-center overflow-hidden rounded-[18px] bg-white">
             <img
               src={card.image}
-              alt={card.alt}
-              className="h-full w-full object-contain p-[16px]"
+              alt={card.title}
+              className="h-full w-full object-cover"
               loading="lazy"
             />
           </div>
@@ -81,7 +76,7 @@ export default function FeedHomeComponent() {
 
           <button
             type="button"
-            onClick={goToBlog}
+            onClick={() => openBlog(card.slug)}
           className="mt-[18px] flex h-[44px] min-w-[120px] items-center justify-center gap-[8px] rounded-full bg-[#0161FE] text-[15px] font-medium text-white"
         >
           Explore
@@ -130,12 +125,12 @@ export default function FeedHomeComponent() {
         </button>
 
         <div className="absolute left-[42px] top-[185px] grid w-[94%] grid-cols-2 gap-[14px] min-[1000px]:max-[1300px]:left-1/2 min-[1000px]:max-[1300px]:w-[92%] min-[1000px]:max-[1300px]:-translate-x-1/2">
-          {feedCards.map((c) => (
+          {desktopCards.map((c) => (
             <article key={c.title} className="w-full">
               <div className="flex h-[438px] w-full items-center justify-center overflow-hidden rounded-[22px] bg-white">
                 <img
                   src={c.image}
-                  alt={c.alt}
+                  alt={c.title}
                   className="h-full w-full object-contain p-[24px]"
                   loading="lazy"
                 />
@@ -145,7 +140,7 @@ export default function FeedHomeComponent() {
               </h3>
               <button
                 type="button"
-                onClick={goToBlog}
+                onClick={() => openBlog(c.slug)}
               className="mt-[28px] flex h-[46px] w-[133px] items-center justify-center gap-[10px] rounded-full bg-[#0161FE] text-[16px] font-medium text-white"
               >
                 Explore

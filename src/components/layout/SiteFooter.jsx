@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 const primaryLinks = [
   { label: 'Home', path: '/' },
   { label: 'About', path: '/about' },
-  { label: 'Service', path: '/products' },
+  { label: 'Product', path: '/products' },
   { label: 'Blog', path: '/blog' },
 ];
 
@@ -14,8 +14,8 @@ const infrastructureLinks = [
   { label: 'Bivalvia', path: '/products?category=bivalve' },
 ];
 const productLinks = [
-  { label: 'Tuna', path: '/products?category=fish' },
-  { label: 'Octopus', path: '/products?category=cephalopods' },
+  { label: 'Tuna', path: '/products/tuna' },
+  { label: 'Octopus', path: '/products/octopus' },
   { label: 'Crab', path: '/products?category=crustaceans' },
   { label: 'FAQ', path: '/faq' },
 ];

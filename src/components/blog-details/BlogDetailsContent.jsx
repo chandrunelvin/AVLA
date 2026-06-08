@@ -49,12 +49,12 @@ function BlogDetailsHero({ blog }) {
       </div>
 
       {/* Fish image card */}
-      <div className="mt-[28px] flex items-center justify-center overflow-hidden rounded-[18px] bg-white px-[20px] py-[0px] min-[800px]:mt-[40px] min-[800px]:h-[580px] min-[800px]:px-[60px] min-[800px]:py-0">
+      <div className="mt-[28px] flex h-[260px] items-center justify-center overflow-hidden rounded-[18px] bg-white min-[800px]:mt-[40px] min-[800px]:h-[580px]">
         {blog.image ? (
           <img
             src={blog.image}
             alt={blog.title}
-            className="h-auto max-h-[220px] w-full object-contain min-[800px]:max-h-none min-[800px]:h-full min-[800px]:w-auto min-[800px]:max-w-full"
+            className="h-full w-full object-cover"
           />
         ) : (
           <div className="flex h-[220px] w-full items-center justify-center rounded-[14px] bg-[#EEF1F5] text-center text-[18px] text-[#7B7B7B] min-[800px]:h-full">

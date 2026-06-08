@@ -35,7 +35,9 @@ export default function CertificationSection() {
 
       {/* Cards grid */}
       <div className="group/grid mt-[28px] grid grid-cols-1 gap-[14px] min-[900px]:mt-[40px] min-[900px]:grid-cols-3 min-[900px]:gap-[14px]">
-        {certifications.map((cert) => (
+        {certifications.map((cert) => {
+          const isMultiLine = (cert.title.match(/\n/g) || []).length >= 2;
+          return (
           <div
             key={cert.title}
             className={`group relative h-[179.69px] overflow-hidden rounded-[20.47px] cursor-pointer transition-colors duration-300 ${
@@ -57,7 +59,9 @@ export default function CertificationSection() {
 
             {/* Title */}
             <p
-              className={`absolute top-[113px] md:top-[95px] left-[20px] w-[120px] whitespace-pre-line md:w-[164px] right-auto md:right-[36%] text-[18px] md:text-[20px] font-normal leading-[23.88px] transition-colors duration-300 ${
+              className={`absolute left-[20px] w-[120px] whitespace-pre-line md:w-[164px] right-auto md:right-[36%] text-[18px] md:text-[20px] font-normal leading-[23.88px] transition-colors duration-300 ${
+                isMultiLine ? 'top-[100px] md:top-[95px]' : 'top-[113px] md:top-[95px]'
+              } ${
                 cert.active
                   ? 'text-white group-hover/grid:text-[rgba(17,17,17,1.00)] group-hover:!text-white'
                   : 'text-[rgba(17,17,17,1.00)] group-hover:text-white'
@@ -77,7 +81,8 @@ export default function CertificationSection() {
               />
             </div>
           </div>
-        ))}
+          );
+        })}
       </div>
 
     </section>
