@@ -72,12 +72,12 @@ export default function CertificationSection() {
 
             {/* Certificate image card — percentage-based so it scales with card width */}
             <div
-              className="absolute top-[4.45%] left-[64%] h-[90.71%] w-[33.87%] flex items-center justify-center md:left-auto md:right-[8px] md:top-[8px] md:h-[163px] md:w-[148px] md:overflow-visible"
+              className="absolute right-[12px] top-1/2 h-[149px] -translate-y-1/2 flex items-center justify-center md:left-auto md:right-[8px] md:top-[8px] md:h-[163px] md:w-[148px] md:translate-y-0 md:overflow-visible"
             >
               <img
                 src={cert.image}
                 alt={cert.title}
-                className="h-full w-full object-contain md:h-[163px] md:w-[148px]"
+                className="h-[149px] object-contain md:h-[163px] md:w-[148px]"
               />
             </div>
           </div>

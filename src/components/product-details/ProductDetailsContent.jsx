@@ -107,7 +107,9 @@ function ProductDetailsHero({ product }) {
           <img
             src={selectedImage}
             alt={product.displayName}
-            className="relative z-[1] h-full w-full object-cover"
+            className={`relative z-[1] h-full w-full ${
+              selectedImage === heroImages[0] ? 'object-contain' : 'object-cover'
+            }`}
           />
         </div>
       </div>
@@ -130,7 +132,7 @@ function ProductDetailsHero({ product }) {
                   key={image}
                   type="button"
                   onClick={(event) => handleThumbnailClick(event, image)}
-                  className={`flex h-[64px] min-w-[90px] flex-shrink-0 items-center justify-center rounded-[6px] border bg-white px-[8px] transition-colors min-[800px]:h-[72px] min-[800px]:min-w-[138px] min-[800px]:px-[12px] ${
+                  className={`flex h-[64px] w-[90px] flex-shrink-0 items-center justify-center overflow-hidden rounded-[6px] border bg-white transition-colors min-[800px]:h-[72px] min-[800px]:w-[138px] ${
                     selectedImage === image ? 'border-[#111111]' : 'border-[#E6E6E6]'
                   }`}
                   aria-label={`Show ${product.displayName} image ${index + 1}`}
@@ -138,7 +140,7 @@ function ProductDetailsHero({ product }) {
                   <img
                     src={image}
                     alt={`${product.displayName} view ${index + 1}`}
-                    className="h-full w-full object-contain select-none"
+                    className="h-full w-full object-cover select-none"
                     draggable="false"
                   />
                 </button>

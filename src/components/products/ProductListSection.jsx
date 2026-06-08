@@ -9,7 +9,7 @@ export default function ProductListSection({ activeCategory }) {
     <section className="mt-[23px] w-full rounded-[15px] bg-[#F6F7F9]">
 
       {/* ── Mobile layout ── */}
-      <div className="flex flex-col items-center px-0 pb-[36px] pt-[28px] text-center min-[800px]:hidden">
+      <div className="flex flex-col items-center px-[8px] pb-[36px] pt-[28px] text-center min-[800px]:hidden">
 
         <div className="flex h-[32px] w-[100px] items-center justify-center rounded-full border border-[#202833]">
           <span className="whitespace-nowrap text-[11px] font-medium uppercase tracking-[1.5px] text-[#202833]">
@@ -30,7 +30,7 @@ export default function ProductListSection({ activeCategory }) {
         <div className="mt-[30px] flex flex-col gap-[30px]">
           {products.map((product) => (
             <article key={product.slug} className="flex flex-col items-center">
-              <div className="flex w-[99%] items-center justify-center overflow-hidden rounded-[20px] bg-white">
+              <div className="flex h-[260px] w-[99%] items-center justify-center overflow-hidden rounded-[20px] bg-white">
                 <img
                   src={product.image}
                   alt={product.name}
