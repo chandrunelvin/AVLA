@@ -7,8 +7,18 @@ const primaryLinks = [
   { label: 'Blog', path: '/blog' },
 ];
 
-const infrastructureLinks = ['Fish', 'Cephalopod', 'Crustacean', 'Bivalvia'];
-const productLinks = ['Tuna', 'Octopus', 'Crab', 'FAQ'];
+const infrastructureLinks = [
+  { label: 'Fish', path: '/products?category=fish' },
+  { label: 'Cephalopod', path: '/products?category=cephalopods' },
+  { label: 'Crustacean', path: '/products?category=crustaceans' },
+  { label: 'Bivalvia', path: '/products?category=bivalve' },
+];
+const productLinks = [
+  { label: 'Tuna', path: '/products?category=fish' },
+  { label: 'Octopus', path: '/products?category=cephalopods' },
+  { label: 'Crab', path: '/products?category=crustaceans' },
+  { label: 'FAQ', path: '/faq' },
+];
 
 const socials = [
   { label: 'Facebook',  icon: '/assets/images/home/fb-icon.svg',       href: 'https://www.facebook.com' },
@@ -43,14 +53,16 @@ export default function SiteFooter() {
           </nav>
 
           <div className="absolute left-[177px] top-[177px] flex flex-col gap-[24px] text-[16px] font-normal leading-[22px] text-white/70">
-            {infrastructureLinks.map((link, i) => <p key={`${link}-${i}`}>{link}</p>)}
+            {infrastructureLinks.map((link) => (
+              <button key={link.label} type="button" onClick={() => navigate(link.path)} className="text-left">{link.label}</button>
+            ))}
           </div>
 
           <div className="absolute left-[23px] top-[362px] flex flex-col gap-[24px] text-[16px] font-normal leading-[22px] text-white/70">
             {productLinks.map((link) => (
-              <button key={link} type="button" onClick={() => { if (link === 'FAQ') navigate('/faq'); }}
-                className={`text-left ${link === 'FAQ' ? 'font-semibold text-white' : ''}`}>
-                {link}
+              <button key={link.label} type="button" onClick={() => navigate(link.path)}
+                className={`text-left ${link.label === 'FAQ' ? 'font-semibold text-white' : ''}`}>
+                {link.label}
               </button>
             ))}
           </div>
@@ -88,13 +100,15 @@ export default function SiteFooter() {
                 ))}
               </nav>
               <div className="flex flex-col gap-[28px] text-[16px] font-normal leading-[20px] text-white/70">
-                {infrastructureLinks.map((link, i) => <p key={`${link}-${i}`}>{link}</p>)}
+                {infrastructureLinks.map((link) => (
+                  <button key={link.label} type="button" onClick={() => navigate(link.path)} className="text-left hover:text-white transition">{link.label}</button>
+                ))}
               </div>
               <div className="flex flex-col gap-[28px] text-[16px] font-normal leading-[20px] text-white/70">
                 {productLinks.map((link) => (
-                  <button key={link} type="button" onClick={() => { if (link === 'FAQ') navigate('/faq'); }}
-                    className={`text-left hover:text-white transition ${link === 'FAQ' ? 'font-bold text-white' : ''}`}>
-                    {link}
+                  <button key={link.label} type="button" onClick={() => navigate(link.path)}
+                    className={`text-left hover:text-white transition ${link.label === 'FAQ' ? 'font-bold text-white' : ''}`}>
+                    {link.label}
                   </button>
                 ))}
               </div>

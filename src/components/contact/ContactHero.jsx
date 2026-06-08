@@ -11,6 +11,9 @@ export default function ContactHero() {
       </p>
       <a
         href="https://wa.me/917736782999"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Chat on WhatsApp"
         className="mx-auto mt-8 flex h-[51px] w-[143px] items-center justify-center gap-[10px] rounded-full bg-[#25D366] text-[16px] font-semibold leading-[22px] text-white lg:absolute lg:left-1/2 lg:top-[220px] lg:mt-0 lg:-translate-x-1/2"
       >
         <img
