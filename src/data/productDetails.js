@@ -22,6 +22,8 @@ import {
   semiNeedleSquidGalleryImages,
   shrimpGalleryImages,
   thondiSquidGalleryImages,
+  threespotCrabGalleryImages,
+  crucifixCrabGalleryImages,
   tunaGalleryImages,
 } from './productDetailAssets';
 
@@ -705,7 +707,7 @@ export const otherProducts = [
     slug: 'threespot-crab',
     category: 'crustaceans',
     image: '/assets/images/products/Threespot Crab.webp',
-    galleryImages: crabGalleryImages,
+    galleryImages: threespotCrabGalleryImages,
     summary:
       'Threespot Crab prepared for export with clean processing, quality checks, and market-specific packing.',
     faqs: crabFaqs,
@@ -715,7 +717,7 @@ export const otherProducts = [
     slug: 'crucifix-crab',
     category: 'crustaceans',
     image: '/assets/images/products/Crucifix Crab.webp',
-    galleryImages: crabGalleryImages,
+    galleryImages: crucifixCrabGalleryImages,
     summary:
       'Crucifix Crab export supply supported by hygienic handling, grading, and dependable shipment planning.',
     faqs: crabFaqs,

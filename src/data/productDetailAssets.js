@@ -24,15 +24,21 @@ export const baigaiGalleryImages = [
 
 export const crabGalleryImages = [
   '/assets/images/product-details/Blue Swimming Crab/bue swimming crab.webp',
-  '/assets/images/product-details/threespot crab/threespot crab (1).webp',
-  '/assets/images/product-details/Crab/Crab Product.webp',
-  '/assets/images/product-details/Crab/Crab Product2.webp',
   '/assets/images/product-details/Crab/Crab Product3.webp',
   '/assets/images/product-details/Crab/Crab Product4.webp',
   '/assets/images/product-details/Crab/Crab Product5.webp',
   '/assets/images/product-details/Crab/Crab Product6.webp',
   '/assets/images/product-details/Crab/Crab Product7.webp',
   '/assets/images/product-details/Crab/Crab Product8.jpg',
+];
+
+export const threespotCrabGalleryImages = [
+  '/assets/images/product-details/threespot crab/threespot crab (1).webp',
+  '/assets/images/product-details/Crab/Crab Product.webp',
+];
+
+export const crucifixCrabGalleryImages = [
+  '/assets/images/product-details/Crab/Crab Product2.webp',
 ];
 
 export const cuttlefishGalleryImages = [
