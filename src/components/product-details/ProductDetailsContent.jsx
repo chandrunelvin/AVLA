@@ -132,7 +132,7 @@ function ProductDetailsHero({ product }) {
                   key={image}
                   type="button"
                   onClick={(event) => handleThumbnailClick(event, image)}
-                  className={`flex h-[64px] w-[90px] flex-shrink-0 items-center justify-center overflow-hidden rounded-[6px] border bg-white transition-colors min-[800px]:h-[72px] min-[800px]:w-[138px] ${
+                  className={`flex h-[61px] w-[114px] flex-shrink-0 items-center justify-center overflow-hidden rounded-[6px] border bg-white transition-colors min-[800px]:h-[72px] min-[800px]:w-[138px] ${
                     selectedImage === image ? 'border-[#111111]' : 'border-[#E6E6E6]'
                   }`}
                   aria-label={`Show ${product.displayName} image ${index + 1}`}

@@ -459,7 +459,659 @@ const ashtamudiFreshCatchSections = [
   },
 ];
 
+const coldChainExcellenceSections = [
+  {
+    title: 'Introduction: Why Cold Chain Matters in Seafood Exports',
+    paragraphs: [
+      'Seafood is among the most sensitive food categories in global trade because freshness directly determines quality, safety, and customer satisfaction. Unlike many products that can tolerate long transportation periods without major quality changes, seafood requires strict handling and temperature control at every stage of the supply chain.',
+      'Even minor disruptions can reduce freshness and affect market value. Maintaining consistent quality therefore demands a carefully managed system from harvesting to delivery. Through AVLA Nettos Exports, this process becomes an organized journey focused on preserving seafood quality from the ocean to international markets.',
+    ],
+    source: {
+      label: 'Food and Agriculture Organization (FAO)',
+      url: 'https://www.fao.org/',
+    },
+  },
+  {
+    title: 'Understanding the Concept of a Cold Chain System',
+    paragraphs: [
+      'Cold chain management refers to maintaining controlled temperatures throughout product handling, storage, transportation, and distribution activities. In seafood exports, this system ensures products remain within required temperature ranges to minimize deterioration and maintain freshness.',
+      'Effective cold chain systems involve multiple stages working together rather than a single storage solution. Temperature monitoring, specialized equipment, efficient transportation, and operational discipline collectively determine success. Businesses such as AVLA Nettos Exports recognize that cold chain excellence serves as a foundation for delivering reliable seafood products across global markets.',
+    ],
+    source: {
+      label: 'FAO Fisheries and Aquaculture Division',
+      url: 'https://www.fao.org/fisheries/en/',
+    },
+  },
+  {
+    title: 'Freshness Begins Immediately After Harvest',
+    paragraphs: [
+      'Maintaining seafood quality starts immediately after harvesting activities are completed. The period following catch collection is critical because seafood quality can rapidly decline if appropriate handling procedures are not followed.',
+      'Effective systems focus on reducing delays and protecting products from unnecessary environmental exposure. Immediate preservation measures contribute significantly toward maintaining product integrity throughout the supply chain. Through AVLA Nettos Exports, seafood handling begins with a focus on maintaining quality from the earliest stages of product movement.',
+    ],
+    source: {
+      label: 'Marine Products Export Development Authority (MPEDA)',
+      url: 'https://mpeda.gov.in/',
+    },
+  },
+  {
+    title: 'The Role of Transportation in Seafood Preservation',
+    paragraphs: [
+      'Transportation systems play a major role in determining whether seafood reaches its destination while maintaining expected quality levels. Products frequently move through multiple stages including collection points, processing facilities, storage locations, shipping terminals, and international destinations.',
+      'Every transfer introduces potential risks if proper controls are absent. Efficient transportation procedures help preserve freshness and reduce quality loss. AVLA understands the importance of maintaining operational consistency throughout logistics activities. Information available through AVLA Nettos Exports reflects the company\'s emphasis on preserving quality throughout transportation processes.',
+    ],
+    source: {
+      label: 'National Fisheries Development Board',
+      url: 'https://nfdb.gov.in/',
+    },
+  },
+  {
+    title: 'Processing Infrastructure Supporting Quality Standards',
+    paragraphs: [
+      'Modern seafood exports require strong processing capabilities that support handling efficiency and product integrity. Processing facilities perform critical activities including sorting, cleaning, packaging, inspection, and preparation for international shipment.',
+      'Structured operational environments help reduce contamination risks and maintain quality consistency. Advanced infrastructure therefore contributes directly toward customer confidence and product reliability. Companies including AVLA Nettos Exports focus on supporting seafood excellence through organized processing systems designed around international expectations.',
+    ],
+    source: {
+      label: 'Marine Products Export Development Authority (MPEDA)',
+      url: 'https://mpeda.gov.in/',
+    },
+  },
+  {
+    title: 'Storage Systems and Temperature Consistency',
+    paragraphs: [
+      'Storage represents another critical component within successful cold chain operations. Temperature variations during storage periods can negatively influence seafood quality and reduce shelf life.',
+      'Controlled environments therefore become essential for maintaining product freshness and preserving product characteristics throughout handling processes. Effective storage systems rely on continuous monitoring and operational precision. Through AVLA Nettos Exports, seafood management reflects a commitment toward preserving quality through disciplined operational practices and temperature-focused handling systems.',
+    ],
+    source: {
+      label: 'Food Safety and Standards Authority of India',
+      url: 'https://www.fssai.gov.in/',
+    },
+  },
+  {
+    title: 'Meeting International Buyer Expectations',
+    paragraphs: [
+      'International seafood buyers increasingly evaluate suppliers based not only on product quality but also on operational reliability and consistency. Buyers expect seafood products to arrive in conditions matching agreed quality standards without unnecessary risks associated with handling failures.',
+      'Strong cold chain systems therefore influence customer trust and long-term business relationships. AVLA understands that delivering products consistently strengthens confidence among international customers. Through AVLA Nettos Exports, buyers gain access to a company focused on maintaining operational discipline and quality assurance.',
+    ],
+    source: {
+      label: 'International Trade Administration',
+      url: 'https://www.trade.gov/',
+    },
+  },
+  {
+    title: 'Technology Improving Cold Chain Performance',
+    paragraphs: [
+      'Technology increasingly influences modern seafood logistics because advanced systems improve visibility and operational control. Temperature monitoring tools, automated tracking systems, and digital process management solutions help reduce risks and support better decision-making.',
+      'Improved operational visibility enables faster responses to potential issues and strengthens quality management practices. Businesses including AVLA Nettos Exports recognize the importance of combining industry expertise with technological capabilities to support efficient seafood handling operations.',
+    ],
+    source: {
+      label: 'SeafoodSource Industry Insights',
+      url: 'https://www.seafoodsource.com/',
+    },
+  },
+  {
+    title: 'Supporting Sustainable Seafood Operations',
+    paragraphs: [
+      'The seafood industry increasingly integrates sustainability into operational strategies because long-term industry success depends on responsible resource management. Efficient cold chain systems can support sustainability objectives by reducing waste and improving operational effectiveness.',
+      'Better handling practices help minimize product losses while strengthening supply chain efficiency. AVLA recognizes the value of balancing quality objectives with responsible industry practices. Through AVLA Nettos Exports, customers can understand the company\'s commitment toward supporting sustainable seafood operations and long-term industry development.',
+    ],
+    source: {
+      label: 'World Wildlife Fund Sustainable Seafood Program',
+      url: 'https://www.worldwildlife.org/industries/seafood',
+    },
+  },
+  {
+    title: 'Building Trust Through Quality Preservation',
+    paragraphs: [
+      'Trust within the seafood export industry is developed through consistent performance and dependable results over time. International buyers depend on suppliers capable of maintaining standards regardless of changing market conditions and logistical challenges.',
+      'Effective cold chain management therefore becomes more than an operational requirement; it becomes an important business advantage. Maintaining seafood quality throughout the supply chain strengthens customer confidence and supports long-term relationships. AVLA continues emphasizing operational excellence and disciplined quality preservation practices to strengthen its reputation within international markets.',
+    ],
+    source: {
+      label: 'U.S. Food and Drug Administration Seafood Guidance',
+      url: 'https://www.fda.gov/food',
+    },
+  },
+  {
+    title: 'Ocean to International Buyer\'s Plate: The AVLA Commitment',
+    paragraphs: [
+      'The journey from ocean harvesting to an international buyer\'s plate involves multiple interconnected processes where consistency and precision determine overall success. Every stage, including sourcing, transportation, processing, storage, and delivery, contributes toward preserving seafood quality and customer satisfaction.',
+      'AVLA\'s cold chain excellence reflects an understanding that seafood exports depend heavily on maintaining standards throughout the entire supply chain rather than focusing on isolated activities. Through AVLA Nettos Exports, customers and business partners can connect with a company focused on transforming seafood handling into a reliable quality-driven process.',
+      'This commitment supports stronger relationships, improved customer confidence, and continued growth across international seafood markets while ensuring premium products reach destinations worldwide with freshness, consistency, and operational excellence maintained throughout every stage of the export journey.',
+    ],
+    source: {
+      label: 'AVLA Nettos Exports Official Website',
+      url: 'https://www.avlaexports.com/',
+    },
+  },
+];
+
+const sourceSeafoodIndiaSections = [
+  {
+    title: 'Introduction: Why India Has Become a Global Seafood Sourcing Destination',
+    paragraphs: [
+      'India has become one of the world\'s leading seafood exporters because of its extensive coastline, rich marine biodiversity, advanced processing capabilities, and strong export infrastructure. International seafood buyers increasingly source products from India because the country offers access to diverse seafood varieties while maintaining competitive market advantages.',
+      'However, successful sourcing involves much more than selecting products and placing purchase orders. Buyers must evaluate suppliers, understand quality standards, review logistics systems, and establish dependable relationships. Through AVLA Nettos Exports, international customers can explore a structured approach toward seafood sourcing designed to support consistent quality and long-term business growth.',
+    ],
+    source: {
+      label: 'Marine Products Export Development Authority (MPEDA)',
+      url: 'https://mpeda.gov.in/',
+    },
+  },
+  {
+    title: 'Understanding India\'s Seafood Industry Landscape',
+    paragraphs: [
+      'Before beginning the sourcing process, buyers should understand the structure of India\'s seafood industry. The country supports marine and aquaculture sectors that contribute significantly to global seafood markets. Different coastal regions specialize in specific seafood products depending on local environmental conditions and industry expertise.',
+      'Understanding regional strengths can help buyers identify sourcing opportunities that align with their business objectives. Companies such as AVLA Nettos Exports operate within this ecosystem by supporting quality-driven seafood exports and maintaining reliable supply chain systems.',
+    ],
+    source: {
+      label: 'Food and Agriculture Organization (FAO)',
+      url: 'https://www.fao.org/',
+    },
+  },
+  {
+    title: 'Identifying the Right Seafood Products',
+    paragraphs: [
+      'The sourcing process begins with defining product requirements clearly. International buyers often seek specific seafood categories based on customer demand, regional preferences, and business strategies. Product selection should consider market trends, quality expectations, and long-term supply availability.',
+      'Establishing detailed product specifications helps reduce misunderstandings and improves communication between buyers and suppliers. Through AVLA Nettos Exports, customers can understand how supplier expertise contributes toward matching products with buyer requirements.',
+    ],
+    source: {
+      label: 'International Trade Administration',
+      url: 'https://www.trade.gov/',
+    },
+  },
+  {
+    title: 'Evaluating Supplier Reliability and Experience',
+    paragraphs: [
+      'One of the most important decisions within seafood sourcing involves selecting dependable suppliers. Product quality alone should not determine supplier selection because operational reliability also affects long-term business outcomes. Buyers should evaluate industry experience, supply consistency, communication practices, and quality management systems before entering partnerships.',
+      'Reliable suppliers help minimize risks associated with delays, inconsistent product quality, and operational disruptions. Companies including AVLA Nettos Exports recognize that strong customer relationships depend heavily on reliability and consistent performance.',
+    ],
+    source: {
+      label: 'U.S. International Trade Administration Export Resources',
+      url: 'https://www.trade.gov/',
+    },
+  },
+  {
+    title: 'Understanding Quality Standards and Certifications',
+    paragraphs: [
+      'Global seafood markets maintain strict quality and safety requirements designed to protect consumers and ensure product consistency. Buyers should understand certification requirements and quality systems relevant to their target markets before finalizing sourcing decisions.',
+      'Compliance with standards helps reduce risks while strengthening customer confidence. Quality assurance systems also contribute toward improved transparency throughout the supply chain. Through AVLA Nettos Exports, businesses can connect with suppliers focused on maintaining quality-driven operations and international expectations.',
+    ],
+    source: {
+      label: 'Food Safety and Standards Authority of India',
+      url: 'https://www.fssai.gov.in/',
+    },
+  },
+  {
+    title: 'The Importance of Processing Infrastructure',
+    paragraphs: [
+      'Processing capabilities significantly influence seafood quality because handling procedures affect freshness and product consistency. Modern facilities help support cleaning, packaging, sorting, storage, and preparation activities while minimizing contamination risks.',
+      'Buyers should evaluate whether suppliers possess infrastructure capable of maintaining quality throughout operational processes. Strong processing systems often indicate greater operational discipline and improved product reliability. Companies such as AVLA Nettos Exports emphasize efficient processing practices designed around international seafood requirements.',
+    ],
+    source: {
+      label: 'Marine Products Export Development Authority (MPEDA)',
+      url: 'https://mpeda.gov.in/',
+    },
+  },
+  {
+    title: 'Why Cold Chain Systems Matter',
+    paragraphs: [
+      'Seafood products require effective temperature management throughout handling and transportation activities because freshness can decline rapidly under improper conditions. Cold chain systems help preserve quality and support product integrity during storage and shipment stages.',
+      'Buyers should understand how suppliers manage temperature-sensitive products and monitor operational consistency throughout the export process. Efficient cold chain systems reduce risks associated with quality deterioration and shipment failures. Through AVLA Nettos Exports, customers can gain insights into operational practices focused on maintaining seafood quality throughout the supply chain.',
+    ],
+    source: {
+      label: 'FAO Fisheries and Aquaculture Division',
+      url: 'https://www.fao.org/fisheries/en/',
+    },
+  },
+  {
+    title: 'Logistics and International Shipping Considerations',
+    paragraphs: [
+      'International seafood sourcing extends beyond production and processing activities because transportation directly influences delivery performance and customer satisfaction. Export shipments frequently involve multiple handling stages that require careful coordination and operational planning.',
+      'Buyers should evaluate supplier capabilities related to documentation, shipping arrangements, and delivery timelines. Efficient logistics systems improve operational reliability and support stronger customer experiences. Businesses including AVLA Nettos Exports understand that logistics excellence contributes significantly toward successful seafood export operations.',
+    ],
+    source: {
+      label: 'World Trade Organization Trade Facilitation Resources',
+      url: 'https://www.wto.org/',
+    },
+  },
+  {
+    title: 'Building Long-Term Supplier Relationships',
+    paragraphs: [
+      'Seafood sourcing should not be viewed as a one-time transaction because long-term partnerships frequently create stronger business outcomes. Reliable suppliers become strategic partners capable of supporting growth objectives and adapting to changing market requirements.',
+      'Effective relationships improve communication, strengthen operational flexibility, and contribute toward better business stability. Trust develops gradually through consistent performance and dependable service standards. Through AVLA Nettos Exports, buyers can connect with a company focused on building lasting partnerships and delivering long-term value.',
+    ],
+    source: {
+      label: 'International Trade Centre Resources',
+      url: 'https://www.intracen.org/',
+    },
+  },
+  {
+    title: 'Understanding Sustainability in Modern Seafood Sourcing',
+    paragraphs: [
+      'Sustainability increasingly influences purchasing decisions across international markets because buyers and consumers pay closer attention to environmental responsibility. Responsible sourcing practices contribute toward long-term resource availability and strengthen business credibility.',
+      'Sustainable operations also improve brand perception and support regulatory compliance in multiple regions. Buyers should therefore consider sustainability practices during supplier evaluations. Companies including AVLA Nettos Exports recognize the importance of balancing commercial objectives with responsible industry practices.',
+    ],
+    source: {
+      label: 'World Wildlife Fund Sustainable Seafood Program',
+      url: 'https://www.worldwildlife.org/industries/seafood',
+    },
+  },
+  {
+    title: 'Conclusion: Building Successful Seafood Sourcing Strategies',
+    paragraphs: [
+      'Sourcing seafood from India requires a strategic approach involving careful planning, supplier evaluation, quality assessment, and supply chain understanding. Buyers who focus only on price frequently overlook operational factors that influence long-term business performance.',
+      'Strong partnerships, reliable infrastructure, quality management systems, and effective logistics contribute significantly toward successful sourcing outcomes. Through AVLA Nettos Exports, businesses can engage with a seafood exporter focused on maintaining quality standards and supporting international customer requirements.',
+      'A structured sourcing strategy helps reduce risks, improve consistency, strengthen customer confidence, and create sustainable growth opportunities within increasingly competitive global seafood markets while supporting long-term business success and operational efficiency across international trade environments.',
+    ],
+    source: {
+      label: 'AVLA Nettos Exports Official Website',
+      url: 'https://www.avlaexports.com/',
+    },
+  },
+];
+
+const indianSeafoodQualitySections = [
+  {
+    title: 'Introduction: The Global Seafood Competition',
+    paragraphs: [
+      'The global seafood market has become increasingly competitive as international buyers seek reliable suppliers capable of delivering quality products consistently. Countries such as India, Vietnam, and Ecuador have emerged as major participants within international seafood trade due to their strong production capabilities and export networks.',
+      'Buyers often compare these countries when selecting sourcing partners because product quality, consistency, logistics efficiency, and operational standards directly influence business outcomes. While every market offers advantages, India\'s seafood industry has increasingly gained attention for its focus on quality and supply chain strength. Through AVLA Nettos Exports, businesses can understand how Indian exporters contribute toward maintaining high standards within global seafood markets.',
+    ],
+    source: {
+      label: 'Food and Agriculture Organization (FAO)',
+      url: 'https://www.fao.org/',
+    },
+  },
+  {
+    title: 'Understanding India\'s Seafood Industry Strength',
+    paragraphs: [
+      'India possesses one of the world\'s largest coastlines and marine ecosystems, creating access to a wide variety of seafood resources. The country\'s seafood industry combines marine fishing activities with rapidly growing aquaculture sectors that support export demand.',
+      'Diversity within seafood products creates flexibility for international buyers seeking multiple sourcing options through a single market. Organizations including AVLA Nettos Exports operate within this ecosystem by focusing on quality management and customer expectations while supporting international trade requirements.',
+    ],
+    source: {
+      label: 'Marine Products Export Development Authority (MPEDA)',
+      url: 'https://mpeda.gov.in/',
+    },
+  },
+  {
+    title: 'Vietnam\'s Position in International Seafood Markets',
+    paragraphs: [
+      'Vietnam has established itself as a major seafood exporter and plays an important role in supplying products across global markets. The country has built a strong reputation in aquaculture and seafood processing activities over recent decades. Its export sector benefits from established infrastructure and significant international market experience.',
+      'However, buyers frequently evaluate multiple factors beyond production volume alone because operational consistency and quality management influence sourcing decisions. Companies such as AVLA Nettos Exports understand that maintaining quality expectations remains critical in competitive international markets.',
+    ],
+    source: {
+      label: 'Vietnam Association of Seafood Exporters and Producers',
+      url: 'https://seafood.vasep.com.vn/',
+    },
+  },
+  {
+    title: 'Ecuador\'s Growing Seafood Export Presence',
+    paragraphs: [
+      'Ecuador has also emerged as a significant participant within international seafood trade, particularly within shrimp exports. The country\'s favorable environmental conditions and export-focused production systems have contributed toward market growth across multiple international regions.',
+      'Ecuador continues strengthening its global presence through investments in production capabilities and export infrastructure. However, buyers evaluating sourcing strategies often consider broader factors including product diversity and long-term supply flexibility. Through AVLA Nettos Exports, businesses can explore solutions designed around diverse seafood requirements and dependable sourcing practices.',
+    ],
+    source: {
+      label: 'International Trade Administration',
+      url: 'https://www.trade.gov/',
+    },
+  },
+  {
+    title: 'Product Diversity Creates a Competitive Advantage',
+    paragraphs: [
+      'One major factor distinguishing India from competing markets involves seafood diversity. International buyers frequently require access to multiple seafood products across different categories and specifications. Product diversity improves sourcing flexibility while reducing dependency on limited product groups.',
+      'India\'s broad marine resources support various seafood categories that can satisfy changing market requirements. Exporters such as AVLA Nettos Exports recognize that broader product availability helps customers achieve better sourcing efficiency and stronger operational outcomes.',
+    ],
+    source: {
+      label: 'National Fisheries Development Board',
+      url: 'https://nfdb.gov.in/',
+    },
+  },
+  {
+    title: 'Quality Standards Influence International Decisions',
+    paragraphs: [
+      'International seafood markets maintain strict expectations regarding hygiene, safety, and product quality. Buyers increasingly prefer suppliers capable of maintaining quality systems consistently across operational activities. Quality management therefore becomes a major competitive factor rather than a secondary consideration.',
+      'India\'s seafood sector has invested significantly in improving quality-focused processes and export readiness. Through AVLA Nettos Exports, customers can understand how operational standards support product consistency and strengthen buyer confidence.',
+    ],
+    source: {
+      label: 'Food Safety and Standards Authority of India',
+      url: 'https://www.fssai.gov.in/',
+    },
+  },
+  {
+    title: 'Processing Infrastructure Strengthens Product Reliability',
+    paragraphs: [
+      'Seafood quality depends heavily on effective processing systems because operational handling directly influences freshness and product consistency. Processing facilities perform activities including cleaning, packaging, sorting, inspection, and storage management.',
+      'Advanced infrastructure improves product reliability while reducing risks associated with operational errors. India\'s seafood processing ecosystem continues expanding to support growing export demands. Companies such as AVLA Nettos Exports understand the importance of maintaining structured operational processes designed around international standards.',
+    ],
+    source: {
+      label: 'Marine Products Export Development Authority (MPEDA)',
+      url: 'https://mpeda.gov.in/',
+    },
+  },
+  {
+    title: 'Cold Chain Management Preserves Seafood Integrity',
+    paragraphs: [
+      'Freshness preservation remains one of the most critical requirements within seafood exports because product quality can decline rapidly without proper handling systems. Effective cold chain management helps maintain product integrity throughout transportation and storage activities.',
+      'International buyers increasingly evaluate suppliers based on their ability to preserve quality across the entire supply chain. Businesses including AVLA Nettos Exports focus on operational practices designed to support reliable temperature management and seafood quality preservation.',
+    ],
+    source: {
+      label: 'FAO Fisheries and Aquaculture Division',
+      url: 'https://www.fao.org/fisheries/en/',
+    },
+  },
+  {
+    title: 'Customer Relationships and Long-Term Reliability',
+    paragraphs: [
+      'Global sourcing decisions increasingly involve evaluating supplier relationships rather than focusing exclusively on pricing considerations. Buyers frequently seek partners capable of maintaining communication quality, operational reliability, and business transparency.',
+      'Strong relationships contribute toward better collaboration and long-term business stability. India\'s seafood industry continues emphasizing customer-focused practices that support international growth opportunities. Through AVLA Nettos Exports, customers can engage with a company focused on supporting dependable partnerships and long-term value creation.',
+    ],
+    source: {
+      label: 'International Trade Centre Resources',
+      url: 'https://www.intracen.org/',
+    },
+  },
+  {
+    title: 'Sustainability Increasingly Shapes Market Expectations',
+    paragraphs: [
+      'Modern seafood markets increasingly prioritize sustainability because consumers and businesses are paying greater attention to environmental responsibility and resource management practices. Sustainable operations support industry stability while improving market credibility and customer confidence.',
+      'Companies that adapt to these expectations strengthen long-term competitiveness and business resilience. Organizations including AVLA Nettos Exports recognize the importance of supporting responsible seafood operations and aligning with evolving market priorities.',
+    ],
+    source: {
+      label: 'World Wildlife Fund Sustainable Seafood Program',
+      url: 'https://www.worldwildlife.org/industries/seafood',
+    },
+  },
+  {
+    title: 'Why Indian Seafood Continues Winning on Quality',
+    paragraphs: [
+      'Comparing India, Vietnam, and Ecuador demonstrates that each country contributes significantly toward international seafood markets and possesses unique strengths. However, quality leadership increasingly depends on factors extending beyond production volumes alone.',
+      'Product diversity, processing infrastructure, quality systems, supply chain efficiency, and customer-focused practices collectively influence sourcing decisions. India\'s seafood industry continues strengthening its position by focusing on these critical areas while supporting evolving international expectations.',
+      'Through AVLA Nettos Exports, businesses can connect with a company committed to maintaining quality standards and supporting dependable seafood sourcing solutions. Strong operational practices, reliable systems, and customer-focused approaches continue helping Indian seafood strengthen its reputation across competitive global markets and sustain long-term international business opportunities.',
+    ],
+    source: {
+      label: 'AVLA Nettos Exports Official Website',
+      url: 'https://www.avlaexports.com/',
+    },
+  },
+];
+
+const iqfSeafoodSections = [
+  {
+    title: 'Introduction: Understanding Modern Seafood Preservation',
+    paragraphs: [
+      'The global seafood industry has evolved significantly because international buyers now expect higher standards of quality, consistency, and product reliability. As seafood products move across countries and continents, maintaining freshness becomes one of the most critical challenges for exporters and suppliers.',
+      'Traditional preservation techniques have improved over time, but modern technologies now play a greater role in supporting quality expectations. Among these innovations, Individually Quick Frozen technology, commonly known as IQF seafood, has become increasingly important within international seafood markets. Through AVLA Nettos Exports, customers can understand how advanced seafood processing methods contribute toward maintaining product quality across global supply chains.',
+    ],
+    source: {
+      label: 'Food and Agriculture Organization (FAO)',
+      url: 'https://www.fao.org/',
+    },
+  },
+  {
+    title: 'What Does IQF Seafood Mean?',
+    paragraphs: [
+      'IQF stands for Individually Quick Frozen, a process designed to freeze individual seafood products rapidly while preserving their structure and quality characteristics. Unlike conventional freezing methods that may cause products to freeze together as a single block, IQF technology allows individual pieces to remain separated after freezing.',
+      'This process improves convenience and helps maintain product integrity throughout storage and distribution stages. Businesses including AVLA Nettos Exports recognize the importance of advanced preservation methods in supporting modern seafood export requirements and customer expectations.',
+    ],
+    source: {
+      label: 'U.S. Food and Drug Administration Food Information',
+      url: 'https://www.fda.gov/food',
+    },
+  },
+  {
+    title: 'How the IQF Process Works',
+    paragraphs: [
+      'The IQF process focuses on freezing seafood products quickly under carefully controlled conditions. Rapid freezing helps reduce the formation of large ice crystals that can affect product structure and texture.',
+      'The process typically involves preparation stages followed by freezing activities designed to preserve product characteristics efficiently. Maintaining speed and consistency during this process contributes significantly toward product quality outcomes. Through AVLA Nettos Exports, customers can understand the value of applying structured operational systems within seafood processing environments.',
+    ],
+    source: {
+      label: 'Food and Agriculture Organization Fisheries Division',
+      url: 'https://www.fao.org/fisheries/en/',
+    },
+  },
+  {
+    title: 'Why Seafood Preservation Is Important for Export Markets',
+    paragraphs: [
+      'Seafood products are highly perishable and require careful handling because quality can decline rapidly under unsuitable conditions. Export markets frequently involve long transportation periods and multiple logistical stages before products reach final destinations.',
+      'Effective preservation methods therefore become essential for maintaining quality and customer satisfaction. Buyers increasingly seek suppliers capable of maintaining standards consistently throughout supply chain operations. Organizations such as AVLA Nettos Exports focus on supporting seafood quality through processes designed around international market expectations.',
+    ],
+    source: {
+      label: 'Marine Products Export Development Authority (MPEDA)',
+      url: 'https://mpeda.gov.in/',
+    },
+  },
+  {
+    title: 'Maintaining Product Quality Through IQF Technology',
+    paragraphs: [
+      'Product quality represents one of the strongest advantages associated with IQF processing. Traditional freezing methods may affect product appearance and handling characteristics because products can freeze together and become difficult to separate.',
+      'IQF systems help maintain product individuality and support consistent handling outcomes. Improved product condition contributes toward better customer experiences and stronger market acceptance. Through AVLA Nettos Exports, buyers can understand the importance of preserving product quality throughout international seafood operations.',
+    ],
+    source: {
+      label: 'National Fisheries Development Board',
+      url: 'https://nfdb.gov.in/',
+    },
+  },
+  {
+    title: 'Greater Flexibility for International Buyers',
+    paragraphs: [
+      'International buyers frequently manage inventory requirements based on customer demand patterns and operational considerations. Products that offer greater flexibility can support improved business efficiency and reduce unnecessary product waste.',
+      'IQF seafood allows users to handle products according to specific quantity requirements because individual pieces remain separated during storage and use. This flexibility creates operational advantages for businesses across various market segments. Companies such as AVLA Nettos Exports understand that customer needs increasingly extend beyond product quality alone.',
+    ],
+    source: {
+      label: 'International Trade Administration',
+      url: 'https://www.trade.gov/',
+    },
+  },
+  {
+    title: 'Supporting Efficient Cold Chain Operations',
+    paragraphs: [
+      'Cold chain systems play a critical role within seafood exports because maintaining consistent temperatures helps preserve freshness and reduce quality risks. IQF products integrate effectively with cold chain operations because the process supports long-term storage and transportation requirements.',
+      'Effective temperature management contributes toward maintaining product reliability during international shipment activities. Export-focused companies including AVLA Nettos Exports recognize the importance of combining advanced preservation methods with disciplined operational systems.',
+    ],
+    source: {
+      label: 'FAO Fisheries and Aquaculture Division',
+      url: 'https://www.fao.org/fisheries/en/',
+    },
+  },
+  {
+    title: 'The Impact of IQF on Supply Chain Efficiency',
+    paragraphs: [
+      'Supply chain efficiency has become increasingly important within international seafood markets because buyers expect dependable delivery schedules and consistent product performance. Delays and quality inconsistencies can affect customer satisfaction and business outcomes.',
+      'IQF technology supports operational efficiency by simplifying product handling and improving inventory management processes. Better handling systems help reduce complications throughout supply chain activities. Through AVLA Nettos Exports, businesses can connect with seafood solutions focused on supporting reliable operational performance.',
+    ],
+    source: {
+      label: 'World Trade Organization Trade Facilitation Resources',
+      url: 'https://www.wto.org/',
+    },
+  },
+  {
+    title: 'Sustainability and Waste Reduction Benefits',
+    paragraphs: [
+      'Sustainability has become an increasingly important consideration within modern seafood markets because customers and organizations pay greater attention to responsible operational practices. Efficient product handling and inventory management systems can help reduce unnecessary waste throughout supply chains.',
+      'IQF products support better product utilization because users can access required quantities without affecting remaining inventory. Improved efficiency contributes toward broader sustainability objectives and resource management efforts. Companies including AVLA Nettos Exports understand the importance of supporting responsible industry practices and long-term business growth.',
+    ],
+    source: {
+      label: 'World Wildlife Fund Sustainable Seafood Program',
+      url: 'https://www.worldwildlife.org/industries/seafood',
+    },
+  },
+  {
+    title: 'Why Export Buyers Prefer IQF Seafood',
+    paragraphs: [
+      'International buyers increasingly evaluate seafood suppliers based on their ability to provide quality consistency, operational reliability, and flexible product solutions. IQF seafood addresses multiple buyer requirements by supporting product integrity, handling convenience, and efficient supply chain performance.',
+      'Businesses operating within highly competitive markets frequently seek solutions capable of improving customer experiences while reducing operational risks. Through AVLA Nettos Exports, buyers can understand how advanced seafood processing technologies contribute toward stronger business outcomes and improved customer satisfaction.',
+    ],
+    source: {
+      label: 'SeafoodSource Industry Insights',
+      url: 'https://www.seafoodsource.com/',
+    },
+  },
+  {
+    title: 'Conclusion: The Growing Importance of IQF Seafood',
+    paragraphs: [
+      'The seafood export industry continues evolving as customer expectations and market requirements become increasingly complex. Preservation technologies now influence product quality and operational performance across global supply chains.',
+      'IQF seafood has emerged as an important solution because it supports freshness preservation, supply chain efficiency, and customer convenience while addressing modern market expectations. Companies focused on quality and operational excellence increasingly recognize the value of integrating advanced processing approaches into seafood operations.',
+      'Through AVLA Nettos Exports, businesses can connect with a company committed to supporting quality-focused seafood solutions. Strong processing systems, disciplined operational practices, and customer-centered approaches continue helping modern seafood exporters strengthen international competitiveness and deliver reliable products to markets worldwide.',
+    ],
+    source: {
+      label: 'AVLA Nettos Exports Official Website',
+      url: 'https://www.avlaexports.com/',
+    },
+  },
+];
+
 export const blogDetails = [
+  {
+    title: 'What is IQF Seafood? Why It Matters for Export Buyers',
+    slug: 'what-is-iqf-seafood-export-buyers',
+    category: 'IQF Seafood',
+    image: '/assets/images/blog/blog-post/Why It Matters for Export Buyers.webp',
+    company: 'Avla Nettos Exports',
+    readTime: '6 Min',
+    releaseDate: 'June 13, 2026',
+    speciesFamily: 'Company',
+    intro: 'What is IQF Seafood? Why It Matters for Export Buyers',
+    sideText:
+      'Learn what IQF seafood means and why it matters for export buyers. Discover how IQF technology improves freshness, quality, storage, and global seafood supply efficiency with AVLA Nettos Exports.',
+    metaTitle:
+      'What is IQF Seafood? Why It Matters for Export Buyers | AVLA Nettos Exports',
+    metaDescription:
+      'Learn what IQF seafood means and why it matters for export buyers. Discover how IQF technology improves freshness, quality, storage, and global seafood supply efficiency with AVLA Nettos Exports.',
+    keywords: {
+      primary: 'IQF Seafood',
+      secondary: [
+        'Individually Quick Frozen seafood',
+        'Seafood exporter from India',
+        'Seafood processing technology',
+        'Frozen seafood exports',
+      ],
+      cluster: [
+        'seafood quality standards',
+        'seafood preservation methods',
+        'seafood cold chain management',
+        'export seafood solutions',
+        'frozen seafood processing',
+      ],
+    },
+    articleLead: [
+      'Individually Quick Frozen (IQF) technology freezes seafood piece by piece, keeping products separated and preserving their structure, texture, and quality far better than traditional block freezing.',
+      'For export buyers, IQF means better freshness, flexible handling, efficient cold chain integration, and reduced waste. AVLA Nettos Exports applies these advanced processing methods to deliver reliable seafood worldwide.',
+    ],
+    sections: iqfSeafoodSections,
+  },
+  {
+    title: 'India vs Vietnam vs Ecuador: Why Indian Seafood Wins on Quality',
+    slug: 'india-vs-vietnam-vs-ecuador-seafood-quality',
+    category: 'Indian Seafood Quality',
+    image: '/assets/images/blog/blog-post/Why Indian Seafood Wins on Quality.webp',
+    company: 'Avla Nettos Exports',
+    readTime: '6 Min',
+    releaseDate: 'June 13, 2026',
+    speciesFamily: 'Company',
+    intro: 'India vs Vietnam vs Ecuador: Why Indian Seafood Wins on Quality',
+    sideText:
+      'Compare India, Vietnam, and Ecuador seafood industries and discover why Indian seafood stands out through quality standards, marine diversity, processing excellence, and trusted exporters like AVLA Nettos Exports.',
+    metaTitle:
+      'India vs Vietnam vs Ecuador: Why Indian Seafood Wins on Quality | AVLA Nettos Exports',
+    metaDescription:
+      'Compare India, Vietnam, and Ecuador seafood industries and discover why Indian seafood stands out through quality standards, marine diversity, processing excellence, and trusted exporters like AVLA Nettos Exports.',
+    keywords: {
+      primary: 'Indian Seafood Quality',
+      secondary: [
+        'India seafood exports',
+        'Vietnam seafood industry',
+        'Ecuador seafood exports',
+        'Seafood exporter from India',
+      ],
+      cluster: [
+        'seafood quality standards',
+        'seafood processing infrastructure',
+        'seafood sourcing guide',
+        'international seafood trade',
+        'seafood export solutions',
+      ],
+    },
+    articleLead: [
+      'India, Vietnam, and Ecuador have all emerged as major players in global seafood trade, but buyers increasingly weigh quality, consistency, and supply chain strength over production volume alone.',
+      'India\'s marine diversity, processing infrastructure, and quality-focused practices give it a competitive edge. AVLA Nettos Exports reflects this commitment to standards and dependable sourcing for international buyers.',
+    ],
+    sections: indianSeafoodQualitySections,
+  },
+  {
+    title: 'How to Source Seafood from India: A Complete Buyer\'s Guide',
+    slug: 'how-to-source-seafood-from-india',
+    category: 'Seafood Sourcing Guide',
+    image: '/assets/images/blog/blog-post/How to Source Seafood from India.webp',
+    company: 'Avla Nettos Exports',
+    readTime: '6 Min',
+    releaseDate: 'June 13, 2026',
+    speciesFamily: 'Company',
+    intro: 'How to Source Seafood from India: A Complete Buyer\'s Guide',
+    sideText:
+      'Learn how to source seafood from India with this complete buyer\'s guide covering quality standards, supplier selection, certifications, logistics, and trusted exporters like AVLA Nettos Exports.',
+    metaTitle:
+      'How to Source Seafood from India: A Complete Buyer\'s Guide | AVLA Nettos Exports',
+    metaDescription:
+      'Learn how to source seafood from India with this complete buyer\'s guide covering quality standards, supplier selection, certifications, logistics, and trusted exporters like AVLA Nettos Exports.',
+    keywords: {
+      primary: 'Source Seafood from India',
+      secondary: [
+        'Seafood exporter from India',
+        'Seafood sourcing guide',
+        'Indian seafood suppliers',
+        'Seafood import process',
+      ],
+      cluster: [
+        'seafood quality standards',
+        'seafood logistics',
+        'seafood export regulations',
+        'seafood sourcing strategies',
+        'international seafood buyers',
+      ],
+    },
+    articleLead: [
+      'India offers international buyers access to diverse seafood varieties supported by an extensive coastline, advanced processing capabilities, and strong export infrastructure, making it a leading global sourcing destination.',
+      'Successful sourcing depends on more than price; it requires supplier evaluation, quality assurance, reliable logistics, and long-term partnerships. AVLA Nettos Exports reflects this structured, quality-driven approach for global seafood buyers.',
+    ],
+    sections: sourceSeafoodIndiaSections,
+  },
+  {
+    title: 'AVLA\'s Cold Chain Excellence: Ocean to International Buyer\'s Plate',
+    slug: 'cold-chain-excellence-ocean-to-plate',
+    category: 'Cold Chain Excellence',
+    image: '/assets/images/blog/blog-post/AVLA\'s Cold Chain Excellence.webp',
+    company: 'Avla Nettos Exports',
+    readTime: '6 Min',
+    releaseDate: 'June 13, 2026',
+    speciesFamily: 'Company',
+    intro: 'AVLA\'s Cold Chain Excellence: Ocean to International Buyer\'s Plate',
+    sideText:
+      'Discover how AVLA Nettos Exports ensures seafood freshness through advanced cold chain excellence, maintaining quality from ocean harvesting to international buyer delivery.',
+    metaTitle:
+      'AVLA\'s Cold Chain Excellence: Ocean to International Buyer\'s Plate | Seafood Export Quality',
+    metaDescription:
+      'Discover how AVLA Nettos Exports ensures seafood freshness through advanced cold chain excellence, maintaining quality from ocean harvesting to international buyer delivery.',
+    keywords: {
+      primary: 'AVLA Cold Chain Excellence',
+      secondary: [
+        'Seafood cold chain management',
+        'Seafood exporter from Kollam',
+        'Seafood quality preservation',
+        'International seafood export solutions',
+      ],
+      cluster: [
+        'cold storage systems',
+        'seafood logistics',
+        'seafood processing standards',
+        'export quality seafood',
+        'seafood supply chain',
+      ],
+    },
+    articleLead: [
+      'Seafood freshness depends on uninterrupted temperature control from the moment of harvest to final delivery, making cold chain management one of the most critical factors in successful seafood exports.',
+      'From ocean to the international buyer\'s plate, AVLA Nettos Exports maintains quality through disciplined handling, modern processing, reliable transportation, and temperature-focused storage systems built around global standards.',
+    ],
+    sections: coldChainExcellenceSections,
+  },
   {
     title: 'Why Kollam Kerala is India\'s Seafood Export Capital',
     slug: 'kollam-kerala-seafood-export-capital',
