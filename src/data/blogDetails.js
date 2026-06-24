@@ -959,7 +959,333 @@ const iqfSeafoodSections = [
   },
 ];
 
+const qualityStandardsSections = [
+  {
+    title: 'Introduction: Why Quality Standards Matter in Seafood Exports',
+    paragraphs: [
+      'The seafood export industry operates in one of the most regulated environments within global food trade. International buyers do not evaluate seafood products based solely on appearance or pricing; they also assess safety systems, quality procedures, operational reliability, and compliance practices. Maintaining high standards throughout processing and supply chain activities has become essential for building trust and sustaining long-term business relationships.',
+      'Buyers increasingly expect suppliers to demonstrate structured quality management systems capable of supporting international requirements. Through AVLA Nettos Exports, customers can understand the importance of maintaining quality-focused operations designed around global market expectations.',
+    ],
+    source: {
+      label: 'Food and Agriculture Organization (FAO)',
+      url: 'https://www.fao.org/',
+    },
+  },
+  {
+    title: 'Understanding Quality Compliance in Modern Seafood Exports',
+    paragraphs: [
+      'Global seafood trade involves multiple regulatory frameworks designed to protect consumers and support food safety objectives. Compliance standards help establish consistency and create structured approaches toward seafood handling, processing, and distribution activities.',
+      'International buyers increasingly consider certifications and quality systems as indicators of operational discipline and product reliability. Businesses including AVLA Nettos Exports recognize that maintaining strong quality systems strengthens customer confidence and supports long-term competitiveness within international seafood markets.',
+    ],
+    source: {
+      label: 'International Trade Administration',
+      url: 'https://www.trade.gov/',
+    },
+  },
+  {
+    title: 'What is HACCP and Why Is It Important?',
+    paragraphs: [
+      'Hazard Analysis and Critical Control Points, commonly known as HACCP, represents a preventive approach designed to identify and manage potential risks throughout food production processes. Rather than relying entirely on final product inspections, HACCP emphasizes monitoring critical stages where safety concerns may emerge.',
+      'This structured system improves consistency and strengthens operational control within seafood environments. Companies such as AVLA Nettos Exports understand the importance of implementing organized procedures that support quality assurance and product safety expectations.',
+    ],
+    source: {
+      label: 'U.S. Food and Drug Administration HACCP Guidance',
+      url: 'https://www.fda.gov/food/hazard-analysis-critical-control-point-haccp',
+    },
+  },
+  {
+    title: 'The Role of HACCP in Seafood Processing',
+    paragraphs: [
+      'Seafood products require careful handling because they are highly sensitive to environmental conditions and operational practices. HACCP systems support seafood businesses by creating structured procedures focused on maintaining quality throughout handling and processing activities.',
+      'Monitoring operational stages helps improve consistency and reduce potential quality concerns across supply chain environments. Effective implementation contributes toward stronger customer confidence and product reliability. Through AVLA Nettos Exports, customers can understand how structured quality systems contribute toward successful seafood export operations.',
+    ],
+    source: {
+      label: 'Marine Products Export Development Authority (MPEDA)',
+      url: 'https://mpeda.gov.in/',
+    },
+  },
+  {
+    title: 'Understanding FSSAI and Its Importance',
+    paragraphs: [
+      'The Food Safety and Standards Authority of India, commonly known as FSSAI, plays a major role in regulating food safety standards across India. The organization establishes guidelines intended to protect consumers while supporting quality consistency throughout food industries.',
+      'Seafood exporters operating within India frequently align their processes with regulatory expectations designed to maintain operational discipline and food safety objectives. Businesses including AVLA Nettos Exports recognize the importance of maintaining operational practices aligned with established standards and regulatory requirements.',
+    ],
+    source: {
+      label: 'Food Safety and Standards Authority of India',
+      url: 'https://www.fssai.gov.in/',
+    },
+  },
+  {
+    title: 'Why FSSAI Standards Matter for International Buyers',
+    paragraphs: [
+      'International buyers frequently evaluate supplier credibility by examining regulatory compliance and operational consistency. FSSAI-related standards support confidence because they demonstrate structured operational approaches within food production environments.',
+      'Buyers increasingly prefer suppliers capable of maintaining documented procedures and quality-focused practices throughout business activities. Compliance contributes toward reducing uncertainty and strengthening customer trust across international relationships. Through AVLA Nettos Exports, customers gain insights into a company focused on maintaining disciplined operational systems designed around customer expectations.',
+    ],
+    source: {
+      label: 'Food Safety and Standards Authority of India Regulations',
+      url: 'https://www.fssai.gov.in/',
+    },
+  },
+  {
+    title: 'Understanding EU Standards in Seafood Trade',
+    paragraphs: [
+      'European seafood markets maintain strict requirements regarding food quality, traceability, and safety procedures. Exporters seeking access to these markets frequently align their systems with internationally recognized practices and operational requirements.',
+      'Meeting these standards often requires disciplined process management and strong quality monitoring systems throughout production and handling activities. Companies such as AVLA Nettos Exports understand that international markets increasingly expect suppliers to maintain comprehensive quality practices and dependable operational performance.',
+    ],
+    source: {
+      label: 'European Commission Food Safety Information',
+      url: 'https://food.ec.europa.eu/',
+    },
+  },
+  {
+    title: 'Quality Monitoring Across the Supply Chain',
+    paragraphs: [
+      'Quality management does not begin or end within processing facilities alone. Effective seafood operations require quality monitoring across sourcing, transportation, storage, handling, and delivery activities.',
+      'Every stage within the supply chain contributes toward preserving product integrity and maintaining customer satisfaction. Operational consistency therefore becomes essential for achieving successful outcomes within international markets. Businesses including AVLA Nettos Exports recognize that maintaining quality requires coordinated efforts across multiple operational environments.',
+    ],
+    source: {
+      label: 'National Fisheries Development Board',
+      url: 'https://nfdb.gov.in/',
+    },
+  },
+  {
+    title: 'Technology Supporting Seafood Quality Systems',
+    paragraphs: [
+      'Modern technology increasingly strengthens seafood quality management because monitoring systems and digital tools improve operational visibility and process control. Temperature tracking systems, automated monitoring technologies, and data management solutions support faster decision-making and better quality oversight.',
+      'Improved visibility helps businesses maintain stronger operational consistency throughout supply chain activities. Through AVLA Nettos Exports, customers can understand how combining operational discipline with technological support contributes toward reliable seafood handling systems.',
+    ],
+    source: {
+      label: 'SeafoodSource Industry Insights',
+      url: 'https://www.seafoodsource.com/',
+    },
+  },
+  {
+    title: 'Customer Trust Built Through Quality Assurance',
+    paragraphs: [
+      'Customer trust develops gradually through consistent performance and reliable operational standards. International buyers frequently seek suppliers capable of maintaining quality expectations regardless of changing market conditions and logistical challenges.',
+      'Strong quality systems support transparency and contribute toward long-term business relationships. Businesses focused on maintaining disciplined operational practices often strengthen market reputation and customer loyalty. Companies including AVLA Nettos Exports understand that customer confidence represents an important foundation for sustainable growth.',
+    ],
+    source: {
+      label: 'International Trade Centre Resources',
+      url: 'https://www.intracen.org/',
+    },
+  },
+  {
+    title: "AVLA's Commitment Toward Quality Excellence",
+    paragraphs: [
+      'Maintaining seafood quality requires more than meeting minimum regulatory expectations because international customers increasingly expect reliability, transparency, and operational consistency. HACCP systems, FSSAI alignment, and internationally recognized standards collectively contribute toward stronger business performance and customer confidence.',
+      'Quality excellence therefore becomes an ongoing process involving disciplined management and continuous improvement efforts. Through AVLA Nettos Exports, businesses can connect with a company committed to supporting high-quality seafood operations and international market requirements.',
+      'By emphasizing structured systems, operational discipline, and customer-focused practices, AVLA continues strengthening its reputation as a dependable seafood exporter capable of supporting evolving global expectations while delivering quality-driven solutions across international markets.',
+    ],
+    source: {
+      label: 'AVLA Nettos Exports Official Website',
+      url: 'https://www.avlaexports.com/',
+    },
+  },
+];
+
+const verifiedImporterSections = [
+  {
+    title: 'Introduction: Understanding the Growing Seafood Import Opportunity',
+    paragraphs: [
+      "India has become one of the world's leading seafood export destinations because of its rich marine resources, extensive coastline, strong processing capabilities, and expanding international trade network. Businesses across multiple countries increasingly source seafood products from India due to growing demand for quality seafood and reliable supply solutions.",
+      'However, importing seafood involves more than identifying products and placing orders. Becoming a verified seafood importer requires understanding regulations, supplier evaluation methods, documentation requirements, and quality systems. Through AVLA Nettos Exports, businesses can gain insight into structured seafood sourcing approaches that support successful international trade relationships.',
+    ],
+    source: {
+      label: 'Marine Products Export Development Authority (MPEDA)',
+      url: 'https://mpeda.gov.in/',
+    },
+  },
+  {
+    title: 'Understanding What a Verified Seafood Importer Means',
+    paragraphs: [
+      'A verified seafood importer is generally recognized as a business that follows regulatory requirements, maintains proper documentation, and works with trusted suppliers capable of meeting quality standards. Verification contributes toward establishing credibility and reducing risks associated with international trade activities.',
+      'Buyers and suppliers frequently prefer working with organizations that demonstrate professionalism and operational reliability. Businesses such as AVLA Nettos Exports understand the importance of maintaining structured relationships designed around trust and consistent operational performance.',
+    ],
+    source: {
+      label: 'International Trade Administration',
+      url: 'https://www.trade.gov/',
+    },
+  },
+  {
+    title: 'Researching International Import Requirements',
+    paragraphs: [
+      'Before importing seafood products from India, businesses should understand the regulations governing imports within their target markets. Different countries maintain unique requirements involving food safety, customs procedures, documentation standards, and quality compliance systems.',
+      'Understanding these expectations helps minimize delays and operational complications during import activities. Thorough preparation supports smoother business operations and stronger supply chain performance. Through AVLA Nettos Exports, businesses can understand the importance of aligning sourcing strategies with market requirements.',
+    ],
+    source: {
+      label: 'World Trade Organization Trade Resources',
+      url: 'https://www.wto.org/',
+    },
+  },
+  {
+    title: 'Establishing Your Business Structure',
+    paragraphs: [
+      'Seafood importing activities generally require businesses to operate through legally recognized structures capable of supporting international transactions. Establishing an appropriate business framework creates a foundation for documentation management and regulatory compliance activities.',
+      'Businesses frequently develop systems supporting finance management, operational procedures, and customer service activities before expanding import operations. Reliable organizational structures contribute toward stronger business credibility and improved operational efficiency. Companies including AVLA Nettos Exports recognize the importance of maintaining organized systems within international trade environments.',
+    ],
+    source: {
+      label: 'International Trade Centre Resources',
+      url: 'https://www.intracen.org/',
+    },
+  },
+  {
+    title: 'Identifying Reliable Seafood Export Partners',
+    paragraphs: [
+      'Selecting the right supplier represents one of the most important steps within the import process because supplier quality directly affects business performance and customer satisfaction. Businesses should evaluate supplier reliability, communication standards, operational consistency, and quality management practices before establishing partnerships.',
+      'Dependable suppliers reduce risks related to delays and product inconsistencies. Through AVLA Nettos Exports, buyers can explore seafood sourcing solutions designed around quality and long-term relationship development.',
+    ],
+    source: {
+      label: 'Marine Products Export Development Authority (MPEDA)',
+      url: 'https://mpeda.gov.in/',
+    },
+  },
+  {
+    title: 'Understanding Seafood Quality Standards',
+    paragraphs: [
+      'International seafood markets maintain strict standards regarding food safety and product quality because seafood products are highly sensitive to handling conditions. Importers should understand how quality management systems influence product consistency and operational performance.',
+      'Evaluating supplier quality procedures helps improve sourcing decisions and strengthen customer confidence. Companies such as AVLA Nettos Exports focus on maintaining operational practices designed around international quality expectations and customer requirements.',
+    ],
+    source: {
+      label: 'Food Safety and Standards Authority of India',
+      url: 'https://www.fssai.gov.in/',
+    },
+  },
+  {
+    title: 'Reviewing Certifications and Compliance Systems',
+    paragraphs: [
+      'Certifications frequently provide buyers with additional confidence regarding supplier capabilities and operational standards. International markets increasingly expect businesses to demonstrate compliance with established quality and food safety requirements.',
+      'Importers should therefore understand how supplier certifications contribute toward risk reduction and operational reliability. Proper evaluation supports stronger purchasing decisions and long-term sourcing strategies. Through AVLA Nettos Exports, businesses can connect with seafood operations focused on maintaining structured quality systems.',
+    ],
+    source: {
+      label: 'U.S. Food and Drug Administration Food Safety Information',
+      url: 'https://www.fda.gov/food',
+    },
+  },
+  {
+    title: 'Understanding Logistics and Cold Chain Requirements',
+    paragraphs: [
+      'Seafood transportation requires careful planning because product quality can rapidly decline without effective handling systems and temperature management procedures. Importers should evaluate how suppliers manage storage, transportation, and delivery activities throughout international supply chains.',
+      'Strong cold chain systems help preserve freshness and reduce operational risks associated with shipment failures. Businesses including AVLA Nettos Exports recognize that maintaining product quality requires disciplined operational practices throughout transportation environments.',
+    ],
+    source: {
+      label: 'FAO Fisheries and Aquaculture Division',
+      url: 'https://www.fao.org/fisheries/en/',
+    },
+  },
+  {
+    title: 'Building Strong Supplier Relationships',
+    paragraphs: [
+      'Successful seafood importing depends heavily on strong relationships between buyers and suppliers. Businesses increasingly view suppliers as long-term strategic partners rather than short-term transactional providers.',
+      'Effective communication, reliability, and transparency contribute toward stronger collaboration and better operational outcomes. Strong partnerships frequently improve business flexibility and customer satisfaction over time. Through AVLA Nettos Exports, importers can engage with a company focused on supporting dependable business relationships and customer success.',
+    ],
+    source: {
+      label: 'International Trade Centre Trade Resources',
+      url: 'https://www.intracen.org/',
+    },
+  },
+  {
+    title: 'Sustainability and Responsible Seafood Sourcing',
+    paragraphs: [
+      'Sustainability increasingly influences purchasing decisions because customers and businesses are paying closer attention to responsible industry practices and environmental considerations. Importers should understand how sourcing decisions affect long-term resource availability and market reputation.',
+      'Supporting responsible seafood operations contributes toward stronger customer trust and future business resilience. Companies including AVLA Nettos Exports recognize the importance of maintaining responsible business approaches designed around long-term growth and customer expectations.',
+    ],
+    source: {
+      label: 'World Wildlife Fund Sustainable Seafood Program',
+      url: 'https://www.worldwildlife.org/industries/seafood',
+    },
+  },
+  {
+    title: 'Becoming a Successful Verified Seafood Importer',
+    paragraphs: [
+      'Becoming a verified seafood importer from India requires a combination of regulatory understanding, supplier evaluation, operational planning, and quality awareness. Businesses focusing exclusively on price frequently overlook factors that significantly influence long-term performance and customer satisfaction.',
+      'Successful importers prioritize reliability, transparency, and quality consistency throughout every stage of the sourcing process. Through AVLA Nettos Exports, businesses can connect with a seafood exporter committed to maintaining dependable standards and supporting international customer requirements.',
+      'Strong planning, disciplined sourcing strategies, and long-term partnerships continue helping seafood importers strengthen market credibility, reduce operational risks, and create sustainable growth opportunities within increasingly competitive international seafood markets.',
+    ],
+    source: {
+      label: 'AVLA Nettos Exports Official Website',
+      url: 'https://www.avlaexports.com/',
+    },
+  },
+];
+
 export const blogDetails = [
+  {
+    title: 'How to Become a Verified Seafood Importer from India',
+    slug: 'how-to-become-verified-seafood-importer-from-india',
+    category: 'Verified Seafood Importer',
+    image: '/assets/images/blog/blog-post/How to Become a Verified Seafood Importer from India.webp',
+    company: 'Avla Nettos Exports',
+    readTime: '6 Min',
+    releaseDate: 'June 24, 2026',
+    speciesFamily: 'Company',
+    intro: 'How to Become a Verified Seafood Importer from India',
+    sideText:
+      'Learn how to become a verified seafood importer from India with this complete guide covering registration, supplier verification, quality standards, certifications, and sourcing strategies.',
+    metaTitle:
+      'How to Become a Verified Seafood Importer from India | AVLA Nettos Exports',
+    metaDescription:
+      'Learn how to become a verified seafood importer from India with this complete guide covering registration, supplier verification, quality standards, certifications, and sourcing strategies.',
+    keywords: {
+      primary: 'Verified Seafood Importer from India',
+      secondary: [
+        'Seafood importer guide',
+        'Indian seafood suppliers',
+        'Seafood import process',
+        'Seafood exporter from India',
+      ],
+      cluster: [
+        'seafood certifications',
+        'seafood import regulations',
+        'seafood sourcing process',
+        'seafood quality standards',
+        'international seafood trade',
+      ],
+    },
+    articleLead: [
+      "India has become one of the world's leading seafood export destinations, and businesses across many countries increasingly source from it, but importing seafood involves far more than placing orders.",
+      'Becoming a verified seafood importer requires understanding regulations, supplier evaluation, documentation, and quality systems. AVLA Nettos Exports offers a structured sourcing approach that supports successful international trade relationships.',
+    ],
+    sections: verifiedImporterSections,
+  },
+  {
+    title: "HACCP, FSSAI & EU-Certified Seafood: AVLA's Quality Standards",
+    slug: 'haccp-fssai-eu-certified-seafood-quality-standards',
+    category: 'Seafood Quality Standards',
+    image: "/assets/images/blog/blog-post/AVLA's Quality Standards.webp",
+    company: 'Avla Nettos Exports',
+    readTime: '6 Min',
+    releaseDate: 'June 24, 2026',
+    speciesFamily: 'Company',
+    intro: "HACCP, FSSAI & EU-Certified Seafood: AVLA's Quality Standards",
+    sideText:
+      'Discover how AVLA Nettos Exports maintains seafood quality through HACCP principles, FSSAI compliance, and EU-standard practices for safe, reliable, and export-ready seafood products.',
+    metaTitle:
+      "HACCP, FSSAI & EU-Certified Seafood: AVLA's Quality Standards | AVLA Nettos Exports",
+    metaDescription:
+      'Discover how AVLA Nettos Exports maintains seafood quality through HACCP principles, FSSAI compliance, and EU-standard practices for safe, reliable, and export-ready seafood products.',
+    keywords: {
+      primary: 'Seafood Quality Standards',
+      secondary: [
+        'HACCP seafood standards',
+        'FSSAI seafood certification',
+        'EU-certified seafood',
+        'Seafood exporter from India',
+      ],
+      cluster: [
+        'seafood safety standards',
+        'seafood processing compliance',
+        'export quality seafood',
+        'seafood certifications India',
+        'international seafood regulations',
+      ],
+    },
+    articleLead: [
+      'The seafood export industry operates in one of the most regulated environments within global food trade, where buyers assess safety systems, quality procedures, and compliance practices alongside product and price.',
+      'Through HACCP principles, FSSAI alignment, and internationally recognized EU-standard practices, AVLA Nettos Exports maintains the structured quality systems that build buyer trust and support safe, reliable, export-ready seafood.',
+    ],
+    sections: qualityStandardsSections,
+  },
   {
     title: 'What is IQF Seafood? Why It Matters for Export Buyers',
     slug: 'what-is-iqf-seafood-export-buyers',
