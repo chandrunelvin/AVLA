@@ -1,45 +1,72 @@
 import { useNavigate } from 'react-router-dom';
 import { blogDetails } from '../../data/blogDetails';
 
-const postsByCategory = {
-  fish: blogDetails,
+const familyToCategory = {
+  fish: 'fish',
+  squid: 'cephalopods',
+  octopus: 'cephalopods',
+  cuttlefish: 'cephalopods',
+  cephalopod: 'cephalopods',
+  crab: 'crustaceans',
+  shrimp: 'crustaceans',
+  prawn: 'crustaceans',
+  lobster: 'crustaceans',
+  crustacean: 'crustaceans',
+  clam: 'bivalve',
+  mussel: 'bivalve',
+  oyster: 'bivalve',
+  bivalve: 'bivalve',
+};
+
+function categoryForBlog(blog) {
+  const family = (blog.speciesFamily || '').toLowerCase();
+  return familyToCategory[family] || 'fish';
+}
+
+const upcomingPostsByCategory = {
   cephalopods: [
     {
-      title: 'Squid Export Guide – Cleaned, Frozen, and Buyer-Ready Supply',
-      image: '/assets/images/blog/blog-cephalopod.svg',
-      slug: null,
-    },
-    {
       title: 'Octopus Export Standards – Processing, Grading, and Packing',
-      image: '/assets/images/blog/blog-octopus.svg',
+      image: null,
       slug: null,
     },
   ],
   crustaceans: [
     {
       title: 'Crab Export Processing – Quality Handling for Global Buyers',
-      image: '/assets/images/blog/blog-crab.svg',
+      image: null,
       slug: null,
     },
     {
       title: 'Shrimp Supply Chain – Frozen Seafood for International Markets',
-      image: '/assets/images/blog/blog-shrimp.svg',
+      image: null,
       slug: null,
     },
   ],
   bivalve: [
     {
       title: 'Clam Export Standards – Safe Handling and Seafood Packing',
-      image: '/assets/images/blog/blog-clam.svg',
+      image: null,
       slug: null,
     },
     {
       title: 'Mussel Export Guide – Quality, Processing, and Delivery',
-      image: '/assets/images/blog/blog-mussel.svg',
+      image: null,
       slug: null,
     },
   ],
 };
+
+const postsByCategory = ['fish', 'cephalopods', 'crustaceans', 'bivalve'].reduce(
+  (acc, category) => {
+    acc[category] = [
+      ...blogDetails.filter((blog) => categoryForBlog(blog) === category),
+      ...(upcomingPostsByCategory[category] || []),
+    ];
+    return acc;
+  },
+  {},
+);
 
 export default function BlogCaseStudies({ activeCategory }) {
   const navigate = useNavigate();
