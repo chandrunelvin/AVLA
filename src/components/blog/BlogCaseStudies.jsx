@@ -24,25 +24,8 @@ function categoryForBlog(blog) {
 }
 
 const upcomingPostsByCategory = {
-  cephalopods: [
-    {
-      title: 'Octopus Export Standards – Processing, Grading, and Packing',
-      image: null,
-      slug: null,
-    },
-  ],
-  crustaceans: [
-    {
-      title: 'Crab Export Processing – Quality Handling for Global Buyers',
-      image: null,
-      slug: null,
-    },
-    {
-      title: 'Shrimp Supply Chain – Frozen Seafood for International Markets',
-      image: null,
-      slug: null,
-    },
-  ],
+  cephalopods: [],
+  crustaceans: [],
   bivalve: [
     {
       title: 'Clam Export Standards – Safe Handling and Seafood Packing',
