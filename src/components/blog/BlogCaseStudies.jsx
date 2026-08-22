@@ -26,18 +26,7 @@ function categoryForBlog(blog) {
 const upcomingPostsByCategory = {
   cephalopods: [],
   crustaceans: [],
-  bivalve: [
-    {
-      title: 'Clam Export Standards – Safe Handling and Seafood Packing',
-      image: null,
-      slug: null,
-    },
-    {
-      title: 'Mussel Export Guide – Quality, Processing, and Delivery',
-      image: null,
-      slug: null,
-    },
-  ],
+  bivalve: [],
 };
 
 const postsByCategory = ['fish', 'cephalopods', 'crustaceans', 'bivalve'].reduce(
