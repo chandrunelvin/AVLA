@@ -28,6 +28,18 @@ const purchaseAreaImages = [
   '/assets/images/about/Purchase area9.jpeg',
   '/assets/images/about/Purchase area10.jpeg',
   '/assets/images/about/Purchase area11.jpeg',
+  '/assets/images/about/Purchase area12.jpeg',
+  '/assets/images/about/Purchase area13.jpeg',
+  '/assets/images/about/Purchase area14.jpeg',
+  '/assets/images/about/Purchase area15.jpeg',
+  '/assets/images/about/Purchase area16.jpeg',
+  '/assets/images/about/Purchase area17.jpeg',
+  '/assets/images/about/Purchase area18.jpeg',
+  '/assets/images/about/Purchase area19.jpeg',
+  '/assets/images/about/Purchase area20.jpeg',
+  '/assets/images/about/Purchase area21.jpeg',
+  '/assets/images/about/Purchase area22.jpeg',
+  '/assets/images/about/Purchase area23.jpeg',
 ];
 
 const globalPresenceImages = [
@@ -107,6 +119,15 @@ function SectionBadge({ children }) {
 export default function AboutShowcaseSection() {
   const [activeTab, setActiveTab] = useState('purchase');
   const tabImages = infraCardsByTab[activeTab];
+  // With a long gallery, give each marquee row its own half of the images so the
+  // same photo never shows up in both rows at once.
+  const splitRows = tabImages.length >= 8;
+  const topRowImages = splitRows
+    ? tabImages.filter((_, i) => i % 2 === 0)
+    : tabImages;
+  const bottomRowImages = splitRows
+    ? tabImages.filter((_, i) => i % 2 === 1)
+    : [...tabImages].reverse();
   const infrastructureDurations =
     activeTab === 'purchase'
       ? { forward: 42, reverse: 40 }
@@ -153,8 +174,8 @@ export default function AboutShowcaseSection() {
 
         {/* Cards marquee */}
         <div className="mt-10 space-y-[10px]">
-          <MarqueeRow images={tabImages} duration={infrastructureDurations.forward} />
-          <MarqueeRow images={[...tabImages].reverse()} reverse duration={infrastructureDurations.reverse} />
+          <MarqueeRow images={topRowImages} duration={infrastructureDurations.forward} />
+          <MarqueeRow images={bottomRowImages} reverse duration={infrastructureDurations.reverse} />
         </div>
       </div>
 
